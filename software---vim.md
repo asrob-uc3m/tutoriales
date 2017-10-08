@@ -3,13 +3,13 @@
 Instalación en Ubuntu/Debian
 ----------------------------
 
-``` bash
+```bash
 sudo apt-get install vim-gnome
 ```
 
 Para instalar el paquete de colores Mustang ([fuente original]):
 
-``` bash
+```bash
 mkdir ~/.vim; mkdir ~/.vim/colors
 mv mustang_vim_colorscheme_by_hcalves.vim ~/.vim/colors/Mustang.vim
 ```
@@ -21,14 +21,14 @@ Pulsa 'i' o 'a' para empezar a escribir!
 
 'esc' vuelve al modo normal. En modo normal:
 
-`:w -> guardar`
-`:q -> salir`
-`:wq -> salir guardando`
-`:q! -> salir sin guardar`
-`/ -> buscar en documento`
-`? -> buscar en documento (hacia atrás)`
-`:s/from/to -> sustituir primera aparición en la línea`
-`:s/from/to/g -> sustituir en toda la línea`
+:w -> guardar
+:q -> salir
+:wq -> salir guardando
+:q! -> salir sin guardar
+/ -> buscar en documento
+? -> buscar en documento (hacia atrás)
+:s/from/to -> sustituir primera aparición en la línea
+:s/from/to/g -> sustituir en toda la línea
 
 Configuraciones útiles
 ----------------------
