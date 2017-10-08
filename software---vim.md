@@ -86,7 +86,7 @@ Excerpts para forzar 80 columnas:
 `* This solution is the key, but I most often find I want to reformat the rest of the current paragraph; for this`
 `behavior, use gq}.`
 
-  [VIM]: http://www.vim.org/
-  [fuente original]: http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484
+- [VIM]: http://www.vim.org/
+- [fuente original]: http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484
 
 
