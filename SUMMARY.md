@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [Introducción](README.md)
 * [Electrónica](electronica.md)
 * [Mecánica](mecanica.md)
 * [Software](software.md)
