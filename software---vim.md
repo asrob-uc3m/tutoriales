@@ -17,7 +17,7 @@ mv mustang_vim_colorscheme_by_hcalves.vim ~/.vim/colors/Mustang.vim
 Comandos básicos
 ----------------
 
-Pulsa 'i' o 'a' para empezar a escribir!
+Pulsa `i` o `a` para empezar a escribir!
 
 'esc' vuelve al modo normal. En modo normal:
 
