@@ -1,4 +1,4 @@
-[VIM] es un editor de texto muy versátil.
+[VIM](http://www.vim.org/) es un editor de texto muy versátil.
 
 Instalación en Ubuntu/Debian
 ----------------------------
@@ -7,7 +7,7 @@ Instalación en Ubuntu/Debian
 sudo apt-get install vim-gnome
 ```
 
-Para instalar el paquete de colores Mustang ([fuente original]):
+Para instalar el paquete de colores Mustang ([fuente original](http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484)):
 
 ```bash
 mkdir ~/.vim; mkdir ~/.vim/colors
@@ -96,8 +96,4 @@ consecutive lines when possible. You can place a blank line between two lines if
 joined together.
   - This solution is the key, but I most often find I want to reformat the rest of the current paragraph; for this
 behavior, use gq}.
-
-- [VIM]: http://www.vim.org/
-- [fuente original]: http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484
-
 
