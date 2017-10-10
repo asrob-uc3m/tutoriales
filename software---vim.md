@@ -88,13 +88,13 @@ map <silent> <F5> :! pdflatex %<CR>  " Map F5 to call a shell (!) 'pdflatex' on 
 au BufNewFile,BufRead *.dox set filetype=cpp.doxygen
 ```
 
-Excerpts para forzar 80 columnas:
+- Excerpts para forzar 80 columnas:
 
-- Set textwidth to 80, move to the start of the file (can be done with Ctrl-Home or gg), and type gqG.
+  - Set textwidth to 80, move to the start of the file (can be done with Ctrl-Home or gg), and type gqG.
 gqG formats the text starting from the current position and to the end of the file. It will automatically join
 consecutive lines when possible. You can place a blank line between two lines if you don't want those two to be
 joined together.
-* This solution is the key, but I most often find I want to reformat the rest of the current paragraph; for this
+  - This solution is the key, but I most often find I want to reformat the rest of the current paragraph; for this
 behavior, use gq}.
 
 - [VIM]: http://www.vim.org/
