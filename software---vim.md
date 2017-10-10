@@ -35,7 +35,7 @@ Pulsa `i` o `a` para empezar a escribir!
 Configuraciones útiles
 ----------------------
 
-Setup básico (en Linux, fichero ~/.vimrc, descargar [aquí](./assets/)):
+Setup básico (en Linux, fichero ~/.vimrc, descargar [aquí](./assets/.vimrc)):
 
 ```vim
 set nocompatible
