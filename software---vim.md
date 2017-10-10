@@ -23,7 +23,7 @@ Pulsa `i` o `a` para empezar a escribir!
 
 - `:w` -> guardar
 - `:q` -> salir
-- `:wq -> guardar y salir
+- `:wq` -> guardar y salir
 - `:q!` -> salir (forzando sin guardar, aunque hayan habido cambios)
 - `/` -> buscar en documento
 - `?` -> buscar en documento (hacia atrás)
