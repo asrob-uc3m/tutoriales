@@ -24,7 +24,7 @@ Pulsa `i` o `a` para empezar a escribir!
 - `:w` -> guardar
 - `:q` -> salir
 - `:wq` -> guardar y salir
-- `:q!` -> salir (forzando sin guardar, aunque hayan habido cambios)
+- `:q!` -> salir sin guardar (forzando sin guardar, aunque hayan habido cambios)
 - `/` -> buscar en documento
 - `?` -> buscar en documento (hacia atrás)
 - `:s/from/to` -> sustituir primera aparición en la línea (nótese el formato `regex`)
