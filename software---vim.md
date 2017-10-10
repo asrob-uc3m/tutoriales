@@ -29,6 +29,8 @@ Pulsa `i` o `a` para empezar a escribir!
 - `?` -> buscar en documento (hacia atrás)
 - `:s/from/to` -> sustituir primera aparición en la línea (nótese el formato `regex`)
 - `:s/from/to/g` -> sustituir en toda la línea (nótese el formato `regex`)
+- `dd` -> borra la línea donde se está
+- `gg`-> va a la primera línea
 
 Configuraciones útiles
 ----------------------
