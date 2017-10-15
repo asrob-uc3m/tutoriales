@@ -23,7 +23,7 @@ Pulsa `i` o `a` para empezar a escribir!
 - `dd` -> borra la línea donde se está
 - `gg`-> va a la primera línea
 
-## Configuraciones útiles
+## Configuración básica
 
 La configuración por defecto es un tanto compleja. Aquí configuraremos VIM con una trama de colores `Mustang`, y con comportamientos como CTRL+C para copiar y CTRL+V para pegar (véase `behave mswin` a continuación).
 
