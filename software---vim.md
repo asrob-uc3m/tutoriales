@@ -1,21 +1,12 @@
 [VIM](http://www.vim.org/) es un editor de texto muy versátil.
 
-Instalación en Ubuntu/Debian
-----------------------------
+## Instalación en Ubuntu/Debian
 
 ```bash
 sudo apt-get install vim-gnome
 ```
 
-Para instalar el paquete de colores Mustang ([fuente original](http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484)):
-
-```bash
-mkdir ~/.vim; mkdir ~/.vim/colors
-mv mustang_vim_colorscheme_by_hcalves.vim ~/.vim/colors/Mustang.vim
-```
-
-Comandos básicos
-----------------
+## Comandos básicos
 
 Pulsa `i` o `a` para empezar a escribir!
 
@@ -32,10 +23,18 @@ Pulsa `i` o `a` para empezar a escribir!
 - `dd` -> borra la línea donde se está
 - `gg`-> va a la primera línea
 
-Configuraciones útiles
-----------------------
+## Configuraciones útiles
 
-Setup básico (en Linux, fichero ~/.vimrc, descargar [aquí](./assets/.vimrc)):
+La configuración por defecto es un tanto compleja. Aquí configuraremos VIM con una trama de colores `Mustang`, y con comportamientos como CTRL+C para copiar y CTRL+V para pegar (véase `behave mswin` a continuación).
+
+Para instalar el paquete de colores `Mustang` que se utilizará ([fuente original](http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484)):
+
+```bash
+mkdir ~/.vim; mkdir ~/.vim/colors
+mv mustang_vim_colorscheme_by_hcalves.vim ~/.vim/colors/Mustang.vim
+```
+
+Configuración básica (en Linux, fichero ~/.vimrc, descargar [aquí](./assets/.vimrc)):
 
 ```vim
 set nocompatible
