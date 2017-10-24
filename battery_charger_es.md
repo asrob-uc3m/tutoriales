@@ -3,13 +3,20 @@ Disclaimer: esta guía está concebida como un resumen de uso rápido. Para una 
 
 ## 1. Contenido de la caja
 Cuando vayas a utilizar el cargador, comprueba la presencia de todos estos elementos:
-- Cargador IMAX B6AC
-- Cable negro para alimentación AC
-- Cable con pinzas para alimentación DC
-- Manual de instrucciones, dentro de un sobre pegado en el interior de la tapa
-- Cables para la conexión de baterías
+1. Caja de cartón
+2. Manual de instrucciones, dentro de un sobre pegado en el interior de la tapa
+3. Cargador IMAX B6AC
+4. Cable negro para alimentación AC
+5. Cable con pinzas para alimentación DC
+6. Cable con bananas para conexión al cargador
+7. Cables adaptadores para baterías
+8. Funda protectora del cargador
 
-Asimismo, **cuando termines de usarlo, asegúrate de que vuelves a dejarlo todo dentro de la caja.**
+![b6ac box content](https://user-images.githubusercontent.com/6171234/31945038-4d5a12f8-b8ce-11e7-84d2-323e4650ef87.jpg)
+
+Asimismo, **cuando termines de usarlo, asegúrate de que vuelves a dejarlo todo dentro de la caja**, tal y como muestra la siguiente imagen:
+
+![b6ac all in the box](https://user-images.githubusercontent.com/6171234/31945054-5982b170-b8ce-11e7-8c23-7f3e366a16b5.jpg)
 
 ## 2. Alimentación del cargador
 Para poner en funcionamiento el cargador se pueden utilizar dos tipos de alimentación:
