@@ -12,11 +12,11 @@ Cuando vayas a utilizar el cargador, comprueba la presencia de todos estos eleme
 7. Cables adaptadores para baterías
 8. Funda protectora del cargador
 
-![b6ac box content](https://user-images.githubusercontent.com/6171234/31945038-4d5a12f8-b8ce-11e7-84d2-323e4650ef87.jpg)
+<img src="https://user-images.githubusercontent.com/6171234/31945038-4d5a12f8-b8ce-11e7-84d2-323e4650ef87.jpg" alt="b6ac box content" height="300" align="middle">
 
 Asimismo, **cuando termines de usarlo, asegúrate de que vuelves a dejarlo todo dentro de la caja**, tal y como muestra la siguiente imagen:
 
-![b6ac all in the box](https://user-images.githubusercontent.com/6171234/31945054-5982b170-b8ce-11e7-8c23-7f3e366a16b5.jpg)
+<img src="https://user-images.githubusercontent.com/6171234/31945054-5982b170-b8ce-11e7-8c23-7f3e366a16b5.jpg" alt="b6ac all in the box" height="300" align="middle">
 
 ## 2. Alimentación del cargador
 Para poner en funcionamiento el cargador se pueden utilizar dos tipos de alimentación:
