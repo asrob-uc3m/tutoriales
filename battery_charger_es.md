@@ -26,6 +26,7 @@ El cargador IMAX B6AC puede cargar los siguientes tipos de baterías:
 - NiMH hasta 15 celdas
 - NiCd hasta 15 celdas
 - Pb hasta 20 V
+
 **Precaución**: no recargar baterías dañadas o pilas no recargables, bajo riesgo de incendio.
 
 Para conocer el tipo de batería que vas a cargar, debes observar su etiquetado. A continuación se exponen los casos de uso más comunes.
@@ -65,10 +66,12 @@ Al encenderse, el cargador mostrará la última configuración utilizada.
 - FAST CHG: Carga rápida, incompleta, sin utilizar el conector de equilibrado.
 - STORAGE: Carga o descarga equilibrada hasta la tensión óptima de almacenamiento. Útil si se va a tener la batería mucho tiempo sin utilizar.
 - DISCHARGE: Descarga completa de la batería.
+
 **Atención**: Se recomienda utillizar únicamente las opciones BALANCE y STORAGE, por ser las más respetuosas con la batería. Las otras opciones pueden comprometer su vida útil y su seguridad. En esta guía se describe el proceso de carga mediante la opción BALANCE. Para otras opciones consultar el [manual de usuario](https://github.com/asrob-uc3m/actas/files/1397540/iMAXB6ACmanual.pdf).
 
 4. Una vez se encuentre en la pantalla la opción BALANCE, pulsar Enter. Parpadeará la corriente.
 5. Ajustar la corriente con los botones izquierda o derecha. Esta corriente será la máxima utilizada durante el proceso de carga; a mayor corriente, mayor velocidad.
+
 **Precaución**: Para la carga, se recomienda utilizar como máximo un valor de corriente correspondiente a 1C. Un valor de 1C es un valor en corriente igual a la capacidad de la batería. Por ejemplo, para una batería de 2200mAh, un valor de 1C es una corriente de 2,2A. Si no se tiene mucha prisa, se recomienda utilizar valores alrededor de 0,5C.
 
 6. Una vez seleccionada la corriente deseada, pulsar Enter. Parpadeará la tensión.
@@ -112,14 +115,17 @@ Al encenderse, el cargador mostrará la última configuración utilizada.
 3. Pulsar los botones izquierda o derecha para navegar entre las opciones:
 - CHARGE: Carga completa de la batería.
 - DISCHARGE: Descarga completa de la batería.
-- CYCLE: Ciclos de carga y descarga.
+- CYCLE: Ciclos de carga y descarga
+
 **Atención**: En esta guía se describe el proceso de carga mediante la opción CHARGE. Para otras opciones consultar el [manual de usuario](https://github.com/asrob-uc3m/actas/files/1397540/iMAXB6ACmanual.pdf).
 
 4. Una vez se encuentre en la pantalla la opción CHARGE, pulsar Enter. Parpadeará el modo.
 5. Ajustar el modo con los botones izquierda o derecha. El modo automático (Aut) permte seleccionar la máxima corriente de carga pero deja libertad al cargador para irla variando durante la carga, mientras que el modo manual (Man) utiliza una corriente de carga fija.
 6. Una vez seleccionado el modo deseado, pulsar Enter. Parpadeará la corriente.
 7. Ajustar la corriente con los botones izquierda o derecha.
+
 **Precaución**: Para la carga, se recomienda utilizar como máximo un valor de corriente correspondiente a 0,5C. Un valor de 1C es un valor en corriente igual a la capacidad de la batería. Por ejemplo, para una batería de 2200mAh, un valor de 1C es una corriente de 2,2A; y un valor de 0,5C es una corriente de 1,1A. Si no se tiene mucha prisa, se recomienda utilizar valores alrededor de 0,25C.
+
 **Atención**: Debido a la técnica que utiliza el cargador para reconocer la carga, no se recomienda utilizar corrientes inferiores a 0,2C, ya que el cargador tendrá problemas para reconocer cuándo la batería está completamente cargada. 
 8. Mantener pulsado Enter durante 3 segundos. El cargador comprobará la batería conectada, y en caso afirmativo la carga comenzará.
 
