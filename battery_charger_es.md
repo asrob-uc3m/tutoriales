@@ -68,11 +68,11 @@ Al encenderse, el cargador mostrará la última configuración utilizada.
 ![lipo options](https://user-images.githubusercontent.com/6171234/31885133-c4e54282-b7ef-11e7-8169-627c724361f8.PNG)
 
 3. Pulsar los botones izquierda o derecha para navegar entre las opciones:
-- CHARGE: Carga completa, sin utilizar el conector de equilibrado.
-- BALANCE: Carga completa y equilibrada, requiere conectar el conector de equilibrado.
-- FAST CHG: Carga rápida, incompleta, sin utilizar el conector de equilibrado.
-- STORAGE: Carga o descarga equilibrada hasta la tensión óptima de almacenamiento. Útil si se va a tener la batería mucho tiempo sin utilizar.
-- DISCHARGE: Descarga completa de la batería.
+  - CHARGE: Carga completa, sin utilizar el conector de equilibrado.
+  - BALANCE: Carga completa y equilibrada, requiere conectar el conector de equilibrado.
+  - FAST CHG: Carga rápida, incompleta, sin utilizar el conector de equilibrado.
+  - STORAGE: Carga o descarga equilibrada hasta la tensión óptima de almacenamiento. Útil si se va a tener la batería mucho tiempo sin utilizar.
+  - DISCHARGE: Descarga completa de la batería.
 
 **Atención**: Se recomienda utillizar únicamente las opciones BALANCE y STORAGE, por ser las más respetuosas con la batería. Las otras opciones pueden comprometer su vida útil y su seguridad. En esta guía se describe el proceso de carga mediante la opción BALANCE. Para otras opciones consultar el [manual de usuario](https://github.com/asrob-uc3m/actas/files/1397540/iMAXB6ACmanual.pdf).
 
@@ -114,15 +114,17 @@ Se deben conectar los bornes de la batería a los bornes marcados como OUTPUT en
 ### c. Configuración del cargador
 Al encenderse, el cargador mostrará la última configuración utilizada. 
 1. Pulsar repetidamente el botón Stop hasta que aparezca esta pantalla:
+
 ![program select nimh batt](https://user-images.githubusercontent.com/6171234/31885761-f517c8ce-b7f1-11e7-8c24-8d07e11401ab.PNG)
 
 2. Pulsar el botón Enter, se mostrarán las opciones de carga o descarga:
+
 ![nimh options](https://user-images.githubusercontent.com/6171234/31885770-fa0b8730-b7f1-11e7-9b2f-93c2dbeaad23.PNG)
 
 3. Pulsar los botones izquierda o derecha para navegar entre las opciones:
-- CHARGE: Carga completa de la batería.
-- DISCHARGE: Descarga completa de la batería.
-- CYCLE: Ciclos de carga y descarga
+  - CHARGE: Carga completa de la batería.
+  - DISCHARGE: Descarga completa de la batería.
+  - CYCLE: Ciclos de carga y descarga
 
 **Atención**: En esta guía se describe el proceso de carga mediante la opción CHARGE. Para otras opciones consultar el [manual de usuario](https://github.com/asrob-uc3m/actas/files/1397540/iMAXB6ACmanual.pdf).
 
