@@ -78,7 +78,7 @@ Al encenderse, el cargador mostrará la última configuración utilizada.
   - STORAGE: Carga o descarga equilibrada hasta la tensión óptima de almacenamiento. Útil si se va a tener la batería mucho tiempo sin utilizar.
   - DISCHARGE: Descarga completa de la batería.
 
-**Atención**: Se recomienda utillizar únicamente las opciones BALANCE y STORAGE, por ser las más respetuosas con la batería. Las otras opciones pueden comprometer su vida útil y su seguridad. En esta guía se describe el proceso de carga mediante la opción BALANCE. Para otras opciones consultar el [manual de usuario](https://github.com/asrob-uc3m/actas/files/1397540/iMAXB6ACmanual.pdf).
+- **Atención**: Se recomienda utillizar únicamente las opciones BALANCE y STORAGE, por ser las más respetuosas con la batería. Las otras opciones pueden comprometer su vida útil y su seguridad. En esta guía se describe el proceso de carga mediante la opción BALANCE. Para otras opciones consultar el [manual de usuario](https://github.com/asrob-uc3m/actas/files/1397540/iMAXB6ACmanual.pdf).
 
 4.Una vez se encuentre en la pantalla la opción BALANCE, pulsar Enter. Parpadeará la corriente.
 
