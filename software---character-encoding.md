@@ -4,6 +4,8 @@ Para texto en inglés, la codificación de caracteres más común se llama ASCII
 Un intento de estandarización de codificación de caracteres se llama Unicode, dentro del cual la codificación más popular es el UTF-8.
 La codificación de caracteres por defecto de un sistema operativo se configura en su `locale`.
 
+## Descubrir la codificación de caracteres de un fichero
+
 Podemos utilizar `file` para descubrir la codificación de caracteres de un fichero (también llamado "tipo de fichero"). Nota: ASCII es un subconjunto de UTF-8, por lo que algunos ficheros `utf-8` pueden detectarse como `ascii-us`.
 
 ```bash
@@ -18,6 +20,7 @@ for fileName in *.txt; do
     file "$fileName" --mime-encoding  # --mime-encoding da específicamente lo que buscamos
 done
 ```
+## Convertir la codificación de caracteres de un fichero
 
 Para conversiones, podemos utilizar `iconv` o `enconv`. Comparando `iconv -l` con `enconv --list languages`, `iconv` suele dar soporte a mayor cantidad de codificaciones de caracteres.
 
