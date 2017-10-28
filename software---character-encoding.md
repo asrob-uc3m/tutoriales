@@ -20,6 +20,12 @@ for fileName in *.txt; do
     file "$fileName" --mime-encoding  # --mime-encoding da específicamente lo que buscamos
 done
 ```
+
+Aquí, en una línea, ver si hay algún fichero `.txt` que no esté en `utf-8` ni `us-ascii`.
+
+`for fileName in *.txt; do file "$fileName" --mime-encoding | grep -v utf-8 | grep -v us-ascii; done`
+
+
 ## Convertir la codificación de caracteres de un fichero
 
 Para conversiones, podemos utilizar `iconv` o `enconv`. Comparando `iconv -l` con `enconv --list languages`, `iconv` suele dar soporte a mayor cantidad de codificaciones de caracteres.
