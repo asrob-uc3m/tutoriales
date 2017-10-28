@@ -1,4 +1,4 @@
 # Redactar
 
-* [vim (editor de texto)](writing---vim.md)
+* [Vim (editor de texto)](writing---vim.md)
 

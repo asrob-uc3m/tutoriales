@@ -1,3 +1,5 @@
+# Vim (editor de texto)
+
 [VIM](http://www.vim.org/) es un editor de texto muy versátil.
 
 ## Instalación en Ubuntu/Debian

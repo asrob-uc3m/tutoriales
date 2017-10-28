@@ -7,5 +7,5 @@
 * [Software](software.md)
   * [Codificación de caracteres](software---character-encoding.md)
 * [Redactar](writing.md)
-  * [vim (editor de texto)](writing---vim.md)
+  * [Vim (editor de texto)](writing---vim.md)
 
