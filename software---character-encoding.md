@@ -35,6 +35,8 @@ for fileName in *.txt; do
 done
 ```
 
+Nota: Los editores de texto suelen permitir el modificar la codificación de caracteres de un archivo que se está editando. Por ejemplo, en [Vim (editor de texto)](writing---vim.md) se puede escribir `:set fileformat=unix`.
+
 ## Referencias
 
 - https://en.wikipedia.org/wiki/Text_file#Encoding
