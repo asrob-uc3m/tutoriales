@@ -2,7 +2,7 @@
 
 * [Introducción](README.md)
 * [Electrónica](electronica.md)
-  * [Uso rápido del cargador de baterías](electronics---battery-charger-imax-b6ac.md)
+  * [Guía rápida de uso del cargador IMAX B6AC](electronics---battery-charger-imax-b6ac.md)
 * [Mecánica](mecanica.md)
 * [Software](software.md)
   * [vim (editor de texto)](software---vim.md)
