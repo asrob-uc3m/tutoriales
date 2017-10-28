@@ -34,7 +34,7 @@ mkdir ~/.vim; mkdir ~/.vim/colors
 mv mustang_vim_colorscheme_by_hcalves.vim ~/.vim/colors/Mustang.vim
 ```
 
-- Configuración básica (en Linux, fichero ~/.vimrc, descargar [aquí](./assets/.vimrc)):
+- Configuración básica (en Linux, fichero ~/.vimrc, descargar [aquí](https://github.com/asrob-uc3m/tutoriales/blob/master/assets/.vimrc)):
 
 ```vim
 set nocompatible
