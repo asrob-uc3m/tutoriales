@@ -24,7 +24,7 @@ done
 
 Para conversiones, podemos utilizar `iconv` o `enconv`. Comparando `iconv -l` con `enconv --list languages`, `iconv` suele dar soporte a mayor cantidad de codificaciones de caracteres.
 
-Aquí un script de bash que crea versiones UTF-8 de todos los ficheros `.txt` de una carpeta, volcándolas a una carpeta nueva llamada `utf8-versions`.
+Aquí un script de bash que crea versiones UTF-8 de todos los ficheros `.txt` de una carpeta, guardándolas en una carpeta nueva llamada `utf8-versions`.
 
 ```bash
 #!/bin/bash
