@@ -19,7 +19,7 @@ for fileName in *.txt; do
 done
 ```
 
-Para conversiones, podemos utilizar `iconv` o `enconv`. Comparando `iconv -l` con `enconv --list languages`, `iconv` suele dar mayor soporte.
+Para conversiones, podemos utilizar `iconv` o `enconv`. Comparando `iconv -l` con `enconv --list languages`, `iconv` suele dar soporte a mayor cantidad de codificaciones de caracteres.
 
 Aquí un script de bash que crea una carpeta `utf8-versions` pasando la codificación de caracteres de todos los archivos `.txt` a UTF-8.
 
