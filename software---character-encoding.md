@@ -43,7 +43,11 @@ for fileName in *.txt; do
 done
 ```
 
-Nota: Los editores de texto suelen permitir el modificar la codificación de caracteres de un archivo que se está editando. En `gedit`, aparece en la parte inferior al `Guardar como...`. En [Vim (editor de texto)](writing---vim.md), está en `Edit`->`File Settings`->`File Format...`, o se puede escribir `:set fileformat=unix`.
+Nota: Los editores de texto suelen permitir el modificar la codificación de caracteres de un archivo que se está editando. En `gedit`, aparece en la parte inferior al `Guardar como...`. En [Vim (editor de texto)](writing---vim.md), está en `Edit`->`File Settings`->`File Format...`, o se puede escribir `:set fileformat=unix` o `:set fileformat=dos`.
+
+## Convertir terminadores de línea
+
+El comando `file` también nos da información sobre terminadores de línea. Notepad sólo reconoce CR, LF (0x0d, 0x0a) como final de línea. Podemos utilizar el comando `unix2dos` para asegurarnos que todas las líneas acaban en este CRLF y así ser compatibles con Notepad, sin tener que abandonar UTF-8. Nota: existe el comando `dos2unix` para la conversión inversa.
 
 ## Referencias
 
@@ -54,3 +58,5 @@ Nota: Los editores de texto suelen permitir el modificar la codificación de car
 - http://askubuntu.com/questions/10252/gedit-cant-recognize-character-encoding-but-gvim-can 
 - https://www.tecmint.com/convert-files-to-utf-8-encoding-in-linux/
 - https://stackoverflow.com/questions/11303405/force-encode-from-us-ascii-to-utf-8-iconv
+- https://www.cyberciti.biz/faq/howto-unix-linux-convert-dos-newlines-cr-lf-unix-text-format/
+- https://superuser.com/questions/362087/notepad-ignoring-linebreaks
