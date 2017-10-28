@@ -15,8 +15,7 @@ Aquí un script de bash que lista la codificación de caracteres de todos los ar
 ```bash
 #!/bin/bash
 for fileName in *.txt; do
-    fileEncoding=$(file "$fileName" --mime-encoding)  # --mime-encoding da específicamente lo que buscamos
-    echo $fileEncoding
+    file "$fileName" --mime-encoding  # --mime-encoding da específicamente lo que buscamos
 done
 ```
 
