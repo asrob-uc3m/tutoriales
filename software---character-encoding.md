@@ -23,7 +23,9 @@ done
 
 Aquí, en una línea, ver si hay algún fichero `.txt` que no esté en `utf-8` ni `us-ascii`.
 
-`for fileName in *.txt; do file "$fileName" --mime-encoding | grep -v utf-8 | grep -v us-ascii; done`
+```bash
+for fileName in *.txt; do file "$fileName" --mime-encoding | grep -v utf-8 | grep -v us-ascii; done
+```
 
 
 ## Convertir la codificación de caracteres de un fichero
