@@ -6,6 +6,7 @@
 * [Mecánica](mechanics.md)
 * [Software](software.md)
   * [Codificación de caracteres](software---character-encoding.md)
+  * [Git](software---git.md)
 * [Redactar](writing.md)
   * [Vim (editor de texto)](writing---vim.md)
 
