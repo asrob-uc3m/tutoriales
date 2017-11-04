@@ -1,4 +1,4 @@
-# Guía rápida de uso del cargador IMAX B6AC
+# Cargador IMAX B6AC
 Disclaimer: esta guía está concebida como un resumen de uso rápido. Para una documentación completa sobre el cargador se debe consultar siempre el [manual de usuario](https://github.com/asrob-uc3m/actas/files/1397540/iMAXB6ACmanual.pdf).
 
 ## 1. Contenido de la caja
