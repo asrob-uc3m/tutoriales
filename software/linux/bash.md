@@ -15,7 +15,9 @@ a la entrada de una sección, por ejemplo *man 3 scanf* (aunque
 funcionaría sin el *3* al no tratarse de una entrada
 duplicada).
 
-## Listado alfabético de comandos útiles (aplicables a gnome-terminal, bash, sh, xterm...)
+## Listado alfabético de comandos útiles
+
+Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, xterm..
 
   - **apt-cache search**: en Debian/Ubuntu/Mint, da el nombre de los
     paquetes que contienen los metadatos que se buscan (versión,
@@ -69,9 +71,3 @@ duplicada).
   - **sudo**: Realizar el comando que se escribe en la misma línea con
     permisos de administrador.
   - **updatedb**: Actualiza la base de datos que utiliza **locate**
-
-## ¿Ahora qué puedo hacer?
-
-  - ¿Por qué no [programas un bash script](Scripts_de_Linux "wikilink")?
-  - ¿Por qué no [programas y compilas un programa en
-    C/C++](Compilación_en_Linux "wikilink")?
