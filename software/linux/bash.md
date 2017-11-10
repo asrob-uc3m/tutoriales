@@ -4,8 +4,8 @@ En Ubuntu 10.04 - 14.10 y otras distribuciones, se puede acceder a una consola (
 
 ## El comando `man`
 
-El comando `man` aparece el manual del comando nombrado. Por ejemplo, `man ls` da información del comando `ls`.
-Dentro del manual, se puede buscar con `/` (esto es como en [vim](../../writing/vim.md)).
+El comando `man` proporciona el manual del comando nombrado. Por ejemplo, con `man ls` se accede al manual del comando `ls`.
+Dentro de un manual, se puede buscar con `/` (esto es como en [vim](../../writing/vim.md)).
 Por ejemplo, con `/--size` se puede obtener información del parámetro `--size` si estamos viendo el manual de `ls`.
 Los manuales de `man` se componen de diferentes secciones, del 1 al 8, porque no sólo se refieren a comandos de consola.
 Por ejemplo, la sección 3 se centra en la librería C estándar (y además muestra el \#include necesario).
