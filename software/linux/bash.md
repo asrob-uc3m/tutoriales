@@ -75,4 +75,78 @@ Existen diversas maneras de iterar en Bash:
  - A través de bucles for.
  
  ## Scripts de bash
- Script se suele traducir como fichero de ejecución por lotes. http://asrob.uc3m.es/index.php/Scripts_de_Linux
+ Script se suele traducir como fichero de ejecución por lotes. Un *bash
+script* es un conjunto de comandos de consola de linux (véase [ el
+tutorial de Consola de Linux (ASROB](Consola_de_Linux "wikilink")) que
+el sistema operativo ejecuta en orden.
+
+El típico script de linux tiene como primera línea \#\!/bin/sh ([leer
+más sobre shebang](http://en.wikipedia.org/wiki/Shebang_%28Unix%29),
+<https://stackoverflow.com/tags/bash/info>).
+
+Existen unos scripts que están por defecto en sistemas operativos
+basados en linux (recuérdese del [tutorial de variables de entorno
+(ASROB)](Variables_de_entorno "wikilink") que ~ equivale a $HOME):
+
+## ~/.bashrc
+
+Su contenido se aplica al lanzar cada consola, y queda dentro de la
+consola. Unas línas convenientes a agregarle
+son:
+
+``` bash
+#Esto es para que al ejecutar el evince desde el terminal no te saque basura, que el programa esté en segundo plano y que si cierras el terminal no se cierre el programa.
+function evince () {
+     /usr/bin/evince $* 2> /dev/null & disown
+}
+ 
+#cd + ls
+function cs () {
+    cd $1
+    ls
+}
+ 
+#transfer path: guarda el path actual en un fichero oculto
+function tp () {
+    pwd > ~/.sp
+}
+ 
+#go to transfer path: va a donde apunta el path anteriormente guardado
+function gtp () {
+    cs `cat ~/.sp`
+}
+ 
+#cat con color
+function ccat () {
+    source-highlight -fesc -i $1
+}
+
+#cat con color
+function ccat2 () {
+    pygmentize -g $1
+}
+
+#abrir explorador nautilus aquí
+function n () {
+    nautilus .
+}
+
+# Sustituye el nombre de tu jefe en la siguiente expresión
+alias carlos='sudo'
+
+#Ocultar nombre de usuario y host en el terminal y hacer ls
+export PS1="\w$ "
+ls
+```
+
+## ~/.profile
+
+Su contenido se aplica al arrancar el sistema operativo, por lo que vale
+para todas las consolas, además de lo que lancemos mediante iconos. Unas
+línas convenientes a agregarle
+son:
+
+``` c
+/usr/bin/udisks --mount /dev/sda7  # O similar para montar disco duro al arranque
+```
+
