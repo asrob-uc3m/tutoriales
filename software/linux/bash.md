@@ -64,10 +64,11 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
       - Uso básico: **sed -i "s/viejo/nuevo/g" fichero.txt**
       - En todos los ficheros de una carpeta: **sed -i "s/viejo/nuevo/g"
         \***
-      - En todos los ficheros de una carpeta y sus subcarptas: **find
-        -type f -exec sed -i 's/viejo/nuevo/g' {} +**
   - **setxkbmap**: Cambiar la configuración del teclado. Por ejemplo, a
     español: **setxkbmap es,es** (sin X: **sudo loadkeys --verbose es**)
   - **sudo**: Realizar el comando que se escribe en la misma línea con
     permisos de administrador.
   - **updatedb**: Actualiza la base de datos que utiliza **locate**
+
+## Bucles en Bash
+   - Grep en todos los ficheros de una carpeta y sus subcarptas: **find -type f -exec sed -i 's/viejo/nuevo/g' {} +**
