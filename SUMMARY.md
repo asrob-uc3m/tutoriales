@@ -2,7 +2,7 @@
 
 * [Introducción](README.md)
 * [Electrónica](electronics.md)
-  * [Cargador IMAX B6AC](electronics---battery-charger-imax-b6ac.md)
+  * [Cargador IMAX B6AC](electronics/battery-charger-imax-b6ac.md)
 * [Mecánica](mechanics.md)
 * [Software](software.md)
   * [Control de versiones](software---version-control.md)
