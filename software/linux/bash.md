@@ -1,8 +1,6 @@
 # Bash (consola de linux)
 
-En Ubuntu 10.04 - 14.10 y otras distribuciones, se puede acceder a una
-consola (*gnome-terminal* en este caso) a través de la combinación de
-teclas **CTRL+ALT+t**.
+En Ubuntu 10.04 - 14.10 y otras distribuciones, se puede acceder a una consola (*gnome-terminal* en este caso) a través de la combinación de teclas `CTRL`+`ALT`+`t`. También se puede acceder a *tty*s virtuales con `CTRL`+`ALT`+`F1`/`F2`/`F3`... y `CTRL`+`ALT`+`F7`/`F8` para volver al entorno gráfico.
 
 ## man \_\_\_\_
 
