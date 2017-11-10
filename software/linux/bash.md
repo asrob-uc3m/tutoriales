@@ -4,7 +4,7 @@ En Ubuntu 10.04 - 14.10 y otras distribuciones, se puede acceder a una consola (
 
 ## El comando `man`
 
-Con `man` *nombreComando* (e `info` *nombreComando*) aparece el manual
+Con `man nombreComando` (e `info nombreComando`) aparece el manual
 del comando. Dentro del manual, se puede buscar con `/` (esto es,
 `/cadenaDeTexto`, como en [vim](../../writing/vim.md)). Se compone de
 diferentes secciones, del 1 al 8, donde el 3 se centra en la librería C
