@@ -1,10 +1,10 @@
 # Bash (consola de linux)
 
-En Ubuntu 10.04 - 14.10 y otras distribuciones, se puede acceder a una consola (*gnome-terminal* en este caso) a través de la combinación de teclas `CTRL`+`ALT`+`t`. También se puede acceder a *tty*s virtuales con `CTRL`+`ALT`+`F1`/`F2`/`F3`... y `CTRL`+`ALT`+`F7`/`F8` para volver al entorno gráfico.
+En Ubuntu 10.04 - 14.10 y otras distribuciones, se puede acceder a una consola (`gnome-terminal` en este caso) a través de la combinación de teclas `CTRL`+`ALT`+`t`. También se puede acceder a *tty*s virtuales con `CTRL`+`ALT`+`F1`/`F2`/`F3`... y `CTRL`+`ALT`+`F7`/`F8` para volver al entorno gráfico.
 
-## man \_\_\_\_
+## El comando `man`
 
-Con **man nombreComando** (e **info nombreComando**) aparece el manual
+Con `man *nombreComando*` (e **info nombreComando**) aparece el manual
 del comando. Dentro del manual, se puede buscar con **/** (esto es,
 */cadenaDeTexto*, como en [vim](../../writing/vim.md)). Se compone de
 diferentes secciones, del 1 al 8, donde el 3 se centra en la librería C
