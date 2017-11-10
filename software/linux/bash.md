@@ -85,7 +85,7 @@ más sobre shebang](http://en.wikipedia.org/wiki/Shebang_%28Unix%29),
 
 Existen unos scripts que están por defecto en sistemas operativos
 basados en linux (recuérdese del [tutorial de variables de entorno
-(ASROB)](../environment-variables) que ~ equivale a $HOME):
+(ASROB)](../environment-variables.md) que ~ equivale a $HOME):
 
 ## ~/.bashrc
 
