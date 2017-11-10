@@ -75,18 +75,17 @@ Existen diversas maneras de iterar en Bash:
  - A través de bucles for.
  
 ## Scripts de bash
- Script se suele traducir como fichero de ejecución por lotes. Un *bash
-script* es un conjunto de comandos de consola de linux (véase [ el
-tutorial de Consola de Linux (ASROB](Consola_de_Linux "wikilink")) que
+Script se suele traducir como fichero de ejecución por lotes. Un *bash
+script* es un conjunto de comandos de consola de linux que
 el sistema operativo ejecuta en orden.
 
-El típico script de linux tiene como primera línea \#\!/bin/sh ([leer
+El típico script de linux tiene como primera línea `\#\!/bin/bash` ([leer
 más sobre shebang](http://en.wikipedia.org/wiki/Shebang_%28Unix%29),
 <https://stackoverflow.com/tags/bash/info>).
 
 Existen unos scripts que están por defecto en sistemas operativos
 basados en linux (recuérdese del [tutorial de variables de entorno
-(ASROB)](Variables_de_entorno "wikilink") que ~ equivale a $HOME):
+(ASROB)](../environment-variables) que ~ equivale a $HOME):
 
 ## ~/.bashrc
 
