@@ -74,7 +74,7 @@ Existen diversas maneras de iterar en Bash:
  - A través del comando find -exec. Por ejemplo, grep en todos los ficheros de una carpeta y sus subcarpetas: **find -type f -exec sed -i 's/viejo/nuevo/g' {} +**
  - A través de bucles for.
  
- ## Scripts de bash
+## Scripts de bash
  Script se suele traducir como fichero de ejecución por lotes. Un *bash
 script* es un conjunto de comandos de consola de linux (véase [ el
 tutorial de Consola de Linux (ASROB](Consola_de_Linux "wikilink")) que
