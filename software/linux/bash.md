@@ -146,7 +146,7 @@ para todas las consolas, además de lo que lancemos mediante iconos. Unas
 línas convenientes a agregarle
 son:
 
-``` c
+```bash
 /usr/bin/udisks --mount /dev/sda7  # O similar para montar disco duro al arranque
 ```
 
