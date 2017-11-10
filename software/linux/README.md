@@ -1,4 +1,4 @@
 # Linux
 
-* [Bash (consola de Linux)](software---linux---bash.md)
+* [Bash (consola de Linux)](bash.md)
 
