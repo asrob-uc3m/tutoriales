@@ -70,4 +70,9 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
   - **updatedb**: Actualiza la base de datos que utiliza **locate**
 
 ## Bucles en Bash
-   - Grep en todos los ficheros de una carpeta y sus subcarptas: **find -type f -exec sed -i 's/viejo/nuevo/g' {} +**
+Existen diversas maneras de iterar en Bash:
+ - A través del comando find -exec. Por ejemplo, grep en todos los ficheros de una carpeta y sus subcarpetas: **find -type f -exec sed -i 's/viejo/nuevo/g' {} +**
+ - A través de bucles for.
+ 
+ ## Scripts de bash
+ Script se suele traducir como fichero de ejecución por lotes. http://asrob.uc3m.es/index.php/Scripts_de_Linux
