@@ -1,4 +1,4 @@
-# Git
+# Git (control de versiones)
 
 ## Cheatsheat
 

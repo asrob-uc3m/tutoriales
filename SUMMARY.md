@@ -6,7 +6,7 @@
 * [Mecánica](mechanics.md)
 * [Software](software.md)
   * [Control de versiones](software---version-control.md)
-    * [Git](software---version-control---git.md)
+    * [Git (control de versiones)](software---version-control---git.md)
   * [Linux](software---linux.md)
     * [Bash (consola de Linux)](software---linux---bash.md)
   * [Codificación de caracteres](software---character-encoding.md)
