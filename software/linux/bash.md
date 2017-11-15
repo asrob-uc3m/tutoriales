@@ -35,6 +35,8 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
         fichero.txt**
       - Buscar fichero por nombre sin importar mayúsculas/minúscula:
         **find -iname fichero.txt**
+      - Buscar fichero por nombre delimitando la profundidad de búsqueda:
+        **find -depthmax 2 -name fichero.txt**
   - **grep**: Busca texto contenido en ficheros.
       - Uso básico: **grep "cadenaDeTexto" fichero.txt**
       - En todos los ficheros de una carpeta: **grep "cadenaDeTexto"
@@ -74,7 +76,7 @@ Existen diversas maneras de iterar en Bash:
   - A través del comando `find -exec`. Por ejemplo, grep en todos los ficheros de una carpeta y sus subcarpetas: `find -type f -exec sed -i 's/viejo/nuevo/g' {} +`
   - A través de bucles `for`. Ejemplo (que se podría realizar en una línea única):
 ```bash
-for fileName in "$(find -maxdepth 2 -name *.mp3)"; do
+for fileName in "$(find -name *.mp3)"; do
     printf "$fileName\n";
 done
 ```
