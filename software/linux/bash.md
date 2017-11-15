@@ -16,7 +16,7 @@ Un comando muy similar a `man` es `info`, que en ocasiones propoorciona mejor do
 
 ## Listado alfabético de comandos útiles
 
-Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, xterm..
+Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, xterm...
 
   - **apt-cache search**: en Debian/Ubuntu/Mint, da el nombre de los
     paquetes que contienen los metadatos que se buscan (versión,
@@ -71,8 +71,8 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
 
 ## Bucles en Bash
 Existen diversas maneras de iterar en Bash:
- - A través del comando find -exec. Por ejemplo, grep en todos los ficheros de una carpeta y sus subcarpetas: **find -type f -exec sed -i 's/viejo/nuevo/g' {} +**
- - A través de bucles for.
+ - A través del comando `find -exec`. Por ejemplo, grep en todos los ficheros de una carpeta y sus subcarpetas: `find -type f -exec sed -i 's/viejo/nuevo/g' {} +`
+  - A través de bucles `for`.
  
 ## Scripts de Bash
 Script se suele traducir como fichero de ejecución por lotes. Un *bash
