@@ -72,8 +72,18 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
 ## Bucles en Bash
 Existen diversas maneras de iterar en Bash:
   - A través del comando `find -exec`. Por ejemplo, grep en todos los ficheros de una carpeta y sus subcarpetas: `find -type f -exec sed -i 's/viejo/nuevo/g' {} +`
-  - A través de bucles `for`.
- 
+  - A través de bucles `for`. Ejemplo (que se podría realizar en una línea única):
+```bash
+for fileName in "$(find -maxdepth 2 -name *.mp3)"; do
+printf "$fileName\n";
+done
+```
+
+A continuación veremos scripts de Bash. Nótese que si la complejidad de un script
+es muy elevada, se puede considerar utilizar un script de Python en su lugar,
+puesto que a costa de su intérprete se consiguen muchas más herramientas y en 
+general una sintaxis más sencilla.
+
 ## Scripts de Bash
 Script se suele traducir como fichero de ejecución por lotes. Un *bash
 script* es un conjunto de comandos de consola de linux que
