@@ -38,35 +38,29 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
       - Buscar fichero por nombre delimitando la profundidad de carpetas entre las cuales se busca:
         `find -maxdepth 2 -name fichero.txt`
   - **grep**: Busca texto contenido en ficheros.
-      - Uso básico: **grep "cadenaDeTexto" fichero.txt**
-      - En todos los ficheros de una carpeta: **grep "cadenaDeTexto"
-        \***
-      - En todos los ficheros de una carpeta y sus subcarptas: **grep -r
-        "cadenaDeTexto" \***
+      - Uso básico: `grep "cadena de texto" fichero.txt`
+      - En todos los ficheros de una carpeta: `grep "cadena de texto" *`
+      - En todos los ficheros de una carpeta y sus subcarptas: `grep -r "cadena de texto" *`
       - En todos los ficheros de una carpeta y sus subcarptas sin
-        importar mayúsculas/minúsculas de la cadena: **grep -ri
-        "cadenadetexto" \***
-      - En todos los ficheros con extensión .cpp de una carpeta y sus
+        importar mayúsculas/minúsculas de la cadena: `grep -ri "cadena de texto" *`
+      - En todos los ficheros con extensión `.cpp` de una carpeta y sus
         subcarptas sin importar mayúsculas/minúsculas de la cadena:
-        **grep -ri "cadenadetexto" --include \*.cpp**
+        `grep -ri "cadena de texto" --include *.cpp`
   - **locate**: Parecido al find. Busca ficheros de forma general y
     rápida porque usa la base de datos de **updatedb**.
   - **ls**: Ver contenido de carpeta.
   - **mkdir**: crear una carpeta
   - **mv**: mover origen a destino
-  - **rename**: --no-act 's/^imagen/image/' \* ((^ -\> sólo al
-    principio))
-  - **rm**: borrar (con -r para recursivo (entra en subcarpetas), -rf
-    recursivo forzado))
+  - **rename**: `--no-act 's/^imagen/image/' *` (donde `^` implica sólo al principio))
+  - **rm**: borrar (con `-r` para recursivo (entra en subcarpetas), `-rf` recursivo forzado))
   - **sed**: Se puede utilizar reemplazar texto en un fichero
     (**utilizar con cuidado\!\!\!**).
       - Previsualización (vuelca por pantalla sin realizar cambios):
         **sed "s/viejo/nuevo/g" fichero.txt**
-      - Uso básico: **sed -i "s/viejo/nuevo/g" fichero.txt**
-      - En todos los ficheros de una carpeta: **sed -i "s/viejo/nuevo/g"
-        \***
+      - Uso básico: `sed -i "s/viejo/nuevo/g" fichero.txt`
+      - En todos los ficheros de una carpeta: `sed -i "s/viejo/nuevo/g" *`
   - **setxkbmap**: Cambiar la configuración del teclado. Por ejemplo, a
-    español: **setxkbmap es,es** (sin X: **sudo loadkeys --verbose es**)
+    español: **setxkbmap es,es** (sin X (requiere `sudo`): `loadkeys --verbose es`)
   - **sudo**: Realizar el comando que se escribe en la misma línea con
     permisos de administrador.
   - **updatedb**: Actualiza la base de datos que utiliza **locate**
