@@ -10,8 +10,7 @@ de Sistema.
 En Windows son modificables a través de Panel de Control -\> Sistema -\>
 Avanzado -\> Variables de Entorno
 
-En Linux se pueden leer con escribir **echo $VARIABLE** en una [
-consola](Consola_de_Linux "wikilink").
+En Linux se pueden leer con escribir **echo $VARIABLE** en una [consola](linux/bash.md).
 
 En Linux se pueden modificar con escribir **export VARIABLE=valor**
 (véase que es sin el símbolo $) en una consola (válido para la sesión
