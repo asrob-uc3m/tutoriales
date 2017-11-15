@@ -11,6 +11,7 @@
     * [Bash (consola de Linux)](software/linux/bash.md)
   * [Codificación de caracteres](software/character-encoding.md)
   * [Variables de entorno](software/environment-variables.md)
+  * [Librerías estáticas y dinámicas](libs.md)
 * [Redactar](writing/README.md)
   * [Vim (editor de texto)](writing/vim.md)
 
