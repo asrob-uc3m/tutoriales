@@ -1,3 +1,5 @@
+# Librerías estáticas y dinámicas
+
 Una Librería es un conjunto de funciones. Es como un programa, sólo que no tiene función main(). Contiene funciones típicas para que sean llamadas desde algún otro programa o librería. Cualquier desarrollador puede crear una librería nueva.
 
 ----
