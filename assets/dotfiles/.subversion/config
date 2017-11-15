@@ -52,6 +52,8 @@
 ###   This will override the compile-time default, which is to use
 ###   Subversion's internal diff implementation.
 # diff-cmd = diff_program (diff, gdiff, etc.)
+# Thanks https://gist.github.com/westonruter/846524
+diff-cmd = colordiff
 ### Diff-extensions are arguments passed to an external diff
 ### program or to Subversion's internal diff implementation.
 ### Set diff-extensions to override the default arguments ('-u').
