@@ -29,7 +29,7 @@ extensión en Linux).
 **LD\_LIBRARY\_PATH**
 
 Es uno de los lugares donde el sistema operativo busca [librerías
-dinámicas](Librerías_Estáticas_y_Dinámicas "wikilink").
+dinámicas](programming/libs.md).
 
 **USER**
 
