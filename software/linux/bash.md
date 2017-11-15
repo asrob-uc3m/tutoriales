@@ -56,7 +56,7 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
   - **sed**: Se puede utilizar reemplazar texto en un fichero
     (**utilizar con cuidado\!\!\!**).
       - Previsualización (vuelca por pantalla sin realizar cambios):
-        **sed "s/viejo/nuevo/g" fichero.txt**
+        `sed "s/viejo/nuevo/g" fichero.txt`
       - Uso básico: `sed -i "s/viejo/nuevo/g" fichero.txt`
       - En todos los ficheros de una carpeta: `sed -i "s/viejo/nuevo/g" *`
   - **setxkbmap**: Cambiar la configuración del teclado. Por ejemplo, a
