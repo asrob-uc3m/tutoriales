@@ -102,18 +102,18 @@ function evince () {
      /usr/bin/evince $* 2> /dev/null & disown
 }
  
-#cd + ls
+#cd + ls, by @jgvictores
 function cs () {
     cd $1
     ls
 }
  
-#transfer path: guarda el path actual en un fichero oculto
+#transfer path: guarda el path actual en un fichero oculto, by @jgvictores
 function tp () {
     pwd > ~/.sp
 }
  
-#go to transfer path: va a donde apunta el path anteriormente guardado
+#go to transfer path: va a donde apunta el path anteriormente guardado, by @jgvictores
 function gtp () {
     cs `cat ~/.sp`
 }
@@ -128,12 +128,12 @@ function ccat2 () {
     pygmentize -g $1
 }
 
-#abrir explorador nautilus aquí
+#abrir explorador nautilus aquí, by @jgvictores
 function n () {
     nautilus .
 }
 
-# Sustituye el nombre de tu jefe en la siguiente expresión
+# Sustituye el nombre de tu jefe en la siguiente expresión, by @roboticslab-uc3m
 alias carlos='sudo'
 
 #Ocultar nombre de usuario y host en el terminal y hacer ls
