@@ -94,7 +94,7 @@ basados en linux (recuérdese del [tutorial de variables de entorno](../environm
 ## ~/.bashrc
 
 Su contenido se aplica al lanzar cada consola, y queda dentro de la
-consola. Unas línas convenientes a agregarle son:
+consola. Unas líneas convenientes a agregarle son:
 
 ``` bash
 #Esto es para que al ejecutar el evince desde el terminal no te saque basura, que el programa esté en segundo plano y que si cierras el terminal no se cierre el programa.
