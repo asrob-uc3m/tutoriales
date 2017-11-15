@@ -6,4 +6,4 @@
   * [Bash (consola de Linux)](linux/bash.md)
 * [Codificación de caracteres](character-encoding.md)
 * [Variables de entorno](environment-variables.md)
-
+* [Librerías estáticas y dinámicas](libs.md)
