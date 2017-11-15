@@ -9,9 +9,10 @@
     * [Git (control de versiones)](software/version-control/git.md)
   * [Linux](software/linux/README.md)
     * [Bash (consola de Linux)](software/linux/bash.md)
+  * [Programación](programming/README.md)
+    * [Librerías estáticas y dinámicas](programming/libs.md)
   * [Codificación de caracteres](software/character-encoding.md)
   * [Variables de entorno](software/environment-variables.md)
-  * [Librerías estáticas y dinámicas](libs.md)
 * [Redactar](writing/README.md)
   * [Vim (editor de texto)](writing/vim.md)
 
