@@ -75,7 +75,7 @@ Existen diversas maneras de iterar en Bash:
   - A través de bucles `for`. Ejemplo (que se podría realizar en una línea única):
 ```bash
 for fileName in "$(find -maxdepth 2 -name *.mp3)"; do
-printf "$fileName\n";
+    printf "$fileName\n";
 done
 ```
 
