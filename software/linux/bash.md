@@ -36,7 +36,7 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
       - Buscar fichero por nombre sin importar mayúsculas/minúscula:
         **find -iname fichero.txt**
       - Buscar fichero por nombre delimitando la profundidad de carpetas entre las cuales se busca:
-        **find -depthmax 2 -name fichero.txt**
+        **find -maxdepth 2 -name fichero.txt**
   - **grep**: Busca texto contenido en ficheros.
       - Uso básico: **grep "cadenaDeTexto" fichero.txt**
       - En todos los ficheros de una carpeta: **grep "cadenaDeTexto"
