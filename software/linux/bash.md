@@ -136,7 +136,7 @@ function n () {
 # Sustituye el nombre de tu jefe en la siguiente expresión, by @roboticslab-uc3m
 alias carlos='sudo'
 
-#Ocultar nombre de usuario y host en el terminal y hacer ls, by @roboticslab-uc3m
+#Ocultar nombre de usuario y host en el terminal y hacer ls, by @jgvictores
 export PS1="\w$ "
 ls
 ```
