@@ -116,15 +116,15 @@ function tp () {
 function gtp () {
     cs `cat ~/.sp`
 }
- 
+
 #cat con color
 function ccat () {
-    source-highlight -fesc -i $1
+    pygmentize -g $1
 }
 
 #cat con color
 function ccat2 () {
-    pygmentize -g $1
+    source-highlight -fesc -i $1
 }
 
 #abrir explorador nautilus aquí, by @jgvictores
