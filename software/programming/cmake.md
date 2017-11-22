@@ -23,40 +23,35 @@ O a través de interfaces semi-gráficas `ccmake ..` (modo `ncurses` de Linux) o
 
 ## Generar un CMakeLists.txt
 
-Habrá veces que quieras crear tu proyecto, que proporcione las bondades de CMake. ¿Cómo hacerlo? En general, si tienes una carpeta uno o varios `.cpp`, aquí tienes un fichero `CMakeLists.txt` que servirá si el proyecto no tiene dependencias adicionales:
+Cuando creas un proyecto, querrás que proporcione las bondades multi-plataforma de CMake. ¿Cómo hacerlo? A continuación, un ejemplo mínimo.
 
 ```cmake
 cmake_minimum_required(VERSION 2.8.7)
 
-set(KEYWORD "ejectutable")  # sustituye la palabra ejecutable por la que quieras
-
-# Start a project.
-project(${KEYWORD})
-
-#find_package()  # paquete a encontrar
-
-# Search for source code.
-file(GLOB folder_source *.cpp *.cc *.c)
-file(GLOB folder_header *.h)
-source_group("Source Files" FILES ${folder_source})
-source_group("Header Files" FILES ${folder_header})
-
-# Automatically add include directories if needed.
-foreach(header_file ${folder_header})
-  get_filename_component(p ${header_file} PATH)
-  include_directories(${p})
-endforeach(header_file ${folder_header})
-
-#include_directories()  # rutas de cabeceras de librerias
-
-#link_directories()  # rutas de librerias 
-
-# Set up our main executable.
-if (folder_source)
-  add_executable(${KEYWORD} ${folder_source} ${folder_header})
-  target_link_libraries(${KEYWORD})  # añadir nombres de librerias
-else (folder_source)
-  message(FATAL_ERROR "No source code files found. Please add something")
-endif (folder_source)
+add_executable(ejecutable main.cpp)
 ```
 
+En general, si tienes una carpeta uno o varios `.cpp`, aquí tienes un fichero `CMakeLists.txt` que servirá si el proyecto no depende de librerías adicionales. Nótese que `#` indica comentarios para documentación:
+
+```cmake
+cmake_minimum_required(VERSION 2.8.7)
+
+set(KEYWORD "ejectutable")  # Creamos una variable llamada KEYWORD de valor "ejecutable"
+
+project(${KEYWORD})
+
+add_executable(${KEYWORD} main.cpp)
+```
+
+Para un proyecto que dependa de YARP:
+```cmake
+cmake_minimum_required(VERSION 2.8.7)
+
+find_package()  # paquete a encontrar
+
+include_directories()  # rutas de cabeceras de librerias
+
+link_directories()  # rutas de librerias
+
+target_link_libraries(${KEYWORD})  # añadir nombres de librerias
+```
