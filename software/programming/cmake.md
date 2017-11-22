@@ -1,6 +1,6 @@
 # CMake
 
-CMake es una herramienta software para la compilación multiplataforma. Esto es, para Linux puede generar ficheros Makefile, para Windows puede generar proyectos de Visual Studio, etc.
+CMake es una herramienta software para la compilación multiplataforma. Esto es, para Linux puede generar ficheros Makefile, para Windows puede generar proyectos de Visual Studio, etc. Enlace la documentación oficial [aquí](https://cmake.org/documentation/).
 
 Reconocerás que un proyecto utiliza CMake por un fichero que se llama `CMakeLists.txt`. Si estás en la raíz del proyecto y ves este fichero, la buena práctica para compilar el proyecto en una terminal (estilo [bash](../linux/bash.md)) es:
 
@@ -23,35 +23,32 @@ O a través de interfaces semi-gráficas `ccmake ..` (modo `ncurses` de Linux) o
 
 ## Generar un CMakeLists.txt
 
-Cuando creas un proyecto, querrás que proporcione las bondades multi-plataforma de CMake. ¿Cómo hacerlo? A continuación, un ejemplo mínimo.
+Cuando creas un proyecto, querrás que proporcione las bondades multi-plataforma de CMake. ¿Cómo hacerlo? A continuación, un ejemplo minimalista. Nótese que se utiliza`#` para incluir comentarios.
 
 ```cmake
-cmake_minimum_required(VERSION 2.8.7)
-
-add_executable(ejecutable main.cpp)
+cmake_minimum_required(VERSION 2.8)  # Versión mínima que exigimos de CMake, que va ampliando sus capacidades
+add_executable(ejecutable main.cpp other.cpp)  # Compilar main.cpp y other.cpp, enlazarlos, y llamar ejecutable al binario generado
 ```
 
-En general, si tienes una carpeta uno o varios `.cpp`, aquí tienes un fichero `CMakeLists.txt` que servirá si el proyecto no depende de librerías adicionales. Nótese que `#` indica comentarios para documentación:
+En general, para una carpeta con uno o varios `.cpp`, aquí un ejemplo de `CMakeLists.txt` algo más extenso:
 
 ```cmake
-cmake_minimum_required(VERSION 2.8.7)
-
-set(KEYWORD "ejectutable")  # Creamos una variable llamada KEYWORD de valor "ejecutable"
-
-project(${KEYWORD})
-
-add_executable(${KEYWORD} main.cpp)
+cmake_minimum_required(VERSION 2.8)  # Versión mínima que exigimos de CMake, que va ampliando sus capacidades
+project(ejecutable)  # Dar nombre al proyecto
+aux_source_directory(. SRC_LIST)  # Parecido a GLOB, no excesivamente recomendado
+add_executable(${PROJECT_NAME} ${SRC_LIST})  # Compilar *, enlazarlos, y llamar como el proyecto (en este caso, ejecutable) al binario generado
 ```
 
-Para un proyecto que dependa de una librería llamada `EJEMPLO`:
+Para un proyecto que dependa de una [librería](libs.md) llamada `EJEMPLO`:
 ```cmake
-cmake_minimum_required(VERSION 2.8.7)
+cmake_minimum_required(VERSION 2.8)  # Versión mínima que exigimos de CMake, que va ampliando sus capacidades
+project(ejecutable)  # Dar nombre al proyecto
 
-find_package(EJEMPLO REQUIRED)  # paquete a encontrar
+find_package(EJEMPLO REQUIRED)  # Nombre de la librería, buscará un módulo de CMake (que define las variables utilizadas a continuación) con este nombre. REQUIRED indica que lo exigimos.
 
-include_directories(${EJEMPLO_INCLUDE_DIRS})  # rutas de cabeceras de librerias
+include_directories(${EJEMPLO_INCLUDE_DIRS})  # Indicamos variables que indican rutas de cabeceras de librerias
 
-link_directories(${EJEMPLO_LIBRARY_DIRS})  # rutas de librerias
+link_directories(${EJEMPLO_LIBRARY_DIRS})  # Indicamos variables que indican rutas de librerias (en desuso)
 
-target_link_libraries(ejecutable ${EJEMPLO_LIBRARIES})  # añadir nombres de librerías
+target_link_libraries(ejecutable ${EJEMPLO_LIBRARIES})  # Añadimos nombres de librerías (actualmente se recomiendan rutas completas, que vuelve el anterior obsoleto)
 ```
