@@ -17,7 +17,7 @@ make  # Make sigue las directrices del Makefile para invocar compilador, etc
 
 Podemos modificar las opciones con la opción `-D`:
 ``` bash
-cmake .. -DOPTION1=ON -DOPTION2=/mi/ruta # Asigna ON a OPTION1, y /mi/ruta a OPTION2
+cmake .. -DOPTION1=ON -DOPTION2=/mi/ruta  # Asigna ON a OPTION1, y /mi/ruta a OPTION2
 ```
 O a través de interfaces semi-gráficas `ccmake ..` (modo `ncurses` de Linux) o gráficas `cmake-gui` (por defecto en Windows).
 
