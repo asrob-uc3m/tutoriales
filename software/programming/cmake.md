@@ -1,25 +1,29 @@
 # CMake
 
-CMake es una herramienta software para la compilación multiplataforma.
-Esto es, para Linux puede generar ficheros Makefile, para Windows puede
-generar proyectos de Visual Studio, etc.
+CMake es una herramienta software para la compilación multiplataforma. Esto es, para Linux puede generar ficheros Makefile, para Windows puede generar proyectos de Visual Studio, etc.
 
-Reconocerás que un proyecto utiliza CMake por un fichero que se llama
-`CMakeLists.txt`. Si estás en la raíz del proyecto y ves este fichero,
-la buena práctica para compilar el proyecto en una terminal (estilo [bash](../linux/bash.md)) es:
+Reconocerás que un proyecto utiliza CMake por un fichero que se llama `CMakeLists.txt`. Si estás en la raíz del proyecto y ves este fichero, la buena práctica para compilar el proyecto en una terminal (estilo [bash](../linux/bash.md)) es:
 
 ``` bash
-mkdir build; cmake ..; make
+mkdir -p build && cmake .. && make
 ```
 
-...ya está\!
+La explicación de esta línea es (donde `&&` lanza un comando sólo si el anterior se ha realizado con éxito):
+``` bash
+mkdir -p build  # Crea una carpeta build, -p para no dar error si ya existe
+cmake ..  # Genera un Makefile con las opciones por defecto
+make  # Make sigue las directrices del Makefile para invocar compilador, etc
+```
+
+Podemos modificar las opciones con la opción `-D`:
+``` bash
+cmake .. -DOPTION1=ON -DOPTION2=/mi/ruta # Asigna ON a OPTION1, y /mi/ruta a OPTION2
+```
+O a través de interfaces semi-gráficas `ccmake ..` (modo `ncurses` de Linux) o gráficas `cmake-gui` (por defecto en Windows).
 
 ## Generar un CMakeLists.txt
 
-Habrá veces que quieras crear tu proyecto, que proporcione las bondades
-de CMake. ¿Cómo hacerlo? En general, si tienes una carpeta uno o varios
-.cpp, aquí tienes un fichero CMakeLists.txt que servirá si el proyecto
-no tiene dependencias adicionales:
+Habrá veces que quieras crear tu proyecto, que proporcione las bondades de CMake. ¿Cómo hacerlo? En general, si tienes una carpeta uno o varios `.cpp`, aquí tienes un fichero `CMakeLists.txt` que servirá si el proyecto no tiene dependencias adicionales:
 
 ```cmake
 cmake_minimum_required(VERSION 2.8.7)
