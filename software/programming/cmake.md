@@ -43,15 +43,15 @@ project(${KEYWORD})
 add_executable(${KEYWORD} main.cpp)
 ```
 
-Para un proyecto que dependa de YARP:
+Para un proyecto que dependa de ASD:
 ```cmake
 cmake_minimum_required(VERSION 2.8.7)
 
-find_package()  # paquete a encontrar
+find_package(ASD REQUIRED)  # paquete a encontrar
 
-include_directories()  # rutas de cabeceras de librerias
+include_directories(${ASD_INCLUDE_DIRS})  # rutas de cabeceras de librerias
 
-link_directories()  # rutas de librerias
+link_directories(${ASD_LIBRARY_DIRS})  # rutas de librerias
 
-target_link_libraries(${KEYWORD})  # añadir nombres de librerias
+target_link_libraries(${PROJECT_NAME} ${ASD_LIBRARIES})  # añadir nombres de librerías
 ```
