@@ -147,7 +147,7 @@ vale para todo todas las consolas además de lo gráfico.
 Podemos ampliarlo con algunas funcionalidades mediante las siguientes líneas:
 
 ```bash
-# Montar algún disco duro al arranque
+# Montar algún disco duro al arranque (sustituir sdx1 por nombre del dispositivo más el número de partición)
 # /usr/bin/udisks --mount /dev/sdx1  # Sistemas antiguos, parte de udisks1
 /usr/bin/udisksctl mount -b /dev/sdx1  # Sistemas modernos, parte de udisks2
 ```
