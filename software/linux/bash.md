@@ -142,12 +142,13 @@ ls
 
 ## ~/.profile
 
-Su contenido se aplica al arrancar el sistema operativo, por lo que vale
-para todas las consolas, además de lo que lancemos mediante iconos. Unas
-línas convenientes a agregarle
-son:
+Su contenido se aplica al arrancar el sistema operativo, por lo que
+vale para todo todas las consolas además de lo gráfico.
+Podemos ampliarlo con algunas funcionalidades mediante las siguientes líneas:
 
 ```bash
-/usr/bin/udisks --mount /dev/sda7  # O similar para montar disco duro al arranque
+# Montar algún disco duro al arranque
+# /usr/bin/udisks --mount /dev/sdx1  # Sistemas antiguos, parte de udisks1
+/usr/bin/udisksctl mount -b /dev/sdx1  # Sistemas modernos, parte de udisks2
 ```
 
