@@ -10,6 +10,7 @@
   * [Linux](software/linux/README.md)
     * [Bash (consola de Linux)](software/linux/bash.md)
   * [Programación](software/programming/README.md)
+    * [CMake](software/programming/cmake.md)
     * [Librerías estáticas y dinámicas](software/programming/libs.md)
   * [Codificación de caracteres](software/character-encoding.md)
   * [Variables de entorno](software/environment-variables.md)
