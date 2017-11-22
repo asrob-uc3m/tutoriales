@@ -43,15 +43,15 @@ project(${KEYWORD})
 add_executable(${KEYWORD} main.cpp)
 ```
 
-Para un proyecto que dependa de ASD:
+Para un proyecto que dependa de una librería llamada `EJEMPLO`:
 ```cmake
 cmake_minimum_required(VERSION 2.8.7)
 
-find_package(ASD REQUIRED)  # paquete a encontrar
+find_package(EJEMPLO REQUIRED)  # paquete a encontrar
 
-include_directories(${ASD_INCLUDE_DIRS})  # rutas de cabeceras de librerias
+include_directories(${EJEMPLO_INCLUDE_DIRS})  # rutas de cabeceras de librerias
 
-link_directories(${ASD_LIBRARY_DIRS})  # rutas de librerias
+link_directories(${EJEMPLO_LIBRARY_DIRS})  # rutas de librerias
 
-target_link_libraries(${PROJECT_NAME} ${ASD_LIBRARIES})  # añadir nombres de librerías
+target_link_libraries(ejecutable ${EJEMPLO_LIBRARIES})  # añadir nombres de librerías
 ```
