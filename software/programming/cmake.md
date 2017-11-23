@@ -23,7 +23,13 @@ O a través de interfaces semi-gráficas `ccmake ..` (modo `ncurses` de Linux) o
 
 ## Generar un CMakeLists.txt
 
-Cuando creas un proyecto, querrás que proporcione las bondades multi-plataforma de CMake. ¿Cómo hacerlo? A continuación, un ejemplo minimalista. Nótese que se utiliza`#` para incluir comentarios.
+Cuando creas un proyecto, querrás que proporcione las bondades multi-plataforma de CMake. ¿Cómo hacerlo? A continuación, un ejemplo extremadamente minimalista de `CMakeLists.txt`. Incluye una única directiva para compilar `main.cpp` y generar el binario ejecutable de nombre `ejecutable`.
+
+```cmake
+add_executable(ejecutable main.cpp)
+```
+
+A continuación, un ejemplo algo menos minimalista. Nótese que se utiliza`#` para incluir comentarios.
 
 ```cmake
 cmake_minimum_required(VERSION 2.8)  # Versión mínima que exigimos de CMake, que va ampliando sus capacidades
@@ -52,3 +58,5 @@ link_directories(${EJEMPLO_LIBRARY_DIRS})  # Indicamos variables que indican rut
 
 target_link_libraries(ejecutable ${EJEMPLO_LIBRARIES})  # Añadimos nombres de librerías (actualmente se recomiendan rutas completas, que vuelve el anterior obsoleto)
 ```
+
+Nótese que los nombres de las variables no están estandarizados. Una guía más extensa acerca de cómo encontrar librerías puede encontrarse [aquí](https://cmake.org/Wiki/CMake:How_To_Find_Libraries).
