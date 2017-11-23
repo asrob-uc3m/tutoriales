@@ -59,7 +59,11 @@ find_package(EJEMPLO REQUIRED)  # Nombre de la librería, buscará un módulo de
 
 include_directories(${EJEMPLO_INCLUDE_DIRS})  # Indicamos variables que indican rutas de cabeceras de librerias
 
+aux_source_directory(. SRC_LIST)  # Parecido a GLOB, no excesivamente recomendado
+
 link_directories(${EJEMPLO_LIBRARY_DIRS})  # Indicamos variables que indican rutas de librerias (en desuso)
+
+add_executable(${PROJECT_NAME} ${SRC_LIST})  # Compilar *, enlazarlos, y llamar como el proyecto (en este caso, ejecutable) al binario generado
 
 target_link_libraries(ejecutable ${EJEMPLO_LIBRARIES})  # Añadimos nombres de librerías (actualmente se recomiendan rutas completas, que vuelve el anterior obsoleto)
 ```
