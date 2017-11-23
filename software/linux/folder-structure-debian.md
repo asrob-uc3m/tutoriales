@@ -1,7 +1,6 @@
 # Estructura de carpetas en Debian y derivados (Ubuntu, Mint...)
 
 Cuando utilizamos `sudo apt-get install nombre_paquete`, los ficheros del paquete se instalan dentro de `/usr/` en las carpetas:
-
 * bin: ejecutables (programas, 'bin' viene de 'binarios')
 * include: cabeceras de librerías (léase [Librerías Estáticas y Dinámicas](../libs.md))
 * lib: librerías compiladas (léase [Librerías Estáticas y Dinámicas](../libs.md))
