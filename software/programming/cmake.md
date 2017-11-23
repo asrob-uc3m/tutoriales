@@ -33,6 +33,7 @@ A continuación, un ejemplo algo menos minimalista. Nótese que se utiliza`#` pa
 
 ```cmake
 cmake_minimum_required(VERSION 2.8)  # Versión mínima que exigimos de CMake, que va ampliando sus capacidades
+
 add_executable(ejecutable main.cpp other.cpp)  # Compilar main.cpp y other.cpp, enlazarlos, y llamar ejecutable al binario generado
 ```
 
@@ -40,14 +41,18 @@ En general, para una carpeta con uno o varios `.cpp`, aquí un ejemplo de `CMake
 
 ```cmake
 cmake_minimum_required(VERSION 2.8)  # Versión mínima que exigimos de CMake, que va ampliando sus capacidades
+
 project(ejecutable)  # Dar nombre al proyecto
+
 aux_source_directory(. SRC_LIST)  # Parecido a GLOB, no excesivamente recomendado
+
 add_executable(${PROJECT_NAME} ${SRC_LIST})  # Compilar *, enlazarlos, y llamar como el proyecto (en este caso, ejecutable) al binario generado
 ```
 
 Para un proyecto que dependa de una [librería](libs.md) llamada `EJEMPLO`:
 ```cmake
 cmake_minimum_required(VERSION 2.8)  # Versión mínima que exigimos de CMake, que va ampliando sus capacidades
+
 project(ejecutable)  # Dar nombre al proyecto
 
 find_package(EJEMPLO REQUIRED)  # Nombre de la librería, buscará un módulo de CMake (que define las variables utilizadas a continuación) con este nombre. REQUIRED indica que lo exigimos.
