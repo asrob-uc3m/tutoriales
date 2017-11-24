@@ -44,7 +44,8 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
       - En todos los ficheros de una carpeta y sus subcarptas sin importar mayúsculas/minúsculas de la cadena: `grep -ri "cadena de texto" *`
       - En todos los ficheros con extensión `.cpp` de una carpeta y sus subcarptas sin importar mayúsculas/minúsculas de la cadena:
         `grep -ri "cadena de texto" --include *.cpp`
-      - Invertir búsqueda (encontrar lo que no lleve cadena): `grep -v "anti cadena" *
+      - Mostrar líneas a continuación de las encontradas: `grep -A 1 "cadena" *`
+      - Invertir búsqueda (encontrar lo que no lleve cadena): `grep -v "anti cadena" *`
       - Manteniendo color pese a cruzarse con un pipe `|`: `grep --color=always "cadena" * | grep -v "anti cadena"`
   - **locate**: Parecido al find. Busca ficheros de forma general y rápida porque usa la base de datos de **updatedb**.
   - **ls**: Ver contenido de carpeta.
