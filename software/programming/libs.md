@@ -23,7 +23,7 @@ Para utilizar una librería (esto es, compilar contra él), deberemos tener:
   * En ''gcc'' de Linux, se utiliza el argumento `-L` para definir la ruta, y `-l` para el nombre de la librería sin el prefijo ''lib'' y sin el sufijo ''.a''.
   * En ''Visual Studio 9'', se pueden definir las rutas en Tools -> Options -> Projects and Solutions -> VC++ Directories -> Escoger ''Library Files'' del desplegable ''Show directories for''. Se pueden definir los nombres de las librerías en Project -> Properties -> Configuration Properties -> Linker -> Input -> Escribir los nombres con extesión de los ''.lib'' (separados por retornos de carro en la ventana de selección).
   * En ''CMake'' (solución multi-plataforma) se utiliza la ''directiva de CMake'' `link_directories()` para definir la ruta, y `target_link_libraries()` para el nombre de la librería,  (véase el [tutorial de CMake](cmake.md)).
-  * En ''QtCreator'' se utiliza el archivo de extensión "pro" para enlazar librerías. Un ejemplo para incluir la librería estática YARP_dev en Linux sería: `LIBS += /home/user/Libraries/yarp2/build/lib/libYARP_dev.a`
+  * En ''QtCreator'' se utiliza el archivo de extensión "pro" para enlazar librerías. Un ejemplo para incluir la librería estática YARP_dev en Linux sería: `LIBS += /home/user/Libraries/yarp2/build/lib/libYARP_dev.a` pero también funcionan comandos del formato `LIBS += -lstdc++`.
 
 ----
 
