@@ -67,7 +67,10 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
 
 ## Bucles en Bash
 Existen diversas maneras de iterar en Bash:
-  - A través del comando `find -exec`. Por ejemplo, grep en todos los ficheros de una carpeta y sus subcarpetas: `find -type f -exec sed -i 's/viejo/nuevo/g' {} +`
+  - A través del comando `find -exec`. Por ejemplo, grep en todos los ficheros de una carpeta y sus subcarpetas:
+```bash
+find -type f -exec sed -i 's/viejo/nuevo/g' {} +
+```
   - A través de bucles `for`. Ejemplo (que se podría realizar en una línea única):
 ```bash
 for fileName in "$(find -name *.mp3)"; do
