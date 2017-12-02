@@ -156,3 +156,5 @@ Podemos ampliarlo con algunas funcionalidades mediante las siguientes líneas:
 /usr/bin/udisksctl mount -b /dev/sdx1  # Sistemas modernos, parte de udisks2
 ```
 
+# Referencias
+- https://help.ubuntu.com/community/UsingTheTerminal
