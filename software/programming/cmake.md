@@ -5,7 +5,7 @@ CMake es una herramienta software para la compilación multiplataforma. Esto es,
 Reconocerás que un proyecto utiliza CMake por un fichero que se llama `CMakeLists.txt`. Si estás en la raíz del proyecto y ves este fichero, la buena práctica para compilar el proyecto en una terminal (estilo [bash](../linux/bash.md)) es:
 
 ``` bash
-mkdir -p build && cmake .. && make
+mkdir -p build && cd build && cmake .. && make
 ```
 
 La explicación de esta línea es (donde `&&` lanza un comando sólo si el anterior se ha realizado con éxito):
