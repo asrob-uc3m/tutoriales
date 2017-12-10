@@ -66,6 +66,7 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
         `sed "s/viejo/nuevo/g" fichero.txt`
       - Uso básico: `sed -i "s/viejo/nuevo/g" fichero.txt`
       - En todos los ficheros de una carpeta: `sed -i "s/viejo/nuevo/g" *`
+      - No tiene funcionalidad recursiva (en todos los ficheros de una carpeta y sus subcarptas), pero se puede conseguir mediante [bucles en bash](#bucles-en-bash).
   - **setxkbmap**: Cambiar la configuración del teclado. Por ejemplo, a
     español: **setxkbmap es,es** (sin X (requiere `sudo`): `loadkeys --verbose es`)
   - **sudo**: Realizar el comando que se escribe en la misma línea con
