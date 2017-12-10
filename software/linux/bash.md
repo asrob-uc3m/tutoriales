@@ -48,10 +48,9 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
   - **grep**: Busca texto contenido en ficheros.
       - Uso básico: `grep "cadena de texto" fichero.txt`
       - En todos los ficheros de una carpeta: `grep "cadena de texto" *`
-      - En todos los ficheros de una carpeta y sus subcarptas: `grep -r "cadena de texto" *`
-      - En todos los ficheros de una carpeta y sus subcarptas sin importar mayúsculas/minúsculas de la cadena: `grep -ri "cadena de texto" *`
-      - En todos los ficheros con extensión `.cpp` de una carpeta y sus subcarptas sin importar mayúsculas/minúsculas de la cadena:
-        `grep -ri "cadena de texto" --include *.cpp`
+      - En todos los ficheros de una carpeta y sus subcarptas (`r` de recursivo): `grep -r "cadena de texto" *`
+      - En todos los ficheros de una carpeta y sus subcarptas (`i` de case-insensitive) sin importar mayúsculas/minúsculas de la cadena: `grep -ri "cadena de texto" *`
+      - En todos los ficheros con extensión `.cpp` de una carpeta y sus subcarptas sin importar mayúsculas/minúsculas de la cadena: `grep -ri "cadena de texto" --include *.cpp`
       - Mostrar líneas a continuación de las encontradas: `grep -A 1 "cadena" *`
       - Invertir búsqueda (encontrar lo que no lleve cadena): `grep -v "anti cadena" *`
       - Manteniendo color pese a cruzarse con un pipe `|`: `grep --color=always "cadena" * | grep -v "anti cadena"`
