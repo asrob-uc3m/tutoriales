@@ -2,6 +2,13 @@
 
 En Ubuntu 10.04 - 16.04 y otras distribuciones, se puede acceder a una consola (`gnome-terminal` en este caso) a través de la combinación de teclas `CTRL`+`ALT`+`t`. También se puede acceder a *tty*s virtuales con `CTRL`+`ALT`+`F1`/`F2`/`F3`... y `CTRL`+`ALT`+`F7`/`F8` para volver al entorno gráfico.
 
+## Símbolos importantes
+
+- `.` Significa "aquí", "en esta carpeta". 
+- `..` Significa "en la carpeta padre", "la carpeta que contiene esta carpeta".
+- `/` Se utiliza como delimitador entre nombres de carpetas, y entre nombres de carpetas y archivos.
+- `*` Significa "cualquier cosa", es un operador "comodín". 
+
 ## El comando `man`
 
 El comando `man` proporciona el manual del comando nombrado. Por ejemplo, con `man ls` se accede al manual del comando `ls`.
