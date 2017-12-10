@@ -75,7 +75,7 @@ Existen diversas maneras de iterar en Bash:
     ```
     - Ejemplo 2: Copiar todo lo que contenga "cadena" en su nombre a otra carpeta:
     ```bash
-    find -name "cadena" -exec cp {} /carpeta/destino  \;
+    find -name "*cadena*" -exec cp {} /carpeta/destino  \;
     ```
   - A través de bucles `for`. Ejemplo (que se podría realizar en una línea única):
 ```bash
