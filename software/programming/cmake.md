@@ -65,7 +65,7 @@ link_directories(${EJEMPLO_LIBRARY_DIRS})  # Indicamos variables que indican rut
 
 add_executable(${PROJECT_NAME} ${SRC_LIST})  # Compilar *, enlazarlos, y llamar como el proyecto (en este caso, ejecutable) al binario generado
 
-target_link_libraries(ejecutable ${EJEMPLO_LIBRARIES})  # Añadimos nombres de librerías (actualmente se recomiendan rutas completas, que vuelve el anterior obsoleto)
+target_link_libraries(${PROJECT_NAME} ${EJEMPLO_LIBRARIES})  # Añadimos nombres de librerías (actualmente se recomiendan rutas completas, que vuelve el anterior obsoleto)
 ```
 
 Nótese que los nombres de las variables no están estandarizados. Una guía más extensa acerca de cómo encontrar librerías puede encontrarse [aquí](https://cmake.org/Wiki/CMake:How_To_Find_Libraries).
