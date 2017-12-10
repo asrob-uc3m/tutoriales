@@ -69,8 +69,14 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
 ## Bucles en Bash
 Existen diversas maneras de iterar en Bash:
   - A través del comando `find -exec`. El operador `{}` se refiere al objeto encontrado, que puede ponerse entre comillas `"{}"` para prevenir frente a espacios en nombres.
-    - Ejemplo 1: En todos los ficheros (`-type f`) de una carpeta y sus subcarpetas, aplicar `sed`: `find -type f -exec sed -i 's/viejo/nuevo/g' {} +`
-    - Ejemplo 2: Copiar todo lo que contenga "cadena" en su nombre a otra carpeta: `find -name "cadena" -exec cp {} /carpeta/destino  \;`
+    - Ejemplo 1: En todos los ficheros (`-type f`) de una carpeta y sus subcarpetas, aplicar `sed`:
+    ```bash
+    find -type f -exec sed -i 's/viejo/nuevo/g' {} +
+    ```
+    - Ejemplo 2: Copiar todo lo que contenga "cadena" en su nombre a otra carpeta:
+    ```bash
+    find -name "cadena" -exec cp {} /carpeta/destino  \;
+    ```
   - A través de bucles `for`. Ejemplo (que se podría realizar en una línea única):
 ```bash
 for fileName in "$(find -name *.mp3)"; do
