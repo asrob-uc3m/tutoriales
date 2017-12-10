@@ -37,6 +37,7 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
         `find -iname fichero.txt`
       - Buscar fichero por nombre delimitando la profundidad de carpetas entre las cuales se busca:
         `find -maxdepth 2 -name fichero.txt`
+      - Véase también su uso en la sección dedicada a [bucles en bash](#bucles-en-bash).
   - **grep**: Busca texto contenido en ficheros.
       - Uso básico: `grep "cadena de texto" fichero.txt`
       - En todos los ficheros de una carpeta: `grep "cadena de texto" *`
