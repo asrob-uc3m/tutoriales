@@ -69,8 +69,8 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
       - No tiene funcionalidad recursiva (en todos los ficheros de una carpeta y sus subcarptas), pero se puede conseguir mediante [bucles en bash](#bucles-en-bash).
   - **setxkbmap**: Cambiar la configuración del teclado. Por ejemplo, a
     español: **setxkbmap es,es** (sin X (requiere `sudo`): `loadkeys --verbose es`)
-  - **sudo**: Realizar el comando que se escribe en la misma línea con
-    permisos de administrador.
+  - **sudo**: Realizar el comando que se escribe en la misma línea con permisos de administrador.
+  - **tree**: Mostrar contenidos de una carpeta en formato árbol. Con `-L` se puede especificar la profundidad.
   - **updatedb**: Actualiza la base de datos que utiliza **locate**
 
 ## Bucles en Bash
