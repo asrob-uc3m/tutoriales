@@ -13,6 +13,7 @@
   * [Programación](software/programming/README.md)
     * [CMake](software/programming/cmake.md)
     * [Librerías estáticas y dinámicas](software/programming/libs.md)
+  * [Comunicaciones](software/comunications/README.md)
   * [Codificación de caracteres](software/character-encoding.md)
   * [Variables de entorno](software/environment-variables.md)
 * [Redactar](writing/README.md)
