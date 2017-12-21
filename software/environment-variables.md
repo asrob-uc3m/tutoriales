@@ -1,21 +1,14 @@
 # Variables de entorno
 
-Las variables de entorno son como variables de un programa (cadenas de
-caracteres) propios del Sistema Operativo. Cualquier programa las puede
-utilizar, y los usuarios las pueden modificar.
+Las variables de entorno son como variables de un programa (cadenas de caracteres) propios del Sistema Operativo. Cualquier programa las puede utilizar, y los usuarios las pueden modificar.
 
-En Windows se pueden leer con escribir **echo %VARIABLE%** en el Símbolo
-de Sistema.
+En Windows se pueden leer con escribir `echo %VARIABLE%` en el Símbolo de Sistema (`cmd.exe`).
 
-En Windows son modificables a través de Panel de Control -\> Sistema -\>
-Avanzado -\> Variables de Entorno
+En Windows son modificables a través de Panel de Control -\> Sistema -\> Avanzado -\> Variables de Entorno
 
-En Linux se pueden leer con escribir **echo $VARIABLE** en una [consola](linux/bash.md).
+En Linux se pueden leer con escribir `echo $VARIABLE` en una [consola](linux/bash.md).
 
-En Linux se pueden modificar con escribir **export VARIABLE=valor**
-(véase que es sin el símbolo $) en una consola (válido para la sesión
-de consola), en ~/.bashrc (al arranque de una consola), o en ~/.profile
-(al arranque del PC).
+En Linux se pueden modificar con escribir `export VARIABLE=valor` (véase que es sin el símbolo $) en una consola (válido para la sesión de consola), dentro el fichero `~/.bashrc` (que se lanza al arranque de una consola, por tanto válido para sesiones de consola), o dentro del fichero `~/.profile` (al arranque del PC).
 
 ## Variables de Uso Frecuente
 
