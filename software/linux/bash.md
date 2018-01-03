@@ -4,10 +4,10 @@ En Ubuntu 10.04 - 16.04 y otras distribuciones, se puede acceder a una consola (
 
 ## Símbolos importantes
 
-- `.` Significa "aquí", "en esta carpeta". 
+- `.` Significa "aquí", "en esta carpeta".
 - `..` Significa "en la carpeta padre", "la carpeta que contiene esta carpeta".
 - `/` Se utiliza como delimitador entre nombres de carpetas, y entre nombres de carpetas y archivos.
-- `*` Significa "cualquier cosa", es un operador "comodín". 
+- `*` Significa "cualquier cosa", es un operador "comodín".
 
 ## El comando `man`
 
@@ -34,7 +34,7 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
     puede ser un programa o librería (e.g. de nombre lib*librería*-dev).
     Suele requerir **sudo** delante.
   - **cd**: cambiar de carpeta.
-  - **cp**: copiar origen a destino.
+  - **cp**: copiar origen a destino. Una alternativa que muestra progreso y mantiene permisos es `rsync -ah --progress origen destino`.
   - **echo**: Escribe por pantalla.
   - **find**: Busca ficheros que cumplan un criterio (nombre,
     tamaño...).
