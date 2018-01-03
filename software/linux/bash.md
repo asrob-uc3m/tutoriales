@@ -35,7 +35,9 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
     Suele requerir **sudo** delante.
   - **cd**: cambiar de carpeta.
   - **cp**: copiar origen a destino. Una alternativa que muestra progreso y mantiene permisos es `rsync -ah --progress origen destino`.
-  - **echo**: Escribe por pantalla.
+  - **df**: Mostrar ocupación de discos montados. Utilícese con `-lh` para lectura humana.
+  - **du**: Mostrar ocupación de subcarpetas. Utilícese con `-lh` para lectura humana, y `-s` para resumido.
+  - **echo**: Escribe por pantalla, útil en [scripts de bash](#scripts-de-bash).
   - **find**: Busca ficheros que cumplan un criterio (nombre,
     tamaño...).
       - Uso básico (buscar fichero por nombre): `find -name fichero.txt`
@@ -45,6 +47,7 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
       - Buscar fichero por nombre delimitando la profundidad de carpetas entre las cuales se busca:
         `find -maxdepth 2 -name fichero.txt`
       - Véase también su uso en la sección dedicada a [bucles en bash](#bucles-en-bash).
+  - **free**: Mostrar memoria (RAM) libre. Utilícese con `-lh` para lectura humana.
   - **grep**: Busca texto contenido en ficheros.
       - Uso básico: `grep "cadena de texto" fichero.txt`
       - En todos los ficheros de una carpeta: `grep "cadena de texto" *`
@@ -55,6 +58,7 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
       - Mostrar número de línea en el cual aparece: `grep -n "cadena" *`
       - Invertir búsqueda (encontrar lo que no lleve cadena): `grep -v "anti cadena" *`
       - Manteniendo color pese a cruzarse con un pipe `|`: `grep --color=always "cadena" * | grep -v "anti cadena"`
+  - **killall**: Intenta matar a un proceso, por nombre. Para un cierre más forzado, `pgrep "nombre" | xargs kill -s 9`.
   - **locate**: Parecido al find. Busca ficheros de forma general y rápida porque usa la base de datos de **updatedb**.
   - **ls**: Ver contenido de carpeta.
   - **mkdir**: crear una carpeta
@@ -71,6 +75,7 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
   - **setxkbmap**: Cambiar la configuración del teclado. Por ejemplo, a
     español: **setxkbmap es,es** (sin X (requiere `sudo`): `loadkeys --verbose es`)
   - **sudo**: Realizar el comando que se escribe en la misma línea con permisos de administrador.
+  - **top**: Mostrar los processos en ejecución. Con colores, existe `htop`.
   - **tree**: Mostrar contenidos de una carpeta en formato árbol. Con `-L` se puede especificar la profundidad.
   - **updatedb**: Actualiza la base de datos que utiliza **locate**
 
