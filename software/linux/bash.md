@@ -23,7 +23,7 @@ Un comando muy similar a `man` es `info`, que en ocasiones propoorciona mejor do
 
 ## Listado alfabético de comandos útiles
 
-Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, xterm...
+Estos comandos, en general, también son aplicables a `gnome-terminal`, `bash`, `sh`, `xterm`...
 
   - **apt-cache search**: en Debian/Ubuntu/Mint, da el nombre de los
     paquetes que contienen los metadatos que se buscan (versión,
@@ -35,7 +35,9 @@ Estos comandos, en general, también son aplicables a gnome-terminal, bash, sh, 
     Suele requerir **sudo** delante.
   - **cd**: cambiar de carpeta.
   - **cp**: copiar origen a destino. Una alternativa que muestra progreso y mantiene permisos es `rsync -ah --progress origen destino`.
+  - **diff**: Compara ficheros y carpetas. `colordiff` existe como variante con colores (o `meld` como cliente gráfico).
   - **df**: Mostrar ocupación de discos montados. Utilícese con `-lh` para lectura humana.
+  - **dmesg**: Muestra mensajes del kernel. Utiliza `tail -f /var/log/syslog` para verlo en stream continuo.
   - **du**: Mostrar ocupación de subcarpetas. Utilícese con `-lh` para lectura humana, y `-s` para resumido.
   - **echo**: Escribe por pantalla, útil en [scripts de bash](#scripts-de-bash).
   - **find**: Busca ficheros que cumplan un criterio (nombre,
