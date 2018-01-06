@@ -7,6 +7,7 @@ En Ubuntu 10.04 - 16.04 y otras distribuciones, se puede acceder a una consola (
 - `.` Significa "aquí", "en esta carpeta".
 - `..` Significa "en la carpeta padre", "la carpeta que contiene esta carpeta".
 - `/` Se utiliza como delimitador entre nombres de carpetas, y entre nombres de carpetas y archivos.
+- `\` Se utiliza para trocear un comando en varias líneas, indicando que el comando continúa. En Windows, es `^`.
 - `*` Significa "cualquier cosa", es un operador "comodín".
 
 ## El comando `man`
