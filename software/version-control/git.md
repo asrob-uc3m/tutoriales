@@ -16,3 +16,4 @@
 - https://www.gitbook.com/book/david-estevez/the-git-the-bad-and-the-ugly
 - https://git-scm.com/book/en/v2
 - https://www.atlassian.com/git
+- https://github.com/k88hudson/git-flight-rules
