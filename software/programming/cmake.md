@@ -68,4 +68,4 @@ add_executable(${PROJECT_NAME} ${SRC_LIST})  # Compilar *, enlazarlos, y llamar 
 target_link_libraries(${PROJECT_NAME} ${EJEMPLO_LIBRARIES})  # Añadimos nombres de librerías (actualmente se recomiendan rutas completas, que vuelve el anterior obsoleto)
 ```
 
-Nótese que los nombres de las variables no están estandarizados. Una guía más extensa acerca de cómo encontrar librerías puede encontrarse [aquí](https://cmake.org/Wiki/CMake:How_To_Find_Libraries).
+Nótese que los nombres de las variables no están estandarizados. Una guía más extensa acerca de cómo encontrar librerías puede encontrarse [aquí](https://cmake.org/cmake/help/latest/manual/cmake-developer.7.html#a-sample-find-module).
