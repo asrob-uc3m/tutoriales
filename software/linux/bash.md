@@ -76,25 +76,25 @@ Estos comandos, en general, también son aplicables a `gnome-terminal`, `bash`, 
 
 ## Bucles en Bash
 Existen diversas maneras de iterar en Bash:
-  - A través del comando `find -exec`. El operador `{}` se refiere al objeto encontrado, que puede ponerse entre comillas `"{}"` para prevenir frente a espacios en nombres. Por último, se utiliza `\;` para lanzar el comando una vez por incidencia (estilo `comando file1; comando file2; comando file3;`), o `\+` para concatenar (estilo `comando file1 file2 file3`). Ejemplos:
-    - Ejemplo 1: Cambiar a permisos `664` todos los ficheros (`-type f`) de una carpeta y sus subcarpetas:
-    ```bash
-    find -type f -exec chmod 664 {} \;
-    ```
-    - Ejemplo 2: Copiar todo lo que contenga "cadena" en su nombre a otra carpeta:
-    ```bash
-    find -name "*cadena*" -exec cp {} /carpeta/destino  \;
-    ```
-    - Ejemplo 3: En todos los ficheros (`-type f`) de una carpeta y sus subcarpetas, aplicar `sed`:
-    ```bash
-    find -type f -exec sed -i 's/viejo/nuevo/g' {} \+
-    ```
-  - A través de bucles `for`. Ejemplo (que se podría realizar en una línea única):
-```bash
-for fileName in "$(find -name *.mp3)"; do
-    printf "$fileName\n";
-done
-```
+- A través del comando `find -exec`. El operador `{}` se refiere al objeto encontrado, que puede ponerse entre comillas `"{}"` para prevenir frente a espacios en nombres. Por último, se utiliza `\;` para lanzar el comando una vez por incidencia (estilo `comando file1; comando file2; comando file3;`), o `\+` para concatenar (estilo `comando file1 file2 file3`). Ejemplos:
+   - Ejemplo 1: Cambiar a permisos `664` todos los ficheros (`-type f`) de una carpeta y sus subcarpetas:
+     ```bash
+     find -type f -exec chmod 664 {} \;
+     ```
+   - Ejemplo 2: Copiar todo lo que contenga "cadena" en su nombre a otra carpeta:
+     ```bash
+     find -name "*cadena*" -exec cp {} /carpeta/destino  \;
+     ```
+   - Ejemplo 3: En todos los ficheros (`-type f`) de una carpeta y sus subcarpetas, aplicar `sed`:
+     ```bash
+     find -type f -exec sed -i 's/viejo/nuevo/g' {} \+
+     ```
+- A través de bucles `for`. Ejemplo (que se podría realizar en una línea única):
+  ```bash
+  for fileName in "$(find -name *.mp3)"; do
+      printf "$fileName\n";
+  done
+  ```
 
 A continuación veremos scripts de Bash. Nótese que si la complejidad de un script
 es muy elevada, se puede considerar utilizar un script de Python en su lugar,
