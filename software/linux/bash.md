@@ -26,65 +26,53 @@ Un comando muy similar a `man` es `info`, que en ocasiones propoorciona mejor do
 
 Estos comandos, en general, también son aplicables a `gnome-terminal`, `bash`, `sh`, `xterm`...
 
-  - **apt-cache search**: en Debian/Ubuntu/Mint, da el nombre de los
-    paquetes que contienen los metadatos que se buscan (versión,
-    dependencias, descripción, etc.).
-  - **apt-file search**: en Debian/Ubuntu/Mint, da el nombre de los
-    paquetes que contienen el fichero que se busca.
-  - **apt-get install**: en Debian/Ubuntu/Mint, instala un paquete, que
-    puede ser un programa o librería (e.g. de nombre lib*librería*-dev).
-    Suele requerir **sudo** delante.
-  - **cd**: cambiar de carpeta.
-  - **cp**: copiar origen a destino. Una alternativa que muestra progreso y mantiene permisos es `rsync -ah --progress origen destino` (ojo: su comportamiento difiere según `/` al final de la ruta).
-  - **diff**: Compara ficheros y carpetas. `colordiff` existe como variante con colores (o `meld` como cliente gráfico).
-  - **df**: Mostrar ocupación de discos montados. Utilícese con `-lh` para lectura humana.
-  - **dmesg**: Muestra mensajes del kernel. Utiliza `tail -f /var/log/syslog` para verlo en stream continuo.
-  - **du**: Mostrar ocupación de subcarpetas. Utilícese con `-lh` para lectura humana, y `-s` para resumido.
-  - **echo**: Escribe por pantalla, útil en [scripts de bash](#scripts-de-bash).
-  - **find**: Busca ficheros que cumplan un criterio (nombre,
-    tamaño...).
-      - Uso básico (buscar fichero por nombre): `find -name fichero.txt`
-      - Uso básico (buscar fichero con comodín, ejemplo extensión): `find -name *.txt`
-      - Buscar fichero por nombre sin importar mayúsculas/minúscula:
-        `find -iname fichero.txt`
-      - Buscar fichero por nombre delimitando la profundidad de carpetas entre las cuales se busca:
-        `find -maxdepth 2 -name fichero.txt`
-      - Véase también su uso en la sección dedicada a [bucles en bash](#bucles-en-bash).
-  - **free**: Mostrar memoria (RAM) libre. Utilícese con `-lh` para lectura humana.
-  - **grep**: Busca texto contenido en ficheros.
-      - Uso básico: `grep "cadena de texto" fichero.txt`
-      - En todos los ficheros de una carpeta: `grep "cadena de texto" *`
-      - En todos los ficheros de una carpeta y sus subcarptas (`r` de recursivo): `grep -r "cadena de texto" *`
-      - En todos los ficheros de una carpeta y sus subcarptas (`i` de case-insensitive) sin importar mayúsculas/minúsculas de la cadena: `grep -ri "cadena de texto" *`
-      - En todos los ficheros con extensión `.cpp` de una carpeta y sus subcarptas sin importar mayúsculas/minúsculas de la cadena: `grep -ri "cadena de texto" --include *.cpp`
-      - Mostrar líneas a continuación de las encontradas: `grep -A 1 "cadena" *`
-      - Mostrar número de línea en el cual aparece: `grep -n "cadena" *`
-      - Invertir búsqueda (encontrar lo que no lleve cadena): `grep -v "anti cadena" *`
-      - Manteniendo color pese a cruzarse con un pipe `|`: `grep --color=always "cadena" * | grep -v "anti cadena"`.
-  
-  * **killall**: Intenta matar a un proceso, por nombre. Puedes utilizar `pkill` en su lugar para nombre incompleto.
+- **apt-cache search**: en Debian/Ubuntu/Mint, da el nombre de los paquetes que contienen los metadatos que se buscan (versión, dependencias, descripción, etc.).
+- **apt-file search**: en Debian/Ubuntu/Mint, da el nombre de los paquetes que contienen el fichero que se busca.
+- **apt-get install**: en Debian/Ubuntu/Mint, instala un paquete, que puede ser un programa o librería (e.g. de nombre lib*librería*-dev). Suele requerir **sudo** delante.
+- **cd**: cambiar de carpeta.
+- **cp**: copiar origen a destino. Una alternativa que muestra progreso y mantiene permisos es `rsync -ah --progress origen destino` (ojo: su comportamiento difiere según `/` al final de la ruta).
+- **diff**: Compara ficheros y carpetas. `colordiff` existe como variante con colores (o `meld` como cliente gráfico).
+- **df**: Mostrar ocupación de discos montados. Utilícese con `-lh` para lectura humana.
+- **dmesg**: Muestra mensajes del kernel. Utiliza `tail -f /var/log/syslog` para verlo en stream continuo.
+- **du**: Mostrar ocupación de subcarpetas. Utilícese con `-lh` para lectura humana, y `-s` para resumido.
+- **echo**: Escribe por pantalla, útil en [scripts de bash](#scripts-de-bash).
+- **find**: Busca ficheros que cumplan un criterio (nombre, tamaño...).
+   - Uso básico (buscar fichero por nombre): `find -name fichero.txt`
+   - Uso básico (buscar fichero con comodín, ejemplo extensión): `find -name *.txt`
+   - Buscar fichero por nombre sin importar mayúsculas/minúscula: `find -iname fichero.txt`
+   - Buscar fichero por nombre delimitando la profundidad de carpetas entre las cuales se busca: `find -maxdepth 2 -name fichero.txt`
+   - Véase también su uso en la sección dedicada a [bucles en bash](#bucles-en-bash).
+- **free**: Mostrar memoria (RAM) libre. Utilícese con `-lh` para lectura humana.
+- **grep**: Busca texto contenido en ficheros.
+   - Uso básico: `grep "cadena de texto" fichero.txt`
+   - En todos los ficheros de una carpeta: `grep "cadena de texto" *`
+   - En todos los ficheros de una carpeta y sus subcarptas (`r` de recursivo): `grep -r "cadena de texto" *`
+   - En todos los ficheros de una carpeta y sus subcarptas (`i` de case-insensitive) sin importar mayúsculas/minúsculas de la cadena: `grep -ri "cadena de texto" *`
+   - En todos los ficheros con extensión `.cpp` de una carpeta y sus subcarptas sin importar mayúsculas/minúsculas de la cadena: `grep -ri "cadena de texto" --include *.cpp`
+   - Mostrar líneas a continuación de las encontradas: `grep -A 1 "cadena" *`
+   - Mostrar número de línea en el cual aparece: `grep -n "cadena" *`
+   - Invertir búsqueda (encontrar lo que no lleve cadena): `grep -v "anti cadena" *`
+   - Manteniendo color pese a cruzarse con un pipe `|`: `grep --color=always "cadena" * | grep -v "anti cadena"`. 
+- **killall**: Intenta matar a un proceso, por nombre. Puedes utilizar `pkill` en su lugar para nombre incompleto.
   Por defecto, envía una [señal POSIX](https://en.wikipedia.org/wiki/Signal_(IPC)#POSIX_signals) de tipo `SIGTERM` (15), que es algo más brusco que `SIGINT` (2, típico de `CTRL-C`), sin llegar al extremo de `SIGKILL` (9).
   Se puede meter la señal como parámetro: `killall -s 9 nombre` (leer más: [1](http://programmergamer.blogspot.com.es/2013/05/clarification-on-sigint-sigterm-sigkill.html),[2](http://www.yolinux.com/TUTORIALS/C++Signals.html); listado señales: `kill -l`).
   Aquí una alternativa más compleja, metiendo números de proceso de por medio: `pgrep "nombre" | xargs kill -s 9`.
-  * **locate**: Parecido al find. Busca ficheros de forma general y rápida porque usa la base de datos de **updatedb**.
-  * **ls**: Ver contenido de carpeta.
-  * **mkdir**: crear una carpeta
-  * **mv**: mover origen a destino
-  * **rename**: `--no-act 's/^imagen/image/' *` (donde `^` implica sólo al principio))
-  * **rm**: borrar (con `-r` para recursivo (entra en subcarpetas), `-rf` recursivo forzado))
-  * **sed**: Se puede utilizar reemplazar texto en un fichero
-    (**utilizar con cuidado\!\!\!**).
-      - Previsualización (vuelca por pantalla sin realizar cambios):
-        `sed "s/viejo/nuevo/g" fichero.txt`
-      - Uso básico: `sed -i "s/viejo/nuevo/g" fichero.txt`
-      - En todos los ficheros de una carpeta: `sed -i "s/viejo/nuevo/g" *`
-      - No tiene funcionalidad recursiva (en todos los ficheros de una carpeta y sus subcarptas), pero se puede conseguir mediante [bucles en bash](#bucles-en-bash).
-  - **setxkbmap**: Cambiar la configuración del teclado. Por ejemplo, a
-    español: **setxkbmap es,es** (sin X (requiere `sudo`): `loadkeys --verbose es`)
-  - **sudo**: Realizar el comando que se escribe en la misma línea con permisos de administrador.
-  - **top**: Mostrar los processos en ejecución. Con colores, existe `htop`.
-  - **tree**: Mostrar contenidos de una carpeta en formato árbol. Con `-L` se puede especificar la profundidad.
-  - **updatedb**: Actualiza la base de datos que utiliza **locate**
+- **locate**: Parecido al find. Busca ficheros de forma general y rápida porque usa la base de datos de **updatedb**.
+- **ls**: Ver contenido de carpeta.
+- **mkdir**: crear una carpeta
+- **mv**: mover origen a destino
+- **rename**: `--no-act 's/^imagen/image/' *` (donde `^` implica sólo al principio))
+- **rm**: borrar (con `-r` para recursivo (entra en subcarpetas), `-rf` recursivo forzado))
+- **sed**: Se puede utilizar reemplazar texto en un fichero (**utilizar con cuidado\!\!\!**).
+   - Previsualización (vuelca por pantalla sin realizar cambios): `sed "s/viejo/nuevo/g" fichero.txt`
+   - Uso básico: `sed -i "s/viejo/nuevo/g" fichero.txt`
+   - En todos los ficheros de una carpeta: `sed -i "s/viejo/nuevo/g" *`
+   - No tiene funcionalidad recursiva (en todos los ficheros de una carpeta y sus subcarptas), pero se puede conseguir mediante [bucles en bash](#bucles-en-bash).
+- **setxkbmap**: Cambiar la configuración del teclado. Por ejemplo, a español: **setxkbmap es,es** (sin X (requiere `sudo`): `loadkeys --verbose es`)
+- **sudo**: Realizar el comando que se escribe en la misma línea con permisos de administrador.
+- **top**: Mostrar los processos en ejecución. Con colores, existe `htop`.
+- **tree**: Mostrar contenidos de una carpeta en formato árbol. Con `-L` se puede especificar la profundidad.
+- **updatedb**: Actualiza la base de datos que utiliza **locate**
 
 ## Bucles en Bash
 Existen diversas maneras de iterar en Bash:
