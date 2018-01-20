@@ -61,6 +61,7 @@ Estos comandos, en general, también son aplicables a `gnome-terminal`, `bash`, 
       - Mostrar número de línea en el cual aparece: `grep -n "cadena" *`
       - Invertir búsqueda (encontrar lo que no lleve cadena): `grep -v "anti cadena" *`
       - Manteniendo color pese a cruzarse con un pipe `|`: `grep --color=always "cadena" * | grep -v "anti cadena"`
+
   - **killall**: Intenta matar a un proceso, por nombre. Puedes utilizar `pkill` en su lugar para nombre incompleto. Por defecto, envía una [señal POSIX](https://en.wikipedia.org/wiki/Signal_(IPC)#POSIX_signals) de tipo `SIGTERM` (15), que es algo más brusco que `SIGINT` (2, típico de `CTRL-C`), sin llegar al extremo de `SIGKILL` (9). Se puede meter la señal como parámetro: `killall -s 9 nombre` (leer más: [1](http://programmergamer.blogspot.com.es/2013/05/clarification-on-sigint-sigterm-sigkill.html),[2](http://www.yolinux.com/TUTORIALS/C++Signals.html); listado señales: `kill -l`). Aquí una alternativa más compleja, metiendo números de proceso de por medio: `pgrep "nombre" | xargs kill -s 9`.
   - **locate**: Parecido al find. Busca ficheros de forma general y rápida porque usa la base de datos de **updatedb**.
   - **ls**: Ver contenido de carpeta.
