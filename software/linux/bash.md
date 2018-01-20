@@ -96,8 +96,8 @@ Existen diversas maneras de iterar en Bash:
   done
   ```
 
-A continuación veremos scripts de Bash. Nótese que si la complejidad de un script
-es muy elevada, se puede considerar utilizar un script de Python en su lugar,
+A continuación veremos scripts de Bash. Nótese que **si la complejidad de un script
+es muy elevada, se puede considerar utilizar un script de Python en su lugar**,
 puesto que a costa de su intérprete se consiguen muchas más herramientas y en 
 general una sintaxis más sencilla.
 
