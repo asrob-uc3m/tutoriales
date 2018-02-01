@@ -18,3 +18,6 @@
 - https://git-scm.com/book/en/v2
 - https://www.atlassian.com/git
 - https://github.com/k88hudson/git-flight-rules
+- https://www.mediawiki.org/wiki/Git_for_dummies
+- https://www.mediawiki.org/wiki/User:Aude/Git
+- https://xkcd.com/1597/
