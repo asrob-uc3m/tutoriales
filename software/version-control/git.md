@@ -13,6 +13,11 @@
 - git log --graph
 - git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit  # Thanks https://coderwall.com/p/euwpig/a-better-git-log
 
+## Git prompt helpers
+Pequeños scripts que pueden hacer que en el prompt de tu consola estilo [bash](/software/linux/bash.md) se vea información de git.
+- Official: https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
+- https://github.com/motine/gitprompt
+
 ## Referencias
 - https://www.gitbook.com/book/david-estevez/the-git-the-bad-and-the-ugly
 - https://git-scm.com/book/en/v2
