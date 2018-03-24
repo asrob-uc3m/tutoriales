@@ -154,11 +154,22 @@ function n () {
     nautilus .
 }
 
-# Sustituye el nombre de tu jefe en la siguiente expresión, by @roboticslab-uc3m
-alias carlos='sudo'
+#-- Ocultar nombre de usuario y host en el terminal, by @jgvictores
+PS1="\w$ "
 
-#Ocultar nombre de usuario y host en el terminal y hacer ls, by @jgvictores
-export PS1="\w$ "
+#-- [necesita git-prompt.sh] Mejoras git en prompt, by @PeterBowman
+#source ~/repos/git/contrib/completion/git-prompt.sh
+#GIT_PS1_SHOWDIRTYSTATE=1
+#GIT_PS1_SHOWUNTRACKEDFILES=1
+#GIT_PS1_SHOWUPSTREAM="verbose"
+#GIT_PS1_SHOWCOLORHINTS=1
+##GIT_PS1_DESCRIBE_STYLE=contains
+#PROMPT_COMMAND='__git_ps1 "\w" "\\\$ "'
+
+#-- [necesita YARP] Soporte autocompletado YARP
+#source ~/repos/yarp/scripts/yarp_completion
+
+#-- ls al abrir, by @jgvictores
 ls
 ```
 
