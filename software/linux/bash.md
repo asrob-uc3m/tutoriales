@@ -89,12 +89,17 @@ Existen diversas maneras de iterar en Bash:
      ```bash
      find -type f -exec sed -i 's/viejo/nuevo/g' {} \+
      ```
-- A través de bucles `for`. Ejemplo (que se podría realizar en una línea única):
-  ```bash
-  for fileName in "$(find -name *.mp3)"; do
-      printf "$fileName\n";
-  done
-  ```
+- A través de bucles `for`.
+   - Ejemplo 1 (que se podría realizar en una línea única):
+      ```bash
+      for fileName in "$(find -name *.mp3)"; do
+          printf "$fileName\n";
+      done
+      ```
+   - Ejemplo 2: Renombrar con fecha delante, separado por guión:
+      ```bash
+      for f in *; do mv -- "$f" "$(date -r "$f" +%Y%m%d)-$f"; done
+      ```
 
 A continuación veremos scripts de Bash. Nótese que **si la complejidad de un script
 es muy elevada, se puede considerar utilizar un script de Python en su lugar**,
