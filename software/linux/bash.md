@@ -60,7 +60,7 @@ Estos comandos, en general, también son aplicables a `gnome-terminal`, `bash`, 
   Se puede meter la señal como parámetro: `killall -s 9 nombre` (leer más: [1](http://programmergamer.blogspot.com.es/2013/05/clarification-on-sigint-sigterm-sigkill.html),[2](http://www.yolinux.com/TUTORIALS/C++Signals.html); listado señales: `kill -l`).
   Aquí una alternativa más compleja, metiendo números de proceso de por medio: `pgrep "nombre" | xargs kill -s 9`.
 - **locate**: Parecido al find. Busca ficheros de forma general y rápida porque usa la base de datos de **updatedb**.
-- **ls**: Ver contenido de carpeta.
+- **ls**: Listar contenido de carpeta, `ls -lh` para tamaños con lectura humana. Existen otros muchos `ls`: `lscpu`, `lsmod`... utiliza `ls` y tabulador para autocompletado para descubrirlos.
 - **mkdir**: crear una carpeta
 - **mv**: mover origen a destino
 - **rename**: `--no-act 's/^imagen/image/' *` (donde `^` implica sólo al principio))
