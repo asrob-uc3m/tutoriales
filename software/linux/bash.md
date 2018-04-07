@@ -113,8 +113,8 @@ Script se suele traducir como fichero de ejecución por lotes. Un *bash
 script* es un conjunto de comandos de consola de linux que
 el sistema operativo ejecuta en orden. Mucha info en <https://stackoverflow.com/tags/bash/info>.
 
-El típico script de linux tiene como primera línea `#!/bin/bash` ([leer
-más sobre shebang](http://en.wikipedia.org/wiki/Shebang_%28Unix%29)). Nótese que `#` implica comentario.
+El típico script de linux debería tener como primera línea `#!/usr/bin/env bash` ([leer
+más sobre shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29#Portability)). Nótese que `#` implica comentario.
 
 Existen unos scripts que están por defecto en sistemas operativos
 basados en linux (recuérdese del [tutorial de variables de entorno](../environment-variables.md) que `~` equivale a `$HOME`):
