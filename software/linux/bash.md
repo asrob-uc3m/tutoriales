@@ -73,7 +73,7 @@ Estos comandos, en general, también son aplicables a `gnome-terminal`, `bash`, 
 - **setxkbmap**: Cambiar la configuración del teclado. Por ejemplo, a español: `setxkbmap es,es` (sin X, pero que requiere `sudo`: `loadkeys --verbose es`)
 - **sudo**: Realizar el comando que se escribe en la misma línea con permisos de administrador.
 - **top**: Mostrar los processos en ejecución. Con colores, existe `htop`.
-- **tree**: Mostrar contenidos de una carpeta en formato árbol. Con `-L` se puede especificar la profundidad.
+- **tree**: Mostrar contenidos de una carpeta en formato árbol. Con `-L` se puede especificar la profundidad, o con `-I` se puede excluir un patrón, ejemplo: `tree -I build`.
 - **updatedb**: Actualiza la base de datos que utiliza **locate**
 
 ## Bucles en Bash
