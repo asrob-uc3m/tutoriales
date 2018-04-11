@@ -1,5 +1,14 @@
 # Git (control de versiones)
 
+## Tutoriales
+- https://www.gitbook.com/book/david-estevez/the-git-the-bad-and-the-ugly
+- https://git-scm.com/book/en/v2
+- https://www.atlassian.com/git
+- https://github.com/k88hudson/git-flight-rules
+- https://www.mediawiki.org/wiki/Git_for_dummies
+- https://www.mediawiki.org/wiki/User:Aude/Git
+- https://xkcd.com/1597/
+
 ## Cheatsheat
 - Almacenar contraseña durante un tiempo: [git config credential.helper cache](https://git-scm.com/docs/git-credential-cache)
 - Deshacer los cambios de un fichero (antes de commit): [git checkout -- nombre-fichero](https://git-scm.com/docs/git-checkout#git-checkout-emgitcheckoutemlttree-ishgt--ltpathspecgt82308203)
@@ -18,12 +27,3 @@ Pequeños scripts que pueden hacer que en el prompt de tu consola estilo [bash](
 - Official: https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
 - Windows: https://desktop.github.com/
 - Short (hay muchos): https://github.com/motine/gitprompt
-
-## Referencias
-- https://www.gitbook.com/book/david-estevez/the-git-the-bad-and-the-ugly
-- https://git-scm.com/book/en/v2
-- https://www.atlassian.com/git
-- https://github.com/k88hudson/git-flight-rules
-- https://www.mediawiki.org/wiki/Git_for_dummies
-- https://www.mediawiki.org/wiki/User:Aude/Git
-- https://xkcd.com/1597/
