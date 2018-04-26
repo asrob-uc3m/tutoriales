@@ -1,10 +1,10 @@
 # Control de versiones: Git
 
 - [Comandos](#comandos)
-    - [Crear un repositorio nuevo](#crear-un-repositorio-nuevo)
+    - [Crear un repositorio nuevo (git init)](#crear-un-repositorio-nuevo-git-init)
     - [Descargar una copia de un repositorio existente (git clone)](#descargar-una-copia-de-un-repositorio-existente-git-clone)
-    - [Comprobar estado de repositorio](#comprobar-estado-de-repositorio)
-    - [Descargar últimos cambios de un repositorio](#descargar-últimos-cambios-de-un-repositorio)
+    - [Descargar últimos cambios de un repositorio (git pull)](#descargar-últimos-cambios-de-un-repositorio-git-pull)
+    - [Comprobar estado de repositorio (git status)](#comprobar-estado-de-repositorio-git-status)
     - [Indicar qué cambios se subirán](#indicar-qué-cambios-se-subirán)
     - Hacer un commit
     - Envío de cambios
@@ -17,7 +17,7 @@
 
 ## Comandos
 
-### Crear un repositorio nuevo
+### Crear un repositorio nuevo (git init)
 
 Habitualmente creamos repositorios nuevos directamente en GitHub (interfaz web), pero también se pueden crear localmente.
 Para crear un repositorio localmente, desde una carpeta nueva, ejecuta el comando:
@@ -36,9 +36,12 @@ Consideraciones:
 1. El sufijo `.git` es opcional.
 1. Existen otros protocolos además de `https:`, incluyendo el propio `git:`.
 
-### Descargar últimos cambios de un repositorio
+### Descargar últimos cambios de un repositorio (git pull)
 
-Si nos hemos descargado previamente la copia de un repositorio 
+Si nos hemos descargado previamente la copia de un repositorio ([git clone](#descargar-una-copia-de-un-repositorio-existente-git-clone), es posible que en un momento dado no tengamos los últimos cambios remotos. Esto se soluciona mediante:
+```bash
+git pull
+```
 
 ### Comprobar estado de repositorio
 
