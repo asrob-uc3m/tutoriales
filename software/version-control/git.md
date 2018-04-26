@@ -17,7 +17,7 @@
 ### Crear un repositorio nuevo
 
 Habitualmente creamos repositorios nuevos directamente en GitHub (interfaz web), pero también se pueden crear localmente.
-Para crear un repositorio localmente, desde un directorio nuevo, ejecuta el comando:
+Para crear un repositorio localmente, desde una carpeta nueva, ejecuta el comando:
 ```bash
 git init
 ```
