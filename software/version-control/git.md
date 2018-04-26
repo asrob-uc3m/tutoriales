@@ -44,7 +44,7 @@ git pull
 ```
 Es recomendable hacerlo **siempre** antes de cualquiera de los próximos pasos.
 
-### Comprobar estado de repositorio
+### Comprobar estado de repositorio (git status)
 
 ```bash
 git status
