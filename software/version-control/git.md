@@ -1,21 +1,22 @@
 # Control de versiones: Git
 
-- [Comandos](#comandos)
+- [Comandos básicos](#comandos-básicos)
     - [Crear un repositorio nuevo (git init)](#crear-un-repositorio-nuevo-git-init)
     - [Descargar una copia de un repositorio existente (git clone)](#descargar-una-copia-de-un-repositorio-existente-git-clone)
     - [Descargar últimos cambios de un repositorio (git pull)](#descargar-últimos-cambios-de-un-repositorio-git-pull)
     - [Comprobar estado de repositorio (git status)](#comprobar-estado-de-repositorio-git-status)
     - [Indicar qué cambios se subirán localmente (git add)](#indicar-qué-cambios-se-subirán-localmente-git-add)
-    - Hacer un commit
-    - Envío de cambios
-    - Enlazar repositorio local con remoto
+    - [Subir los cambios localmente (git commit)](#subir-los-cambios-localmente-git-commit)
+    - [Subir los cambios locales al repositorio remoto (git push)](#subir-los-cambios-locales-al-repositorio-remoto-git-push)
+- Trabajar con ramas (branches)
     - Creación de ramas
     - Borrar ramas
     - Actualizar y fusionar
     - Etiquetas
+    - Enlazar repositorio local con remoto
 - [Tutoriales](#tutoriales)
 
-## Comandos
+## Comandos mínimos
 
 ### Crear un repositorio nuevo (git init)
 
@@ -65,15 +66,16 @@ Git hace distinción entre ficheros nuevos y modificados. Existe un atajo para i
 git add -u
 ```
 
-### Hacer un commit
-	
-`git commit -m "Mensaje del commit"`
+### Subir los cambios localmente (git commit)
+Se pueden subir los cambios localmente	(los ficheros "staged", marcados en <span style="color:green;">**verde**</span>) con el comando:
+```bash
+git commit -m"Mensaje del commit"
+```
+Esto es un método abreviado. `git commit` a secas nos abre un editor de texto que permite introducir descripciones más completas.
 
-Ahora el archivo esta incluído en el HEAD, pero aún no en tu repositorio remoto.
+### Subir los cambios locales al repositorio remoto (git push)
 
-### Envío de cambios
-
-Tus cambios están ahora en el HEAD de tu copia local. Para enviar estos cambios a tu repositorio remoto ejecuta:
+Para enviar estos cambios a tu repositorio remoto ejecuta:
 
 `git push origin master`
 
