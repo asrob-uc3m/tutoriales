@@ -1,6 +1,6 @@
 # Control de versiones: Git
 
-- [Crear un proyecto nuevo](#crear-un-proyecto-nuevo)
+- [Crear un repositorio nuevo](#crear-un-repositorio-nuevo)
 - Registrar cambios
 - Hacer un commit
 - Envío de cambios
@@ -10,13 +10,17 @@
 - Actualizar y fusionar
 - Etiquetas
 
-## Crear un proyecto nuevo
+## Comandos
 
-Crea un directorio nuevo, ábrelo y ejecuta.
+### Crear un repositorio nuevo
 
-`git init`
+Habitualmente creamos repositorios nuevos directamente en GitHub (interfaz web), pero también se pueden crear localmente.
+Para crear un repositorio localmente, desde un directorio nuevo, ejecuta el comando:
+```bash
+git init
+```
 
-	2. Registrar cambios
+### Registrar cambios
 
 Puedes registrar cambios usando:
 `git add <filename>`
@@ -26,14 +30,13 @@ Para todo el directorio:
 `git add -A`
 
 
-	3. Hacer un commit
+### Hacer un commit
 	
 `git commit -m "Mensaje del commit"`
 
 Ahora el archivo esta incluído en el HEAD, pero aún no en tu repositorio remoto.
 
-	4. Envío de cambios
-	
+### Envío de cambios
 
 Tus cambios están ahora en el HEAD de tu copia local. Para enviar estos cambios a tu repositorio remoto ejecuta:
 
@@ -44,8 +47,7 @@ Si se desea enviar a la rama en la que se encuentra, únicamente ejecutar:
 
 `git push`
 
-
-	5. Enlazar repositorio local con remoto
+### Enlazar repositorio local con uno remoto
 	
 Si no se ha clonado un repositorio ya existente y quieres conectar tu repositorio local a un repositorio remoto, usa:
 
@@ -53,7 +55,7 @@ Si no se ha clonado un repositorio ya existente y quieres conectar tu repositori
 
 Ahora podrás subir tus cambios al repositorio remoto seleccionado.
 
-	6. Creación de ramas
+### Creación de ramas
 
 Las ramas son utilizadas para desarrollar funcionalidades aisladas unas de otras. La rama master es la rama "por defecto" cuando creas un repositorio. Crea nuevas ramas durante el desarrollo y fusiónalas a la rama principal cuando termines.
 	
@@ -65,7 +67,7 @@ Vuelve a la rama principal.
 
 `git checkout master`
 
-	7. Borrar ramas
+### Borrar ramas
 	
 Borra la rama:
 
@@ -75,7 +77,7 @@ Una rama nueva no estará disponible para los demás a menos que subas (push) la
 
 `git push origin <branch>`
 	
-    8. Actualizar y fusionar
+### Actualizar y fusionar
     
 Actualiza y fusiona:
 
@@ -96,7 +98,7 @@ Antes de fusionar los cambios, puedes revisarlos usando
 
 `git diff <source_branch> <target_branch>`
 
-	9. Etiquetas
+### Etiquetas
 
 Se recomienda crear etiquetas para cada nueva versión publicada de un software. Este concepto no es nuevo, ya que estaba disponible en SVN. Puedes crear una nueva etiqueta llamada 1.0.0 ejecutando:
 
@@ -119,8 +121,6 @@ Por otro lado, si quieres deshacer todos los cambios locales y commits, puedes t
 
 `git fetch origin`
 `git reset --hard origin/master`
-
-
 
 ## Tutoriales
 - https://www.gitbook.com/book/david-estevez/the-git-the-bad-and-the-ugly
