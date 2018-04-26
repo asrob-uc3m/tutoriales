@@ -37,7 +37,7 @@ Para todo el directorio:
 
 	3. Hacer un commit
 	
-`git commit -m "Commit message"`
+`git commit -m "Mensaje del commit"`
 
 Ahora el archivo esta incluído en el HEAD, pero aún no en tu repositorio remoto.
 
@@ -88,7 +88,7 @@ Una rama nueva no estará disponible para los demás a menos que subas (push) la
     
 Actualiza y fusiona:
 
-Para actualizar tu repositorio local al commit más nuevo, ejecuta.
+Para actualizar tu repositorio local al commit más nuevo, ejecuta:
 
 `git pull`
 
@@ -107,7 +107,7 @@ Antes de fusionar los cambios, puedes revisarlos usando
 
 	9. Etiquetas
 
-Se recomienda crear etiquetas para cada nueva versión publicada de un software. Este concepto no es nuevo, ya que estaba disponible en SVN. Puedes crear una nueva etiqueta llamada 1.0.0 ejecutando
+Se recomienda crear etiquetas para cada nueva versión publicada de un software. Este concepto no es nuevo, ya que estaba disponible en SVN. Puedes crear una nueva etiqueta llamada 1.0.0 ejecutando:
 
 `git tag 1.0.0 1b2e1d63ff`
 
@@ -115,10 +115,10 @@ Se recomienda crear etiquetas para cada nueva versión publicada de un software.
 
 `git log`
 
-también puedes usar menos caracteres que el commit id, pero debe ser un valor único.
-reemplaza cambios locales
+También puedes usar menos caracteres que el commit id, pero debe ser un valor único.
+Reemplaza cambios locales.
 
-En caso de que hagas algo mal (lo que seguramente nunca suceda ;) puedes reemplazar cambios locales usando el comando
+En caso de que hagas algo mal puedes reemplazar cambios locales usando el comando:
 
 `git checkout -- <filename>`
 
