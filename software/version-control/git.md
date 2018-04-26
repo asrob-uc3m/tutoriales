@@ -5,6 +5,7 @@
     - [Descargar una copia de un repositorio existente (git clone)](#descargar-una-copia-de-un-repositorio-existente-git-clone)
     - [Descargar últimos cambios de un repositorio (git pull)](#descargar-últimos-cambios-de-un-repositorio-git-pull)
     - [Comprobar estado de repositorio (git status)](#comprobar-estado-de-repositorio-git-status)
+    - [Comprobar estado de repositorio por línea (git diff)](#comprobar-estado-de-repositorio-por-línea-git-diff)
     - [Indicar qué cambios se subirán localmente (git add)](#indicar-qué-cambios-se-subirán-localmente-git-add)
     - [Subir los cambios localmente (git commit)](#subir-los-cambios-localmente-git-commit)
     - [Subir los cambios locales al repositorio remoto (git push)](#subir-los-cambios-locales-al-repositorio-remoto-git-push)
@@ -55,6 +56,12 @@ git status
 
 1. Los ficheros con cambios y los que no estén agregados al proyecto aparecerán en <span style="color:red;">**rojo**</span>.
 1. Los ficheros con cambios que se subirán localmente aparecerán en <span style="color:green;">**verde**</span>.
+
+### Comprobar estado de repositorio por línea (git diff)
+Se pueden ver los cambios con una granularidad línea-a-línea mediante:
+```bash
+git diff
+```
 
 ### Indicar qué cambios se subirán localmente (git add)
 
