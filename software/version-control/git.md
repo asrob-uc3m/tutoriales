@@ -42,6 +42,7 @@ Si nos hemos descargado previamente la copia de un repositorio ([git clone](#des
 ```bash
 git pull
 ```
+Es recomendable hacerlo **siempre** antes de cualquiera de los próximos pasos.
 
 ### Comprobar estado de repositorio
 
