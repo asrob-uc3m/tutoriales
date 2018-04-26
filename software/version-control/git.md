@@ -2,9 +2,10 @@
 
 - [Comandos](#comandos)
     - [Crear un repositorio nuevo](#crear-un-repositorio-nuevo)
-    - [Descargar una copia de un repositorio existente](#descargar-una-copia-de-un-repositorio-existente)
+    - [Descargar una copia de un repositorio existente (git clone)](#descargar-una-copia-de-un-repositorio-existente-git-clone)
     - [Comprobar estado de repositorio](#comprobar-estado-de-repositorio)
-    - Registrar cambios
+    - [Descargar últimos cambios de un repositorio](#descargar-últimos-cambios-de-un-repositorio)
+    - [Indicar qué cambios se subirán](#indicar-qué-cambios-se-subirán)
     - Hacer un commit
     - Envío de cambios
     - Enlazar repositorio local con remoto
@@ -24,7 +25,7 @@ Para crear un repositorio localmente, desde una carpeta nueva, ejecuta el comand
 git init
 ```
 
-### Descargar una copia de un repositorio existente
+### Descargar una copia de un repositorio existente (git clone)
 
 Para descargar una copia de un repositorio existente (creado con GitHub o manualmente), se utiliza el comando `git clone`. Para el repositorio `tutoriales` de la organización `asrob-uc3m` en GitHub, el comando sería:
 ```bash
@@ -34,6 +35,10 @@ Consideraciones:
 1. Debe utilizarse con la raíz del repositorio.
 1. El sufijo `.git` es opcional.
 1. Existen otros protocolos además de `https:`, incluyendo el propio `git:`.
+
+### Descargar últimos cambios de un repositorio
+
+Si nos hemos descargado previamente la copia de un repositorio 
 
 ### Comprobar estado de repositorio
 
