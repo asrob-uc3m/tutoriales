@@ -38,7 +38,7 @@ Consideraciones:
 
 ### Descargar últimos cambios de un repositorio (git pull)
 
-Si nos hemos descargado previamente la copia de un repositorio ([git clone](#descargar-una-copia-de-un-repositorio-existente-git-clone), es posible que en un momento dado no tengamos los últimos cambios remotos. Esto se soluciona mediante:
+Si nos hemos descargado previamente la copia de un repositorio ([git clone](#descargar-una-copia-de-un-repositorio-existente-git-clone)), es posible que en un momento dado no tengamos los últimos cambios remotos. Esto se soluciona mediante:
 ```bash
 git pull
 ```
