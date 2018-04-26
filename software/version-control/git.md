@@ -5,7 +5,7 @@
     - [Descargar una copia de un repositorio existente (git clone)](#descargar-una-copia-de-un-repositorio-existente-git-clone)
     - [Descargar últimos cambios de un repositorio (git pull)](#descargar-últimos-cambios-de-un-repositorio-git-pull)
     - [Comprobar estado de repositorio (git status)](#comprobar-estado-de-repositorio-git-status)
-    - [Indicar qué cambios se subirán (git add)](#indicar-qué-cambios-se-subirán-git-add)
+    - [Indicar qué cambios se subirán localmente (git add)](#indicar-qué-cambios-se-subirán-localmente-git-add)
     - Hacer un commit
     - Envío de cambios
     - Enlazar repositorio local con remoto
@@ -51,9 +51,9 @@ git status
 ```
 
 1. Los ficheros con cambios y los que no estén agregados al proyecto aparecerán en <span style="color:red;">**rojo**</span>.
-1. Los ficheros con cambios que se agregarán cuando se haga el [commit]() aparecerán en <span style="color:green;">**verde**</span>.
+1. Los ficheros con cambios que se subirán localmente aparecerán en <span style="color:green;">**verde**</span>.
 
-### Indicar qué cambios se subirán (git add)
+### Indicar qué cambios se subirán localmente (git add)
 
 Puedes indicar qué cambios se subirán usando:
 `git add <filename>`
