@@ -1,22 +1,16 @@
 # Control de versiones: Git
 
-## Sintaxis: Git
+- [Inicialización de proyecto](#Inicialización-de-proyecto)
+- Registrar cambios
+- Hacer un commit
+- Envío de cambios
+- Enlazar repositorio local con remoto
+- Creación de ramas
+- Borrar ramas
+- Actualizar y fusionar
+- Etiquetas
 
-### TABLA DE CONTENIDOS
-
-1. Inicialización de proyecto
-2. Registrar cambios
-3. Hacer un commit
-4. Envío de cambios
-5. Enlazar repositorio local con remoto
-6. Creación de ramas
-7. Borrar ramas
-8. Actualizar y fusionar
-9. Etiquetas
-
-#### Descripción del contenido
-
-	1. Inicialización de proyecto
+## Inicialización de proyecto
 
 Crea un directorio nuevo, ábrelo y ejecuta.
 
