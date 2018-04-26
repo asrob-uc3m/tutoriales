@@ -20,7 +20,7 @@
 - [Git prompt helpers](#git-prompt-helpers)
 - [Más tutoriales](#más-tutoriales)
 
-## Comandos mínimos
+## Comandos básicos
 
 ### Crear un repositorio nuevo (git init)
 
