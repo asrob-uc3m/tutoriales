@@ -10,7 +10,7 @@
 - Actualizar y fusionar
 - Etiquetas
 
-## Inicialización de proyecto
+## Crear un proyecto nuevo
 
 Crea un directorio nuevo, ábrelo y ejecuta.
 
