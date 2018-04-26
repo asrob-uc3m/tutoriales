@@ -219,20 +219,20 @@ Código:
 * Puntos
 Mediante:
 
-* Elemento 1.
-	* Subelemto 1.
-	* Subelemento 2.
-		*  Subsubelemento 1.
-* Elemento 2.
-* Elemento 3.
+* Elemento 1
+	* Subelemto 1
+	* Subelemento 2
+		*  Subsubelemento 1
+* Elemento 2
+* Elemento 3
 
 Código:
 
 ```
 
-* Elemento 1.
-	* Subelemto 1.
-	* Subelemento 2.
-		*  Subsubelemento 1.
-* Elemento 2.
-* Elemento 3.
+* Elemento 1
+	* Subelemto 1
+	* Subelemento 2
+		*  Subsubelemento 1
+* Elemento 2
+* Elemento 3
