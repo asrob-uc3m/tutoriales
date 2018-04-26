@@ -14,10 +14,10 @@
     - Actualizar y fusionar
     - Etiquetas
     - Enlazar repositorio local con remoto
-- [Tutoriales](#tutoriales)
 - [Cheatsheet](#cheatsheet)
 - [Git Log Visualization](#git-log-visualization)
 - [Git prompt helpers](#git-prompt-helpers)
+- [Más tutoriales](#más-tutoriales)
 
 ## Comandos mínimos
 
@@ -161,15 +161,6 @@ Si no se ha clonado un repositorio ya existente y quieres conectar tu repositori
 
 Ahora podrás subir tus cambios al repositorio remoto seleccionado.
 
-## Tutoriales
-- https://www.gitbook.com/book/david-estevez/the-git-the-bad-and-the-ugly
-- https://git-scm.com/book/en/v2
-- https://www.atlassian.com/git
-- https://github.com/k88hudson/git-flight-rules
-- https://www.mediawiki.org/wiki/Git_for_dummies
-- https://www.mediawiki.org/wiki/User:Aude/Git
-- https://xkcd.com/1597/
-
 ## Cheatsheet
 - Almacenar contraseña durante un tiempo: [`git config credential.helper cache`](https://git-scm.com/docs/git-credential-cache)
 - Deshacer los cambios de un fichero (antes de commit): [`git checkout -- nombre-fichero`](https://git-scm.com/docs/git-checkout#git-checkout-emgitcheckoutemlttree-ishgt--ltpathspecgt82308203)
@@ -188,3 +179,12 @@ Pequeños scripts que pueden hacer que en el prompt de tu consola estilo [bash](
 - Oficial: https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
 - Windows: https://desktop.github.com/
 - Short (hay muchos): https://github.com/motine/gitprompt
+
+## Más tutoriales
+- https://www.gitbook.com/book/david-estevez/the-git-the-bad-and-the-ugly
+- https://git-scm.com/book/en/v2
+- https://www.atlassian.com/git
+- https://github.com/k88hudson/git-flight-rules
+- https://www.mediawiki.org/wiki/Git_for_dummies
+- https://www.mediawiki.org/wiki/User:Aude/Git
+- https://xkcd.com/1597/
