@@ -2,20 +2,17 @@
 
 ## Sintaxis: Git
 
-
 ### TABLA DE CONTENIDOS
 
-	1. Inicialización de proyecto
-	2. Registrar cambios
-	3. Hacer un commit
-	4. Envío de cambios
-	5. Enlazar repositorio local con remoto
-	6. Creación de ramas
-	7. Borrar ramas
-	8. Actualizar y fusionar
-	9. Etiquetas
-
-
+1. Inicialización de proyecto
+2. Registrar cambios
+3. Hacer un commit
+4. Envío de cambios
+5. Enlazar repositorio local con remoto
+6. Creación de ramas
+7. Borrar ramas
+8. Actualizar y fusionar
+9. Etiquetas
 
 #### Descripción del contenido
 
