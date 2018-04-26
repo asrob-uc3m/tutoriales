@@ -5,7 +5,7 @@
     - [Descargar una copia de un repositorio existente (git clone)](#descargar-una-copia-de-un-repositorio-existente-git-clone)
     - [Descargar últimos cambios de un repositorio (git pull)](#descargar-últimos-cambios-de-un-repositorio-git-pull)
     - [Comprobar estado de repositorio (git status)](#comprobar-estado-de-repositorio-git-status)
-    - [Indicar qué cambios se subirán](#indicar-qué-cambios-se-subirán)
+    - [Indicar qué cambios se subirán (git add)](#indicar-qué-cambios-se-subirán-git-add)
     - Hacer un commit
     - Envío de cambios
     - Enlazar repositorio local con remoto
