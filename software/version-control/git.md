@@ -62,6 +62,7 @@ Se pueden ver los cambios con una granularidad línea-a-línea mediante:
 ```bash
 git diff
 ```
+Por defecto muestra los cambios en todos los ficheros modificados (pero no los nuevos).
 
 ### Indicar qué cambios se subirán localmente (git add)
 
