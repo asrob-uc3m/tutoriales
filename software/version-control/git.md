@@ -41,8 +41,8 @@ Consideraciones:
 git status
 ```
 
-1. Los ficheros con cambios y los que no estén agregados al proyecto aparecerán en <span style="color:red;">rojo</span>.
-1. Los ficheros con cambios que se agregarán cuando se haga el [commit]() aparecerán en <span style="color:green;">verde</span>.
+1. Los ficheros con cambios y los que no estén agregados al proyecto aparecerán en <span style="color:red;">**rojo**</span>.
+1. Los ficheros con cambios que se agregarán cuando se haga el [commit]() aparecerán en <span style="color:green;">**verde**</span>.
 
 ### Registrar cambios
 
