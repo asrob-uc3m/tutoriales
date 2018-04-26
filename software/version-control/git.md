@@ -15,6 +15,9 @@
     - Etiquetas
     - Enlazar repositorio local con remoto
 - [Tutoriales](#tutoriales)
+- [Cheatsheet](#cheatsheet)
+- [Git Log Visualization](#git-log-visualization)
+- [Git prompt helpers](#git-prompt-helpers)
 
 ## Comandos mínimos
 
