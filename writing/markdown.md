@@ -17,8 +17,7 @@ Listado de recetas para la sintaxis de Markdown.
 	10. Menciones
 	11. Comentario de código
 	12. Ińdice y puntos
-
-
+	13. 
 #### Descripción del contenido
 
 	1. Tablas
@@ -28,15 +27,14 @@ Ejemplo de tablas.
 | Elemento 1 | Elemento 2 | Elemento 3 |
 | ---------- | ---------- | ---------- |
 | Elemento 1 | Elemento 2 | Elemento 3 |
-| Cosa 1| Cosa 2|COsa3|cosa|
+| Cosa 1| Cosa 2|Cosa3|cosa|
 
 Código:
 ```
-
 | Elemento 1 | Elemento 2 | Elemento 3 |
 | ---------- | ---------- | ---------- |
 | Elemento 1 | Elemento 2 | Elemento 3 |
-| Cosa 1| Cosa 2|COsa3|cosa|
+| Cosa 1| Cosa 2|Cosa3|cosa|
 ```
 	2. Lista de tareas
 
@@ -54,7 +52,6 @@ Código:
 - [ ] Elemento 3
 
 ```
-
 	3. Encabezados
 
 Ejemplo de encabezados.
@@ -73,8 +70,6 @@ Código:
 ### Nivel 4
 
 ```
-
-
 	4. Cursivas
 
 Ejemplo de cursivas.
@@ -84,7 +79,6 @@ Ejemplo de cursivas.
 Código:
 
 `*Mensaje de prueba*`
-
 
 	5. Negrita
 
@@ -96,9 +90,7 @@ Código:
 
 `**Mensaje de prueba**`
 
-
 	6. Negrita y cursiva
-
 
 Ejemplo de negrita y cursiva.
 
@@ -155,14 +147,12 @@ Código:
 ```
 [nombre enlace](../)
 ```
-
 	9. Menciones
 
 Menciones mediante `@nombredeusuario`
 Ejemplo:
 
 @davidvelascogarcia
-
 
 	10. Comentario de código
 
@@ -171,7 +161,6 @@ El comentario de código.
 1.  En una línea.
 
 * Si se trara de comentar un fragmento en una línea mediante apertura y cerrado del mensaje a comentar con `
-
 
 Ejemplo:
 
@@ -193,7 +182,7 @@ Ejemplo:
 ```
 Mensaje a comentar
 ```
-		11. Índices y puntos
+	11. Índices y puntos
 
 * Índices
 Mediante:
@@ -236,3 +225,4 @@ Código:
 		*  Subsubelemento 1
 * Elemento 2
 * Elemento 3
+```
