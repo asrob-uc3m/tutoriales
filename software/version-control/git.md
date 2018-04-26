@@ -8,7 +8,7 @@
     - [Indicar qué cambios se subirán localmente (git add)](#indicar-qué-cambios-se-subirán-localmente-git-add)
     - [Subir los cambios localmente (git commit)](#subir-los-cambios-localmente-git-commit)
     - [Subir los cambios locales al repositorio remoto (git push)](#subir-los-cambios-locales-al-repositorio-remoto-git-push)
-- Trabajar con ramas (branches)
+- [Trabajar con ramas (branches)](#trabajar-con-ramas-branches)
     - Creación de ramas
     - Borrar ramas
     - Actualizar y fusionar
@@ -76,21 +76,12 @@ Esto es un método abreviado. `git commit` a secas nos abre un editor de texto q
 ### Subir los cambios locales al repositorio remoto (git push)
 
 Para enviar estos cambios a tu repositorio remoto ejecuta:
+```
+git push
+```
+Aquí entran conceptos más avanzados de ramas (branches), que incluso depende de tu configuración local. Para un repositorio sencillo con una única rama `master`, si el comando previo da problemas, el comando `git push origin master` te puede salvar.
 
-`git push origin master`
-
-Reemplaza master por la rama a la que quieres enviar tus cambios.
-Si se desea enviar a la rama en la que se encuentra, únicamente ejecutar:
-
-`git push`
-
-### Enlazar repositorio local con uno remoto
-	
-Si no se ha clonado un repositorio ya existente y quieres conectar tu repositorio local a un repositorio remoto, usa:
-
-`git remote add origin <server>`
-
-Ahora podrás subir tus cambios al repositorio remoto seleccionado.
+## Trabajar con ramas (branches)
 
 ### Creación de ramas
 
@@ -158,6 +149,14 @@ Por otro lado, si quieres deshacer todos los cambios locales y commits, puedes t
 
 `git fetch origin`
 `git reset --hard origin/master`
+
+### Enlazar repositorio local con uno remoto
+	
+Si no se ha clonado un repositorio ya existente y quieres conectar tu repositorio local a un repositorio remoto, usa:
+
+`git remote add origin <server>`
+
+Ahora podrás subir tus cambios al repositorio remoto seleccionado.
 
 ## Tutoriales
 - https://www.gitbook.com/book/david-estevez/the-git-the-bad-and-the-ugly
