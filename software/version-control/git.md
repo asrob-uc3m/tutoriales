@@ -3,6 +3,7 @@
 - [Comandos](#comandos)
     - [Crear un repositorio nuevo](#crear-un-repositorio-nuevo)
     - [Descargar una copia de un repositorio existente](#descargar-una-copia-de-un-repositorio-existente)
+    - [Comprobar estado de repositorio](#comprobar-estado-de-repositorio)
     - Registrar cambios
     - Hacer un commit
     - Envío de cambios
@@ -33,6 +34,14 @@ Consideraciones:
 1. Debe utilizarse con la raíz del repositorio.
 1. El sufijo `.git` es opcional.
 1. Existen otros protocolos además de `https:`, incluyendo el propio `git:`.
+
+### Comprobar estado de repositorio
+
+```bash
+git status
+```
+
+Aparecerán en rojo los ficheros con cambios y los que no estén agregados al proyecto.
 
 ### Registrar cambios
 
