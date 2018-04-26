@@ -1,14 +1,16 @@
 # Control de versiones: Git
 
-- [Crear un repositorio nuevo](#crear-un-repositorio-nuevo)
-- Registrar cambios
-- Hacer un commit
-- Envío de cambios
-- Enlazar repositorio local con remoto
-- Creación de ramas
-- Borrar ramas
-- Actualizar y fusionar
-- Etiquetas
+- [Comandos](#comandos)
+    - [Crear un repositorio nuevo](#crear-un-repositorio-nuevo)
+    - Registrar cambios
+    - Hacer un commit
+    - Envío de cambios
+    - Enlazar repositorio local con remoto
+    - Creación de ramas
+    - Borrar ramas
+    - Actualizar y fusionar
+    - Etiquetas
+- [Tutoriales](#tutoriales)
 
 ## Comandos
 
