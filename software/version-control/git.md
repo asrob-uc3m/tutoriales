@@ -45,7 +45,6 @@ git pull
 Es recomendable hacerlo **siempre** antes de cualquiera de los próximos pasos.
 
 ### Comprobar estado de repositorio (git status)
-
 ```bash
 git status
 ```
@@ -55,13 +54,16 @@ git status
 
 ### Indicar qué cambios se subirán localmente (git add)
 
-Puedes indicar qué cambios se subirán usando:
-`git add <filename>`
+Puedes indicar qué cambios se subirán usando `git add`. Existe un modo interactivo (`git add -i`) que permite seleccionar por línea, pero lo más habitual es por fichero. Por ejemplo, para indicar que se subirá localmente el fichero `file.md` (sea nuevo o modificado):
+```bash
+git add file.md
+```
+Este fichero pasará a <span style="color:green;">**verde**</span> en `git status` y se dice que está "staged". Nótese que todavía no se ha subido localmente.
 
-Para todo el directorio:
-
-`git add -A`
-
+Git hace distinción entre ficheros nuevos y modificados. Existe un atajo para indicar que se suban localmente todos los ficheros con modificaciones, que no afecta a los nuevos (que deberán indicarse explícitamente):
+```bash
+git add -u
+```
 
 ### Hacer un commit
 	
