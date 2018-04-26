@@ -1,6 +1,6 @@
 # Control de versiones: Git
 
-- [Inicialización de proyecto](#inicialización-de-proyecto)
+- [Crear un proyecto nuevo](#crear-un-proyecto-nuevo)
 - Registrar cambios
 - Hacer un commit
 - Envío de cambios
