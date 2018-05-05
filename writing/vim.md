@@ -29,7 +29,7 @@ Pulsa `i` o `a` para empezar a escribir!
 
 La configuración por defecto es un tanto compleja, pero puede modificarse en el fichero `.vimrc`. Aquí configuraremos VIM con una trama de colores `Mustang`, y con comportamientos como CTRL+C para copiar y CTRL+V para pegar (véase `behave mswin` a continuación).
 
-1. Descarga el paquete de colores `Mustang` de: [fuente original](http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484)
+1. Descarga el paquete de colores `Mustang` de: [web oficial](http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484)
 
 1. Crea `~/.vim/colors` y mueve el paquete de colores:
    ```bash
