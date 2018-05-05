@@ -32,7 +32,7 @@ La configuración por defecto es un tanto compleja. Aquí configuraremos VIM con
 - Para instalar el paquete de colores `Mustang` que se utilizará ([fuente original](http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484)):
 
 ```bash
-mkdir ~/.vim; mkdir ~/.vim/colors
+mkdir -p ~/.vim && mkdir -p ~/.vim/colors
 mv mustang_vim_colorscheme_by_hcalves.vim ~/.vim/colors/Mustang.vim
 ```
 
