@@ -32,18 +32,18 @@ La configuración por defecto es un tanto compleja, pero puede modificarse en el
 1. Descarga el paquete de colores `Mustang` de: [fuente original](http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484)
 
 1. Crea `~/.vim/colors` y mueve el paquete de colores:
-```bash
-mkdir -p ~/.vim && mkdir -p ~/.vim/colors
-mv mustang_vim_colorscheme_by_hcalves.vim ~/.vim/colors/Mustang.vim
-```
+   ```bash
+   mkdir -p ~/.vim && mkdir -p ~/.vim/colors
+   mv mustang_vim_colorscheme_by_hcalves.vim ~/.vim/colors/Mustang.vim
+   ```
 
 1. Descarga e instala en `~/` el fichero de configuración básica ([fuente](https://github.com/asrob-uc3m/tutoriales/blob/master/assets/dotfiles/.vimrc)):
-```
-cd
-wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/assets/dotfiles/.vimrc
-```
+   ```bash
+   cd
+   wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/assets/dotfiles/.vimrc
+   ```
 
-##
+## Configuraciones alternativas
 
 - Excerpts para forzar 80 columnas:
 
