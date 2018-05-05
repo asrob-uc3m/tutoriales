@@ -129,63 +129,9 @@ basados en linux (recuérdese del [tutorial de variables de entorno](../environm
 
 ## ~/.bashrc
 
-Su contenido se aplica al lanzar cada consola, y queda dentro de la
-consola. Unas líneas convenientes a agregarle son:
-
-``` bash
-#Esto es para que al ejecutar el evince desde el terminal no te saque basura, que el programa esté en segundo plano y que si cierras el terminal no se cierre el programa.
-function evince () {
-     /usr/bin/evince $* 2> /dev/null & disown
-}
- 
-#cd + ls, by @jgvictores
-function cs () {
-    cd $1
-    ls
-}
- 
-#transfer path: guarda el path actual en un fichero oculto, by @jgvictores
-function tp () {
-    pwd > ~/.sp
-}
- 
-#go to transfer path: va a donde apunta el path anteriormente guardado, by @jgvictores
-function gtp () {
-    cs `cat ~/.sp`
-}
-
-#cat con color
-function ccat () {
-    pygmentize -g $1
-}
-
-#cat con color
-function ccat2 () {
-    source-highlight -fesc -i $1
-}
-
-#abrir explorador nautilus aquí, by @jgvictores
-function n () {
-    nautilus .
-}
-
-#-- Ocultar nombre de usuario y host en el terminal, by @jgvictores
-PS1="\w$ "
-
-#-- [necesita git-prompt.sh] Mejoras git en prompt, by @PeterBowman
-#source ~/repos/git/contrib/completion/git-prompt.sh
-#GIT_PS1_SHOWDIRTYSTATE=1
-#GIT_PS1_SHOWUNTRACKEDFILES=1
-#GIT_PS1_SHOWUPSTREAM="verbose"
-#GIT_PS1_SHOWCOLORHINTS=1
-##GIT_PS1_DESCRIBE_STYLE=contains
-#PROMPT_COMMAND='__git_ps1 "\w" "\\\$ "'
-
-#-- [necesita YARP] Soporte autocompletado YARP
-#source ~/repos/yarp/scripts/yarp_completion
-
-#-- ls al abrir, by @jgvictores
-ls
+Su contenido se aplica al lanzar cada consola, y queda dentro de la consola. Unas líneas convenientes a agregarle son [estas](https://github.com/asrob-uc3m/tutoriales/commit/6333063cc4a1b6d358eee14788917f064790b0b9). Se puede descarga e instalar en `~/` con estas mejoras ([fuente](https://github.com/asrob-uc3m/tutoriales/blob/master/assets/dotfiles/.bashrc)):
+```
+wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/assets/dotfiles/.bashrc -O ~/.bashrc
 ```
 
 ## ~/.profile
