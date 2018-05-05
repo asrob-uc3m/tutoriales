@@ -115,3 +115,57 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+#Esto es para que al ejecutar el evince desde el terminal no te saque basura, que el programa esté en segundo plano y que si cierras el terminal no se cierre el programa.
+function evince () {
+     /usr/bin/evince $* 2> /dev/null & disown
+}
+
+#cd + ls, by @jgvictores
+function cs () {
+    cd $1
+    ls
+}
+
+#transfer path: guarda el path actual en un fichero oculto, by @jgvictores
+function tp () {
+    pwd > ~/.sp
+}
+
+#go to transfer path: va a donde apunta el path anteriormente guardado, by @jgvictores
+function gtp () {
+    cs `cat ~/.sp`
+}
+
+#cat con color
+function ccat () {
+    pygmentize -g $1
+}
+
+#cat con color
+function ccat2 () {
+    source-highlight -fesc -i $1
+}
+
+#abrir explorador nautilus aquí, by @jgvictores
+function n () {
+    nautilus .
+}
+
+#-- Ocultar nombre de usuario y host en el terminal, by @jgvictores
+PS1="\w$ "
+
+#-- [necesita git-prompt.sh] Mejoras git en prompt, by @PeterBowman
+#source ~/repos/git/contrib/completion/git-prompt.sh
+#GIT_PS1_SHOWDIRTYSTATE=1
+#GIT_PS1_SHOWUNTRACKEDFILES=1
+#GIT_PS1_SHOWUPSTREAM="verbose"
+#GIT_PS1_SHOWCOLORHINTS=1
+##GIT_PS1_DESCRIBE_STYLE=contains
+#PROMPT_COMMAND='__git_ps1 "\w" "\\\$ "'
+
+#-- [necesita YARP] Soporte autocompletado YARP
+#source ~/repos/yarp/scripts/yarp_completion
+
+#-- ls al abrir, by @jgvictores
+ls
