@@ -4,6 +4,11 @@ En Ubuntu 10.04 - 16.04 y otras distribuciones, se puede acceder a una consola (
 
 La consola tiene muchos atajos, como autocompletado mediante tabular, y fechas y `CTRL-R` para búsqueda de comandos escritos anteriormente.
 
+- [Símbolos importantes](#símbolos-importantes)
+- [El comando `man`](#el-comando-man)
+- [Listado alfabético de comandos útiles](#listado-alfabético-de-comandos-útiles)
+- [Scripts de Bash](#scripts-de-bash)
+
 ## Símbolos importantes
 
 - `.` Significa "aquí", "en esta carpeta".
