@@ -131,6 +131,7 @@ basados en linux (recuérdese del [tutorial de variables de entorno](../environm
 
 Su contenido se aplica al lanzar cada consola, y queda dentro de la consola. Unas líneas convenientes a agregarle son [estas](https://github.com/asrob-uc3m/tutoriales/commit/6333063cc4a1b6d358eee14788917f064790b0b9). Se puede descarga e instalar en `~/` con estas mejoras ([fuente](https://github.com/asrob-uc3m/tutoriales/blob/master/assets/dotfiles/.bashrc)):
 ```
+cp ~/.bashrc ~/.bashrc.orig
 wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/assets/dotfiles/.bashrc -O ~/.bashrc
 ```
 
