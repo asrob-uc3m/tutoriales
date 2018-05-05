@@ -8,6 +8,9 @@ La consola tiene muchos atajos, como autocompletado mediante tabular, y fechas y
 - [El comando `man`](#el-comando-man)
 - [Listado alfabético de comandos útiles](#listado-alfabético-de-comandos-útiles)
 - [Scripts de Bash](#scripts-de-bash)
+- [~/.bashrc](#bashrc)
+- [~/.profile](#profile)
+- [Referencias](#referencias)
 
 ## Símbolos importantes
 
@@ -197,5 +200,5 @@ Podemos ampliarlo con algunas funcionalidades mediante las siguientes líneas:
 /usr/bin/udisksctl mount -b /dev/sdx1  # Sistemas modernos, parte de udisks2
 ```
 
-# Referencias
+## Referencias
 - https://help.ubuntu.com/community/UsingTheTerminal
