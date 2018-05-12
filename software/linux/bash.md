@@ -150,3 +150,4 @@ Podemos ampliarlo con algunas funcionalidades mediante las siguientes líneas:
 
 ## Referencias
 - https://help.ubuntu.com/community/UsingTheTerminal
+- http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/
