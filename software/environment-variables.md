@@ -19,7 +19,7 @@ En Linux se pueden modificar con escribir `export VARIABLE=valor` (véase que es
 - **HOME**: Equivalente a **~** y a **/home/$USER**, es la carpeta personal del usuario de sesión.
 - **HOSTNAME**: El nombre de la máquina.
 - **LD\_LIBRARY\_PATH**: Es uno de los lugares donde el sistema operativo busca [librerías dinámicas](programming/libs.md).
-- **PS1**: *Prompt string 1*, la línea de consola. Más [aquí](https://www.linuxnix.com/linuxunix-shell-ps1-prompt-explained-in-detail/).
+- **PS1**: *Prompt string 1*, la línea de consola. Más [aquí](https://www.linuxnix.com/linuxunix-shell-ps1-prompt-explained-in-detail/). Véase también **PROMPT_COMMAND**.
 - **USER**: Nombre del usuario de sesión.
 - **xxxx\_ROOT**: Las aplicaciones pueden utilizar esta variable para saber dónde está la raíz del código fuente descargado de la aplicación xxxx.
 - **xxxx\_DIR**: Las aplicaciones pueden utilizar esta variable para saber dónde está la raíz del *build* del código fuente descargado de la aplicación xxxx. Es utilizado por CMake para encontrar el fichero xxxxConfig.cmake o alguna de sus alternativas.
