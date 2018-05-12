@@ -41,6 +41,7 @@ Estos comandos, en general, también son aplicables a `gnome-terminal`, `bash`, 
 - **apt-get install**: en Debian/Ubuntu/Mint, instala un paquete, que puede ser un programa o librería (e.g. de nombre lib*librería*-dev). Suele requerir **sudo** delante.
 - **cd**: cambiar de carpeta.
 - **cp**: copiar origen a destino. Una alternativa que muestra progreso y mantiene permisos es `rsync -ah --progress origen destino` (ojo: su comportamiento difiere según `/` al final de la ruta).
+- **crontab**: Edita la tabla de tareas periódicas mediante `crontab -e`.
 - **diff**: Compara ficheros y carpetas. `colordiff` existe como variante con colores (o `meld` como cliente gráfico).
 - **df**: Mostrar ocupación de discos montados. Utilícese con `-lh` para lectura humana.
 - **dmesg**: Muestra mensajes del kernel. Utiliza `tail -f /var/log/syslog` para verlo en stream continuo.
