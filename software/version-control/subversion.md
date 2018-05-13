@@ -7,7 +7,7 @@
 - [Más tutoriales](#más-tutoriales)
 
 ## Acerca de SVN
-Apache Subversion (SVN) es un [sistema de control de versiones](README.md) centralizado (utiliza un servidor centralizado (a veces algunos más de respaldo) al cual se conectan los diversos usuarios del sistema para subir o descargar ficheros).
+Apache Subversion (SVN) es un [sistema de control de versiones](README.md) centralizado (utiliza un servidor centralizado, y a veces algunos más de respaldo).
 
 ## Clientes SVN
 El cliente SVN más básico es el de modo consola (en Ubuntu, se instala mediante *sudo apt install subversion*). Existen diversos clientes SVN cuya interfaz es gráfica. [Tortoise SVN](http://tortoisesvn.net/downloads) es un cliente SVN gráfico para Windows que agrega funcionalidades al menú que se despliega al pulsar el botón derecho del ratón dentro de una carpeta. Para Linux existe [RabbitVCS](http://www.rabbitvcs.org), muy semejante. [RapidSVN](http://rapidsvn.tigris.org) es un cliente SVN gráfico multiplataforma (en Ubuntu se instala con un *sudo apt-get install rapidsvn*). SVN ofrece además una inferfaz web ("http") para navegar y descargar ficheros, y se puede integrar con TRAC para ofrecer una interfaz web con más funcionalidades.
