@@ -1,8 +1,8 @@
 # Subversion (SVN)
 
-Esto es un tutorial básico para Apache Subversion (SVN). [Pincha aquí para un tutorial más extenso](http://www.hasheado.com/usando-subversion-desde-la-linea-de-comandos.html).
+- [Más tutoriales](#más-tutoriales)
 
-Subversion (SVN) es una herramienta software para la gestión de ficheros online. Utiliza un servidor centralizado (a veces algunos más de respaldo) al cual se conectan los diversos usuarios del sistema para subir o descargar ficheros. Al igual que otros RCS (Revision Control System, entre los cuales se encuentran SVN, CVS, Hg, Git, Bazaar...) mantiene una base de datos incremental ("repositorio"). Se actualiza con las subidas de ficheros de los usuarios ("commits"), pero las anteriores versiones ("revisiones") se mantienen y son siempre accesibles en caso de necesidad de ir para atrás. El hecho de registrar qué cambios existen entre distintas revisiones de código y la posibilidad de comparación y marcha atrás hacen que los RCS sean componentes fundamentales para la depuración y el desarrollo de software. SVN ofrece además una inferfaz web ("http") para navegar y descargar ficheros, y se puede integrar con TRAC para ofrecer una interfaz web con más funcionalidades.
+Apache Subversion (SVN) es una herramienta software para la gestión de ficheros online. Utiliza un servidor centralizado (a veces algunos más de respaldo) al cual se conectan los diversos usuarios del sistema para subir o descargar ficheros. Al igual que otros RCS (Revision Control System, entre los cuales se encuentran SVN, CVS, Hg, Git, Bazaar...) mantiene una base de datos incremental ("repositorio"). Se actualiza con las subidas de ficheros de los usuarios ("commits"), pero las anteriores versiones ("revisiones") se mantienen y son siempre accesibles en caso de necesidad de ir para atrás. El hecho de registrar qué cambios existen entre distintas revisiones de código y la posibilidad de comparación y marcha atrás hacen que los RCS sean componentes fundamentales para la depuración y el desarrollo de software. SVN ofrece además una inferfaz web ("http") para navegar y descargar ficheros, y se puede integrar con TRAC para ofrecer una interfaz web con más funcionalidades.
 
 ## Clientes SVN
 
@@ -89,3 +89,6 @@ global-ignores = *.o *.lo *.la *.al .libs *.so *.so.[0-9]* *.a *.pyc 
 ```
 
 al fichero **config**, que en Windows se encuentra en: *C:\\Documents and Settings\\\[username\]\\Application Data\\Subversion*, y en GNU/Linux Ubuntu puede encontrarse en *~/.subversion*.
+
+## Más tutoriales
+- http://www.hasheado.com/usando-subversion-desde-la-linea-de-comandos.html
