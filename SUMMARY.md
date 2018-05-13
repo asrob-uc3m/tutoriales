@@ -7,6 +7,7 @@
 * [Software](software/README.md)
   * [Control de versiones](software/version-control/README.md)
     * [Git](software/version-control/git.md)
+    * [Subversion (SVN)](software/version-control/subversion.md)
   * [Linux](software/linux/README.md)
     * [Bash (consola de Linux)](software/linux/bash.md)
     * [Estructura de carpetas en Debian y derivados](software/linux/folder-structure-debian.md)
