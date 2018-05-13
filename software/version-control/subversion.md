@@ -3,7 +3,7 @@
 - [Acerca de SVN](#acerca-de-svn)
 - [Clientes SVN](#clientes-svn)
 - [Comandos básicos](#comandos-básicos)
-- [Configuraciones SVN](#configuraciones-svn)
+- [Cheatsheet](#cheatsheet)
 - [Más tutoriales](#más-tutoriales)
 
 ## Acerca de SVN
