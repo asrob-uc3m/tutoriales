@@ -1,6 +1,6 @@
-* Svn (subversion)
+# Subversion (SVN)
 
-Esto es un tutorial básico para Subversion (SVN) [Pincha aquí para un tutorial más extenso](http://www.hasheado.com/usando-subversion-desde-la-linea-de-comandos.html).
+Esto es un tutorial básico para Apache Subversion (SVN) [Pincha aquí para un tutorial más extenso](http://www.hasheado.com/usando-subversion-desde-la-linea-de-comandos.html).
 
 Subversion (SVN) es una herramienta software para la gestión de ficheros online. Utiliza un servidor centralizado (a veces algunos más de respaldo) al cual se conectan los diversos usuarios del sistema para subir o descargar ficheros. Al igual que otros RCS (Revision Control System, entre los cuales se encuentran SVN, CVS, Hg, Git, Bazaar...) mantiene una base de datos incremental ("repositorio"). Se actualiza con las subidas de ficheros de los usuarios ("commits"), pero las anteriores versiones ("revisiones") se mantienen y son siempre accesibles en caso de necesidad de ir para atrás. El hecho de registrar qué cambios existen entre distintas revisiones de código y la posibilidad de comparación y marcha atrás hacen que los RCS sean componentes fundamentales para la depuración y el desarrollo de software. SVN ofrece además una inferfaz web ("http") para navegar y descargar ficheros, y se puede integrar con TRAC para ofrecer una interfaz web con más funcionalidades.
 
