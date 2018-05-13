@@ -1,7 +1,7 @@
 # Software
 
 * [Control de versiones](version-control/README.md)
-  * [Git (control de versiones)](version-control/git.md)
+  * [Git](version-control/git.md)
 * [Linux](linux/README.md)
   * [Bash (consola de Linux)](linux/bash.md)
   * [Estructura de carpetas en Debian y derivados](linux/folder-structure-debian.md)
@@ -11,4 +11,3 @@
 * [Comunicaciones](comunications/README.md)
 * [Codificación de caracteres](character-encoding.md)
 * [Variables de entorno](environment-variables.md)
-
