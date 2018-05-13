@@ -73,7 +73,7 @@ entre un fichero con una revisión pasada del mismo:
    global-ignores = *.o *.lo *.la *.al .libs *.so *.so.[0-9]* *.a *.pyc *.pyo Thumbs.db *.aux *.blg *.out *.lof *.suo build
    ```
    al fichero **config**, que en Windows se encuentra en: *C:\\Documents and Settings\\\[username\]\\Application Data\\Subversion*, y en GNU/Linux Ubuntu puede encontrarse en *~/.subversion*.
-- Comando para `svn rm` de ficheros que faltan ([ref](https://stackoverflow.com/questions/9600382/svn-command-to-delete-all-locally-missing-files)): `svn st | grep ^! |awk '{$1=""; print " --force \""substr($0,2)"@\"" }' | xargs svn rm`
+- Comando Linux para `svn rm` de ficheros que faltan ([ref](https://stackoverflow.com/questions/9600382/svn-command-to-delete-all-locally-missing-files)): `svn st | grep ^! | awk '{$1=""; print " --force \""substr($0,2)"@\"" }' | xargs svn rm`
 
 ## Más tutoriales
 - http://www.hasheado.com/usando-subversion-desde-la-linea-de-comandos.html
