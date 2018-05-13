@@ -6,7 +6,7 @@
 * [Mecánica](mechanics/README.md)
 * [Software](software/README.md)
   * [Control de versiones](software/version-control/README.md)
-    * [Git (control de versiones)](software/version-control/git.md)
+    * [Git](software/version-control/git.md)
   * [Linux](software/linux/README.md)
     * [Bash (consola de Linux)](software/linux/bash.md)
     * [Estructura de carpetas en Debian y derivados](software/linux/folder-structure-debian.md)
@@ -18,4 +18,3 @@
   * [Variables de entorno](software/environment-variables.md)
 * [Redactar](writing/README.md)
   * [Vim (editor de texto)](writing/vim.md)
-
