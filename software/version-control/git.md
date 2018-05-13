@@ -1,4 +1,4 @@
-# Control de versiones: Git
+# Git
 
 - [Comandos básicos](#comandos-básicos)
     - [Crear un repositorio nuevo (git init)](#crear-un-repositorio-nuevo-git-init)
