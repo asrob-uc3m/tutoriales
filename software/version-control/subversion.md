@@ -69,14 +69,11 @@ entre un fichero con una revisión pasada del mismo:
 
 ## Configuraciones SVN
 
-Muchas veces nos interesa ignorar cierto fichero o tipo de fichero.
-Podemos añadir la línea:
-
-```bash
-global-ignores = *.o *.lo *.la *.al .libs *.so *.so.[0-9]* *.a *.pyc *.pyo Thumbs.db *.aux *.blg *.out *.lof *.suo build
-```
-
-al fichero **config**, que en Windows se encuentra en: *C:\\Documents and Settings\\\[username\]\\Application Data\\Subversion*, y en GNU/Linux Ubuntu puede encontrarse en *~/.subversion*.
+- Muchas veces nos interesa ignorar cierto fichero o tipo de fichero. Podemos añadir la línea:
+   ```bash
+   global-ignores = *.o *.lo *.la *.al .libs *.so *.so.[0-9]* *.a *.pyc *.pyo Thumbs.db *.aux *.blg *.out *.lof *.suo build
+   ```
+   al fichero **config**, que en Windows se encuentra en: *C:\\Documents and Settings\\\[username\]\\Application Data\\Subversion*, y en GNU/Linux Ubuntu puede encontrarse en *~/.subversion*.
 
 ## Más tutoriales
 - http://www.hasheado.com/usando-subversion-desde-la-linea-de-comandos.html
