@@ -56,14 +56,11 @@ M tu_fichero_modificado1....
 svn ci -m"He mejorado mi nivel de usuario SVN!"
 ```
 
-El cliente de interfaz de texto de SVN exige que se escriba un mensaje
-que explique el porqué de los cambios realizados entre "revisión" y
-"revisión".
+El cliente de interfaz de texto de SVN exige que se escriba un mensaje que explique el porqué de los cambios realizados entre "revisión" y "revisión".
 
 -----
 
-Otro comando muy interesante es este, que sirve para ver la diferencia
-entre un fichero con una revisión pasada del mismo:
+Otro comando muy interesante es este, que sirve para ver la diferencia entre un fichero con una revisión pasada del mismo:
 
 `$ svn diff -r numero_de_la_revisión_antigua fichero_con_extensión`
 
@@ -73,7 +70,10 @@ entre un fichero con una revisión pasada del mismo:
    global-ignores = *.o *.lo *.la *.al .libs *.so *.so.[0-9]* *.a *.pyc *.pyo Thumbs.db *.aux *.blg *.out *.lof *.suo build
    ```
    al fichero **config**, que en Windows se encuentra en: *C:\\Documents and Settings\\\[username\]\\Application Data\\Subversion*, y en GNU/Linux Ubuntu puede encontrarse en *~/.subversion*.
-- Comando Linux para `svn rm` de ficheros que faltan ([ref](https://stackoverflow.com/questions/9600382/svn-command-to-delete-all-locally-missing-files)): `svn st | grep ^! | awk '{$1=""; print " --force \""substr($0,2)"@\"" }' | xargs svn rm`
+- Comando Linux para `svn rm` de ficheros que faltan ([ref](https://stackoverflow.com/questions/9600382/svn-command-to-delete-all-locally-missing-files)):
+   ```bash
+   svn st | grep ^! | awk '{$1=""; print " --force \""substr($0,2)"@\"" }' | xargs svn rm
+   ```
 - Configuración Linux para `svn diff` de colores: se puede agregar `diff-cmd = colordiff` (que se debe instalar, `sudo apt install colordiff`) en `.subversion/config` como se ha hecho [aquí](https://github.com/asrob-uc3m/tutoriales/commit/708348f02fe1b11cbe0982121fb6f2e098df5886).
 ## Más tutoriales
 - http://www.hasheado.com/usando-subversion-desde-la-linea-de-comandos.html
