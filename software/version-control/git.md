@@ -1,5 +1,6 @@
 # Git
 
+- [Acerca de Git](#acerca-de-git)
 - [Comandos básicos](#comandos-básicos)
     - [Crear un repositorio nuevo (git init)](#crear-un-repositorio-nuevo-git-init)
     - [Descargar una copia de un repositorio existente (git clone)](#descargar-una-copia-de-un-repositorio-existente-git-clone)
@@ -19,6 +20,10 @@
 - [Git Log Visualization](#git-log-visualization)
 - [Git prompt helpers](#git-prompt-helpers)
 - [Más tutoriales](#más-tutoriales)
+
+
+## Acerca de Git
+Git es un [sistema de control de versiones](README.md) distribuido creado por Linus Torvalds en 2005 para el desarrollo del kernel de Linux.
 
 ## Comandos básicos
 
