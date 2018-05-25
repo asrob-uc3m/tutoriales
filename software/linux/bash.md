@@ -129,7 +129,6 @@ Existen unos scripts que están por defecto en sistemas operativos
 basados en linux (recuérdese del [tutorial de variables de entorno](../environment-variables.md) que `~` equivale a `$HOME`):
 
 ## ~/.bashrc
-
 Su contenido se aplica al lanzar cada consola, y queda dentro de la consola. Unas líneas convenientes a agregarle son [estas](https://github.com/asrob-uc3m/tutoriales/commit/6333063cc4a1b6d358eee14788917f064790b0b9). Se puede descarga e instalar en `~/` con estas mejoras ([fuente](https://github.com/asrob-uc3m/tutoriales/blob/master/assets/dotfiles/.bashrc)):
 ```
 cp ~/.bashrc ~/.bashrc.orig
@@ -137,11 +136,7 @@ wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/assets/dotfi
 ```
 
 ## ~/.profile
-
-Su contenido se aplica al arrancar el sistema operativo, por lo que
-vale para todo todas las consolas además de lo gráfico.
-Podemos ampliarlo con algunas funcionalidades mediante las siguientes líneas:
-
+Su contenido se aplica al arrancar el sistema operativo, por lo que vale para todo todas las consolas además de lo gráfico. Podemos ampliarlo con algunas funcionalidades mediante las siguientes líneas:
 ```bash
 # Montar algún disco duro al arranque (sustituir sdx1 por nombre del dispositivo más el número de partición)
 # /usr/bin/udisks --mount /dev/sdx1  # Sistemas antiguos, parte de udisks1
