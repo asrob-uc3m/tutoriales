@@ -147,8 +147,6 @@ wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/assets/dotfi
 
 ## ~/.inputrc
 Afecta al autocompletado de la consola. Se puede descarga e instalar en `~/` con [este](https://github.com/asrob-uc3m/tutoriales/blob/master/assets/dotfiles/.inputrc) contenido de búsqueda incremental ([fuente](https://help.ubuntu.com/community/UsingTheTerminal#An_extremely_handy_tool_::_Incremental_history_searching)):
-
-):
 ```
 cp ~/.inputrc ~/.inputrc.orig
 wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/assets/dotfiles/.inputrc -O ~/.inputrc
