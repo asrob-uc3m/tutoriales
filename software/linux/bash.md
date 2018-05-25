@@ -8,8 +8,8 @@ La consola tiene muchos atajos, como autocompletado mediante tabular, y fechas y
 - [El comando `man`](#el-comando-man)
 - [Listado alfabético de comandos útiles](#listado-alfabético-de-comandos-útiles)
 - [Scripts de Bash](#scripts-de-bash)
-- [~/.bashrc](#bashrc)
 - [~/.profile](#profile)
+- [~/.bashrc](#bashrc)
 - [~/.inputrc](#inputrc)
 - [Referencias](#referencias)
 
@@ -129,13 +129,6 @@ más sobre shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29#Portability
 Existen unos scripts que están por defecto en sistemas operativos
 basados en linux (recuérdese del [tutorial de variables de entorno](../environment-variables.md) que `~` equivale a `$HOME`):
 
-## ~/.bashrc
-Su contenido se aplica al lanzar cada consola, y queda dentro de la consola. Unas líneas convenientes a agregarle son [estas](https://github.com/asrob-uc3m/tutoriales/commit/6333063cc4a1b6d358eee14788917f064790b0b9). Se puede descarga e instalar en `~/` con [estas](https://github.com/asrob-uc3m/tutoriales/blob/master/assets/dotfiles/.bashrc) mejoras:
-```
-cp ~/.bashrc ~/.bashrc.orig
-wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/assets/dotfiles/.bashrc -O ~/.bashrc
-```
-
 ## ~/.profile
 Su contenido se aplica al arrancar el sistema operativo, por lo que vale para todo todas las consolas además de lo gráfico. Podemos ampliarlo con algunas funcionalidades mediante las siguientes líneas:
 ```bash
@@ -143,6 +136,14 @@ Su contenido se aplica al arrancar el sistema operativo, por lo que vale para to
 # /usr/bin/udisks --mount /dev/sdx1  # Sistemas antiguos, parte de udisks1
 /usr/bin/udisksctl mount -b /dev/sdx1  # Sistemas modernos, parte de udisks2
 ```
+
+## ~/.bashrc
+Su contenido se aplica al lanzar cada consola, y queda dentro de la consola. Unas líneas convenientes a agregarle son [estas](https://github.com/asrob-uc3m/tutoriales/commit/6333063cc4a1b6d358eee14788917f064790b0b9). Se puede descarga e instalar en `~/` con [estas](https://github.com/asrob-uc3m/tutoriales/blob/master/assets/dotfiles/.bashrc) mejoras:
+```
+cp ~/.bashrc ~/.bashrc.orig
+wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/assets/dotfiles/.bashrc -O ~/.bashrc
+```
+
 ## ~/.inputrc
 Afecta al autocompletado de la consola. Se puede descarga e instalar en `~/` con [este](https://github.com/asrob-uc3m/tutoriales/blob/master/assets/dotfiles/.inputrc) contenido de búsqueda incremental ([fuente](https://help.ubuntu.com/community/UsingTheTerminal#An_extremely_handy_tool_::_Incremental_history_searching)):
 
