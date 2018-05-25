@@ -136,6 +136,7 @@ Su contenido se aplica al arrancar el sistema operativo, por lo que vale para to
 # /usr/bin/udisks --mount /dev/sdx1  # Sistemas antiguos, parte de udisks1
 /usr/bin/udisksctl mount -b /dev/sdx1  # Sistemas modernos, parte de udisks2
 ```
+Nota: Tocar con cuidado, puesto que puede darse el caso de que frene el arranque si metemos algo bloqueante. Existen alternativas como `/etc/rc.local` o servicios/daemontools con opciones más avanzadas.
 
 ## ~/.bashrc
 Su contenido se aplica al lanzar cada consola, y queda dentro de la consola. Unas líneas convenientes a agregarle son [estas](https://github.com/asrob-uc3m/tutoriales/commit/6333063cc4a1b6d358eee14788917f064790b0b9). Se puede descarga e instalar en `~/` con [estas](https://github.com/asrob-uc3m/tutoriales/blob/master/assets/dotfiles/.bashrc) mejoras:
