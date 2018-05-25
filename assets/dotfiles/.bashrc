@@ -152,6 +152,13 @@ function n () {
     nautilus .
 }
 
+#forzar cambios SVN, by @jgvictores
+function svn-all () {
+    svn st | grep ^? | awk '{$1=""; print " --force \""substr($0,2)"@\"" }' | xargs svn add
+    svn st | grep ^! | awk '{$1=""; print " --force \""substr($0,2)"@\"" }' | xargs svn rm
+    # manually: svn commit
+}
+
 #-- Ocultar nombre de usuario y host en el terminal, by @jgvictores
 PS1="\w$ "
 
