@@ -170,6 +170,7 @@ PS1="\w$ "
 #GIT_PS1_SHOWCOLORHINTS=1
 ##GIT_PS1_DESCRIBE_STYLE=contains
 #PROMPT_COMMAND='__git_ps1 "\w" "\\\$ "'
+##PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "' # Better if remotely accessed
 
 #-- [necesita YARP] Soporte autocompletado YARP
 #source ~/repos/yarp/scripts/yarp_completion
