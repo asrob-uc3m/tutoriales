@@ -139,10 +139,11 @@ Su contenido se aplica al arrancar el sistema operativo, por lo que vale para to
 Nota: Tocar con cuidado, puesto que puede darse el caso de que frene el arranque si metemos algo bloqueante. Existen alternativas como `/etc/rc.local` o servicios/daemontools con opciones más avanzadas.
 
 ## ~/.bashrc
-Su contenido se aplica al lanzar cada consola, y queda dentro de la consola. Unas líneas convenientes a agregarle son [estas](https://github.com/asrob-uc3m/tutoriales/commit/6333063cc4a1b6d358eee14788917f064790b0b9). Se puede descarga e instalar en `~/` con [este](https://github.com/asrob-uc3m/tutoriales/blob/master/assets/dotfiles/.bashrc) contenido:
+Su contenido se aplica al lanzar cada consola, y queda dentro de la consola. Unas líneas convenientes a agregarle son [estas](https://github.com/asrob-uc3m/tutoriales/blob/master/assets/dotfiles/.bashrc-asrob). Se puede descargar y hacer que se ejecute como parte de `~/.bashrc` con:
 ```
+wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/assets/dotfiles/.bashrc-asrob -O ~/.bashrc-asrob
 cp ~/.bashrc ~/.bashrc.orig
-wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/assets/dotfiles/.bashrc -O ~/.bashrc
+echo "source ~/.bashrc-asrob" >> ~/.bashrc
 ```
 
 ## ~/.inputrc
