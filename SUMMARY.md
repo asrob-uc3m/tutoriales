@@ -18,4 +18,6 @@
   * [Codificación de caracteres](software/character-encoding.md)
   * [Variables de entorno](software/environment-variables.md)
 * [Redactar](writing/README.md)
+  * [Markdown](writing/markdown.md)
+  * [Redactar](writing/redactar.md)
   * [Vim (editor de texto)](writing/vim.md)
