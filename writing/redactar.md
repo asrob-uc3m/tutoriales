@@ -24,9 +24,8 @@ Existe mucha documentación en Campus Global, y en UC3M/Biblioteca (incluida [Ma
 6.  Desarrollo C
 7.  Experimentos y resultados
 8.  Conclusiones y líneas futuras (con conclusiones y líneas futuras)
-
-  -   - [Bibliografía](#Bibliograf.C3.ADa "wikilink")
-      - Anexos (sí: presupuesto)(posible: partes relevantes de datasheets)(no códigos fuentes completos, mejor proporcionar diagramas de clases, etc., y citar URL del código fuente en documento).
+- [Bibliografía](#Bibliograf.C3.ADa "wikilink")
+- Anexos (sí: presupuesto)(posible: partes relevantes de datasheets)(no códigos fuentes completos, mejor proporcionar diagramas de clases, etc., y citar URL del código fuente en documento).
 
 ## Estado del arte
 
