@@ -9,19 +9,19 @@ Existe mucha documentación en Campus Global, y en UC3M/Biblioteca (incluida [Ma
 - Una profundidad de índice admisible es hasta 3 subniveles (sección 2.3.4), aunque luego en el documento se desglosen más (sección 2.3.4.c).
 - Cantidad de páginas por capítulo compensado (no tiene sentido que un capítulo sea de 80 páginas y otro de 3).
 - Aquí un ejemplo de índice:
-1.  Introducción (con introducción, objetivos, estructura del documento)
-2.  [Estado del arte](#Estado_del_arte "wikilink") A+B+C
-3.  Arquitectura global (aquí entra bien un diagrama de flujo general)
-4.  Desarrollo A
-5.  Desarrollo B
-6.  Desarrollo C
-7.  Experimentos y resultados
-8.  Conclusiones y líneas futuras (con conclusiones y líneas futuras)
-- [Bibliografía](#Bibliograf.C3.ADa "wikilink")
+  1.  Introducción (con introducción, objetivos, estructura del documento)
+  2.  [Estado del arte](#estado-del-arte) A+B+C
+  3.  Arquitectura global (aquí entra bien un diagrama de flujo general)
+  4.  Desarrollo A
+  5.  Desarrollo B
+  6.  Desarrollo C
+  7.  Experimentos y resultados
+  8.  Conclusiones y líneas futuras (con conclusiones y líneas futuras)
+- [Bibliografía](#bibliografía)
 - Anexos (sí: presupuesto)(posible: partes relevantes de datasheets)(no códigos fuentes completos, mejor proporcionar diagramas de clases, etc., y citar URL del código fuente en documento).
 
 ## Estado del arte
-- El estado del arte de un documento científico debería consistir en referencias a documentos científicos que componen la [Bibliografía](#Bibliograf.C3.ADa "wikilink"), tanto por que sean útiles o porque posteriormente se debata que se hayan superado. También debería servir para explicar alternativas software o hardware, como apoyo para justificar decisiones de diseño que se tomen más adelante en el documento.
+- El estado del arte de un documento científico debería consistir en referencias a documentos científicos que componen la [Bibliografía](#bibliografía), tanto por que sean útiles o porque posteriormente se debata que se hayan superado. También debería servir para explicar alternativas software o hardware, como apoyo para justificar decisiones de diseño que se tomen más adelante en el documento.
 
 ## Bibliografía
 - Existen muchos gestores de bibliografía: [Mendeley](https://www.mendeley.com/) (que dispone de plugins recomendables para Microsoft Word y LibreOffice), Zotero... En LaTeX, se puede utilizar uno de estos gestores, o trabajar directamente sobre el archivo .bib (no se recomienda trabajar sobre el .bbl sino generarlo con bibtex a partir del .bib).
