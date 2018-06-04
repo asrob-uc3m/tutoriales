@@ -1,14 +1,14 @@
 # Redactar
 
-* [UC3M (plantillas, documentación...)](#uc3m-plantillas-documentacion)
-* [Índice](#indice)
+* [UC3M (plantillas, documentación...)](#uc3m-plantillas-documentación)
+* [Índice](#índice)
 * [Estado del arte](#estado-del-arte)
-* [Bibliografía](#bibliografia)
+* [Bibliografía](#bibliografía)
 * [Formato (Importante)](#formato-importante)
 * [Figuras](#figuras)
 * [Tablas](#tablas)
-* [Úlitmos consejos](#ulitmos-consejos)
-* [Más enlaces de interés](#mas-enlaces-de-interes)
+* [Úlitmos consejos](#úlitmos-consejos)
+* [Más enlaces de interés](#más-enlaces-de-interés)
 
 Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.wikipedia.org/wiki/Microsoft_Word), y [LaTeX](http://es.wikipedia.org/wiki/LaTeX). Microsoft Word es más visual, y LaTeX se parece más a programar. Una ventaja de LaTeX es que es Open Source, por tanto, si falla algo, puede ser difícil, pero tienes la posibilidad de arreglarlo.
 
