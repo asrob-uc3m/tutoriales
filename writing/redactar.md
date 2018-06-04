@@ -1,13 +1,12 @@
+# Redactar
+
 Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.wikipedia.org/wiki/Microsoft_Word), y [LaTeX](http://es.wikipedia.org/wiki/LaTeX). Microsoft Word es más visual, y LaTeX se parece más a programar. Una ventaja de LaTeX es que es Open Source, por tanto, si falla algo, puede ser difícil, pero tienes la posibilidad de arreglarlo.
 
 ## Plantillas UC3M
 
 Existe mucha documentación en Campus Global, y en UC3M/Biblioteca (incluida [Matriz de Criterios de Evaluación de PFCs de la UC3M](Media:Criterios_matriz_evaluacion_TFG.pdf "wikilink"), hoja [Excel para presupuestos](https://github.com/asrob-uc3m/recursos-digitales/blob/master/plantillas/Formulario_PresupuestoPFC-TFG.xlsx), [etc](http://uc3m.libguides.com/TFG)). Mirar también [Nuestros recursos digitales](https://github.com/asrob-uc3m/recursos-digitales).
 
-  - <https://github.com/asrob-uc3m/recursos-digitales/tree/master/plantillas>
-
-<!-- end list -->
-
+  - https://github.com/asrob-uc3m/recursos-digitales/tree/master/plantillas
   - Old:
       - [Grado LaTeX (UC3M)](media:PlantillaTFG.zip "wikilink"). Tutorial para éste: [Ubuntu TFG LaTeX (UC3M)](LaTeX_para_TFG_en_Ubuntu "wikilink").
       - [Master LaTeX (UC3M)](media:Master_template.zip "wikilink"). [Portada Master (UC3M)](https://github.com/asrob-uc3m/recursos-digitales/tree/develop/plantillas/portada-master).
@@ -17,9 +16,6 @@ Existe mucha documentación en Campus Global, y en UC3M/Biblioteca (incluida [Ma
   - Una profundidad de índice admisible es hasta 3 subniveles (sección 2.3.4), aunque luego en el documento se desglosen más (sección 2.3.4.c).
   - Cantidad de páginas por capítulo compensado (no tiene sentido que un capítulo sea de 80 páginas y otro de 3).
   - Aquí un ejemplo de índice:
-
-<!-- end list -->
-
 1.  Introducción (con introducción, objetivos, estructura del documento)
 2.  [Estado del arte](#Estado_del_arte "wikilink") A+B+C
 3.  Arquitectura global (aquí entra bien un diagrama de flujo general)
@@ -28,8 +24,6 @@ Existe mucha documentación en Campus Global, y en UC3M/Biblioteca (incluida [Ma
 6.  Desarrollo C
 7.  Experimentos y resultados
 8.  Conclusiones y líneas futuras (con conclusiones y líneas futuras)
-
-<!-- end list -->
 
   -   - [Bibliografía](#Bibliograf.C3.ADa "wikilink")
       - Anexos (sí: presupuesto)(posible: partes relevantes de datasheets)(no códigos fuentes completos, mejor proporcionar diagramas de clases, etc., y citar URL del código fuente en documento).
