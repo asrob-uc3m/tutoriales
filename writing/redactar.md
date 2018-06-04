@@ -2,8 +2,8 @@
 
 Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.wikipedia.org/wiki/Microsoft_Word), y [LaTeX](http://es.wikipedia.org/wiki/LaTeX). Microsoft Word es más visual, y LaTeX se parece más a programar. Una ventaja de LaTeX es que es Open Source, por tanto, si falla algo, puede ser difícil, pero tienes la posibilidad de arreglarlo.
 
-## Plantillas UC3M
-Existe mucha documentación en Campus Global, y en UC3M/Biblioteca (incluida [Matriz de Criterios de Evaluación de PFCs de la UC3M](Media:Criterios_matriz_evaluacion_TFG.pdf "wikilink"), hoja [Excel para presupuestos](https://github.com/asrob-uc3m/recursos-digitales/blob/master/plantillas/Formulario_PresupuestoPFC-TFG.xlsx), [etc](http://uc3m.libguides.com/TFG)). Mirar nuestros recursos digitales: https://github.com/asrob-uc3m/recursos-digitales
+## UC3M (plantillas, documentación...)
+Existe mucha documentación en Campus Global, y en UC3M/Biblioteca (incluida [Matriz de Criterios de Evaluación de PFCs de la UC3M](https://github.com/asrob-uc3m/recursos-digitales/blob/master/plantillas/uc3m_matriz_de_evaluacion_9_febrero_2018.pdf), hoja [Excel para presupuestos](https://github.com/asrob-uc3m/recursos-digitales/blob/master/plantillas/Formulario_PresupuestoPFC-TFG.xlsx), [etc](http://uc3m.libguides.com/TFG)). Mirar nuestros recursos digitales: https://github.com/asrob-uc3m/recursos-digitales
 
 ## Índice
 - Una profundidad de índice admisible es hasta 3 subniveles (sección 2.3.4), aunque luego en el documento se desglosen más (sección 2.3.4.c).
