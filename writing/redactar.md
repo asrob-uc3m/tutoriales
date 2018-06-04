@@ -1,7 +1,7 @@
 # Redactar
 
 * [UC3M (plantillas, documentación...)](#uc3m-plantillas-documentación)
-* [Índice](#índice)
+* [Índice](#Índice)
 * [Estado del arte](#estado-del-arte)
 * [Bibliografía](#bibliografía)
 * [Formato (Importante)](#formato-importante)
