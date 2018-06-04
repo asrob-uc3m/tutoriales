@@ -11,6 +11,7 @@ La consola tiene muchos atajos, como autocompletado mediante tabular, y fechas y
 - [~/.profile](#profile)
 - [~/.bashrc](#bashrc)
 - [~/.inputrc](#inputrc)
+- [~/.dircolors](#dircolors)
 - [Referencias](#referencias)
 
 ## Símbolos importantes
@@ -151,6 +152,13 @@ Afecta al autocompletado de la consola. Se puede descarga e instalar en `~/` con
 ```
 cp ~/.inputrc ~/.inputrc.orig
 wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/assets/dotfiles/.inputrc -O ~/.inputrc
+```
+
+## ~/.dircolors
+Afecta al color de los listados de `ls`. Se puede descarga e instalar en `~/` con [este contenido](https://github.com/asrob-uc3m/tutoriales/blob/master/assets/dotfiles/.inputrc) que mejora los colores con sistemas de ficheros NTFS:
+```
+cp ~/.dircolors ~/.dircolors.orig
+wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/assets/dotfiles/.dircolors -O ~/.dircolors
 ```
 
 ## Referencias
