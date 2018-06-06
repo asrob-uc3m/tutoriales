@@ -6,7 +6,7 @@ Listado de recetas para la sintaxis de Markdown.
 ### TABLA DE CONTENIDOS
 
 - [Tablas](#tablas)
-- [Listado de tareas](#listado-de-tareas)
+- [Listado de tareas](#lista-de-tareas)
 - [Encabezados](#encabezados)
 - [Cursivas](#cursivas)
 - [Negrita](#negrita)
@@ -16,7 +16,7 @@ Listado de recetas para la sintaxis de Markdown.
 - [Movimiento en ruta](#movimiento-en-ruta)
 - [Menciones](#menciones)
 - [Comentarios de código](#comentarios-de-código)
-- [Indice y puntos](#indice-y-puntos)
+- [Indices y puntos](#índices-y-puntos)
 
 #### Tablas
 
@@ -152,7 +152,7 @@ Ejemplo:
 
 @davidvelascogarcia
 
-#### Comentario de código
+#### Comentarios de código
 
 El comentario de código.
 
