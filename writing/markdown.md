@@ -1,9 +1,8 @@
 # Lenguaje de marcado: MARKDOWN
-## Sintaxis: MARKDOWN
 
 Listado de recetas para la sintaxis de Markdown.
 
-### TABLA DE CONTENIDOS
+## TABLA DE CONTENIDOS
 
 - [Tablas](#tablas)
 - [Listado de tareas](#lista-de-tareas)
@@ -18,7 +17,7 @@ Listado de recetas para la sintaxis de Markdown.
 - [Comentarios de código](#comentarios-de-código)
 - [Indices y puntos](#índices-y-puntos)
 
-#### Tablas
+### Tablas
 
 Ejemplo de tablas.
 
@@ -34,7 +33,7 @@ Código:
 | Elemento 1 | Elemento 2 | Elemento 3 |
 | Cosa 1| Cosa 2|Cosa3|Cosa|
 ```
-#### Lista de tareas
+### Lista de tareas
 
 Ejemplo lista de tareas.
 
@@ -50,7 +49,7 @@ Código:
 - [ ] Elemento 3
 
 ```
-#### Encabezados
+### Encabezados
 
 Ejemplo de encabezados.
 
@@ -68,7 +67,7 @@ Código:
 #### Nivel 4
 
 ```
-#### Cursivas
+### Cursivas
 
 Ejemplo de cursivas.
 
@@ -78,7 +77,7 @@ Código:
 
 `*Mensaje de prueba*`
 
-#### Negrita
+### Negrita
 
 Ejemplo de negrita.
 
@@ -88,7 +87,7 @@ Código:
 
 `**Mensaje de prueba**`
 
-#### Negrita y cursiva
+### Negrita y cursiva
 
 Ejemplo de negrita y cursiva.
 
@@ -98,7 +97,7 @@ Código:
 
 `***Mensaje de prueba***`
 
-#### Link
+### Link
 
 Ejemplo de link.
 
@@ -108,7 +107,7 @@ Código:
 
 `[link](www.google.es)`
 
-#### Imágenes
+### Imágenes
 
 Ejemplo de imágen.
 
@@ -119,7 +118,7 @@ Código:
 ```
 ![Nombre de la imagen en caso de no cargar](http://www.analiticaweb.es/wp-content/uploads/2017/02/markdown.jpg)
 ```
-#### Movimiento en ruta
+### Movimiento en ruta
 
 Ejemplo movimientos en ruta.
 
@@ -145,14 +144,14 @@ Código:
 ```
 [nombre enlace](../)
 ```
-#### Menciones
+### Menciones
 
 Menciones mediante `@nombredeusuario`
 Ejemplo:
 
 @davidvelascogarcia
 
-#### Comentarios de código
+### Comentarios de código
 
 El comentario de código.
 
@@ -180,7 +179,7 @@ Ejemplo:
 ```
 Mensaje a comentar
 ```
-#### Índices y puntos
+### Índices y puntos
 
 * Índices
 Mediante:
