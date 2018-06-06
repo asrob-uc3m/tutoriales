@@ -5,7 +5,7 @@ Listado de recetas para la sintaxis de Markdown.
 
 ### TABLA DE CONTENIDOS
 
-	1. Tablas
+-[Tablas](#tablas)
 	2. Lista de tareas
 	3. Encabezados
 	4. Cursivas
@@ -20,7 +20,7 @@ Listado de recetas para la sintaxis de Markdown.
 	13. 
 #### Descripción del contenido
 
-	1. Tablas
+#### Tablas
 
 Ejemplo de tablas.
 
