@@ -5,20 +5,18 @@ Listado de recetas para la sintaxis de Markdown.
 
 ### TABLA DE CONTENIDOS
 
--[Tablas](#tablas)
-	2. Lista de tareas
-	3. Encabezados
-	4. Cursivas
-	5. Negrita
-	6. Negrita y cursiva
-	7. Link
-	8. Imágenes
-	9. Movimiento en ruta
-	10. Menciones
-	11. Comentario de código
-	12. Ińdice y puntos
-	13. 
-#### Descripción del contenido
+- [Tablas](#tablas)
+- [Listado de tareas](#listado-de-tareas)
+- [Encabezados](#encabezados)
+- [Cursivas](#cursivas)
+- [Negrita](#negrita)
+- [Negrita y cusiva](#negrita-y-cursiva)
+- [Link](#link)
+- [Imágenes](#imagenes)
+- [Movimiento en ruta](#movimiento-en-ruta)
+- [Menciones](#menciones)
+- [Comentarios de código](#comentarios-de-código)
+- [Indice y puntos](#indice-y-puntos)
 
 #### Tablas
 
@@ -27,16 +25,16 @@ Ejemplo de tablas.
 | Elemento 1 | Elemento 2 | Elemento 3 |
 | ---------- | ---------- | ---------- |
 | Elemento 1 | Elemento 2 | Elemento 3 |
-| Cosa 1| Cosa 2|Cosa3|cosa|
+| Cosa 1| Cosa 2|Cosa3|Cosa|
 
 Código:
 ```
 | Elemento 1 | Elemento 2 | Elemento 3 |
 | ---------- | ---------- | ---------- |
 | Elemento 1 | Elemento 2 | Elemento 3 |
-| Cosa 1| Cosa 2|Cosa3|cosa|
+| Cosa 1| Cosa 2|Cosa3|Cosa|
 ```
-	2. Lista de tareas
+#### Lista de tareas
 
 Ejemplo lista de tareas.
 
@@ -52,14 +50,14 @@ Código:
 - [ ] Elemento 3
 
 ```
-	3. Encabezados
+#### Encabezados
 
 Ejemplo de encabezados.
 
 # Nivel 1
 ## Nivel 2
 ### Nivel 3
-### Nivel 4
+#### Nivel 4
 
 Código:
 
@@ -67,10 +65,10 @@ Código:
 # Nivel 1
 ## Nivel 2
 ### Nivel 3
-### Nivel 4
+#### Nivel 4
 
 ```
-	4. Cursivas
+#### Cursivas
 
 Ejemplo de cursivas.
 
@@ -80,7 +78,7 @@ Código:
 
 `*Mensaje de prueba*`
 
-	5. Negrita
+#### Negrita
 
 Ejemplo de negrita.
 
@@ -90,7 +88,7 @@ Código:
 
 `**Mensaje de prueba**`
 
-	6. Negrita y cursiva
+#### Negrita y cursiva
 
 Ejemplo de negrita y cursiva.
 
@@ -100,7 +98,7 @@ Código:
 
 `***Mensaje de prueba***`
 
-	7. Link
+#### Link
 
 Ejemplo de link.
 
@@ -110,7 +108,7 @@ Código:
 
 `[link](www.google.es)`
 
-	7. Imágenes
+#### Imágenes
 
 Ejemplo de imágen.
 
@@ -121,11 +119,11 @@ Código:
 ```
 ![Nombre de la imagen en caso de no cargar](http://www.analiticaweb.es/wp-content/uploads/2017/02/markdown.jpg)
 ```
-	8. Movimiento en ruta
+#### Movimiento en ruta
 
 Ejemplo movimientos en ruta.
 
-1. Adelante
+* Adelante
 
 Ejemplo adelante.
 
@@ -137,7 +135,7 @@ Código:
 [nombre enlace](./ruta a ir)
 ```
 
-2. Atrás
+* Atrás
 
 Ejemplo atrás.
 
@@ -147,14 +145,14 @@ Código:
 ```
 [nombre enlace](../)
 ```
-	9. Menciones
+#### Menciones
 
 Menciones mediante `@nombredeusuario`
 Ejemplo:
 
 @davidvelascogarcia
 
-	10. Comentario de código
+#### Comentario de código
 
 El comentario de código.
 
@@ -182,7 +180,7 @@ Ejemplo:
 ```
 Mensaje a comentar
 ```
-	11. Índices y puntos
+#### Índices y puntos
 
 * Índices
 Mediante:
