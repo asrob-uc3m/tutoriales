@@ -2,8 +2,6 @@
 
 Listado de recetas para la sintaxis de Markdown.
 
-## TABLA DE CONTENIDOS
-
 - [Tablas](#tablas)
 - [Listado de tareas](#lista-de-tareas)
 - [Encabezados](#encabezados)
@@ -11,14 +9,13 @@ Listado de recetas para la sintaxis de Markdown.
 - [Negrita](#negrita)
 - [Negrita y cusiva](#negrita-y-cursiva)
 - [Link](#link)
-- [Imágenes](#imagenes)
+- [Imágenes](#imágenes)
 - [Movimiento en ruta](#movimiento-en-ruta)
 - [Menciones](#menciones)
 - [Comentarios de código](#comentarios-de-código)
-- [Indices y puntos](#índices-y-puntos)
+- [Indices y puntos](#Índices-y-puntos)
 
-### Tablas
-
+## Tablas
 Ejemplo de tablas.
 
 | Elemento 1 | Elemento 2 | Elemento 3 |
@@ -33,8 +30,8 @@ Código:
 | Elemento 1 | Elemento 2 | Elemento 3 |
 | Cosa 1| Cosa 2|Cosa3|Cosa|
 ```
-### Lista de tareas
 
+## Lista de tareas
 Ejemplo lista de tareas.
 
 - [ ] Elemento 1
@@ -49,7 +46,7 @@ Código:
 - [ ] Elemento 3
 
 ```
-### Encabezados
+## Encabezados
 
 Ejemplo de encabezados.
 
@@ -67,8 +64,8 @@ Código:
 #### Nivel 4
 
 ```
-### Cursivas
 
+## Cursivas
 Ejemplo de cursivas.
 
 *Mensaje de prueba*
@@ -77,8 +74,7 @@ Código:
 
 `*Mensaje de prueba*`
 
-### Negrita
-
+## Negrita
 Ejemplo de negrita.
 
 **Mensaje de prueba**
@@ -87,8 +83,7 @@ Código:
 
 `**Mensaje de prueba**`
 
-### Negrita y cursiva
-
+## Negrita y cursiva
 Ejemplo de negrita y cursiva.
 
 ***Mensaje de prueba***
@@ -97,8 +92,7 @@ Código:
 
 `***Mensaje de prueba***`
 
-### Link
-
+## Link
 Ejemplo de link.
 
 [link](www.google.es)
@@ -107,8 +101,7 @@ Código:
 
 `[link](www.google.es)`
 
-### Imágenes
-
+## Imágenes
 Ejemplo de imágen.
 
 ![Nombre de la imagen en caso de no cargar](http://www.analiticaweb.es/wp-content/uploads/2017/02/markdown.jpg)
@@ -118,8 +111,8 @@ Código:
 ```
 ![Nombre de la imagen en caso de no cargar](http://www.analiticaweb.es/wp-content/uploads/2017/02/markdown.jpg)
 ```
-### Movimiento en ruta
 
+## Movimiento en ruta
 Ejemplo movimientos en ruta.
 
 * Adelante
@@ -144,14 +137,14 @@ Código:
 ```
 [nombre enlace](../)
 ```
-### Menciones
 
+## Menciones
 Menciones mediante `@nombredeusuario`
 Ejemplo:
 
 @davidvelascogarcia
 
-### Comentarios de código
+## Comentarios de código
 
 El comentario de código.
 
@@ -179,7 +172,8 @@ Ejemplo:
 ```
 Mensaje a comentar
 ```
-### Índices y puntos
+
+## Índices y puntos
 
 * Índices
 Mediante:
