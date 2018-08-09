@@ -69,3 +69,6 @@ target_link_libraries(${PROJECT_NAME} ${EJEMPLO_LIBRARIES})  # Añadimos nombres
 ```
 
 Nótese que los nombres de las variables no están estandarizados. Una guía más extensa acerca de cómo encontrar librerías puede encontrarse [aquí](https://cmake.org/cmake/help/latest/manual/cmake-developer.7.html#a-sample-find-module).
+
+## Referencias adicionales
+- [*CGold: The Hitchhiker’s Guide to the CMake*](https://cgold.readthedocs.io/en/latest/), still WIP.
