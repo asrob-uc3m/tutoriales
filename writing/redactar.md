@@ -75,7 +75,7 @@ Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.w
 - Texto explicativo normalmente encima y también centrado.
 
 ## Código fuente
-- Bulto de código fuente: La tendencia es no incluir bultos de código en una memoria, ni siquiera como anexo. Se sube a un lugar y se proporcional la URL. Las siguientes indicaciones se refieren a .
+- Bulto de código fuente: La tendencia es no incluir bultos de código en una memoria, ni siquiera como anexo. Se sube a un lugar y se proporcional la URL.
 - Fragmentos de código fuente: Los fragmentos de código fuente en teoría no deberían ir como figuras. Específicamente, en LaTex, se suele utilizar el mecanismo [`listing`](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings). `listing` tiene muchas opciones, incluida la de poner un marco alrededor y sintaxis (pone colores cual IDE, indicándole si es Python, JSON, etc).
 - Recomendación: Incluir diagramas (de flujo, UML, etc), que sí son figuras (y aplican las recomendaciones de la sección [figuras](#figuras)). Para trabajos con software en lenguajes de programación orientados a objetos (OOP), los diagramas de clases son casi indispensables.
 - También es un plus incluir un enlace a la documentación generada por [Doxygen](http://www.doxygen.nl/) (que además se puede configurar para generar distintos diagramas).
