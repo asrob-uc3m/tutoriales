@@ -6,6 +6,7 @@
 * [Bibliografía](#bibliografía)
 * [Formato (Importante)](#formato-importante)
 * [Figuras](#figuras)
+* [Código fuente](#código-fuente)
 * [Tablas](#tablas)
 * [Úlitmos consejos](#Úlitmos-consejos)
 * [Más enlaces de interés](#más-enlaces-de-interés)
@@ -73,6 +74,10 @@ Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.w
 ## Tablas
 - Centradas.
 - Texto explicativo normalmente encima y también centrado.
+
+## Código fuente
+- Bulto de código fuente: La tendencia es no incluir bultos de código en una memoria, ni siquiera como anexo. Se sube a un lugar y se proporcional la URL. Las siguientes indicaciones se refieren a .
+- Fragmentos de código fuente: Los fragmentos de código fuente en teoría no deberían ir como figuras. Específicamente, en LaTex, se suele utilizar el mecanismo [listing](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings). `listing` tiene muchas opciones, incluida la de poner un marco alrededor y sintaxis (pone colores cual IDE, indicándole si es Python, JSON, etc).
 
 ## Úlitmos consejos
 - Se empezó a realizar un script que revisa textos en inglés [aquí](https://github.com/jgvictores/snippets/blob/develop/bash/review-tex.sh) ([permalink](https://github.com/jgvictores/snippets/blob/8db93e72b29279ffa959e5b72287ab8e0129fa16/bash/review-tex.sh)).
