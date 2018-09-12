@@ -29,7 +29,7 @@ Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.w
   7.  Experimentos y resultados
   8.  Conclusiones y líneas futuras (con conclusiones y líneas futuras)
 - [Bibliografía](#bibliografía)
-- Anexos (sí: presupuesto)(posible: partes relevantes de datasheets)(no códigos fuentes completos, mejor proporcionar diagramas de clases, etc., y citar URL del código fuente en documento).
+- Anexos (sí: presupuesto)(posible: partes relevantes de datasheets)(no: códigos fuentes completos, véase sección [código fuente](#código-fuente)).
 
 ## Estado del arte
 - El estado del arte de un documento científico debería consistir en referencias a documentos científicos que componen la [Bibliografía](#bibliografía), tanto por que sean útiles o porque posteriormente se debata que se hayan superado. También debería servir para explicar alternativas software o hardware, como apoyo para justificar decisiones de diseño que se tomen más adelante en el documento.
@@ -69,7 +69,6 @@ Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.w
 - Figuras siempre referenciadas. Si es posible, cerca de la propia figura, y antes de aparecer.
 - Figuras vectoriales. Siempre que se pueda (logotipos, diagramas de flujo, etc) crear y utilizar imágenes de tipo vectorial. Estas umágenes no se pixelan con cambios de zoom. Se recomienda Inkscape como la alternativa libre referencia (existen alternativas propietarias como Adobe Illustrator o Corel). Para generar diagramas, tanto yEd (freeware) como Dia (libre) son buneas opciones (también pensar en <https://mermaidjs.github.io/>). Powerpoint también puede exportar a formatos vectoriales. El formato vectorial editable más recomendable es el .svg de Inkscape, o los propios de cada programa. Para incrustar en documentos LaTeX (pdflatex), se recomienda exportar a PDF. Para incrustar en documentos Word, se recomienda exportar a EMF (o WMF si sale mal)(disponible en versión Windows de Inkscape). Aquí un enlace con logos en vectorial: <https://github.com/asrob-uc3m/recursos-digitales/tree/master/logos>
 - Un buscador para imágenes libres: <http://search.creativecommons.org/>
-- Diagramas de clases UML si hay SW (también vectoriales a ser posible).
 
 ## Tablas
 - Centradas.
@@ -77,7 +76,9 @@ Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.w
 
 ## Código fuente
 - Bulto de código fuente: La tendencia es no incluir bultos de código en una memoria, ni siquiera como anexo. Se sube a un lugar y se proporcional la URL. Las siguientes indicaciones se refieren a .
-- Fragmentos de código fuente: Los fragmentos de código fuente en teoría no deberían ir como figuras. Específicamente, en LaTex, se suele utilizar el mecanismo [listing](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings). `listing` tiene muchas opciones, incluida la de poner un marco alrededor y sintaxis (pone colores cual IDE, indicándole si es Python, JSON, etc).
+- Fragmentos de código fuente: Los fragmentos de código fuente en teoría no deberían ir como figuras. Específicamente, en LaTex, se suele utilizar el mecanismo [`listing`](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings). `listing` tiene muchas opciones, incluida la de poner un marco alrededor y sintaxis (pone colores cual IDE, indicándole si es Python, JSON, etc).
+- Recomendación: Incluir diagramas (de flujo, UML, etc), que sí son figuras (y aplican las recomendaciones de la sección [figuras](#figuras)). Para trabajos con software en lenguajes de programación orientados a objetos (OOP), los diagramas de clases son casi indispensables.
+- También es un plus incluir un enlace a la documentación generada por [Doxygen](http://www.doxygen.nl/) (que además se puede configurar para generar distintos diagramas).
 
 ## Úlitmos consejos
 - Se empezó a realizar un script que revisa textos en inglés [aquí](https://github.com/jgvictores/snippets/blob/develop/bash/review-tex.sh) ([permalink](https://github.com/jgvictores/snippets/blob/8db93e72b29279ffa959e5b72287ab8e0129fa16/bash/review-tex.sh)).
