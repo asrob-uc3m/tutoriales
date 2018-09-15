@@ -60,3 +60,4 @@ El comando `file` también nos da información sobre terminadores de línea. Not
 - https://stackoverflow.com/questions/11303405/force-encode-from-us-ascii-to-utf-8-iconv
 - https://www.cyberciti.biz/faq/howto-unix-linux-convert-dos-newlines-cr-lf-unix-text-format/
 - https://superuser.com/questions/362087/notepad-ignoring-linebreaks
+- https://softwareengineering.stackexchange.com/questions/152780/should-my-source-code-be-in-utf-8
