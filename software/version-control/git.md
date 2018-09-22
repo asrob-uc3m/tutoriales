@@ -11,8 +11,8 @@
     - [Subir los cambios localmente (git commit)](#subir-los-cambios-localmente-git-commit)
     - [Subir los cambios locales al repositorio remoto (git push)](#subir-los-cambios-locales-al-repositorio-remoto-git-push)
 - [Trabajar con ramas (branches)](#trabajar-con-ramas-branches)
-    - Creación de ramas
-    - Borrar ramas
+    - [Creación de ramas](#creación-de-ramas)
+    - [Borrar ramas](#borrar-ramas)
     - Actualizar y fusionar
     - Etiquetas
     - Enlazar repositorio local con remoto
