@@ -4,18 +4,27 @@ Markdown es un lenguaje de marcado (tipo de formateo de texto más o menos estan
 
 Lo siguiente es un listado genérico de diversos ejemplos de uso la sintaxis de Markdown.
 
+- [Enlaces (links)](#enlaces-links)
 - [Tablas](#tablas)
 - [Listado de tareas](#lista-de-tareas)
 - [Encabezados](#encabezados)
 - [Cursivas](#cursivas)
 - [Negrita](#negrita)
 - [Negrita y cusiva](#negrita-y-cursiva)
-- [Link](#link)
 - [Imágenes](#imágenes)
 - [Movimiento en ruta](#movimiento-en-ruta)
 - [Menciones](#menciones)
 - [Comentarios de código](#comentarios-de-código)
 - [Indices y puntos](#Índices-y-puntos)
+
+## Enlaces (links)
+Ejemplo de enlace (link).
+
+[link](www.google.es)
+
+Código:
+
+`[link](www.google.es)`
 
 ## Tablas
 Ejemplo de tablas.
@@ -93,15 +102,6 @@ Ejemplo de negrita y cursiva.
 Código:
 
 `***Mensaje de prueba***`
-
-## Link
-Ejemplo de link.
-
-[link](www.google.es)
-
-Código:
-
-`[link](www.google.es)`
 
 ## Imágenes
 Ejemplo de imágen.
