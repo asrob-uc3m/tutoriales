@@ -29,7 +29,7 @@ Git es un [sistema de control de versiones](README.md) distribuido creado por Li
 
 ### Crear un repositorio nuevo (git init)
 
-Habitualmente creamos repositorios nuevos directamente en GitHub (interfaz web), pero también se pueden crear localmente.
+Habitualmente creamos repositorios nuevos directamente en GitHub (interfaz web), con lo cual nos saltaríamos este paso, pero también se pueden crear localmente.
 Para crear un repositorio localmente, desde una carpeta nueva, ejecuta el comando:
 ```bash
 git init
