@@ -1,14 +1,20 @@
 # Bash (consola de linux)
 
-En Ubuntu 10.04 - 16.04 y otras distribuciones, se puede acceder a una consola (`gnome-terminal` en este caso) a través de la combinación de teclas `CTRL`+`ALT`+`t`. También se puede acceder a *tty*s virtuales con `CTRL`+`ALT`+`F1`/`F2`/`F3`... y `CTRL`+`ALT`+`F7`/`F8` para volver al entorno gráfico.
-
-La consola tiene muchos atajos, como autocompletado mediante tabular, y fechas y `CTRL-R` para búsqueda de comandos escritos anteriormente.
-
+- [Introducción](#introducción)
+- [Atajos de teclado](#atajos-de-teclado)
 - [Símbolos importantes](#símbolos-importantes)
 - [El comando `man`](#el-comando-man)
 - [Listado alfabético de comandos útiles](#listado-alfabético-de-comandos-útiles)
 - [Scripts de Bash](#scripts-de-bash)
 - [Referencias](#referencias)
+
+# Introducción
+La consola (o terminal) de Linux es muy útil. Como se mencionó en la [introducción a Linux](introduction.md#atajos-de-teclado-y-ratón), se puede acceder a una consola a través de la combinación de teclas `CTRL`+`ALT`+`t`, y utilizar mecanismos como los portapapeles de Linux, además de sus atajos de teclado propios.
+
+## Atajos de teclado
+- `tab`: autocompletado
+- flechas: historial
+- `CTRL-r`: búsqueda de comandos escritos anteriormente.
 
 ## Símbolos importantes
 
