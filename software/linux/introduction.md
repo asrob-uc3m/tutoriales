@@ -32,3 +32,4 @@ Nótese que la mayor parte de distribuciones y programas admiten la personalizac
 ## Notas adicionales
 - Linux es en general "sensible a mayúsculas" (al contrario que en Windows, sí hace diferencia el hecho de que una misma letra se escriba con minúscula o mayúscula).
 - El sistema operativo está fuertemente ligado a la consola [bash](bash.md), por lo que conviene revisar los [Símbolos importantes](bash.md#símbolos-importantes), además de todas las demás secciones Linux [/software/linux].
+- Por norma general, `.` al inicio de un nombre de fichero indica fichero oculto. Veremos esto como una práctica común entre [ficheros de configuración](configuration-files.md). En ciertos entornos (p.ej. `nautilus` en Ubuntu) pueden desocultarse/ocultarse mediante `CTRL`+`h`.
