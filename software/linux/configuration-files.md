@@ -1,7 +1,7 @@
 # Ficheros de configuración
 
 Existen unos ficheros de configuración que están presentes por defecto en sistemas operativos basados en Linux.
-Para las siguientes secciones, recuérdese del [tutorial de variables de entorno](../environment-variables.md) que `~` equivale a `$HOME`.
+Para las siguientes secciones, recuérdese que `~` equivale a `$HOME` (véase [tutorial de variables de entorno](../environment-variables.md)) y `.` al inicio significa fichero oculto (véase [introducción](introduction.md#notas-adicionales)).
 Algunos ficheros de configuración son [scripts de Bash](bash.sh), y estarán marcados como tal.
 
 - [~/.profile](#profile)
