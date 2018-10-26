@@ -30,5 +30,5 @@ Nótese que la mayor parte de distribuciones y programas admiten la personalizac
 - (warning: con este atajo uno puede salirse del entorno gráfico; utilizar `CTRL`+`ALT`+`F7`/`F8` para volver, o reiniciar si no queda remedio) `CTRL`+`ALT`+`F1`/`F2`/`F3`...: acceder a *tty*s virtuales
 
 ## Notas adicionales
-- Linux es en general "sensible a mayúsculas" (al contrario que en Windows, sí hace diferencia el hecho de que una misma letra esté escrito con minúscula o mayúscula).
+- Linux es en general "sensible a mayúsculas" (al contrario que en Windows, sí hace diferencia el hecho de que una misma letra se escriba con minúscula o mayúscula).
 - El sistema operativo está fuertemente ligado a la consola [bash](bash.md), por lo que conviene revisar los [Símbolos importantes](bash.md#símbolos-importantes), además de todas las demás secciones Linux [/software/linux].
