@@ -18,5 +18,5 @@ Las distribuciones, en general, cuentan con gestores de paquetes para poder inst
 Nótese que la mayor parte de distribuciones y programas admiten la personalización de atajos de teclado. Aquí se mencionan los atajos por defecto más comunes.
 
 - Portapapeles "lento" y no disponible en todos los programas: `CTRL`+`C` (copiar), `CTRL`+`X` (cortar) y `CTRL`+`V` (pegar). Este portapapeles es el que se corresponde con el del desplegable al pinchar con el botón derecho del ratón.
-- Portapapeles "rápido": Simplemente seleccionar un texto (copiar), `SHIFT`+`INSERT` (pegar), o más rápido todavía _hacer click (no scroll) en el botón de en medio del ratón_ (pegar).
+- Portapapeles "rápido": Simplemente seleccionar un texto (copiar), `SHIFT`+`INSERT` (pegar), o más rápido todavía _hacer click (no scroll) en el botón del medio del ratón_ (pegar).
 - `CTRL`+`ALT`+`t`: Abre una terminal (consola) donde se pueden utilizar comandos de [bash](bash.md).
