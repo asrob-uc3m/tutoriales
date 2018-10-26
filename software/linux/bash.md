@@ -12,9 +12,9 @@
 La consola (o terminal) de Linux es muy útil. Como se mencionó en la [introducción a Linux](introduction.md#atajos-de-teclado-y-ratón), se puede acceder a una consola a través de la combinación de teclas `CTRL`+`ALT`+`t`, y utilizar mecanismos como los portapapeles de Linux, además de sus atajos de teclado propios. Nótese que, al igual que Linux en general, Bash es "sensible a mayúsculas" (al contrario que en Windows, sí hace diferencia el hecho de que una misma letra se escriba con minúscula o mayúscula).
 
 ## Atajos de teclado
-- `tab`: autocompletado
-- flechas: historial
-- `CTRL-r`: búsqueda de comandos escritos anteriormente.
+- `tab`: autocompletado a partir de lo escrito (es necesario pulsar dos veces si hay existen opciones).
+- flecha `arriba`/`abajo`: moverse a través de historial de comandos.
+- `CTRL-r`: búsqueda de comandos escritos anteriormente (pulsar y empezar a teclear).
 
 ## Símbolos importantes
 
