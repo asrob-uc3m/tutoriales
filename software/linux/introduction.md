@@ -1,7 +1,7 @@
 # Introducción
 
-- [¿Qué es Linux?](#¿qué-es-linux?)
-- [¿Qué es una Distribución?](#¿qué-es-una-distribución?)
+- [¿Qué es Linux?](#qué-es-linux)
+- [¿Qué es una Distribución?](#qué-es-una-distribución)
 - [Instalar programas](#instalar-programas)
 - [Atajos de teclado](#atajos-de-teclado)
 
