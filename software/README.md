@@ -6,6 +6,7 @@
 * [Linux](linux/README.md)
   * [Bash (consola de Linux)](linux/bash.md)
   * [Estructura de carpetas en Debian y derivados](linux/folder-structure-debian.md)
+  * [Ficheros de configuración](linux/configuration-files.md)
 * [Programación](programming/README.md)
   * [CMake](programming/cmake.md)
   * [Librerías estáticas y dinámicas](programming/libs.md)
