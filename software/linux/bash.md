@@ -1,4 +1,4 @@
-# Bash (consola de linux)
+# Bash (consola/terminal)
 
 - [Introducción](#introducción)
 - [Atajos de teclado](#atajos-de-teclado)

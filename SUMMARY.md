@@ -10,7 +10,7 @@
     * [Subversion (SVN)](software/version-control/subversion.md)
   * [Linux](software/linux/README.md)
     * [Introducción](software/linux/introduction.md)
-    * [Bash (consola de Linux)](software/linux/bash.md)
+    * [Bash (consola/terminal)](software/linux/bash.md)
     * [Estructura de carpetas en Debian y derivados](software/linux/folder-structure-debian.md)
     * [Ficheros de configuración](software/linux/configuration-files.md)
   * [Programación](software/programming/README.md)
