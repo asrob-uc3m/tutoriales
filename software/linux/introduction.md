@@ -12,7 +12,7 @@ GNU/Linux, conocido de forma coloquial como simplemente Linux, es un sistema ope
 Se llama Distribución a una colección determinada de los elementos previamente mencionados. En la actualidad, Ubuntu goza de mucha popularidad, pero otras distribuciones pueden tener ventajas en cuanto a elección de escritorio más ligero (Lubuntu, Xubuntu, o Mint), estabilidad (Debian), o minimalismo (Arch Linux). Nótese que algunas distribuciones se basan en otras (Mint se basa en Ubuntu, que a su vez se basa en Debian).
 
 ## Instalar programas
-Las distribuciones, en general, cuentan con gestores de paquetes para poder instalar programas (y librerías) sin necesidad de acceder a ninguna web. En Debian y derivados (Ubuntu, Mint) el comando de consola se llama `apt`. En la actualidad existen aplicaciones gráficas para interactuar con los gestores de paquetes (p.ej. `Ubuntu Software` de Ubuntu 16.04).
+Las distribuciones, en general, cuentan con gestores de paquetes para poder instalar programas (y librerías) sin necesidad de acceder a ninguna web. En Debian y derivados (Ubuntu, Mint) el comando de consola se llama `apt`. En la actualidad existen aplicaciones gráficas para interactuar con los gestores de paquetes sin utilizar la consola (p.ej. `Ubuntu Software` de Ubuntu 16.04).
 
 ## Atajos de teclado
 Nótese que la mayor parte de distribuciones y programas admiten la personalización de atajos de teclado. Aquí se mencionan los atajos por defecto más comunes.
