@@ -4,6 +4,7 @@
 * [Electrónica](electronics/README.md)
   * [Cargador IMAX B6AC](electronics/battery-charger-imax-b6ac.md)
 * [Mecánica](mechanics/README.md)
+    * [FreeCAD](mechanics/freecad.md)
 * [Software](software/README.md)
   * [Control de versiones](software/version-control/README.md)
     * [Git](software/version-control/git.md)
