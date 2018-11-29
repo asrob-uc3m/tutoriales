@@ -6,7 +6,7 @@
 * [Bibliografía](#bibliografía)
 * [Formato (Importante)](#formato-importante)
    * [Formato de figuras](#formato-de-figuras)
-   * [Formato de citas bibliográficas](#formato-de-citas-bibliograficas)
+   * [Formato de bibliografía](#formato-de-bibliografía)
    * [Formato de ecuaciones](#formato-de-ecuaciones)
    * [Formato de tablas](#formato-de-tablas)
 * [Código fuente](#código-fuente)
@@ -66,7 +66,7 @@ Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.w
 - Un buscador para imágenes libres: <http://search.creativecommons.org/>
 - **UC3M**: Aquí un enlace con logos en vectorial: <https://github.com/asrob-uc3m/recursos-digitales/tree/master/logos>
 
-### Formato de citas bibliográficas
+### Formato de bibliografía
 - Es necesario que todos los elementos de la bibliografía estén referenciados.
 - La regla general es citar la referencia sólo la primera vez que aparece. Excepciones: no se introduce en el resumen/abstract (sí en la introducción); se puede volver a citar cuando ha pasado un cierto número de páginas (p.ej. capítulos diferentes).
 - Se deja un espacio entre la palabra y la referencia, como se hace en esta frase \[1\]. Es recomendable, además, que esta frase pueda leerse habiendo omitido la referencia (p.antiejemplo: léase \[3\] y \[16\]).
