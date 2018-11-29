@@ -38,7 +38,7 @@ Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.w
 
 ## Bibliografía
 - Existen muchos gestores de referencias bibliográficas: [Mendeley](https://www.mendeley.com/) (que dispone de plugins para Microsoft Word y LibreOffice, y puede exportar ficheros `.bib` para LaTeX), Zotero... En LaTeX se recomienda trabajar con ficheros `.bib` que genera ficheros `.bbl` mediante el comando `bibtex` (frente a la alternativa de directamente manipular los elementos `\bibitem` del `.bbl`).
-- URLs (blogs, foros, webs...). En principio, tratar de evitar este tipo de referencias bibliográficas. Muchas veces se puede encontrar un documento científico que describe el mismo contenido.
+- URLs (blogs, foros, webs...). En principio, tratar de evitar este tipo de referencias bibliográficas. Muchas veces se puede encontrar un documento científico que describe el mismo contenido (p.ej. la wikipedia muchas veces cita artículos científicos como fuente).
 - Tratar de utilizar siempre bibliografía científica, que debe componerse principalmente de contenidos de años recientes (aunque puede contener algunas referencias clásicas):
    - Journals: Artículos de revistas científicas. Pasan por procesos de revisión por pares en general largos y con varias iteraciones, por tanto suelen ser largos, descriptivos e informativos. Los journals "top" están indexados en Journal Citation Reports (JCR).
    - Proceedings de conferencias: Artículos que se presentan en conferencias científicas. En general, con contenido más actual y breve que journals. Los proceedings "top" están indexados en Web of Science (WOS).
