@@ -35,16 +35,13 @@ Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.w
 - El estado del arte de un documento científico debería consistir en referencias a documentos científicos que componen la [Bibliografía](#bibliografía), tanto por que sean útiles o porque posteriormente se debata que se hayan superado. También debería servir para explicar alternativas software o hardware, como apoyo para justificar decisiones de diseño que se tomen más adelante en el documento.
 
 ## Bibliografía
-- Existen muchos gestores de bibliografía: [Mendeley](https://www.mendeley.com/) (que dispone de plugins para Microsoft Word y LibreOffice, y puede exportar ficheros `.bib` para LaTeX), Zotero... En LaTeX se recomienda trabajar con ficheros `.bib` que genera ficheros `.bbl` mediante el comando `bibtex` (frente a la alternativa de directamente manipular los elementos `\bibitem` del `.bbl`).
-- Es necesario que todos los elementos de la bibliografía estén referenciados.
-- El orden de los elementos debe ser el de aparición en el documento (ciertos autores prefieren orden alfabético).
-- Tratar de evitar bibliografía del que solo se disponga una URL (foros, webs...). En caso de ser realmente necesario, es obligatorio poner la fecha de acceso: "(último acceso 22 de febrero de 2011)", y en general es casi preferible que sea simplemente un pie de página.
-- En lugar de foros o webs, tratar de utilizar bibliografía científica: preferiblemente "Journals" (preferiblemente indexados en Journal Citation Reports (JCR)), o "Proceedings of Conferences" (preferiblemente indexados en Web of Science (WOS)) si no.
+- Existen muchos gestores de referencias bibliográficas: [Mendeley](https://www.mendeley.com/) (que dispone de plugins para Microsoft Word y LibreOffice, y puede exportar ficheros `.bib` para LaTeX), Zotero... En LaTeX se recomienda trabajar con ficheros `.bib` que genera ficheros `.bbl` mediante el comando `bibtex` (frente a la alternativa de directamente manipular los elementos `\bibitem` del `.bbl`).
+- URLs (blogs, foros, webs...). En principio, tratar de evitar este tipo de referencias bibliográficas. Muchas veces se puede encontrar un documento científico que describe el mismo contenido.
+- Tratar de utilizar siempre bibliografía científica: preferiblemente "Journals" (preferiblemente indexados en Journal Citation Reports (JCR)), o "Proceedings of Conferences" (preferiblemente indexados en Web of Science (WOS)) si no.
 - Para localizar bibliografía científica, utiliza buscadores como [Google Académico](http://scholar.google.es) o [IEEExplore](http://ieeexplore.ieee.org/Xplore/guesthome.jsp?reload=true) que dispongan de la opción de importar citas a bibtex o semejante.
-
-**UC3M (acceso a buscadores JCR y WOS)**: Puedes acceder a los buscadores JCR dentro de [UC3M > Biblioteca > Ińdices de impacto](https://www.uc3m.es/ss/Satellite/Biblioteca/es/TextoMixta/1371212970020/Indices_de_impacto) > "Journal Citation Reports (JCR)" o "Web of Science"
-
-**UC3M (acceso externo a recursos)**: Las subscripciones de la Biblioteca (p.ej. IEEExplore, JCR y WOS) dentro de las redes de los campus. Puedes acceder externamente a través de la VPN.
+   - **UC3M (acceso a buscadores JCR y WOS)**: Puedes acceder a los buscadores JCR dentro de [UC3M > Biblioteca > Ińdices de impacto](https://www.uc3m.es/ss/Satellite/Biblioteca/es/TextoMixta/1371212970020/Indices_de_impacto) > "Journal Citation Reports (JCR)" o "Web of Science"
+   - **UC3M (acceso estos recursos desde fuera de las redes del campus)**: Las subscripciones de la Biblioteca (p.ej. IEEExplore, JCR y WOS) funcionan de forma automática para dentro de las redes de los campus (cable, `wifi-uc3m`, `eduroam` en campus). Para acceder externamente, puedes utilizar el servicio [VPN](https://www.uc3m.es/sdic/servicios/vpn).
+- Véase también la sección de [formato de citas bibliográficas](#formato-de-citas-bibliográficas).
 
 ## Formato (Importante)
 - Respecto a títulos de documento/capítulo/secciones: "Esto es un título en español". "This Is A Title In English". Ninguno acaba en punto.
@@ -56,21 +53,28 @@ Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.w
 - Utilizar frases cortas. Como regla general, se puede pensar "no más de un concepto por frase, tal vez más de una frase para explicar un solo concepto".
 - Coherencia interna. Ejemplo 1: MTi debe aparecer siempre como MTi, no MTI a veces. Ejemplo 2: Un algoritmo es siempre un algoritmo, no pasa a ser un método o infraestructura en un mismo documento.
 - Evitar extranjerismos sin referenciar (p.e. si el documento está en español, como mínimo poner pie de página ante anglicismos).
-- Respecto a citas bibliográficas:
-  - La regla general es citar la referencia sólo la primera vez que aparece. Excepciones: no se introduce en el resumen/abstract (sí en la introducción); se puede volver a citar cuando ha pasado un cierto número de páginas (p.ej. capítulos diferentes).
-  - Se deja un espacio entre la palabra y la referencia, como se hace en esta frase \[1\]. Es recomendable, además, que esta frase pueda leerse habiendo omitido la referencia (p.antiejemplo: léase \[3\] y \[16\]).
-- Respecto a ecuaciones:
-  - Referencias entre paréntesis (no corchetes).
 
-## Figuras
+### Formato de figuras
 - Centradas.
 - Sin deformar (conservar proporciones originales).
 - Texto explicativo debajo y también centrado.
 - Figuras siempre referenciadas. Si es posible, cerca de la propia figura, y antes de aparecer.
-- Figuras vectoriales. Siempre que se pueda (logotipos, diagramas de flujo, etc) crear y utilizar imágenes de tipo vectorial. Estas umágenes no se pixelan con cambios de zoom. Se recomienda Inkscape como la alternativa libre referencia (existen alternativas propietarias como Adobe Illustrator o Corel). Para generar diagramas, tanto yEd (freeware) como Dia (libre) son buneas opciones (también pensar en <https://mermaidjs.github.io/>). Powerpoint también puede exportar a formatos vectoriales. El formato vectorial editable más recomendable es el `.svg` de Inkscape, o los propios de cada programa. Para incrustar en documentos LaTeX (pdflatex), se recomienda exportar a PDF. Para incrustar en documentos Word, se recomienda exportar a EMF (o WMF si sale mal)(disponible en versión Windows de Inkscape). Aquí un enlace con logos en vectorial: <https://github.com/asrob-uc3m/recursos-digitales/tree/master/logos>
+- Figuras vectoriales. Siempre que se pueda (logotipos, diagramas de flujo, etc) crear y utilizar imágenes de tipo vectorial. Estas imágenes no se pixelan con cambios de zoom. Se recomienda Inkscape como la alternativa libre referencia (existen alternativas propietarias como Adobe Illustrator o Corel). Para generar diagramas, tanto yEd (freeware) como Dia (libre) son buneas opciones (también pensar en <https://mermaidjs.github.io/>). Powerpoint también puede exportar a formatos vectoriales. El formato vectorial editable más recomendable es el `.svg` de Inkscape, o los propios de cada programa. Para incrustar en documentos LaTeX (pdflatex), se recomienda exportar a PDF. Para incrustar en documentos Word, se recomienda exportar a EMF (o WMF si sale mal)(disponible en versión Windows de Inkscape).
+- A veces debemos volver a generar las referencias cruzadas para que se actualice el orden.
 - Un buscador para imágenes libres: <http://search.creativecommons.org/>
+- **UC3M**: Aquí un enlace con logos en vectorial: <https://github.com/asrob-uc3m/recursos-digitales/tree/master/logos>
 
-## Tablas
+### Formato de citas bibliográficas
+- Es necesario que todos los elementos de la bibliografía estén referenciados.
+- La regla general es citar la referencia sólo la primera vez que aparece. Excepciones: no se introduce en el resumen/abstract (sí en la introducción); se puede volver a citar cuando ha pasado un cierto número de páginas (p.ej. capítulos diferentes).
+- Se deja un espacio entre la palabra y la referencia, como se hace en esta frase \[1\]. Es recomendable, además, que esta frase pueda leerse habiendo omitido la referencia (p.antiejemplo: léase \[3\] y \[16\]).
+- Existen diversos formatos para citar (APA, etc). Para aquellos que son numéricos, el orden de los elementos debe ser el de aparición en el documento (a veces debemos volver a generar las referencias cruzadas para que se actualice)(nota: ciertos autores prefieren orden alfabético).
+- URLs: Se comentó en [bibliografía](#bibliografía) que se debe tratar de evitar este tipo de referencias bibliográficas. En caso de ser realmente necesario, es obligatorio poner la fecha de acceso: "(último acceso 22 de febrero de 2011)", y en general es casi preferible que sea simplemente un pie de página.
+
+### Formato de ecuaciones
+- Referencias entre paréntesis (no corchetes).
+
+### Formato de tablas
 - Centradas.
 - Texto explicativo normalmente encima y también centrado.
 
