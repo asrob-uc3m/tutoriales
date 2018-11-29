@@ -35,7 +35,7 @@ Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.w
 - El estado del arte de un documento científico debería consistir en referencias a documentos científicos que componen la [Bibliografía](#bibliografía), tanto por que sean útiles o porque posteriormente se debata que se hayan superado. También debería servir para explicar alternativas software o hardware, como apoyo para justificar decisiones de diseño que se tomen más adelante en el documento.
 
 ## Bibliografía
-- Existen muchos gestores de bibliografía: [Mendeley](https://www.mendeley.com/) (que dispone de plugins recomendables para Microsoft Word y LibreOffice), Zotero... En LaTeX, se puede utilizar uno de estos gestores, o trabajar directamente sobre el archivo `.bib` (no se recomienda trabajar sobre el `.bbl` sino generarlo con bibtex a partir del `.bib`).
+- Existen muchos gestores de bibliografía: [Mendeley](https://www.mendeley.com/) (que dispone de plugins para Microsoft Word y LibreOffice, y puede exportar ficheros `.bib` para LaTeX), Zotero... En LaTeX se recomienda trabajar con ficheros `.bib` que genera ficheros `.bbl` mediante el comando `bibtex` (frente a la alternativa de directamente manipular los elementos `\bibitem` del `.bbl`).
 - Es necesario que todos los elementos de la bibliografía estén referenciados.
 - El orden de los elementos debe ser el de aparición en el documento (ciertos autores prefieren orden alfabético).
 - Tratar de evitar bibliografía del que solo se disponga una URL (foros, webs...). En caso de ser realmente necesario, es obligatorio poner la fecha de acceso: "(último acceso 22 de febrero de 2011)", y en general es casi preferible que sea simplemente un pie de página.
