@@ -5,11 +5,13 @@
 * [Estado del arte](#estado-del-arte)
 * [Bibliografía](#bibliografía)
 * [Formato (Importante)](#formato-importante)
-* [Figuras](#figuras)
-* [Tablas](#tablas)
+   * [Formato de figuras](#formato-de-figuras)
+   * [Formato de citas bibliográficas](#formato-de-citas-bibliograficas)
+   * [Formato de ecuaciones](#formato-de-ecuaciones)
+   * [Formato de tablas](#formato-de-tablas)
 * [Código fuente](#código-fuente)
 * [Úlitmos consejos](#Úlitmos-consejos)
-* [Más enlaces de interés](#más-enlaces-de-interés)
+* [Más enlaces de interés](#más-enlaces-de-interes)
 
 ## Herramientas
 Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.wikipedia.org/wiki/Microsoft_Word), y [LaTeX](http://es.wikipedia.org/wiki/LaTeX). Microsoft Word es más visual, y LaTeX se parece más a programar. Una ventaja de LaTeX es que es Open Source, por tanto, si falla algo, puede ser difícil, pero tienes la posibilidad de arreglarlo.
