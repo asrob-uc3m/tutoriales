@@ -71,7 +71,7 @@ Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.w
 - La regla general es citar la referencia sólo la primera vez que aparece. Excepciones: no se introduce en el resumen/abstract (sí en la introducción); se puede volver a citar cuando ha pasado un cierto número de páginas (p.ej. capítulos diferentes).
 - Se deja un espacio entre la palabra y la referencia, como se hace en esta frase \[1\]. Es recomendable, además, que esta frase pueda leerse habiendo omitido la referencia (p.antiejemplo: léase \[3\] y \[16\]).
 - Existen diversos formatos para citar (APA, etc). Para aquellos que son numéricos, el orden de los elementos debe ser el de aparición en el documento (a veces debemos volver a generar las referencias cruzadas para que se actualice)(nota: ciertos autores prefieren orden alfabético).
-- URLs: Se comentó en [bibliografía](#bibliografía) que se debe tratar de evitar este tipo de referencias bibliográficas. En caso de ser realmente necesario, es obligatorio poner la fecha de acceso: "(último acceso 22 de febrero de 2011)", y en general es casi preferible que sea simplemente un pie de página.
+- URLs: Se comentó en [bibliografía](#bibliografía) que se debe tratar de evitar este tipo de referencias bibliográficas. En caso de ser realmente necesario, es obligatorio poner la fecha de acceso: "(último acceso 22 de febrero de 2011)", y es preferible que sea un pie de página en lugar de un elemento de la bibliografía como tal.
 
 ### Formato de ecuaciones
 - Referencias entre paréntesis (no corchetes).
