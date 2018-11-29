@@ -42,7 +42,7 @@ Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.w
 - Tratar de utilizar siempre bibliografía científica: preferiblemente "Journals" (preferiblemente indexados en Journal Citation Reports (JCR)), o "Proceedings of Conferences" (preferiblemente indexados en Web of Science (WOS)) si no.
 - Para localizar bibliografía científica, utiliza buscadores como [Google Académico](http://scholar.google.es) o [IEEExplore](http://ieeexplore.ieee.org/Xplore/guesthome.jsp?reload=true) que dispongan de la opción de importar citas a bibtex o semejante.
    - **UC3M (acceso a buscadores JCR y WOS)**: Puedes acceder a los buscadores JCR dentro de [UC3M > Biblioteca > Ińdices de impacto](https://www.uc3m.es/ss/Satellite/Biblioteca/es/TextoMixta/1371212970020/Indices_de_impacto) > "Journal Citation Reports (JCR)" o "Web of Science"
-   - **UC3M (acceso estos recursos desde fuera de las redes del campus)**: Las subscripciones de la Biblioteca (p.ej. IEEExplore, JCR y WOS) funcionan de forma automática para dentro de las redes de los campus (cable, `wifi-uc3m`, `eduroam` en campus). Para acceder externamente, puedes utilizar el servicio [VPN](https://www.uc3m.es/sdic/servicios/vpn).
+   - **UC3M (acceso estos recursos desde fuera de las redes del campus)**: Las subscripciones de la Biblioteca (p.ej. IEEExplore, JCR y WOS) funcionan de forma automática para dentro de las redes de los campus (cable, `WiFi-UC3M`, `eduroam` en campus). Para acceder externamente, puedes utilizar el servicio [VPN](https://www.uc3m.es/sdic/servicios/vpn).
 - Véase también la sección de [formato de citas bibliográficas](#formato-de-citas-bibliográficas).
 
 ## Formato (Importante)
