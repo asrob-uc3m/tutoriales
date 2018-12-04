@@ -29,6 +29,8 @@ En esta sección se comentan algunos símbolos importantes. En los ejemplos se u
 - `*` Significa "cualquier cosa", es un operador "comodín". Por ejemplo, `ls *png` nos da un listado de todos los archivos que finalicen (nombre completo, incluyendo extensión) en `png`.
 - `?` Significa "cualquier cosa", es un operador "comodín", pero limitado a una sola letra o carácter. Se pueden poner varios seguidos.
 - `\` Se utiliza para trocear un comando en varias líneas, indicando que el comando continúa (equivalente en Windows: `^`).
+- `;` Se puede utilizar para escribir varios comandos en la misma línea (equivalente en Windows: `&`).
+- `&&` Similar al anterior, para escribir varios comandos en la misma línea, pero sólo si va bien el primero se ejecuta el segundo (equivalente en Windows: `&&` igual).
 
 ## El comando `man`
 
