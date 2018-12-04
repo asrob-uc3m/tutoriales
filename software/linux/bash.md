@@ -24,7 +24,7 @@ En esta sección se comentan algunos símbolos importantes. En los ejemplos se u
    - Se utiliza cuando se quiere especificar una ruta relativa. Por ejemplo: `/etc` es una ruta absoluta, se refiere una carpeta `etc` en la raíz del sistema de ficheros; sin embargo, `./etc` es una ruta relativa, se refiere a una carpeta `etc` dentro de la carpeta donde estamos.
    - Se utiliza cuando se quiere lanzar un programa no instalado. Se trata de un caso de uso específico del punto anterior. Cuando un programa no está propiamente instalado (por ejemplo, acabamos de compilar `miPrograma`), uno está obligado a especificar que se quiere ejecutar el de la carpeta donde se está (siguiendo con el ejemplo: `./miPrograma`).
    - También se utiliza dentro del nombre de un fichero, para separar `nombre.extensión`.
-   - Por último, al inicio de un nombre de fichero, clásicamente se trata de un fichero oculto, como sucede con muchos [ficheros de configuración](configuration-files.md).
+   - Por último, como se comentó en [introducción](introduction.md#notas-adicionales)), el `.` al inicio de un nombre de fichero indica fichero oculto, y esto sucede con muchos [ficheros de configuración](configuration-files.md).
 - `..` Significa "en la carpeta padre", "la carpeta que contiene esta carpeta". Por ejemplo, ascendemos a la carpeta padre via `cd ..`.
 - `*` Significa "cualquier cosa", es un operador "comodín". Por ejemplo, `ls *png` nos da un listado de todos los archivos que finalicen (nombre completo, incluyendo extensión) en `png`.
 - `?` Significa "cualquier cosa", es un operador "comodín", pero limitado a una sola letra o carácter. Se pueden poner varios seguidos.
