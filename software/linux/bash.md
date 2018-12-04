@@ -18,12 +18,12 @@ La consola (o terminal) de Linux es muy útil. Como se mencionó en la [introduc
 
 ## Símbolos importantes
 
+- `/` Se utiliza como delimitador entre nombres de carpetas, y entre nombres de carpetas y archivos (equivalente en Windows: `\`).
 - `.` Significa "aquí", "en esta carpeta".
 - `..` Significa "en la carpeta padre", "la carpeta que contiene esta carpeta".
-- `/` Se utiliza como delimitador entre nombres de carpetas, y entre nombres de carpetas y archivos (equivalente en Windows: `\`).
-- `\` Se utiliza para trocear un comando en varias líneas, indicando que el comando continúa (equivalente en Windows: `^`).
 - `*` Significa "cualquier cosa", es un operador "comodín".
 - `?` Significa "cualquier cosa", es un operador "comodín", pero limitado a una sola letra o carácter.
+- `\` Se utiliza para trocear un comando en varias líneas, indicando que el comando continúa (equivalente en Windows: `^`).
 
 ## El comando `man`
 
