@@ -6,7 +6,7 @@ En Windows se pueden leer con escribir `echo %VARIABLE%` en el Símbolo de Siste
 
 En Windows son modificables a través de Panel de Control -\> Sistema -\> Avanzado -\> Variables de Entorno
 
-En Linux se pueden leer con escribir `echo $VARIABLE` en una [consola](linux/bash.md).
+En Linux se pueden leer con escribir `echo $VARIABLE` en una [consola](linux/bash.md) (específicamente, véase sección de [símbolos importantes](linux/bash#símbolos-importantes)).
 
 En Linux se pueden modificar con escribir `export VARIABLE=valor` (véase que es sin el símbolo $) en una consola (válido para la sesión de consola), dentro el fichero `~/.bashrc` (que se lanza al arranque de una consola, por tanto válido para sesiones de consola), o dentro del fichero `~/.profile` (al arranque del PC).
 
@@ -23,9 +23,6 @@ En Linux se pueden modificar con escribir `export VARIABLE=valor` (véase que es
 - **USER**: Nombre del usuario de sesión.
 - **xxxx\_ROOT**: Las aplicaciones pueden utilizar esta variable para saber dónde está la raíz del código fuente descargado de la aplicación xxxx.
 - **xxxx\_DIR**: Las aplicaciones pueden utilizar esta variable para saber dónde está la raíz del *build* del código fuente descargado de la aplicación xxxx. Es utilizado por CMake para encontrar el fichero xxxxConfig.cmake o alguna de sus alternativas.
-- **?**: Valor de retorno del último programa ejecutado (no es lo mismo que su salida por pantalla, más [aquí](http://tldp.org/LDP/abs/html/exit-status.html) y [aquí sus valores estándar](http://tldp.org/LDP/abs/html/exitcodes.html)).
-- **\!**: PID del último programa ejecutado.
-- **\!$**: Esta variable de entorno propia de Linux guarda la última "palabra" escrita (véase que la notación es un tanto extraña, la exclamación precede al símbolo $).
 
 ## Variables de Uso Frecuente en Windows
 
