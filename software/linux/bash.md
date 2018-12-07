@@ -29,7 +29,9 @@ En esta sección se comentan algunos símbolos especiales. En los ejemplos se ut
 - `*` Significa "cualquier cosa", es un operador "comodín". Por ejemplo: `ls ab*` nos da un listado de todo lo que empieza por `ab`, y `ls *png` nos da un listado de todoque finalice (nombre completo, incluyendo extensión) en `png`.
 - `?` Significa "cualquier cosa", es un operador "comodín", pero limitado a una sola letra o carácter. Se pueden poner varios seguidos.
 - `#` Significa "comentario", no se ejecuta lo que esté a su derecha. Por ejemplo: `ls # Esto es un comentario` hace lo mismo que `ls`, pero aporta información al lector. Nótese que aunque no se ejecute como tal, puede contener información relevante, véase el Shebang en la sección de [scripts de Bash](#scripts-de-bash).
-- `\` Se utiliza para trocear un comando en varias líneas, indicando que el comando continúa (equivalente en Windows: `^`).
+- `\` La *barra inversa* (*backslash*) tiene dos usos (su equivalente en Windows: `^` (*caret*)):
+   - Interpretar como *literal*. Por ejemplo: mediante `ls Mis\ Documentos` se evita el uso de entrecomillado del texto (interpreta el espacio (` `) como *literalmente* un espacio en lugar de como separador de argumentos/parámetros).
+   - Se utiliza para trocear un comando en varias líneas, indicando que el comando continúa. Funciona sólo si no se introducen caracteres adicionales a su derecha (aunque en realidad lo que se está introduciendo es una [nueva línea](https://es.wikipedia.org/wiki/Nueva_l%C3%ADnea), y el mecanismo subyacente es el del caso anterior).
 - `;` Se puede utilizar para escribir varios comandos en la misma línea (equivalente en Windows: `&`).
 - `&&` Similar al anterior, para escribir varios comandos en la misma línea, pero sólo si va bien el primero se ejecuta el segundo (equivalente en Windows: `&&` igual).
 - `"` Este tipo de entrecomillado permite espeficicar que un texto va en bloque, pese a la presencia de espacios. Por ejemplo: `cd "Mis Documentos"`.
