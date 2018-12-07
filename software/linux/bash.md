@@ -33,7 +33,7 @@ En esta sección se comentan algunos símbolos especiales. En los ejemplos se ut
 - `&&` Similar al anterior, para escribir varios comandos en la misma línea, pero sólo si va bien el primero se ejecuta el segundo (equivalente en Windows: `&&` igual).
 - `"` Este tipo de entrecomillado permite espeficicar que un texto va en bloque, pese a la presencia de espacios. Por ejemplo: `cd "Mis Documentos"`.
 - \` Este tipo de entrecomillado permite utilizar la salida estándar ([STDOUT](http://man7.org/linux/man-pages/man3/stdout.3.html), que por defecto se muestra por pantalla) de un programa como argumento de otro. Por ejemplo: `cd `\``ls`\` intentaría cambiar de carpeta utilizando el nombre de la primera entrada del listado de `ls` (y daría error en caso de que fuese un fichero en lugar de una carpeta).
-- `|` Se llama pipe. Redirige la salida estándar ([STDOUT](http://man7.org/linux/man-pages/man3/stdout.3.html), que por defecto se muestra por pantalla) de un programa a otro programa. Es similar pero de uso algo menos intuitivo que el entrcomillado  \`. Por ejemplo, para salidas estándar muy largos y sin posibilidad de scroll de ratón, se utiliza: `ls | less`, donde `less` permite el avance con la tecla `Enter` y salir con `q`. En otras ocasiones está desaconsejado ([don't pipe the cat](https://memegenerator.net/img/instances/53648306/piping-cat-output-to-grep-thats-not-optimal.jpg), [1](https://www.infoworld.com/article/2614499/unix/unix--when-pipes-don-t-make-sense.html), [2](http://porkmail.org/era/unix/award.html)).
+- `|` Se llama pipe. Redirige la salida estándar ([STDOUT](http://man7.org/linux/man-pages/man3/stdout.3.html), que por defecto se muestra por pantalla) de un programa a otro programa. Es similar pero de uso algo menos intuitivo que el entrcomillado  \`. Por ejemplo, para salidas estándar muy largos y sin posibilidad de scroll de ratón, se utiliza: `ls | less`, donde `less` permite el avance con la tecla `Enter` y salir con `q`. En otras ocasiones está desaconsejado ([don't pipe the cat](https://memegenerator.net/img/instances/53648306/piping-cat-output-to-grep-thats-not-optimal.jpg), [1](https://www.infoworld.com/article/2614499/unix/unix--when-pipes-don-t-make-sense.html)).
 - `>` Redirige la salida estándar ([STDOUT](http://man7.org/linux/man-pages/man3/stdout.3.html), que por defecto se muestra por pantalla) de un programa, a un fichero. Si el fichero ya existe, primero borra su contenido. Por ejemplo: `ls > stdout.log` vuelca el listado de contenido de la carpeta donde se está creando un fichero llamado `stdout.log`. Hemos seleccionado `log` porque se traduce como "registro de actividades", pero puede usarse cualquier extensión o incluso omitirse.
 - `>>` Similar a `>`, pero si el fichero ya existe, anexa los datos a continuación de los datos existentes.
 - `2>` Redirige la salida de errores ([STDERR](http://man7.org/linux/man-pages/man3/stdout.3.html), que por defecto se muestra por pantalla) de un programa, a un fichero. Si el fichero ya existe, primero borra su contenido. Por ejemplo: `cd` \` `ls` \` `2> stderr.log` vuelca el error (en caso de producirse) creando un fichero llamado `stderr.log`. Existe un fichero muy especial, `/dev/null`, que quiere decir "a ninguna parte" (se traduce como "no me muestre usted los errores"), y se puede utilizar: `cd `\``ls`\`` 2> /dev/null`
@@ -140,15 +140,10 @@ Existen diversas maneras de iterar en Bash:
       for f in *; do mv -- "$f" "$(date -r "$f" +%Y%m%d)-$f"; done
       ```
 
-A continuación veremos scripts de Bash. Nótese que **si la complejidad de un script
-es muy elevada, se puede considerar utilizar un script de Python en su lugar**,
-puesto que a costa de su intérprete se consiguen muchas más herramientas y en 
-general una sintaxis más sencilla.
-
 ## Scripts de Bash
-Script se suele traducir como fichero de ejecución por lotes. Un *bash
-script* es un conjunto de comandos de consola de linux que
-el sistema operativo ejecuta en orden. Mucha info en <https://stackoverflow.com/tags/bash/info>.
+Un script de Bash (*bash script*) es un conjunto de comandos de consola de linux que el sistema operativo ejecuta en orden. Script se suele traducir como fichero de ejecución por lotes. Nótese que **si la complejidad de un script es muy elevada**:
+1. Tal vez se pueda simplificar [1](http://porkmail.org/era/unix/award.html)
+2. Se puede considerar utilizar un script de Python en su lugar, puesto que a costa de su intérprete se consiguen muchas más herramientas y en general una sintaxis más sencilla.
 
 El típico script de linux debería tener como primera línea `#!/usr/bin/env bash` ([leer más sobre shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29#Portability)). Nótese que `#` implica comentario.
 
@@ -157,3 +152,5 @@ Se pueden encontrar algunos ejemplos de scripts de bash en la sección de [fiche
 ## Referencias
 - https://help.ubuntu.com/community/UsingTheTerminal
 - http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/
+- https://stackoverflow.com/tags/bash/info
+
