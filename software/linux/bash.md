@@ -36,10 +36,12 @@ En esta sección se comentan algunos símbolos especiales. En los ejemplos se ut
 - `>` Redirige la salida estándar ([STDOUT](http://man7.org/linux/man-pages/man3/stdout.3.html), que por defecto se muestra por pantalla) de un programa, a un fichero. Si el fixhero ya existe, primero borra su contenido. Por ejemplo: `ls > stdout.log` vuelca el listado de contenido de la carpeta donde se está creando un fichero llamado `stdout.log`. Hemos seleccionado `log` porque se traduce como "registro de actividades", pero puede usarse cualquier extensión o incluso omitirse.
 - `>>` Similar a `>`, pero si el fichero ya existe, anexa los datos a continuación de los datos existentes.
 - `2>` Redirige la salida de errores ([STDERR](http://man7.org/linux/man-pages/man3/stdout.3.html), que por defecto se muestra por pantalla) de un programa, a un fichero. Por ejemplo: `cd` \` `ls` \` `2> stderr.log` vuelca el error (en caso de producirse) creando un fichero llamado `stderr.log`. Existe un fichero muy especial, `/dev/null`, que quiere decir "a ninguna parte" (se traduce como "no me muestre usted los errores"), y se puede utilizar: `cd `\``ls`\`` 2> /dev/null`
-- `&` Lanza un programa en segundo plano, por ejemplo: `programa &`. Se puede utilizar como `programa 2> /dev/null &` para que no nos estén llegando mensajes de error en segundo plano (véase cómo lo utilizamos [aquí](https://github.com/asrob-uc3m/tutoriales/blob/8236fc98076747a377537e608976ac8901108fb0/assets/dotfiles/.bashrc-asrob#L3)). Se puede listar los programas en segundo plano mediante el comando **jobs**, o pasar el programa a primer plano mediante el comando **fg**.
+- `&` Lanza un programa en segundo plano, por ejemplo: `programa &`. Muestra el identificador de proceso ([PID](https://en.wikipedia.org/wiki/Process_identifier)) al lanzar el programa. Se puede listar los programas en segundo plano mediante el comando **jobs**, o pasar el programa a primer plano mediante el comando **fg**.
 - `!$` Contiene la última palabra que uno mismo ha escrito en la consola.
 - `$` Para obtener el valor de una [variable de entorno](../environment-variables.md).
 - `~` Se corresponde con la [variable de entorno](../environment-variables.md) `HOME`. Por ejemplo, `ls ~` y `ls $HOME` son equivalentes.
+
+Estos símbolos se pueden combinar en el mismo comando y en cualquier orden, como por ejemplo: `programa & 2> /dev/null` lanza `programa` en segundo plano, y además evita que no nos estén llegando mensajes de error (que sería el comportamiento por defecto): véase cómo lo utilizamos [aquí](https://github.com/asrob-uc3m/tutoriales/blob/8236fc98076747a377537e608976ac8901108fb0/assets/dotfiles/.bashrc-asrob#L3).
 
 ## El comando `man`
 
