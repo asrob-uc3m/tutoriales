@@ -31,6 +31,8 @@ En esta sección se comentan algunos símbolos importantes. En los ejemplos se u
 - `\` Se utiliza para trocear un comando en varias líneas, indicando que el comando continúa (equivalente en Windows: `^`).
 - `;` Se puede utilizar para escribir varios comandos en la misma línea (equivalente en Windows: `&`).
 - `&&` Similar al anterior, para escribir varios comandos en la misma línea, pero sólo si va bien el primero se ejecuta el segundo (equivalente en Windows: `&&` igual).
+- `>` Redirige la salida estándar ([STDOUT](http://man7.org/linux/man-pages/man3/stdout.3.html), que por defecto se muestra por pantalla) de un programa, a un fichero. Por ejemplo: `ls > miarchivo.txt` vuelca el listado de contenido de la carpeta donde se está a un fichero.
+- `2>` Redirige la salida de errores ([STDERR](http://man7.org/linux/man-pages/man3/stdout.3.html), que por defecto se muestra por pantalla) de un programa, a un fichero. Por ejemplo: `ls 2> /dev/null` vuelca cualquier error que se genere (poco habitual, es meramente ilustrativo) a un fichero muy especial, `/dev/null`, que quiere decir "a ninguna parte" (se traduce como "no me muestre usted los errores").
 
 ## El comando `man`
 
