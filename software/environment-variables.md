@@ -6,7 +6,7 @@ En Windows se pueden leer con escribir `echo %VARIABLE%` en el Símbolo de Siste
 
 En Windows son modificables a través de Panel de Control -\> Sistema -\> Avanzado -\> Variables de Entorno
 
-En Linux se pueden leer con escribir `echo $VARIABLE` en una [consola](linux/bash.md) (específicamente, véase sección de [símbolos importantes](linux/bash#símbolos-importantes)).
+En Linux se pueden leer con escribir `echo $VARIABLE` en una [consola](linux/bash.md) (específicamente, véase sección de [símbolos importantes](linux/bash.md#símbolos-importantes)).
 
 En Linux se pueden modificar con escribir `export VARIABLE=valor` (véase que es sin el símbolo $) en una consola (válido para la sesión de consola), dentro el fichero [~/.bashrc](linux/configuration-files.md#bashrc), o dentro del fichero [~/.profile](linux/configuration-files.md#profile).
 
