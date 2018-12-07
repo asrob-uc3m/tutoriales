@@ -37,6 +37,7 @@ En esta sección se comentan algunos símbolos especiales. En los ejemplos se ut
 - `>>` Similar a `>`, pero si el fichero ya existe, anexa los datos a continuación de los datos existentes.
 - `2>` Redirige la salida de errores ([STDERR](http://man7.org/linux/man-pages/man3/stdout.3.html), que por defecto se muestra por pantalla) de un programa, a un fichero. Si el fichero ya existe, primero borra su contenido. Por ejemplo: `cd` \` `ls` \` `2> stderr.log` vuelca el error (en caso de producirse) creando un fichero llamado `stderr.log`. Existe un fichero muy especial, `/dev/null`, que quiere decir "a ninguna parte" (se traduce como "no me muestre usted los errores"), y se puede utilizar: `cd `\``ls`\`` 2> /dev/null`
 - `2>>` Similar a `>`, pero si el fichero ya existe, anexa los datos a continuación de los datos existentes.
+- `2>&1` Otra variante de `2>`, redirige a donde se dirija lo de `>`.
 - `&` Lanza un programa en segundo plano, por ejemplo: `programa &`. Muestra el identificador de proceso ([PID](https://en.wikipedia.org/wiki/Process_identifier)) al lanzar el programa. Se puede listar los programas en segundo plano mediante el comando **jobs**, o pasar el programa a primer plano mediante el comando **fg**.
 - `!$` Contiene la última palabra que uno mismo ha escrito en la consola.
 - `$` Para obtener el valor de una [variable de entorno](../environment-variables.md).
