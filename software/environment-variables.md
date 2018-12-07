@@ -6,7 +6,7 @@ En Windows se pueden leer con escribir `echo %VARIABLE%` en el Símbolo de Siste
 
 En Windows son modificables a través de Panel de Control -\> Sistema -\> Avanzado -\> Variables de Entorno
 
-En Linux se pueden leer con escribir `echo $VARIABLE` en una [consola](linux/bash.md) (específicamente, véase sección de [símbolos importantes](linux/bash.md#símbolos-importantes)).
+En Linux se pueden leer con escribir `echo $VARIABLE` en una [consola](linux/bash.md) (específicamente, véase sección de [símbolos especiales](linux/bash.md#símbolos-especiales)).
 
 En Linux se pueden modificar con escribir `export VARIABLE=valor` (véase que es sin el símbolo $) en una consola (válido para la sesión de consola), dentro el fichero [~/.bashrc](linux/configuration-files.md#bashrc), o dentro del fichero [~/.profile](linux/configuration-files.md#profile).
 
@@ -16,7 +16,7 @@ En Linux se pueden modificar con escribir `export VARIABLE=valor` (véase que es
 
 ## Variables de Uso Frecuente en Linux
 
-- **HOME**: Es la carpeta personal del usuario de sesión. Equivalente **/home/$USER** y al [símbolo importante](linux/bash.md#símbolos-importantes)) **~**.
+- **HOME**: Es la carpeta personal del usuario de sesión. Equivalente **/home/$USER** y al [símbolo especial](linux/bash.md#símbolos-especiales)) **~**.
 - **HOSTNAME**: El nombre de la máquina.
 - **LD\_LIBRARY\_PATH**: Es uno de los lugares donde el sistema operativo busca [librerías dinámicas](programming/libs.md).
 - **PS1**: *Prompt string 1*, la línea de consola. Más [aquí](https://www.linuxnix.com/linuxunix-shell-ps1-prompt-explained-in-detail/). Véase también **PROMPT_COMMAND**.

@@ -2,7 +2,7 @@
 
 - [Introducción](#introducción)
 - [Atajos de teclado](#atajos-de-teclado)
-- [Símbolos importantes](#símbolos-importantes)
+- [Símbolos especiales](#símbolos-especiales)
 - [El comando `man`](#el-comando-man)
 - [Listado alfabético de comandos útiles](#listado-alfabético-de-comandos-útiles)
 - [Scripts de Bash](#scripts-de-bash)
@@ -16,9 +16,9 @@ La consola (o terminal) de Linux es muy útil. Como se mencionó en la [introduc
 - flecha `arriba`/`abajo`: moverse a través de historial de comandos.
 - `CTRL-r`: búsqueda de comandos escritos anteriormente (pulsar y empezar a teclear).
 
-## Símbolos importantes
+## Símbolos especiales
 
-En esta sección se comentan algunos símbolos importantes. En los ejemplos se utilizan los comandos `ls` (listar contenido de carpeta) y `cd` (cambiar de carpeta) que se explican con mayor detalle en la sección de [comandos útiles](#listado-alfabético-de-comandos-útiles).
+En esta sección se comentan algunos símbolos especiales. En los ejemplos se utilizan los comandos `ls` (listar contenido de carpeta) y `cd` (cambiar de carpeta) que se explican con mayor detalle en la sección de [comandos útiles](#listado-alfabético-de-comandos-útiles).
 - `/` Se utiliza como delimitador entre nombres de carpetas, y entre nombres de carpetas y archivos (equivalente en Windows: `\`). Por ejemplo: `/etc/crontab` indica que dentro de la carpeta `/etc` hay un fichero que se llama `crontab`.
 - `.` Significa "aquí", "en esta carpeta". Por su cuenta, muchas veces se puede omitir (`ls .` se puede abreviar como `ls`, y `cd .` no hace nada).
    - Se utiliza cuando se quiere especificar una ruta relativa. Por ejemplo: `/etc` es una ruta absoluta, se refiere una carpeta `etc` en la raíz del sistema de ficheros; sin embargo, `./etc` es una ruta relativa, se refiere a una carpeta `etc` dentro de la carpeta donde estamos.
