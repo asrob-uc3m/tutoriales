@@ -51,6 +51,7 @@ Estos comandos, en general, también son aplicables a `gnome-terminal`, `bash`, 
 - **apt-cache search**: en Debian/Ubuntu/Mint, da el nombre de los paquetes que contienen los metadatos que se buscan (versión, dependencias, descripción, etc.).
 - **apt-file search**: en Debian/Ubuntu/Mint, da el nombre de los paquetes que contienen el fichero que se busca.
 - **apt-get install**: en Debian/Ubuntu/Mint, instala un paquete, que puede ser un programa o librería (e.g. de nombre lib*librería*-dev). Suele requerir **sudo** delante.
+- **cat**: Escribe el contenido de un fichero por pantalla. Útil para echar un vistazo rápido a un fichero que ni merece la pena abrir para editar. Por ejemplo: `cat README.md` vuelca el contenido del fichero `README.md`. Para ficheros largos, mejor utilizar **head** (donde una opción buena es `head -n 5 README.md` para ver sólo primeras 5 líneas) o **tail** (para ver últimas líneas, véase también su uso en **dmesg**).
 - **cd**: cambiar de carpeta.
 - **cp**: copiar origen a destino. Una alternativa que muestra progreso y mantiene permisos es `rsync -ah --progress origen destino` (ojo: su comportamiento difiere según `/` al final de la ruta).
 - **crontab**: Edita la tabla de tareas periódicas mediante `crontab -e`.
@@ -58,7 +59,7 @@ Estos comandos, en general, también son aplicables a `gnome-terminal`, `bash`, 
 - **df**: Mostrar ocupación de discos montados. Utilícese con `-lh` para lectura humana.
 - **dmesg**: Muestra mensajes del kernel. Utiliza `tail -f /var/log/syslog` para verlo en stream continuo.
 - **du**: Mostrar ocupación de subcarpetas. Utilícese con `-lh` para lectura humana, y `-s` para resumido.
-- **echo**: Escribe por pantalla, útil en [scripts de bash](#scripts-de-bash).
+- **echo**: Escribe una cadena de caracteres por pantalla. Útil en [scripts de bash](#scripts-de-bash). Por ejemplo: `echo "hola mundo"` escribe `hola mundo` en pantalla.
 - **find**: Busca ficheros que cumplan un criterio (nombre, tamaño...).
    - Uso básico (buscar fichero por nombre): `find -name fichero.txt`
    - Uso básico (buscar fichero con comodín, ejemplo extensión): `find -name *.txt`
