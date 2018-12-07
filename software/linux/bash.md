@@ -6,7 +6,7 @@
 - [El comando `man`](#el-comando-man)
 - [Listado alfabético de comandos útiles](#listado-alfabético-de-comandos-útiles)
 - [Scripts de Bash](#scripts-de-bash)
-- [Referencias](#referencias)
+- [Páginas similares y relacionadas](#páginas-similares-y-relacionadas)
 
 # Introducción
 La consola (o terminal) de Linux es muy útil. Como se mencionó en la [introducción a Linux](introduction.md#atajos-de-teclado-y-ratón), se puede acceder a una consola a través de la combinación de teclas `CTRL`+`ALT`+`t`, y utilizar mecanismos como los portapapeles de Linux, además de sus atajos de teclado propios. Nótese que, al igual que Linux en general, Bash es "sensible a mayúsculas" (al contrario que en Windows, sí hace diferencia el hecho de que una misma letra se escriba con minúscula o mayúscula).
@@ -152,6 +152,6 @@ Cualquier Script de Linux debería tener un [Shebang](https://en.wikipedia.org/w
 
 Se pueden encontrar algunos ejemplos de Scripts de Bash en la sección de [ficheros de configuración](configuration-files.md).
 
-## Referencias
+## Páginas similares y relacionadas
 - https://help.ubuntu.com/community/UsingTheTerminal
-- http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/
+- http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO
