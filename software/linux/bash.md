@@ -105,7 +105,7 @@ Estos comandos, en general, también son aplicables a `gnome-terminal`, `bash`, 
    - No tiene funcionalidad recursiva (en todos los ficheros de una carpeta y sus subcarptas), pero se puede conseguir mediante [bucles en bash](#bucles-en-bash).
 - **setxkbmap**: Cambiar la configuración del teclado. Por ejemplo, a español: `setxkbmap es,es` (sin X, pero que requiere `sudo`: `loadkeys --verbose es`)
 - **sudo**: Realizar el comando que se escribe en la misma línea con permisos de administrador.
-- **top**: Mostrar los processos en ejecución. Con colores, existe `htop`.
+- **top**: Mostrar los processos en ejecución (donde ([PID](https://en.wikipedia.org/wiki/Process_identifier) es el identificador de proceso, y COMMAND es el nombre del proceso). Con colores, existe `htop`.
 - **tree**: Mostrar contenidos de una carpeta en formato árbol. Con `-L` se puede especificar la profundidad, o con `-I` se puede excluir un patrón, ejemplo: `tree -I build`.
 - **updatedb**: Actualiza la base de datos que utiliza **locate**
 
