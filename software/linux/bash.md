@@ -38,6 +38,7 @@ En esta sección se comentan algunos símbolos importantes. En los ejemplos se u
 - `&` Lanza un programa en segundo plano, por ejemplo: `programa &`. Se puede utilizar como `programa 2> /dev/null &` para que no nos estén llegando mensajes de error en segundo plano (véase cómo lo utilizamos [aquí](https://github.com/asrob-uc3m/tutoriales/blob/8236fc98076747a377537e608976ac8901108fb0/assets/dotfiles/.bashrc-asrob#L3)). Se puede listar los programas en segundo plano mediante el comando **jobs**, o pasar el programa a primer plano mediante el comando **fg**.
 - `!$` Contiene la última palabra que uno mismo ha escrito en la consola.
 - `$` Para obtener el valor de una [variable de entorno](../environment-variables.md).
+- `~` Se corresponde con la [variable de entorno](../environment-variables.md) `HOME`. Por ejemplo, `ls ~` y `ls $HOME` son equivalentes.
 
 ## El comando `man`
 

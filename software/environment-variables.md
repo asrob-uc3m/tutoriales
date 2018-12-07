@@ -16,7 +16,7 @@ En Linux se pueden modificar con escribir `export VARIABLE=valor` (véase que es
 
 ## Variables de Uso Frecuente en Linux
 
-- **HOME**: Equivalente a **~** y a **/home/$USER**, es la carpeta personal del usuario de sesión.
+- **HOME**: Es la carpeta personal del usuario de sesión. Equivalente **/home/$USER** y al [símbolo importante](linux/bash.md#símbolos-importantes)) **~**.
 - **HOSTNAME**: El nombre de la máquina.
 - **LD\_LIBRARY\_PATH**: Es uno de los lugares donde el sistema operativo busca [librerías dinámicas](programming/libs.md).
 - **PS1**: *Prompt string 1*, la línea de consola. Más [aquí](https://www.linuxnix.com/linuxunix-shell-ps1-prompt-explained-in-detail/). Véase también **PROMPT_COMMAND**.
