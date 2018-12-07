@@ -148,12 +148,10 @@ Nótese que si la complejidad de un Script es muy elevada:
 1. Tal vez se pueda simplificar [1](http://porkmail.org/era/unix/award.html)
 2. Se puede considerar utilizar un script de Python en su lugar, puesto que a costa de su intérprete se consiguen muchas más herramientas y en general una sintaxis más sencilla.
 
-Cualquier Script de Linux debería tener un [Shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29) como primera línea. El de un Script de Bash debería ser `#!/usr/bin/env bash` ([1](https://en.wikipedia.org/wiki/Shebang_%28Unix%29#Portability)).
+Cualquier Script de Linux debería tener un [Shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29) como primera línea. El de un Script de Bash debería ser `#!/usr/bin/env bash` ([1](https://stackoverflow.com/tags/bash/info)).
 
 Se pueden encontrar algunos ejemplos de Scripts de Bash en la sección de [ficheros de configuración](configuration-files.md).
 
 ## Referencias
 - https://help.ubuntu.com/community/UsingTheTerminal
 - http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/
-- https://stackoverflow.com/tags/bash/info
-
