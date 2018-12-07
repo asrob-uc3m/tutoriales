@@ -28,6 +28,7 @@ En esta sección se comentan algunos símbolos especiales. En los ejemplos se ut
 - `..` Significa "en la carpeta padre", "la carpeta que contiene esta carpeta". Por ejemplo, ascendemos a la carpeta padre via `cd ..`.
 - `*` Significa "cualquier cosa", es un operador "comodín". Por ejemplo: `ls ab*` nos da un listado de todo lo que empieza por `ab`, y `ls *png` nos da un listado de todoque finalice (nombre completo, incluyendo extensión) en `png`.
 - `?` Significa "cualquier cosa", es un operador "comodín", pero limitado a una sola letra o carácter. Se pueden poner varios seguidos.
+- `#` Significa "comentario", no se ejecuta lo que esté a su derecha. Por ejemplo: `ls # Esto es un comentario` hace lo mismo que `ls`, pero aporta información al lector. Nótese que aunque no se ejecute como tal, puede contener información relevante, véase el Shebang en la sección de [scripts de Bash](#scripts-de-bash).
 - `\` Se utiliza para trocear un comando en varias líneas, indicando que el comando continúa (equivalente en Windows: `^`).
 - `;` Se puede utilizar para escribir varios comandos en la misma línea (equivalente en Windows: `&`).
 - `&&` Similar al anterior, para escribir varios comandos en la misma línea, pero sólo si va bien el primero se ejecuta el segundo (equivalente en Windows: `&&` igual).
@@ -147,7 +148,7 @@ Nótese que **si la complejidad de un script es muy elevada**:
 1. Tal vez se pueda simplificar [1](http://porkmail.org/era/unix/award.html)
 2. Se puede considerar utilizar un script de Python en su lugar, puesto que a costa de su intérprete se consiguen muchas más herramientas y en general una sintaxis más sencilla.
 
-El típico script de linux debería tener como primera línea `#!/usr/bin/env bash` ([leer más sobre shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29#Portability)). Nótese que `#` implica comentario.
+Cualquier Script de Linux debería tener un [Shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29) como primera línea. El de un Script de Bash debería ser `#!/usr/bin/env bash` ([1](https://en.wikipedia.org/wiki/Shebang_%28Unix%29#Portability)).
 
 Se pueden encontrar algunos ejemplos de scripts de bash en la sección de [ficheros de configuración](configuration-files.md).
 
