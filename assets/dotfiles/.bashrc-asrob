@@ -19,12 +19,12 @@ function gtp () {
     cs `cat ~/.sp`
 }
 
-#cat con color
+#cat con color, `sudo -H pip install Pygments` (via pip está >=2.3 con .md) 
 function ccat () {
     pygmentize -g $1
 }
 
-#cat con color
+#cat con color, `sudo apt install source-highlight`
 function ccat2 () {
     source-highlight -fesc -i $1
 }
