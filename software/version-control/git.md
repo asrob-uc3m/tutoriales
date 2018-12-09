@@ -16,6 +16,7 @@
     - Actualizar y fusionar
     - Etiquetas
     - Enlazar repositorio local con remoto
+- [Comandos avanzados](#comandos-avanzados)
 - [Cheatsheet](#cheatsheet)
 - [Git Log Visualization](#git-log-visualization)
 - [Git prompt helpers](#git-prompt-helpers)
@@ -173,6 +174,10 @@ Si no se ha clonado un repositorio ya existente y quieres conectar tu repositori
 `git remote add origin <server>`
 
 Ahora podrás subir tus cambios al repositorio remoto seleccionado.
+
+## Comandos avanzados
+- cherry-pick
+- rebase
 
 ## Cheatsheet
 - Almacenar contraseña durante un tiempo: [`git config credential.helper cache`](https://git-scm.com/docs/git-credential-cache)
