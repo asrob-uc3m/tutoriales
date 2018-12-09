@@ -144,7 +144,7 @@ Antes de fusionar los cambios, puedes revisarlos usando
 
 ### Etiquetas
 
-Se recomienda crear etiquetas para cada nueva versión publicada de un software. Este concepto no es nuevo, ya que estaba disponible en SVN. Puedes crear una nueva etiqueta llamada 1.0.0 ejecutando:
+Se recomienda crear etiquetas para cada nueva [versión](https://semver.org) publicada de un software. Puedes crear una nueva etiqueta llamada 1.0.0 ejecutando:
 
 `git tag 1.0.0 1b2e1d63ff`
 
