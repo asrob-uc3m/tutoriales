@@ -19,7 +19,7 @@
 - [Cheatsheet](#cheatsheet)
 - [Git Log Visualization](#git-log-visualization)
 - [Git prompt helpers](#git-prompt-helpers)
-- [Más tutoriales](#más-tutoriales)
+- [Páginas similares y relacionadas](#páginas-similares-y-relacionadas)
 
 
 ## Acerca de Git
@@ -193,7 +193,7 @@ Pequeños scripts que pueden hacer que en el prompt de tu consola estilo [bash](
 - Windows: https://desktop.github.com/
 - Short (hay muchos): https://github.com/motine/gitprompt
 
-## Más tutoriales
+## Páginas similares y relacionadas
 - https://www.gitbook.com/book/david-estevez/the-git-the-bad-and-the-ugly
 - https://git-scm.com/book/en/v2
 - https://www.atlassian.com/git
