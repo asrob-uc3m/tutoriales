@@ -1,7 +1,13 @@
 # Markdown
 
-Markdown es un lenguaje de marcado (tipo de formateo de texto más o menos estandarizado, que ocupa poco espacio y es fácil de editar con un editor de texto) que permite incluir enlaces, tablas, listados, etc, en un texto de forma sencilla. La especificación dentro de GitHub se llama [GDM](https://github.github.com/gfm/), y se puede utilizar tanto dentro de ficheros `.md` como en los comentarios de las propias `issues`.
+Markdown es un lenguaje de marcado (tipo de formateo de texto más o menos estandarizado, que ocupa poco espacio y es fácil de editar con un editor de texto) que permite incluir enlaces, tablas, listados, etc, en un texto de forma sencilla.
 
+## Editores
+- GitHub: Se puede utilizar tanto dentro de ficheros `.md` como en los comentarios de las propias `Issues`. La especificación dentro de GitHub se llama [GDM](https://github.github.com/gfm/)
+- [haroopad](http://pad.haroopress.com/): The Next Document processor based on Markdown
+- [wereturtle/ghostwriter](https://github.com/wereturtle/ghostwriter): A cross-platform, aesthetic, distraction-free Markdown editor
+
+## Ejemplos
 Lo siguiente es un listado genérico de diversos ejemplos de uso la sintaxis de Markdown.
 
 - [Enlaces (links)](#enlaces-links)
