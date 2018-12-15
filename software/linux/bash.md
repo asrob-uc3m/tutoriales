@@ -115,6 +115,7 @@ Estos comandos, en general, también son aplicables a `gnome-terminal`, `bash`, 
 - **top**: Mostrar los processos en ejecución (donde ([PID](https://en.wikipedia.org/wiki/Process_identifier) es el identificador de proceso, y COMMAND es el nombre del proceso). Con colores, existe `htop`.
 - **tree**: Mostrar contenidos de una carpeta en formato árbol. Con `-L` se puede especificar la profundidad, o con `-I` se puede excluir un patrón, ejemplo: `tree -I build`.
 - **updatedb**: Actualiza la base de datos que utiliza **locate**
+- **wget**: Descarga un fichero, con `-O` se puede renombrar. Es lo que utilizamos [aquí](https://github.com/asrob-uc3m/tutoriales/blob/master/software/linux/configuration-files.md#bashrc).
 
 ## Bucles en Bash
 Existen diversas maneras de iterar en Bash:
