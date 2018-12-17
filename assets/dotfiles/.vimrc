@@ -28,7 +28,8 @@ set expandtab  " Si prefieres tabs reales: noexpandtab
 " autocmd FileType python set noexpandtab " Descomenta si prefieres tabs reales para Python
 set shiftwidth=4  " Numero de espacios a insertar con expandtab
 set tabstop=4  " Espacios que ocupa un tab real
-" block indentation con tab y shift-tab utilizando behave mswin
+
+" block indentation via tab/shift-tab (seleccionar en visual mode primero; en behave mswin: v, shift+arrows)
 vnoremap <Tab> >
 vnoremap <S-Tab> <
 
