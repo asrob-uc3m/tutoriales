@@ -33,6 +33,26 @@ set tabstop=4  " Espacios que ocupa un tab real
 vnoremap <Tab> >
 vnoremap <S-Tab> <
 
+" block c-comment/uncomment via / (seleccionar en visual mode primero; en behave mswin: v, shift+arrows)
+vnoremap <silent> / :call ToggleCommentC()<cr>
+function! ToggleCommentC()
+        if matchstr(getline(line(".")),'^\s*\/\/.*$') == ''
+                :execute "s:^://:"
+        else
+                :execute "s:^\s*//::"
+        endif
+endfunction
+
+" block python-comment/uncomment via # (seleccionar en visual mode primero; en behave mswin: v, shift+arrows)
+vnoremap <silent> # :call ToggleCommentPython()<cr>
+function! ToggleCommentPython()
+        if matchstr(getline(line(".")),'^\s*\#.*$') == ''
+                :execute "s:^:#:"
+        else
+                :execute "s:^\s*#::"
+        endif
+endfunction
+
 set incsearch
 set hlsearch
 set ignorecase      "ic:    ignores case when pattern matching
