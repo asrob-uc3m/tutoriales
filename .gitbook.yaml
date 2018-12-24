@@ -1,2 +1,4 @@
+root: ./
+
 structure:
   readme: gitbook-tmp-cover.md
