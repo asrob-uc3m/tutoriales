@@ -1,6 +1,6 @@
 # Summary
 
-* [Portada](README-gitbook.md)
+* [Portada](gitbook-tmp-cover.md)
 * [Electrónica](electronics/README.md)
   * [Cargador IMAX B6AC](electronics/battery-charger-imax-b6ac.md)
   * [KiCad](electronics/kicad.md)
