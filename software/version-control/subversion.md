@@ -62,15 +62,37 @@ El cliente de interfaz de texto de SVN exige que se escriba un mensaje que expli
 
 Otro comando muy interesante es este, que sirve para ver la diferencia entre un fichero con una revisión pasada del mismo:
 
-`$ svn diff -r numero_de_la_revisión_antigua fichero_con_extensión`
+```bash
+svn diff -r numero_de_la_revisión_antigua fichero_con_extensión
+```
 
 ## Cheatsheet
-- Muchas veces nos interesa ignorar cierto fichero o tipo de fichero. Podemos añadir la línea:
-   ```bash
-   global-ignores = *.o *.lo *.la *.al .libs *.so *.so.[0-9]* *.a *.pyc *.pyo Thumbs.db *.aux *.blg *.out *.lof *.suo build
-   ```
-   al fichero **config**, que en Windows se encuentra en: *C:\\Documents and Settings\\\[username\]\\Application Data\\Subversion*, y en GNU/Linux Ubuntu puede encontrarse en *~/.subversion*.
-- Comando Linux para `svn rm` de ficheros que faltan ([ref](https://stackoverflow.com/questions/9600382/svn-command-to-delete-all-locally-missing-files)): `svn st | grep ^! | awk '{$1=""; print " --force \""substr($0,2)"@\"" }' | xargs svn rm`
-- Configuración Linux para `svn diff` de colores: se puede agregar `diff-cmd = colordiff` (que se debe instalar, `sudo apt install colordiff`) en `.subversion/config` como se ha hecho [aquí](https://github.com/asrob-uc3m/tutoriales/commit/708348f02fe1b11cbe0982121fb6f2e098df5886).
+
+### Ignorar cierto fichero o tipo de fichero
+Añadir la siguiente línea al fichero **config** (en Windows se encuentra en: *C:\\Documents and Settings\\\[username\]\\Application Data\\Subversion*, y en GNU/Linux Ubuntu puede encontrarse en *~/.subversion*):
+```
+global-ignores = *.o *.lo *.la *.al .libs *.so *.so.[0-9]* *.a *.pyc *.pyo Thumbs.db *.aux *.blg *.out *.lof *.suo build
+```
+
+### svn diff: con colores
+Configuración para `svn diff` de colores:
+1. Instalar `colordiff`. En una [consola](../linux/bash.md) de una [distribución Debian/Ubuntu](../linux/introduction.md#qué-es-una-distribución): `sudo apt install colordiff`
+2. Añadir la siguiente línea al fichero **config** (en Windows se encuentra en: *C:\\Documents and Settings\\\[username\]\\Application Data\\Subversion*, y en GNU/Linux Ubuntu puede encontrarse en *~/.subversion*) como se ha hecho [aquí](https://github.com/asrob-uc3m/tutoriales/commit/708348f02fe1b11cbe0982121fb6f2e098df5886):
+    ```
+    diff-cmd = colordiff
+    ```
+
+### Marcar ficheros inexistentes como borrados en el proyecto svn
+En una [consola](../linux/bash.md) (gracias: ([ref](https://stackoverflow.com/questions/9600382/svn-command-to-delete-all-locally-missing-files)):
+```bash
+svn st | grep ^! | awk '{$1=""; print " --force \""substr($0,2)"@\"" }' | xargs svn rm
+```
+
+### Marcar ficheros nuevos como añadidos en el proyecto svn
+En una [consola](../linux/bash.md):
+```bash
+svn st | grep ^? | awk '{$1=""; print " --force \""substr($0,2)"@\"" }' | xargs svn add
+```
+
 ## Más tutoriales
 - http://www.hasheado.com/usando-subversion-desde-la-linea-de-comandos.html
