@@ -93,6 +93,7 @@ Estos comandos, en general, también son aplicables a `gnome-terminal`, `bash`, 
    - En todos los ficheros con extensión `.cpp` de una carpeta y sus subcarptas sin importar mayúsculas/minúsculas de la cadena: `grep -ri "cadena de texto" --include *.cpp`
    - Mostrar líneas a continuación de las encontradas: `grep -A 1 "cadena" *`
    - Mostrar número de línea en el cual aparece: `grep -n "cadena" *`
+   - Mostrar fichero completo marcando cadena en color: `grep --color -E "cadena|$" fichero.txt`
    - Invertir búsqueda (encontrar lo que no lleve cadena): `grep -v "anti cadena" *`
    - Manteniendo color pese a cruzarse con un pipe `|`: `grep --color=always "cadena" * | grep -v "anti cadena"`
 - **killall**: Intenta matar a un proceso, por nombre. Puedes utilizar `pkill` en su lugar para nombre incompleto.
