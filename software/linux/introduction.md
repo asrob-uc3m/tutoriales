@@ -1,19 +1,22 @@
 # Introducción
 
 - [¿Qué es Linux?](#qué-es-linux)
-- [¿Qué es una distribución?](#qué-es-una-distribución)
+- [¿Qué es una distribución de Linux?](#qué-es-una-distribución-de-linux)
 - [Instalar programas](#instalar-programas)
 - [Atajos de teclado y ratón](#atajos-de-teclado-y-ratón)
 - [Notas adicionales](#notas-adicionales)
 
 ## ¿Qué es Linux?
-GNU/Linux, conocido de forma coloquial como simplemente Linux, es un sistema operativo combinación de varios proyectos, entre los cuales podemos destacar: el núcleo Linux (encabezado por Linus Torvalds), herramientas del proyecto GNU (encabezado por Richard Stallman y la Free Software Foundation), elementos gráficos (desde el bajo nivel de X, pasando por librerías gráficas como Qt o GTK, hasta entornos de escritorio como Unity, Cinnamon o MATE), y aplicaciones para usuarios.
+GNU/Linux, conocido de forma coloquial como simplemente Linux, es un sistema operativo combinación de varios proyectos, entre los cuales podemos destacar:
+- El propio núcleo Linux (el kernel, cuyo desarrollo encabeza Linus Torvalds), con el cual no interactuamos directamente salvo que desarrollemos drivers (que se llaman módulos de kernel)
+- Herramientas del proyecto GNU (cuyo desarrollo encabeza Richard Stallman y la Free Software Foundation), de las cuales muchas son comandos de la [consola de Linux](bash.md)
+- Elementos gráficos (desde el bajo nivel de X, pasando por librerías gráficas como Qt o GTK, hasta entornos de escritorio como Unity, Cinnamon o MATE)
 
-## ¿Qué es una distribución?
-Se llama **distribución** a una colección determinada de los elementos previamente mencionados. En la actualidad, Ubuntu goza de mucha popularidad, pero otras distribuciones pueden tener ventajas en cuanto a elección de escritorio más ligero (Lubuntu, Xubuntu, o Mint), estabilidad (Debian), o minimalismo (Arch Linux). Nótese que algunas distribuciones se basan en otras (Mint se basa en Ubuntu, que a su vez se basa en Debian).
+## ¿Qué es una distribución de Linux?
+Se llama **distribución** a una colección determinada de los elementos previamente mencionados. En la actualidad, Ubuntu goza de mucha popularidad, pero otras distribuciones pueden tener ventajas en cuanto a elección de escritorio más ligero (Lubuntu, Xubuntu, o Mint), estabilidad (Debian), o minimalismo (Arch Linux). Nótese que algunas distribuciones se basan en otras (Mint se basa en Ubuntu, y Ubuntu a su vez se basa en Debian).
 
 ## Instalar programas
-Las distribuciones, en general, cuentan con gestores de paquetes para poder instalar programas (y librerías) sin necesidad de acceder a ninguna web. En Debian y derivados (Ubuntu, Mint) el comando de consola se llama `apt`. En la actualidad existen aplicaciones gráficas para interactuar con los gestores de paquetes sin utilizar la consola (p.ej. `Ubuntu Software` de Ubuntu 16.04).
+Las distribuciones, en general, cuentan con gestores de paquetes para poder instalar programas (y librerías) sin necesidad de acceder a ninguna web. En Debian y derivados (Ubuntu, Mint) el comando de consola se llama `apt`. Por ejemplo, `git` se puede instalar vía `sudo apt install git` en una [consola de Linux](bash.md). En la actualidad existen aplicaciones gráficas para interactuar con los gestores de paquetes sin utilizar la consola (p.ej. `Ubuntu Software` de Ubuntu 16.04).
 
 ## Atajos de teclado y ratón
 Nótese que la mayor parte de distribuciones y programas admiten la personalización de atajos de teclado. Aquí se mencionan los atajos por defecto más comunes.

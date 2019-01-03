@@ -76,7 +76,7 @@ global-ignores = *.o *.lo *.la *.al .libs *.so *.so.[0-9]* *.a *.pyc 
 
 ### svn diff: con colores
 Configuración para `svn diff` de colores:
-1. Instalar `colordiff`. En una [consola](../linux/bash.md) de una [distribución Debian/Ubuntu](../linux/introduction.md#qué-es-una-distribución): `sudo apt install colordiff`
+1. Instalar `colordiff`. En una [consola](../linux/bash.md) de una [distribución Debian/Ubuntu](../linux/introduction.md#qué-es-una-distribución-de-linux): `sudo apt install colordiff`
 2. Añadir la siguiente línea al fichero `config` (en Windows se encuentra en: `C:\\Documents and Settings\\\[username\]\\Application Data\\Subversion`, y en Debian/Ubuntu puede encontrarse en `~/.subversion`) como se ha hecho [aquí](https://github.com/asrob-uc3m/tutoriales/commit/708348f02fe1b11cbe0982121fb6f2e098df5886):
     ```
     diff-cmd = colordiff
