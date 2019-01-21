@@ -115,6 +115,7 @@ Estos comandos, en general, también son aplicables a `gnome-terminal`, `bash`, 
 - **sudo**: Realizar el comando que se escribe en la misma línea con permisos de administrador.
 - **top**: Mostrar los processos en ejecución (donde ([PID](https://en.wikipedia.org/wiki/Process_identifier) es el identificador de proceso, y COMMAND es el nombre del proceso). Con colores, existe `htop`.
 - **tree**: Mostrar contenidos de una carpeta en formato árbol. Con `-L` se puede especificar la profundidad, o con `-I` se puede excluir un patrón, ejemplo: `tree -I build`.
+- **uname**: Información de bajo nivel, incluida la versión de kernel de Linux y arquitectura/provesadores si se invoca: `uname -a`.
 - **updatedb**: Actualiza la base de datos que utiliza **locate**
 - **wget**: Descarga un fichero, con `-O` se puede renombrar. Es lo que utilizamos [aquí](configuration-files.md#bashrc).
 
