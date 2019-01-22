@@ -18,7 +18,7 @@ En Linux se pueden modificar con escribir `export VARIABLE=valor` (véase que es
 
 - **HOME**: Es la carpeta personal del usuario de sesión. Equivalente **/home/$USER** y al [símbolo especial](linux/bash.md#símbolos-especiales)) **~**.
 - **HOSTNAME**: El nombre de la máquina.
-- **LD\_LIBRARY\_PATH**: Es uno de los lugares donde el sistema operativo busca [librerías dinámicas](programming/libs.md).
+- **LD\_LIBRARY\_PATH**: Es uno de los lugares donde el sistema operativo busca [librerías dinámicas](programming/libs.md). Nota: [1](https://stackoverflow.com/questions/13428910/how-to-set-the-environmental-variable-ld-library-path-in-linux)
 - **PS1**: *Prompt string 1*, la línea de consola. Más [aquí](https://www.linuxnix.com/linuxunix-shell-ps1-prompt-explained-in-detail/). Véase también **PROMPT_COMMAND**.
 - **USER**: Nombre del usuario de sesión.
 - **xxxx\_ROOT**: Las aplicaciones pueden utilizar esta variable para saber dónde está la raíz del código fuente descargado de la aplicación xxxx.
