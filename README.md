@@ -18,7 +18,7 @@ Es útil servir en `localhost` para modificar el sitio web y ver los cambios loc
 
 1. Desde la raíz del proyecto, ejecuta el siguiente comando (que es universal para todos los proyectos basados en [Gitbook (legacy)](https://github.com/GitbookIO/gitbook)):
 ```bash
-gitbook build && gitbook serve
+gitbook serve # command builds and serves
 ```
 
 2. Ahora puedes navegar por el sitio en la ubicación predeterminada: http://127.0.0.1:4000
