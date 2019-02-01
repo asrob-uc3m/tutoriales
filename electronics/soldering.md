@@ -15,4 +15,13 @@
 - La punta del soldador se limpia con el estropajo metálico que ASROB provee. Esta asociación no tolera esponjas mojadas, ni aunque sea con agua destilada.
 - Las puntas cónicas las quemamos y con sus lágrimas forjamos puntas biseladas o planas.
 
+Guía con recomendaciones básicas para soldar:
 ![soldering](../assets/soldering.png)
+
+
+En la siguiente imagen se indican los dos elementos que forman la estación de soldadura Baku 601D.
+Descripción de controles (de izquierda a derecha)
+1. Control analógico de la temperatura del soldador.
+2. Control analógico del caudal de aire de la pistola de aire caliente.
+3. Control digital de la temperatura del aire en la pistola de aire caliente.
+![soldering](../assets/photo_2019-02-01_18-08-52.jpg)
