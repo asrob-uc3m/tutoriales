@@ -19,6 +19,8 @@ Guía con recomendaciones básicas para soldar:
 ![soldering](../assets/soldering.png)
 
 
+
+## Descripción de elementos
 En la siguiente imagen se indican los dos elementos que forman la estación de soldadura Baku 601D.
 Descripción de controles (de izquierda a derecha)
 1. Control analógico de la temperatura del soldador.
