@@ -4,6 +4,7 @@
 * [Electrónica](electronics/README.md)
   * [Cargador IMAX B6AC](electronics/battery-charger-imax-b6ac.md)
   * [KiCad](electronics/kicad.md)
+  * [Estación de soldadura Baku 601D](electronics/soldering.md)
 * [Mecánica](mechanics/README.md)
     * [FreeCAD](mechanics/freecad.md)
 * [Software](software/README.md)
