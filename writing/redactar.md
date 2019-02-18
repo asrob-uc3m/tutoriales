@@ -93,4 +93,4 @@ Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.w
 - ¡Releer el documento entero mínimo una vez\!
 
 ## Más enlaces de interés
-- Consejos generales para la [presentación de un documento](http://asrob.uc3m.es/index.php/Presentar).
+- Consejos generales para la [presentación de un documento](http://wiki.asrob.uc3m.es/index.php/Presentar).
