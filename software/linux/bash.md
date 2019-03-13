@@ -69,7 +69,7 @@ Estos comandos, en general, también son aplicables a `gnome-terminal`, `bash`, 
 - **apt-cache search**: en Debian/Ubuntu/Mint, da el nombre de los paquetes que contienen los metadatos que se buscan (versión, dependencias, descripción, etc.).
 - **apt-file search**: en Debian/Ubuntu/Mint, da el nombre de los paquetes que contienen el fichero que se busca.
 - **apt-get install**: en Debian/Ubuntu/Mint, instala un paquete, que puede ser un programa o librería (e.g. de nombre lib*librería*-dev). Suele requerir **sudo** delante.
-- **cat**: Escribe el contenido de un fichero por pantalla. Útil para echar un vistazo rápido a un fichero que ni merece la pena abrir para editar. Por ejemplo: `cat README.md` vuelca el contenido del fichero `README.md`. Para ficheros largos, mejor utilizar **head** (donde una opción buena es `head -n 5 README.md` para ver sólo primeras 5 líneas) o **tail** (para ver últimas líneas, véase también su uso en **dmesg**). Nota: Su nombre proviene de su uso original, para concatenar, por ejemplo: `cat file1.txt file2.txt > new.txt`
+- **cat**: Escribe el contenido de un fichero por pantalla. Útil para echar un vistazo rápido a un fichero que ni merece la pena abrir para editar. Por ejemplo: `cat README.md` vuelca el contenido del fichero `README.md`. Para ficheros largos, mejor utilizar **head** (donde una opción buena es `head -n 5 README.md` para ver sólo primeras 5 líneas) o **tail** (para ver últimas líneas, véase también su uso en **dmesg**). Curiosamente, para ver una línea específica, es mejor **sed** vía `sed -n 5p README.md` (más usos en su sección abajo). Nota: Su nombre proviene de su uso original, para concatenar, por ejemplo: `cat file1.txt file2.txt > new.txt`
 - **cd**: cambiar de carpeta.
 - **cp**: copiar origen a destino. Una alternativa que muestra progreso y mantiene permisos es `rsync -ah --progress origen destino` (ojo: su comportamiento difiere según `/` al final de la ruta).
 - **crontab**: Edita la tabla de tareas periódicas mediante `crontab -e`.
@@ -110,6 +110,7 @@ Estos comandos, en general, también son aplicables a `gnome-terminal`, `bash`, 
    - Previsualización (vuelca por pantalla sin realizar cambios): `sed "s/viejo/nuevo/g" fichero.txt`
    - Uso básico: `sed -i "s/viejo/nuevo/g" fichero.txt`
    - En todos los ficheros de una carpeta: `sed -i "s/viejo/nuevo/g" *`
+   - 
    - No tiene funcionalidad recursiva (en todos los ficheros de una carpeta y sus subcarptas), pero se puede conseguir mediante [bucles en bash](#bucles-en-bash).
 - **setxkbmap**: Cambiar la configuración del teclado. Por ejemplo, a español: `setxkbmap es,es` (sin X, pero que requiere `sudo`: `loadkeys --verbose es`)
 - **sudo**: Realizar el comando que se escribe en la misma línea con permisos de administrador.
