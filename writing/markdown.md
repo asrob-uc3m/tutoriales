@@ -7,6 +7,9 @@ Markdown es un lenguaje de marcado (tipo de formateo de texto más o menos estan
 - [haroopad](http://pad.haroopress.com/): The Next Document processor based on Markdown
 - [wereturtle/ghostwriter](https://github.com/wereturtle/ghostwriter): A cross-platform, aesthetic, distraction-free Markdown editor
 
+## Herramientas
+- Auto-generación de índice de contenidos (TOC): [1](https://github.com/jonschlinkert/markdown-toc), [2](https://github.com/ekalinin/github-markdown-toc), [3](http://doctoc.herokuapp.com/), [4](https://github.com/rossant/awesome-math/blob/master/build_toc.py)
+
 ## Ejemplos
 Lo siguiente es un listado genérico de diversos ejemplos de uso la sintaxis de Markdown.
 
