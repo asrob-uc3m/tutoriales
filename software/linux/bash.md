@@ -162,3 +162,5 @@ Se pueden encontrar algunos ejemplos de Scripts de Bash en la sección de [fiche
 - https://help.ubuntu.com/community/UsingTheTerminal
 - http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO
 - https://blog.desdelinux.net/shellcheck-una-utilidad-para-comprobar-tus-scripts-de-shell
+- http://tldp.org/LDP/Bash-Beginners-Guide/html/index.html
+- http://tldp.org/LDP/abs/html/index.html
