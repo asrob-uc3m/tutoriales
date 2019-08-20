@@ -41,6 +41,11 @@ function svn-all () {
     # manually: svn commit
 }
 
+#almacenar contraseña durante un tiempo (debe lanzarse desde dentro de una repo), by @jgvictores
+function git-credential () {
+    git config credential.helper cache
+}
+
 #-- Ocultar nombre de usuario y host en el terminal, by @jgvictores
 PS1="\w$ "
 
