@@ -46,6 +46,9 @@ function git-credential () {
     git config credential.helper cache
 }
 
+#esto @jgvictores lo encontró en SO
+function swap() { mv $1 $1._tmp && mv $2 $1 && mv $1._tmp $2; }
+
 #-- Ocultar nombre de usuario y host en el terminal, by @jgvictores
 PS1="\w$ "
 
