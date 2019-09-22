@@ -135,6 +135,10 @@ Existen diversas maneras de iterar en Bash:
      ```bash
      find -type f -exec sed -i 's/viejo/nuevo/g' {} \+
      ```
+   - Ejemplo 4: Por cada carpeta que contenga una carpeta `.svn`, aplicar `svn up {}` done `{}` es cada ruta encontrada (omitiendo `.svn` via `sed`):
+     ```bash
+     find -name ".svn" | sed "s/.svn//g" | xargs svn up
+     ```
 - A través de bucles `for`.
    - Ejemplo 1 (que se podría realizar en una línea única):
       ```bash
