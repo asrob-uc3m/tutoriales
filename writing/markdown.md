@@ -8,9 +8,10 @@ Markdown es un lenguaje de marcado (tipo de formateo de texto más o menos estan
 - [wereturtle/ghostwriter](https://github.com/wereturtle/ghostwriter): A cross-platform, aesthetic, distraction-free Markdown editor
 
 ## Herramientas
-- Auto-generación de índice de contenidos (Table Of Contents, TOC)
-    - [jonschlinkert/markdown-toc](https://github.com/jonschlinkert/markdown-toc)
-    - [ekalinin/github-markdown-toc](https://github.com/ekalinin/github-markdown-toc)
+- Auto-generación de tabla de contenidos (Table Of Contents, TOC)
+    - [jonschlinkert/markdown-toc](https://github.com/jonschlinkert/markdown-toc) (Node.js)
+    - [ekalinin/github-markdown-toc](https://github.com/ekalinin/github-markdown-toc) (bash)
+    - [ekalinin/github-markdown-toc.go](https://github.com/ekalinin/github-markdown-toc.go) (go)
     - <http://doctoc.herokuapp.com/>
     - [rossant/awesome-math//build_toc.py](https://github.com/rossant/awesome-math/blob/master/build_toc.py)
 
