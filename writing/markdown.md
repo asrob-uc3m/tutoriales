@@ -20,6 +20,9 @@ Markdown es un lenguaje de marcado (tipo de formateo de texto más o menos estan
 - <http://doctoc.herokuapp.com/>
 - [rossant/awesome-math//build_toc.py](https://github.com/rossant/awesome-math/blob/master/build_toc.py)
 
+### wiki -> markdown
+- `pandoc`, véase <https://github.com/asrob-uc3m/tutoriales/issues/2#issue-273074070>
+
 ## Ejemplos
 Lo siguiente es un listado genérico de diversos ejemplos de uso la sintaxis de Markdown.
 
