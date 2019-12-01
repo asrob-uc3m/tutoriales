@@ -8,8 +8,10 @@ Markdown es un lenguaje de marcado (tipo de formateo de texto más o menos estan
 - [haroopad](http://pad.haroopress.com/): The Next Document processor based on Markdown
 - [wereturtle/ghostwriter](https://github.com/wereturtle/ghostwriter): A cross-platform, aesthetic, distraction-free Markdown editor
 
-### Otros Editores y Previsualizadores
+### Otros Editores, Webs y Previsualizadores
 - GitHub: Se puede utilizar tanto dentro de ficheros `.md` como en los comentarios de las propias `Issues`. La especificación dentro de GitHub se llama [GFM](https://github.github.com/gfm/)
+- GitBook
+- Jekyll
 
 ### Auto-generación de tabla de contenidos (Table Of Contents, TOC)
 - [jonschlinkert/markdown-toc](https://github.com/jonschlinkert/markdown-toc) (Node.js)
