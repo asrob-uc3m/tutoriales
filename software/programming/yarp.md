@@ -1,7 +1,7 @@
 # YARP
-A continuación, presentamos un mini-tutorial, destinado a establecer las comunicaciones en un entorno **YARP**.
+A continuación, presentamos un mini-tutorial, destinado a establecer las comunicaciones en un entorno [YARP](http://yarp.it).
 La organización está basada en pequeñas lecciones que explican los primeros pasos para comprender YARP.
-Para más información existe, en el apartado tutoriales, un enlace a la guía oficial de YARP.
+Para más información existe una sección dedicada en la guía oficial: [YARP (Tutorials)](http://yarp.it/tutorials.html).
 Para nociones básicas de redes, existe [el tutorial de redes (ASROB)](http://wiki.asrob.uc3m.es/index.php/Tutorial_de_Redes).
 
 **Requisitos**: Se supone un mínimo conocimiento de sistemas **Linux** (veáse [el tutorial de Consola de Linux (ASROB)](../linux/bash.html)), y de **C/C++** (veáse [el tutorial de Compilación en Linux (ASROB)](http://wiki.asrob.uc3m.es/index.php/Compilaci%C3%B3n_en_Linux)).
