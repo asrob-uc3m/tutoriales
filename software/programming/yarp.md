@@ -30,25 +30,27 @@ Ahora escribimos (casi) cualquier cosa en consola3 y vemos cómo aparece mágica
 
 Crea un archivo llamado `ejemplo.cpp` con este código:
 
-`#include <yarp/os/Network.h>`  
-`#include <yarp/os/Port.h>`  
-`#include <yarp/os/Bottle.h>`  
-`#include <stdio.h>`  
-`using namespace yarp::os;`  
-`int main() {`  
-`   Network yarp;`  
-`   Bottle bot;`  
-`   Port input;`  
-`   input.open("/read");`  
-`   while(1) {`  
-`       input.read(bot);`  
-`       printf("Got message: %s\n", bot.toString().c_str());`  
-`       // Now exit the loop if first element (this is, 0), treated as a string, equals "quit":`  
-`       if(bot.get(0).asString() == "quit") break;`  
-`   }`  
-`   input.close();`  
-`   return 0;`  
-`}`
+```cpp
+#include <yarp/os/Network.h>
+#include <yarp/os/Port.h>
+#include <yarp/os/Bottle.h>
+#include <stdio.h>
+using namespace yarp::os;
+int main() {
+   Network yarp;
+   Bottle bot;
+   Port input;
+   input.open("/read");
+   while(1) {
+       input.read(bot);
+       printf("Got message: %s\n", bot.toString().c_str());
+       // Now exit the loop if first element (this is, 0), treated as a string, equals "quit":
+       if(bot.get(0).asString() == "quit") break;
+   }
+   input.close();
+   return 0;
+}
+```
 
 Abre una consola (que llamaremos consola1) en donde esté ese archivo.
 
