@@ -6,6 +6,14 @@ Para nociones básicas de redes, existe [el tutorial de redes (ASROB)](http://wi
 
 **Requisitos**: Se supone un mínimo conocimiento de sistemas **Linux** (veáse [el tutorial de Consola de Linux (ASROB)](../linux/bash.html)), y de **C/C++** (veáse [el tutorial de Compilación en Linux (ASROB)](http://wiki.asrob.uc3m.es/index.php/Compilaci%C3%B3n_en_Linux)).
 
+* [Lección 1: `yarp server`, `yarp write`, y `yarp read`](#lección-1-yarp-server-yarp-write-y-yarp-read)
+* [Lección 2: `yarp read` con función de `quit`](#lección-2-yarp-read-con-función-de-quit)
+* [Lección 3: `yarp write` básico](#lección-3-yarp-write-básico)
+* [FAQ (Frequently asked questions o Preguntas frecuentes)](#faq-frequently-asked-questions-o-preguntas-frecuentes)
+    * [¿Que es `/yarpy`?](#¿que-es-yarpy)
+    * [¿Que funcion tiene una botella (Bottle)?](#%C2%BFque-funcion-tiene-una-botella-bottle)
+* [Páginas similares y relacionadas](#páginas-similares-y-relacionadas)
+
 ## Lección 1: `yarp server`, `yarp write`, y `yarp read`
 
 Abre una terminal en un sistema Linux (que llamaremos consola+número) y sigue estos pasos:
