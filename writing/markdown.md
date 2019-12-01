@@ -2,13 +2,26 @@
 
 Markdown es un lenguaje de marcado (tipo de formateo de texto más o menos estandarizado, que ocupa poco espacio y es fácil de editar con un editor de texto) que permite incluir enlaces, tablas, listados, etc, en un texto de forma sencilla.
 
-## Editores
-- GitHub: Se puede utilizar tanto dentro de ficheros `.md` como en los comentarios de las propias `Issues`. La especificación dentro de GitHub se llama [GFM](https://github.github.com/gfm/)
+## Herramientas
+
+### Editores WYSIWYG
 - [haroopad](http://pad.haroopress.com/): The Next Document processor based on Markdown
 - [wereturtle/ghostwriter](https://github.com/wereturtle/ghostwriter): A cross-platform, aesthetic, distraction-free Markdown editor
 
-## Herramientas
-- Auto-generación de índice de contenidos (TOC): [1](https://github.com/jonschlinkert/markdown-toc), [2](https://github.com/ekalinin/github-markdown-toc), [3](http://doctoc.herokuapp.com/), [4](https://github.com/rossant/awesome-math/blob/master/build_toc.py)
+### Otros Editores, Webs y Previsualizadores
+- GitHub: Se puede utilizar tanto dentro de ficheros `.md` como en los comentarios de las propias `Issues`. La especificación dentro de GitHub se llama [GFM](https://github.github.com/gfm/)
+- GitBook
+- Jekyll
+
+### Auto-generación de tabla de contenidos (Table Of Contents, TOC)
+- [jonschlinkert/markdown-toc](https://github.com/jonschlinkert/markdown-toc) (Node.js)
+- [ekalinin/github-markdown-toc](https://github.com/ekalinin/github-markdown-toc) (bash)
+- [ekalinin/github-markdown-toc.go](https://github.com/ekalinin/github-markdown-toc.go) (go)
+- <http://doctoc.herokuapp.com/>
+- [rossant/awesome-math//build_toc.py](https://github.com/rossant/awesome-math/blob/master/build_toc.py)
+
+### wiki -> markdown
+- `pandoc`, véase <https://github.com/asrob-uc3m/tutoriales/issues/2#issue-273074070>
 
 ## Ejemplos
 Lo siguiente es un listado genérico de diversos ejemplos de uso la sintaxis de Markdown.
