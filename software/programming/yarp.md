@@ -87,13 +87,13 @@ Pues `yarp write`, que conectamos con sus parámetros de inicialización de (qu�
 
 ## Lección 3: `yarp write` básico
 
-Se parte de la lección anterior. En negrita se puede ver el código nuevo.
+Se parte de la lección anterior, añadiendo código nuevo.
 
 ```bash
 #include <yarp/os/Network.h>
 #include <yarp/os/Port.h>
 #include <yarp/os/Bottle.h>
-**#include <yarp/os/Time.h>**
+#include <yarp/os/Time.h> // código nuevo
 #include <stdio.h>
 
 using namespace yarp::os;
@@ -101,16 +101,16 @@ using namespace yarp::os;
 int main() {
    Network yarp;
    Bottle bot;
-   **Port output;**
-   **output.open("/write");**
-   **while(1) {**
-       **char c[100];**
-       **scanf("%s",c);**
-       **bot.clear(); // will keep on appending if this line were inexistent**
-       **bot.addString(c);**
-       **output.write(bot);**
-   **}**
-   **output.close();**
+   Port output; // código nuevo
+   output.open("/write"); // código nuevo
+   while(1) { // código nuevo
+       char c[100]; // código nuevo
+       scanf("%s",c); // código nuevo
+       bot.clear(); // will keep on appending if this line were inexistent // código nuevo
+       bot.addString(c); // código nuevo
+       output.write(bot); // código nuevo
+   } // código nuevo
+   output.close(); // código nuevo
    return 0;
 }
 ```
