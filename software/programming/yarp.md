@@ -6,7 +6,7 @@ Para nociones básicas de redes, existe [el tutorial de redes (ASROB)](Tutorial_
 
 **Requisitos**: Se supone un mínimo conocimiento de sistemas **Linux** (veáse [el tutorial de Consola de Linux (ASROB)](Consola_de_Linux "wikilink")), y de **C/C++** (veáse [el tutorial de Compilación en Linux (ASROB)](Compilación_en_Linux "wikilink")).
 
-## Lección 1: "yarp server", "yarp write", y "yarp read"
+## Lección 1: `yarp server`, `yarp write`, y `yarp read`
 
 Abre una terminal en un sistema Linux (que llamaremos consola+número) y sigue estos pasos:
 
@@ -26,7 +26,7 @@ yarp write /write /read
 ```
 Ahora escribimos (casi) cualquier cosa en consola3 y vemos cómo aparece mágicamente en consola2.
 
-## Lección 2: "yarp read" con función de "quit"
+## Lección 2: `yarp read` con función de `quit`
 
 Crea un archivo llamado `ejemplo.cpp` con este código:
 
@@ -78,7 +78,7 @@ yarp write /write /read
 ```
 
 Ahora escribimos cualquier cosa en consola3 y vemos cómo aparece mágicamente en consola1.
-Si escribimos "quit" en la consola3, vemos que el módulo de la consola1 se cierra, tal y como está explícito en el código que le hemos implementado.
+Si escribimos `quit` en la consola3, vemos que el módulo de la consola1 se cierra, tal y como está explícito en el código que le hemos implementado.
 
 **Observación 1:** Con `input.read(bot);` se está diciendo que el programa se quede en esta línea esperando (esto es, la función `read`, utilizada así, es una función "bloqueante") a que algo llegue por el puerto (que dentro del programa manejamos a través del objeto `input`) y vuelque su contenido dentro del objeto bot (de clase botella).
 
@@ -130,15 +130,7 @@ mágicamente en consola3.
 ## FAQ (Frequently asked questions o Preguntas frecuentes)
 
 - **P: ¿Que es /yarpy?**
-   - R: Está definido en la línea 10 del CMakeLists.txt que genera
-        "yarp cmake". Es simplemente el nombre por defecto que asigna al
-        ejecutable que generas tras el cmake y make (o sistema de
-        compilación que utilices). Prueba a cambiar esa palabra antes
-        del cmake\!
+   - R: Está definido en la línea 10 del `CMakeLists.txt` que genera `yarp cmake`. Es simplemente el nombre por defecto que asigna al ejecutable que generas tras el cmake y make (o sistema de compilación que utilices). Prueba a cambiar esa palabra antes del cmake\!
 
 - **P: ¿Que funcion tiene una botella (Bottle)?**
-    - R: Es una estructura de datos flexible, un contenedor donde
-        puedes incorportar enteros, cadenas de caracteres, coma
-        flotante... Si nos fijamos en la declaración de la clase Port de
-        YARP, no es más que un puerto especializado en manejar objetos
-        de clase Bottle.
+    - R: Es una estructura de datos flexible, un contenedor donde puedes incorportar enteros, cadenas de caracteres, coma flotante... Si nos fijamos en la declaración de la clase `Port` de YARP, no es más que un puerto especializado en manejar objetos de clase `Bottle`.
