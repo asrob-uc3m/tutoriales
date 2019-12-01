@@ -35,7 +35,9 @@ Crea un archivo llamado `ejemplo.cpp` con este código:
 #include <yarp/os/Port.h>
 #include <yarp/os/Bottle.h>
 #include <stdio.h>
+
 using namespace yarp::os;
+
 int main() {
    Network yarp;
    Bottle bot;
@@ -87,28 +89,31 @@ Pues `yarp write`, que conectamos con sus parámetros de inicialización de (qu�
 
 Se parte de la lección anterior. En negrita se puede ver el código nuevo.
 
-`#include <yarp/os/Network.h>`  
-`#include <yarp/os/Port.h>`  
-`#include <yarp/os/Bottle.h>`  
-**`#include`` ``<yarp/os/Time.h>`**  
-`#include <stdio.h>`  
-`using namespace yarp::os;`  
-`int main() {`  
-`   Network yarp;`  
-`   Bottle bot; `  
-`   `**`Port`` ``output;`**  
-`   `**`output.open("/write");`**  
-`  `*`'`` ``while(1)`` ``{`*`'`  
-`       `**`char`` ``c[100];`**  
-`       `**`scanf("%s",c);`**  
-`      `*`'`` ``bot.clear();`` ``//`` ``will`` ``keep`` ``on``
-``appending`` ``if`` ``this`` ``line`` ``were`` ``inexistent`*`'`  
-`      `*`'`` ``bot.addString(c);`*`'`  
-`       `**`output.write(bot);`**  
-`   `**`}`**  
-`   `**`output.close();`**  
-`   return 0;`  
-`}`
+```bash
+#include <yarp/os/Network.h>
+#include <yarp/os/Port.h>
+#include <yarp/os/Bottle.h>
+**#include <yarp/os/Time.h>**
+#include <stdio.h>
+
+using namespace yarp::os;
+
+int main() {
+   Network yarp;
+   Bottle bot;
+   **Port output;**
+   **output.open("/write");**
+   **while(1) {**
+       **char c[100];**
+       **scanf("%s",c);**
+       **bot.clear(); // will keep on appending if this line were inexistent**
+       **bot.addString(c);**
+       **output.write(bot);**
+   **}**
+   **output.close();**
+   return 0;
+}
+```
 
 Abre una consola (que llamaremos consola1) en donde esté ese archivo.
 
