@@ -78,25 +78,14 @@ yarp write /write /read
 Ahora escribimos cualquier cosa en consola3 y vemos cómo aparece mágicamente en consola1.
 Si escribimos "quit" en la consola3, vemos que el módulo de la consola1 se cierra, tal y como está explícito en el código que le hemos implementado.
 
-**Observación 1:** Con "input.read(bot);" se está diciendo que el
-programa se quede en esta línea esperando (esto es, la función "read",
-utilizada así, es una función "bloqueante") a que algo llegue por el
-puerto (que dentro del programa manejamos a través del objeto "input") y
-vuelque su contenido dentro del objeto bot (de clase botella).
+**Observación 1:** Con `input.read(bot);` se está diciendo que el programa se quede en esta línea esperando (esto es, la función `read`, utilizada así, es una función "bloqueante") a que algo llegue por el puerto (que dentro del programa manejamos a través del objeto `input`) y vuelque su contenido dentro del objeto bot (de clase botella).
 
-**Observación 2:** ¿Quién es el que manda, en la lección, contenido al
-puerto que manejamos con "input"? Pues "yarp write", que conectamos con
-sus parámetros de inicialización de (qué nombre muestro al exterior -\>
-"/write") (a quién me conecto al iniciarme -\> "/read", que es el nombre
-que hemos dicho a "input" que muestre de cara al exterior) al hacer
-"yarp write /write /read" desde la consola. "yarp write" por defecto,
-cada vez que damos al retorno de carro (enter), coge lo que hemos
-escrito y lo envía encapsulado en un Bottle.
+**Observación 2:** ¿Quién es el que manda, en la lección, contenido al puerto que manejamos con `input`?
+Pues `yarp write`, que conectamos con sus parámetros de inicialización de (qué nombre muestro al exterior -\> `/write`) (a quién me conecto al iniciarme -\> `/read`, que es el nombre que hemos dicho a `input` que muestre de cara al exterior) al hacer `yarp write /write /read` desde la consola. `yarp write` por defecto, cada vez que damos al retorno de carro (enter), coge lo que hemos escrito y lo envía encapsulado en un `Bottle`.
 
-## Lección 3: "yarp write" básico
+## Lección 3: `yarp write` básico
 
-Se parte de la lección anterior. En negrita se puede ver el código
-nuevo.
+Se parte de la lección anterior. En negrita se puede ver el código nuevo.
 
 `#include <yarp/os/Network.h>`  
 `#include <yarp/os/Port.h>`  
