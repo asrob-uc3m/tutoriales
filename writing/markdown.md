@@ -10,8 +10,8 @@ Markdown es un lenguaje de marcado (tipo de formateo de texto más o menos estan
 
 ### Otros Editores, Webs y Previsualizadores
 - GitHub: Se puede utilizar tanto dentro de ficheros `.md` como en los comentarios de las propias `Issues`. La especificación dentro de GitHub se llama [GFM](https://github.github.com/gfm/)
-- GitBook
-- Jekyll
+- [GitBook](https://github.com/GitbookIO/gitbook)
+- [Jekyll](https://jekyllrb.com)
 
 ### Auto-generación de tabla de contenidos (Table Of Contents, TOC)
 - [jonschlinkert/markdown-toc](https://github.com/jonschlinkert/markdown-toc) (Node.js)
