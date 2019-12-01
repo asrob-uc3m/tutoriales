@@ -157,3 +157,6 @@ Está definido en la línea 10 del `CMakeLists.txt` que genera `yarp cmake`. Es 
 
 ### ¿Que funcion tiene una botella (Bottle)?
 Es una estructura de datos flexible, un contenedor donde puedes incorportar enteros, cadenas de caracteres, coma flotante... Si nos fijamos en la declaración de la clase `Port` de YARP, no es más que un puerto especializado en manejar objetos de clase `Bottle`.
+
+## Páginas similares y relacionadas
+- <http://wiki.asrob.uc3m.es/index.php/Tutorial_yarp_devices>
