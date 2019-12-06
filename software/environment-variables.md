@@ -29,4 +29,4 @@ En Linux se pueden modificar con escribir `export VARIABLE=valor` (véase que es
 ## Variables de Uso Frecuente en Windows
 
 - **USERPROFILE**
-- Más [aquí](http://technet.microsoft.com/en-us/library/cc749104(v=ws.10).aspx).
+- Más en: <http://technet.microsoft.com/en-us/library/cc749104(v=ws.10).aspx>
