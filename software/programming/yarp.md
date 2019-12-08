@@ -18,8 +18,8 @@ Para nociones básicas de redes, existe [el tutorial de redes (ASROB)](http://wi
 ## Requisitos previos
 
 * Se supone un mínimo conocimiento de:
-    - Sistemas **Linux**: veáse [el tutorial de Consola de Linux (ASROB)](../linux/bash.html))
-    - **C/C++**: veáse [el tutorial de Compilación en Linux (ASROB)](http://wiki.asrob.uc3m.es/index.php/Compilaci%C3%B3n_en_Linux))
+    - Sistemas **Linux**: veánse las secciones de [Linux (ASROB)](../linux)
+    - **C/C++**: veáse [el tutorial de Compilación en Linux (ASROB)](http://wiki.asrob.uc3m.es/index.php/Compilaci%C3%B3n_en_Linux)
 * Instalar YARP: [installation-guides/install-yarp](http://robots.uc3m.es/gitbook-installation-guides/install-yarp.html)
 
 ## Lección 1: `yarp server`, `yarp write`, y `yarp read`
