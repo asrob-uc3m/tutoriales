@@ -1,4 +1,37 @@
-#-- Esto es para que al ejecutar el evince desde el terminal no te saque basura, que el programa esté en segundo plano y que si cierras el terminal no se cierre el programa.
+## cd + ls, by @jgvictores
+function cs () {
+    cd $1
+    ls
+}
+
+## transfer path: guarda el path actual en un fichero oculto, by @jgvictores
+function tp () {
+    pwd > ~/.sp
+}
+
+## go to transfer path: va a donde apunta el path anteriormente guardado, by @jgvictores
+function gtp () {
+    cs `cat ~/.sp`
+}
+
+## swap. thanks https://stackoverflow.com
+function swap() { mv $1 $1._tmp && mv $2 $1 && mv $1._tmp $2; }
+
+## cat-related
+
+### cat con color, `sudo -H pip install Pygments` (via pip está >=2.3 con .md) 
+function ccat () {
+    pygmentize -g $1
+}
+
+### cat con color, `sudo apt install source-highlight`
+function ccat2 () {
+    source-highlight -fesc -i $1
+}
+
+## window-related
+
+### Esto es para que al ejecutar el evince desde el terminal no te saque basura, que el programa esté en segundo plano y que si cierras el terminal no se cierre el programa.
 function evince () {
      /usr/bin/evince $* 2> /dev/null & disown
 }
@@ -9,56 +42,30 @@ function gw () {
      /usr/bin/ghostwriter $* 2> /dev/null & disown
 }
 
-#-- cd + ls, by @jgvictores
-function cs () {
-    cd $1
-    ls
-}
-
-#-- transfer path: guarda el path actual en un fichero oculto, by @jgvictores
-function tp () {
-    pwd > ~/.sp
-}
-
-#-- go to transfer path: va a donde apunta el path anteriormente guardado, by @jgvictores
-function gtp () {
-    cs `cat ~/.sp`
-}
-
-#-- cat con color, `sudo -H pip install Pygments` (via pip está >=2.3 con .md) 
-function ccat () {
-    pygmentize -g $1
-}
-
-#-- cat con color, `sudo apt install source-highlight`
-function ccat2 () {
-    source-highlight -fesc -i $1
-}
-
-#-- abrir explorador nautilus aquí, by @jgvictores
+### abrir explorador nautilus aquí, by @jgvictores
 function n () {
     nautilus .
 }
 
-#-- forzar cambios SVN, by @jgvictores + https://stackoverflow.com
+## svn-related
+
+### forzar cambios SVN, by @jgvictores + https://stackoverflow.com
 function svn-all () {
     svn st | grep ^? | awk '{$1=""; print " --force \""substr($0,2)"@\"" }' | xargs svn add
     svn st | grep ^! | awk '{$1=""; print " --force \""substr($0,2)"@\"" }' | xargs svn rm
     # manually: svn commit
 }
 
-#-- https://stackoverflow.com/questions/282802/how-can-i-view-all-historical-changes-to-a-file-in-svn
+### https://stackoverflow.com/questions/282802/how-can-i-view-all-historical-changes-to-a-file-in-svn
 function svn-file-history() {
     url=$1 # current url of file
     svn log -q $url | grep -E -e "^r[[:digit:]]+" -o | cut -c2- | sort -n | {
-
 #       first revision as full text
         echo
         read r
         svn log -r$r $url@HEAD
         svn cat -r$r $url@HEAD
         echo
-
 #       remaining revisions as differences to previous revision
         while read r
         do
@@ -70,18 +77,19 @@ function svn-file-history() {
     }
 }
 
-#-- almacenar contraseña durante un tiempo (debe lanzarse desde dentro de una repo), https://stackoverflow.com
+## git-related
+
+### almacenar contraseña durante un tiempo (debe lanzarse desde dentro de una repo), https://stackoverflow.com
 function git-credential () {
     git config credential.helper cache
 }
 
-# https://stackoverflow.com
-function swap() { mv $1 $1._tmp && mv $2 $1 && mv $1._tmp $2; }
+## Terminal-related
 
-#-- Ocultar nombre de usuario y host en el terminal, by @jgvictores
+### Ocultar nombre de usuario y host en el terminal, by @jgvictores
 PS1="\w$ "
 
-#-- [necesita git-prompt.sh] Mejoras git en prompt, by @PeterBowman
+### Terminal+git [necesita git-prompt.sh] Mejoras git en prompt, by @PeterBowman
 #source ~/repos/git/contrib/completion/git-prompt.sh
 #GIT_PS1_SHOWDIRTYSTATE=1
 #GIT_PS1_SHOWUNTRACKEDFILES=1
@@ -91,7 +99,7 @@ PS1="\w$ "
 #PROMPT_COMMAND='__git_ps1 "\w" "\\\$ "'
 ##PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "' # Better if remotely accessed
 
-#-- [necesita YARP] Soporte autocompletado YARP
+### Terminal+yarp [necesita YARP] Soporte autocompletado YARP
 #source ~/repos/yarp/scripts/yarp_completion
 
 #-- ls al abrir, by @jgvictores
