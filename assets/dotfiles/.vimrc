@@ -5,8 +5,18 @@ map <silent> <F6> :set nolist!<CR>:set nolist?<CR>
 
 source $VIMRUNTIME/mswin.vim
 behave mswin
-" set guifont=Monospace\ 11 " Programming; Windows: guifont=fixedsys:h11
-set guifont=Monospace\ 13 " Writing; Windows: guifont=fixedsys:h13
+
+"-- Linux setting
+set guifont=Monospace\ 11 " Programming
+"set guifont=Monospace\ 13 " Writing
+
+"-- Windows setting
+"set enc=utf-8
+"set fileencoding=utf-8
+"set fileencodings=ucs-bom,utf8,prc
+"set guifont=Monaco:h11
+""set guifont=fixedsys:h11 " Old
+"set guifontwide=NSimsun:h12
 
 syntax on
 set nu
