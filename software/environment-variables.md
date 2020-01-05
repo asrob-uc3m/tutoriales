@@ -25,6 +25,7 @@ En Linux se pueden modificar con escribir `export VARIABLE=valor` (véase que es
 - **xxxx\_DIR**: Las aplicaciones pueden utilizar esta variable para saber dónde está la raíz del *build* del código fuente descargado de la aplicación xxxx. Es utilizado por CMake para encontrar el fichero xxxxConfig.cmake o alguna de sus alternativas.
 - `!` Contiene el identificador de proceso ([PID](https://en.wikipedia.org/wiki/Process_identifier)) del último programa ejecutado.
 - `?` Contiene el valor de retorno del último programa ejecutado (que no es lo mismo que lo que muestra por pantalla, más info: [aquí](http://tldp.org/LDP/abs/html/exit-status.html) y [aquí sus valores estándar](http://tldp.org/LDP/abs/html/exitcodes.html)).
+- `_` Contiene el último argumento del último comando. Similar al [símbolo especial](linux/bash.md#símbolos-especiales) `!$` ([ref](https://unix.stackexchange.com/questions/271659/vs-last-argument-of-the-preceding-command-and-output-redirection)).
 
 ## Variables de Uso Frecuente en Windows
 

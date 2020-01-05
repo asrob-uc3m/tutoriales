@@ -44,7 +44,7 @@ En esta sección se comentan algunos símbolos especiales. En los ejemplos se ut
 - `2>&1` Otra variante de `2>`, redirige a donde se dirija lo de `>`. Existe `1>&2` para el caso inverso.
 - `<` Por ejemplo `programa < file.txt` utiliza el contenido de `file.txt` como la entrada estándar ([STDIN](http://man7.org/linux/man-pages/man3/stdin.3.html), que normalmente sería el teclado, de `programa` durante su ejecución.
 - `&` Lanza un programa en segundo plano, por ejemplo: `programa &`. Muestra el identificador de proceso ([PID](https://en.wikipedia.org/wiki/Process_identifier)) al lanzar el programa. Se puede listar los programas en segundo plano mediante el comando **jobs**, o pasar el programa a primer plano mediante el comando **fg**.
-- `!$` Contiene la última palabra que uno mismo ha escrito en la consola.
+- `!$` Contiene la última palabra que uno mismo ha escrito en la consola, similar a la [variable de entorno](../environment-variables.md) `_` ([ref](https://unix.stackexchange.com/questions/271659/vs-last-argument-of-the-preceding-command-and-output-redirection)).
 - `$` Para obtener el valor de una [variable de entorno](../environment-variables.md).
 - `~` Se corresponde con la [variable de entorno](../environment-variables.md) `HOME`. Por ejemplo, `ls ~` y `ls $HOME` son equivalentes.
 
