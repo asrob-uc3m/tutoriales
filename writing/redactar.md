@@ -90,8 +90,10 @@ Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.w
 - También es un plus incluir un enlace a la documentación generada por [Doxygen](http://www.doxygen.nl/) (que además se puede configurar para generar distintos diagramas).
 
 ## Úlitmos consejos
+- Revisar enlaces rotos y referencias internas rotas (p.ej. buscar por `??` en LaTeX)
+- Revisar, en todas las páginas generadas por LaTeX, que ninguna palabra se haya salido de márgenes (el hyphen puede hacer que esto ocurra con parabras muy largas)
 - Se empezó a realizar un script que revisa textos en inglés [aquí](https://github.com/jgvictores/snippets/blob/develop/bash/review-tex.sh) ([permalink](https://github.com/jgvictores/snippets/blob/8db93e72b29279ffa959e5b72287ab8e0129fa16/bash/review-tex.sh)).
-- ¡Releer el documento entero mínimo una vez\!
+- ¡Releer el documento entero mínimo una vez!
 
 ## Más enlaces de interés
 - Consejos generales para la [presentación de un documento](http://wiki.asrob.uc3m.es/index.php/Presentar).
