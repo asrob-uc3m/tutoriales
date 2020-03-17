@@ -185,6 +185,7 @@ Ahora podrás subir tus cambios al repositorio remoto seleccionado.
 - Corregir el texto del último commit (antes de push, aunque se podría forzar): [`git commit --amend`](https://git-scm.com/docs/git-commit#git-commit---amend)
 - Deshacer el útimo commit entero (antes de push, aunque se podría forzar): [`git reset HEAD~1`](https://git-scm.com/docs/git-reset#git-reset-emgitresetemltmodegtltcommitgt)
 - Ver diferencias por palabras en lugar de líneas (probado también con `git show`): [`git diff --word-diff=color --word-diff-regex=.`](https://stackoverflow.com/questions/1721738/using-diff-or-anything-else-to-get-character-level-diff-between-text-files)
+- Crear alias para comandos personalizados (por ejemplo, para escribir solo `git wd` en lugar del comando anterior): [`git config --global alias.wd 'diff --word-diff=color --word-diff-regex=.'`](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
 
 ## Git Log Visualization
 - `gitk`
