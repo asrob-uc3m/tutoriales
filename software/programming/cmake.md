@@ -73,3 +73,4 @@ Nótese que los nombres de las variables no están estandarizados. Una guía má
 ## Referencias adicionales
 - [*CGold: The Hitchhiker’s Guide to the CMake*](https://cgold.readthedocs.io/en/latest/), still WIP.
 - https://github.com/robotology/how-to-export-cpp-library
+- https://github.com/IRCAD-IHU/modern-cmake-tutorial
