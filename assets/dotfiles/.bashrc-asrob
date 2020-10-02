@@ -99,7 +99,7 @@ PS1="\w$ "
 #PROMPT_COMMAND='__git_ps1 "\w" "\\\$ "'
 ##PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "' # Better if remotely accessed
 
-### Terminal+yarp [necesita YARP] Soporte autocompletado YARP
+### Terminal+yarp [necesita YARP] Soporte autocompletado YARP, sólo para versiones previas a YARP 3.4
 #source ~/repos/yarp/scripts/yarp_completion
 
 #-- ls al abrir, by @jgvictores
