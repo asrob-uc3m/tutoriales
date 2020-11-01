@@ -137,6 +137,7 @@ Código:
 ```
 
 ## Movimiento en ruta
+
 Ejemplo movimientos en ruta.
 
 * Adelante
@@ -163,6 +164,7 @@ Código:
 ```
 
 ## Menciones
+
 Menciones mediante `@nombredeusuario`
 Ejemplo:
 
@@ -204,7 +206,7 @@ Mensaje a comentar
 Mediante:
 
 1. Elemento 1
-  1. Subelemto 1
+  1. Subelemento 1
   1. Subelemento 2
     1. Subsubelemento 1
 1. Elemento 2
@@ -214,7 +216,7 @@ Código:
 
 ```
 1. Elemento 1
-  1. Subelemto 1
+  1. Subelemento 1
   1. Subelemento 2
     1. Subsubelemento 1
 1. Elemento 2
@@ -226,7 +228,7 @@ Código:
 Mediante:
 
 * Elemento 1
-  * Subelemto 1
+  * Subelemento 1
   * Subelemento 2
     *  Subsubelemento 1
 * Elemento 2
@@ -236,7 +238,7 @@ Código:
 
 ```
 * Elemento 1
-  * Subelemto 1
+  * Subelemento 1
   * Subelemento 2
     *  Subsubelemento 1
 * Elemento 2
