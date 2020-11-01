@@ -200,33 +200,35 @@ Mensaje a comentar
 ## Índices y puntos
 
 * Índices
+
 Mediante:
 
 1. Elemento 1
-	1.Subelemto 1
-	2.Subelemento 2
-	1. Subsubelemento 1
-2. Elemento 2
-3. Elemento 3
+  1. Subelemto 1
+  1. Subelemento 2
+    1. Subsubelemento 1
+1. Elemento 2
+1. Elemento 3
 
 Código:
 
 ```
 1. Elemento 1
-	1.Subelemto 1
-	2.Subelemento 2
-	1. Subsubelemento 1
-2. Elemento 2
-3. Elemento 3
+  1. Subelemto 1
+  1. Subelemento 2
+    1. Subsubelemento 1
+1. Elemento 2
+1. Elemento 3
 ```
 
 * Puntos
+
 Mediante:
 
 * Elemento 1
-	* Subelemto 1
-	* Subelemento 2
-		*  Subsubelemento 1
+  * Subelemto 1
+  * Subelemento 2
+    *  Subsubelemento 1
 * Elemento 2
 * Elemento 3
 
@@ -234,9 +236,9 @@ Código:
 
 ```
 * Elemento 1
-	* Subelemto 1
-	* Subelemento 2
-		*  Subsubelemento 1
+  * Subelemto 1
+  * Subelemento 2
+    *  Subsubelemento 1
 * Elemento 2
 * Elemento 3
 ```
