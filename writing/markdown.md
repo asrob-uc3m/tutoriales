@@ -233,7 +233,6 @@ Mediante:
 Código:
 
 ```
-
 * Elemento 1
 	* Subelemto 1
 	* Subelemento 2
