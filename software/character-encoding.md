@@ -47,7 +47,7 @@ Nota: Los editores de texto suelen permitir el modificar la codificación de car
 
 ## Convertir terminadores de línea
 
-El comando `file` también nos da información sobre terminadores de línea. Notepad sólo reconoce CR, LF (0x0d, 0x0a) como final de línea. Podemos utilizar el comando `unix2dos` para asegurarnos que todas las líneas acaban en este CRLF y así ser compatibles con Notepad, sin tener que abandonar UTF-8. Nota: existe el comando `dos2unix` para la conversión inversa.
+El comando `file` también nos da información sobre terminadores de línea. Notepad hasta [2018](https://devblogs.microsoft.com/commandline/extended-eol-in-notepad/) sólo reconocía CR, LF (CRLF: 0x0d, 0x0a) como final de línea. El comando `unix2dos` se usaba para asegurarnos que todas las líneas acaban en este CRLF y así ser compatibles con ese antiguo Notepad, sin tener que abandonar UTF-8. Existe el comando `dos2unix` para la conversión inversa.
 
 ## Referencias
 
