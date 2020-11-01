@@ -5,7 +5,7 @@
 # crontab -e
 # 30 2 * * * /your/command
 
-echo "Update tutoriales..."a
+echo "Update tutoriales..."
 cd $HOME/tutoriales
 git pull
 echo "Gitbook tutoriales..."
