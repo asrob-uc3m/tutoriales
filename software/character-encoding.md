@@ -12,21 +12,30 @@ Podemos utilizar `file` para descubrir la codificación de caracteres de un fich
 file nombre-de-fichero
 ```
 
-Aquí un script de bash que lista la codificación de caracteres de todos los archivos `.txt` de una carpeta.
+Para abreviar la salida, se puede omitir el nombre del fichero via `-b` y el terminador de línea vía `--mime-encoding`:
 
 ```bash
-#!/bin/bash
-for fileName in *.txt; do
-    file "$fileName" --mime-encoding  # --mime-encoding da específicamente lo que buscamos
-done
+file nombre-de-fichero -b --mime-encoding
 ```
 
-Aquí, en una línea, ver si hay algún fichero `.txt` que no esté en `utf-8` ni `us-ascii`.
+Para mostrar `file` de todos los archivos de una carpeta:
 
 ```bash
-for fileName in *.txt; do file "$fileName" --mime-encoding | grep -v utf-8 | grep -v us-ascii; done
+file *
 ```
 
+Para mostrar `file` de todos los archivos `.txt` de una carpeta y sus contenidos.
+
+```bash
+find -name "*.txt" -exec file {} \;
+```
+
+Para ver si hay algún fichero `.txt` que no esté en `utf-8` ni `us-ascii`.
+
+```bash
+find -name "*.txt" -exec file {} \; | grep -vi ascii | grep -vi utf-8
+
+```
 
 ## Convertir la codificación de caracteres de un fichero
 
