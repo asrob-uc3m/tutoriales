@@ -1,29 +1,7 @@
 # Git
 
-- [Acerca de Git](#acerca-de-git)
-- [Comandos básicos](#comandos-básicos)
-    - [Crear un repositorio nuevo (git init)](#crear-un-repositorio-nuevo-git-init)
-    - [Descargar una copia de un repositorio existente (git clone)](#descargar-una-copia-de-un-repositorio-existente-git-clone)
-    - [Descargar últimos cambios de un repositorio (git pull)](#descargar-últimos-cambios-de-un-repositorio-git-pull)
-    - [Comprobar estado de repositorio (git status)](#comprobar-estado-de-repositorio-git-status)
-    - [Comprobar estado de repositorio por línea (git diff)](#comprobar-estado-de-repositorio-por-línea-git-diff)
-    - [Indicar qué cambios se subirán localmente (git add)](#indicar-qué-cambios-se-subirán-localmente-git-add)
-    - [Subir los cambios localmente (git commit)](#subir-los-cambios-localmente-git-commit)
-    - [Subir los cambios locales al repositorio remoto (git push)](#subir-los-cambios-locales-al-repositorio-remoto-git-push)
-- [Trabajar con ramas (branches)](#trabajar-con-ramas-branches)
-    - [Creación de ramas](#creación-de-ramas)
-    - [Borrar ramas](#borrar-ramas)
-    - Actualizar y fusionar
-    - Etiquetas
-    - Enlazar repositorio local con remoto
-- [Comandos avanzados](#comandos-avanzados)
-- [Cheatsheet](#cheatsheet)
-- [Git Log Visualization](#git-log-visualization)
-- [Git prompt helpers](#git-prompt-helpers)
-- [Páginas similares y relacionadas](#páginas-similares-y-relacionadas)
-
-
 ## Acerca de Git
+
 Git es un [sistema de control de versiones](README.md) distribuido creado por Linus Torvalds en 2005 para el desarrollo del kernel de Linux.
 
 ## Comandos básicos
@@ -56,6 +34,7 @@ git pull
 Es recomendable hacerlo **siempre** antes de cualquiera de los próximos pasos.
 
 ### Comprobar estado de repositorio (git status)
+
 ```bash
 git status
 ```
@@ -64,6 +43,7 @@ git status
 1. Los ficheros con cambios que se subirán localmente aparecerán en <span style="color:green;">**verde**</span>.
 
 ### Comprobar estado de repositorio por línea (git diff)
+
 Se pueden ver los cambios con una granularidad línea-a-línea mediante:
 ```bash
 git diff
@@ -176,10 +156,12 @@ Si no se ha clonado un repositorio ya existente y quieres conectar tu repositori
 Ahora podrás subir tus cambios al repositorio remoto seleccionado.
 
 ## Comandos avanzados
+
 - cherry-pick
 - rebase
 
 ## Cheatsheet
+
 - Almacenar contraseña durante un tiempo: [`git config credential.helper cache`](https://git-scm.com/docs/git-credential-cache)
 - Deshacer los cambios de un fichero (antes de commit): [`git checkout -- nombre-fichero`](https://git-scm.com/docs/git-checkout#git-checkout-emgitcheckoutemlttree-ishgt--ltpathspecgt82308203)
 - Corregir el texto del último commit (antes de push, aunque se podría forzar): [`git commit --amend`](https://git-scm.com/docs/git-commit#git-commit---amend)
