@@ -2,19 +2,32 @@
 
 Markdown es un lenguaje de marcado (tipo de formateo de texto más o menos estandarizado, que ocupa poco espacio y es fácil de editar con un editor de texto) que permite incluir enlaces, tablas, listados, etc, en un texto de forma sencilla.
 
-## Herramientas
+## Editores, previsualizadores, generadores de webs
 
 ### Editores WYSIWYG
 
 - [haroopad](http://pad.haroopress.com/): The Next Document processor based on Markdown
 - [wereturtle/ghostwriter](https://github.com/wereturtle/ghostwriter): A cross-platform, aesthetic, distraction-free Markdown editor
 
-### Otros Editores, Webs y Previsualizadores
+### Previsualizadores
 
-- GitHub: Se puede utilizar tanto dentro de ficheros `.md` como en los comentarios de las propias `Issues`. La especificación dentro de GitHub se llama [GFM](https://github.github.com/gfm/)
-- [GitBook](https://github.com/GitbookIO/gitbook)
-- [Jekyll](https://jekyllrb.com)
 - Calibre viewer
+- GitHub: Se puede utilizar tanto dentro de ficheros `.md` como en los comentarios de las propias `Issues`. La especificación dentro de GitHub se llama [GFM](https://github.github.com/gfm/)
+
+### Generadores de webs
+
+- [GitBook](http://robots.uc3m.es/gitbook-installation-guides/install-gitbook.html) ([perma](https://github.com/roboticslab-uc3m/installation-guides/blob/09ffe48fd158656bb6359b4f3969948d2a94d4cd/install-gitbook.md)), oficial: [GitBook](https://github.com/GitbookIO/gitbook)
+- [Jekyll](https://jekyllrb.com)
+
+## Herramientas
+
+### wiki -> markdown
+
+- `pandoc`, véase <https://github.com/asrob-uc3m/tutoriales/issues/2#issue-273074070>
+
+### portapapeles -> markdown
+
+- <https://euangoddard.github.io/clipboard2markdown/>
 
 ### Auto-generación de tabla de contenidos (Table Of Contents, TOC)
 
@@ -27,14 +40,6 @@ Véase [roboticslab-uc3m/questions-and-answers#64](https://github.com/roboticsla
 - [ekalinin/github-markdown-toc.go](https://github.com/ekalinin/github-markdown-toc.go) (go)
 - <http://doctoc.herokuapp.com/>
 - [rossant/awesome-math/build_toc.py](https://github.com/rossant/awesome-math/blob/master/build_toc.py)
-
-### wiki -> markdown
-
-- `pandoc`, véase <https://github.com/asrob-uc3m/tutoriales/issues/2#issue-273074070>
-
-### portapapeles -> markdown
-
-- <https://euangoddard.github.io/clipboard2markdown/>
 
 ## Ejemplos
 
