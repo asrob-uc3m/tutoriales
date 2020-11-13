@@ -43,7 +43,7 @@ Véase [roboticslab-uc3m/questions-and-answers#64](https://github.com/roboticsla
 
 ## Ejemplos
 
-### Enlaces (links)
+### Enlaces
 
 Ejemplo de enlace (link).
 
@@ -52,6 +52,25 @@ Ejemplo de enlace (link).
 Código:
 
 `[link](www.google.es)`
+
+Ejemplo de enlace con movimientos en ruta. Ejemplo adelante.
+
+[nombre enlace](./ruta a ir)
+
+Código:
+
+```
+[nombre enlace](./ruta a ir)
+```
+
+Ejemplo de enlace con movimientos en ruta. Ejemplo atrás.
+
+[nombre enlace](../)
+
+Código:
+```
+[nombre enlace](../)
+```
 
 ### Tablas
 
@@ -131,33 +150,6 @@ Código:
 
 ```
 ![Nombre de la imagen en caso de no cargar](http://www.analiticaweb.es/wp-content/uploads/2017/02/markdown.jpg)
-```
-
-### Movimiento en ruta
-
-Ejemplo movimientos en ruta.
-
-* Adelante
-
-Ejemplo adelante.
-
-[nombre enlace](./ruta a ir)
-
-Código:
-
-```
-[nombre enlace](./ruta a ir)
-```
-
-* Atrás
-
-Ejemplo atrás.
-
-[nombre enlace](../)
-
-Código:
-```
-[nombre enlace](../)
 ```
 
 ### Comentarios de código
