@@ -5,25 +5,35 @@ Markdown es un lenguaje de marcado (tipo de formateo de texto más o menos estan
 ## Herramientas
 
 ### Editores WYSIWYG
+
 - [haroopad](http://pad.haroopress.com/): The Next Document processor based on Markdown
 - [wereturtle/ghostwriter](https://github.com/wereturtle/ghostwriter): A cross-platform, aesthetic, distraction-free Markdown editor
 
 ### Otros Editores, Webs y Previsualizadores
+
 - GitHub: Se puede utilizar tanto dentro de ficheros `.md` como en los comentarios de las propias `Issues`. La especificación dentro de GitHub se llama [GFM](https://github.github.com/gfm/)
 - [GitBook](https://github.com/GitbookIO/gitbook)
 - [Jekyll](https://jekyllrb.com)
+- Calibre viewer
 
 ### Auto-generación de tabla de contenidos (Table Of Contents, TOC)
+
 - [jonschlinkert/markdown-toc](https://github.com/jonschlinkert/markdown-toc) (Node.js)
 - [ekalinin/github-markdown-toc](https://github.com/ekalinin/github-markdown-toc) (bash)
 - [ekalinin/github-markdown-toc.go](https://github.com/ekalinin/github-markdown-toc.go) (go)
 - <http://doctoc.herokuapp.com/>
-- [rossant/awesome-math//build_toc.py](https://github.com/rossant/awesome-math/blob/master/build_toc.py)
+- [rossant/awesome-math/build_toc.py](https://github.com/rossant/awesome-math/blob/master/build_toc.py)
 
 ### wiki -> markdown
+
 - `pandoc`, véase <https://github.com/asrob-uc3m/tutoriales/issues/2#issue-273074070>
 
+### portapapeles -> markdown
+
+- <https://euangoddard.github.io/clipboard2markdown/>
+
 ## Ejemplos
+
 Lo siguiente es un listado genérico de diversos ejemplos de uso la sintaxis de Markdown.
 
 - [Enlaces (links)](#enlaces-links)
@@ -40,6 +50,7 @@ Lo siguiente es un listado genérico de diversos ejemplos de uso la sintaxis de 
 - [Indices y puntos](#Índices-y-puntos)
 
 ## Enlaces (links)
+
 Ejemplo de enlace (link).
 
 [link](www.google.es)
@@ -49,6 +60,7 @@ Código:
 `[link](www.google.es)`
 
 ## Tablas
+
 Ejemplo de tablas.
 
 | Elemento 1 | Elemento 2 | Elemento 3 |
@@ -65,6 +77,7 @@ Código:
 ```
 
 ## Lista de tareas
+
 Ejemplo lista de tareas.
 
 - [ ] Elemento 1
@@ -79,6 +92,7 @@ Código:
 - [ ] Elemento 3
 
 ```
+
 ## Encabezados
 
 Ejemplo de encabezados.
@@ -99,6 +113,7 @@ Código:
 ```
 
 ## Cursivas
+
 Ejemplo de cursivas.
 
 *Mensaje de prueba*
@@ -108,24 +123,31 @@ Código:
 `*Mensaje de prueba*`
 
 ## Negrita
+
 Ejemplo de negrita.
 
 **Mensaje de prueba**
 
 Código:
 
-`**Mensaje de prueba**`
+```
+**Mensaje de prueba**
+```
 
 ## Negrita y cursiva
+
 Ejemplo de negrita y cursiva.
 
 ***Mensaje de prueba***
 
 Código:
 
-`***Mensaje de prueba***`
+```
+***Mensaje de prueba***
+```
 
 ## Imágenes
+
 Ejemplo de imágen.
 
 ![Nombre de la imagen en caso de no cargar](http://www.analiticaweb.es/wp-content/uploads/2017/02/markdown.jpg)
@@ -165,8 +187,7 @@ Código:
 
 ## Menciones
 
-Menciones mediante `@nombredeusuario`
-Ejemplo:
+Menciones mediante `@nombredeusuario`. Ejemplo:
 
 @davidvelascogarcia
 
