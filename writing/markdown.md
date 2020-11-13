@@ -70,23 +70,6 @@ Código:
 | Cosa 1| Cosa 2|Cosa3|Cosa|
 ```
 
-### Lista de tareas
-
-Ejemplo lista de tareas.
-
-- [ ] Elemento 1
-- [ ] Elemento 2
-- [ ] Elemento 3
-
-Código:
-
-```
-- [ ] Elemento 1
-- [ ] Elemento 2
-- [ ] Elemento 3
-
-```
-
 ### Encabezados
 
 Ejemplo de encabezados.
@@ -177,12 +160,6 @@ Código:
 [nombre enlace](../)
 ```
 
-### Menciones (GitHub)
-
-Menciones mediante `@nombredeusuario`. Ejemplo:
-
-@davidvelascogarcia
-
 ### Comentarios de código
 
 El comentario de código.
@@ -256,4 +233,29 @@ Código:
     *  Subsubelemento 1
 * Elemento 2
 * Elemento 3
+```
+
+### Lista de tareas (GitHub)
+
+Ejemplo lista de tareas.
+
+- [ ] Elemento 1
+- [ ] Elemento 2
+- [ ] Elemento 3
+
+Código:
+
+```
+- [ ] Elemento 1
+- [ ] Elemento 2
+- [ ] Elemento 3
+
+```
+
+### Menciones (GitHub)
+
+Menciones mediante `@nombredeusuario`. Ejemplo:
+
+```
+@nombredeusuario
 ```
