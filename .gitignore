@@ -7,5 +7,5 @@
 *.orig
 
 ## gitbook generated
-## because asrob-uc3m repos is currently hosted and generated at gitbook.com legacy site: https://asrob-uc3m.gitbooks.io
 /_book/
+/node_modules/
