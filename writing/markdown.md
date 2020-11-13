@@ -43,22 +43,7 @@ Véase [roboticslab-uc3m/questions-and-answers#64](https://github.com/roboticsla
 
 ## Ejemplos
 
-Lo siguiente es un listado genérico de diversos ejemplos de uso la sintaxis de Markdown.
-
-- [Enlaces (links)](#enlaces-links)
-- [Tablas](#tablas)
-- [Listado de tareas](#lista-de-tareas)
-- [Encabezados](#encabezados)
-- [Cursivas](#cursivas)
-- [Negrita](#negrita)
-- [Negrita y cusiva](#negrita-y-cursiva)
-- [Imágenes](#imágenes)
-- [Movimiento en ruta](#movimiento-en-ruta)
-- [Menciones](#menciones)
-- [Comentarios de código](#comentarios-de-código)
-- [Indices y puntos](#Índices-y-puntos)
-
-## Enlaces (links)
+### Enlaces (links)
 
 Ejemplo de enlace (link).
 
@@ -68,7 +53,7 @@ Código:
 
 `[link](www.google.es)`
 
-## Tablas
+### Tablas
 
 Ejemplo de tablas.
 
@@ -85,7 +70,7 @@ Código:
 | Cosa 1| Cosa 2|Cosa3|Cosa|
 ```
 
-## Lista de tareas
+### Lista de tareas
 
 Ejemplo lista de tareas.
 
@@ -102,26 +87,22 @@ Código:
 
 ```
 
-## Encabezados
+### Encabezados
 
 Ejemplo de encabezados.
 
-# Nivel 1
-## Nivel 2
 ### Nivel 3
 #### Nivel 4
 
 Código:
 
 ```
-# Nivel 1
-## Nivel 2
 ### Nivel 3
 #### Nivel 4
 
 ```
 
-## Cursivas
+### Cursivas
 
 Ejemplo de cursivas.
 
@@ -129,9 +110,11 @@ Ejemplo de cursivas.
 
 Código:
 
-`*Mensaje de prueba*`
+```
+*Mensaje de prueba*
+```
 
-## Negrita
+### Negrita
 
 Ejemplo de negrita.
 
@@ -143,7 +126,7 @@ Código:
 **Mensaje de prueba**
 ```
 
-## Negrita y cursiva
+### Negrita y cursiva
 
 Ejemplo de negrita y cursiva.
 
@@ -155,7 +138,7 @@ Código:
 ***Mensaje de prueba***
 ```
 
-## Imágenes
+### Imágenes
 
 Ejemplo de imágen.
 
@@ -167,7 +150,7 @@ Código:
 ![Nombre de la imagen en caso de no cargar](http://www.analiticaweb.es/wp-content/uploads/2017/02/markdown.jpg)
 ```
 
-## Movimiento en ruta
+### Movimiento en ruta
 
 Ejemplo movimientos en ruta.
 
@@ -194,13 +177,13 @@ Código:
 [nombre enlace](../)
 ```
 
-## Menciones
+### Menciones (GitHub)
 
 Menciones mediante `@nombredeusuario`. Ejemplo:
 
 @davidvelascogarcia
 
-## Comentarios de código
+### Comentarios de código
 
 El comentario de código.
 
@@ -229,7 +212,7 @@ Ejemplo:
 Mensaje a comentar
 ```
 
-## Índices y puntos
+### Índices y puntos
 
 * Índices
 
