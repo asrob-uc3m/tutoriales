@@ -1,5 +1,13 @@
 {
   "structure": {
     "readme": "gitbook-cover.md"
+  },
+  "plugins": ["include-csv","embed-pdf","mermaid-gb3","include","page-toc"],
+  "pluginsConfig": {
+    "page-toc": {
+      "selector": ".markdown-section h2, .markdown-section h3, .markdown-section h4",
+      "position": "before-first",
+      "showByDefault": true
+    }
   }
 }
