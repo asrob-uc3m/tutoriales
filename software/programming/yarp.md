@@ -6,15 +6,6 @@ Para más información existe una sección dedicada en la guía oficial: [YARP (
 
 Para nociones básicas de redes, existe [el tutorial de redes (ASROB)](http://wiki.asrob.uc3m.es/index.php/Tutorial_de_Redes).
 
-* [Requisitos previos](#requisitos-previos)
-* [Lección 1: `yarp server`, `yarp write`, y `yarp read`](#lección-1-yarp-server-yarp-write-y-yarp-read)
-* [Lección 2: `yarp read` con función de `quit`](#lección-2-yarp-read-con-función-de-quit)
-* [Lección 3: `yarp write` básico](#lección-3-yarp-write-básico)
-* [FAQ (Frequently asked questions o Preguntas frecuentes)](#faq-frequently-asked-questions-o-preguntas-frecuentes)
-    * [¿Que es `yarpy`?](#¿que-es-yarpy)
-    * [¿Que funcion tiene una botella (Bottle)?](#%C2%BFque-funcion-tiene-una-botella-bottle)
-* [Páginas similares y relacionadas](#páginas-similares-y-relacionadas)
-
 ## Requisitos previos
 
 * Se supone un mínimo conocimiento de:

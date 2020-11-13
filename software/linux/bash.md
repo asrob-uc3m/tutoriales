@@ -1,17 +1,11 @@
 # Bash (consola/terminal)
 
-- [Introducción](#introducción)
-- [Atajos de teclado](#atajos-de-teclado)
-- [Símbolos especiales](#símbolos-especiales)
-- [El comando `man`](#el-comando-man)
-- [Listado alfabético de comandos útiles](#listado-alfabético-de-comandos-útiles)
-- [Scripts de Bash](#scripts-de-bash)
-- [Páginas similares y relacionadas](#páginas-similares-y-relacionadas)
+## Introducción
 
-# Introducción
 La consola (o terminal) de Linux es muy útil. Como se mencionó en la [introducción a Linux](introduction.md#atajos-de-teclado-y-ratón), se puede acceder a una consola a través de la combinación de teclas `CTRL`+`ALT`+`t`, y utilizar mecanismos como los portapapeles de Linux, además de sus atajos de teclado propios. Nótese que, al igual que Linux en general, Bash es "sensible a mayúsculas" (al contrario que en Windows, sí hace diferencia el hecho de que una misma letra se escriba con minúscula o mayúscula).
 
 ## Atajos de teclado
+
 - `tab`: autocompletado a partir de lo escrito (es necesario pulsar dos veces si hay existen opciones).
 - flecha `arriba`/`abajo`: moverse a través de historial de comandos.
 - `CTRL-r`: búsqueda de comandos escritos anteriormente (pulsar y empezar a teclear).
@@ -121,6 +115,7 @@ Estos comandos, en general, también son aplicables a `gnome-terminal`, `bash`, 
 - **wget**: Descarga un fichero, con `-O` se puede renombrar. Es lo que utilizamos [aquí](configuration-files.md#bashrc).
 
 ## Bucles en Bash
+
 Existen diversas maneras de iterar en Bash:
 - A través del comando `find -exec`. El operador `{}` se refiere al objeto encontrado, que puede ponerse entre comillas `"{}"` para prevenir frente a espacios en nombres. Por último, se utiliza `\;` para lanzar el comando una vez por incidencia (estilo `comando file1; comando file2; comando file3;`), o `\+` para concatenar (juntar secuencialmente en una sola línea, estilo `comando file1 file2 file3`). Ejemplos:
    - Ejemplo 1: Cambiar a permisos `664` todos los ficheros (`-type f`) de una carpeta y sus subcarpetas:
@@ -163,6 +158,7 @@ Cualquier Script de Linux debería tener un [Shebang](https://en.wikipedia.org/w
 Se pueden encontrar algunos ejemplos de Scripts de Bash en la sección de [ficheros de configuración](configuration-files.md). Nota: al tratarse de ficheros de sistema, en general no necesitan Shebang.
 
 ## Páginas similares y relacionadas
+
 - https://help.ubuntu.com/community/UsingTheTerminal
 - http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO
 - https://blog.desdelinux.net/shellcheck-una-utilidad-para-comprobar-tus-scripts-de-shell

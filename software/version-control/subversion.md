@@ -1,18 +1,15 @@
 # Subversion (SVN)
 
-- [Acerca de SVN](#acerca-de-svn)
-- [Clientes SVN](#clientes-svn)
-- [Comandos básicos](#comandos-básicos)
-- [Cheatsheet](#cheatsheet)
-- [Más tutoriales](#más-tutoriales)
-
 ## Acerca de SVN
+
 Apache Subversion (SVN) es un [sistema de control de versiones](README.md) centralizado (utiliza un servidor centralizado, y a veces algunos más de respaldo).
 
 ## Clientes SVN
+
 El cliente SVN más básico es el de modo consola (en Ubuntu, se instala mediante *sudo apt install subversion*). Existen diversos clientes SVN cuya interfaz es gráfica. [Tortoise SVN](http://tortoisesvn.net/downloads) es un cliente SVN gráfico para Windows que agrega funcionalidades al menú que se despliega al pulsar el botón derecho del ratón dentro de una carpeta. Para Linux existe [RabbitVCS](http://www.rabbitvcs.org), muy semejante. [RapidSVN](http://rapidsvn.tigris.org) es un cliente SVN gráfico multiplataforma (en Ubuntu se instala con un *sudo apt-get install rapidsvn*). SVN ofrece además una inferfaz web ("http") para navegar y descargar ficheros, y se puede integrar con TRAC para ofrecer una interfaz web con más funcionalidades.
 
 ## Comandos básicos
+
 1. Deberéis descargar el repositorio o trozo de repositorio sobre el que vais a trabajar ("check-out"). Por defecto descarga la última revisión ("HEAD").
 ```bash
 svn co https://asrob.svn.sourceforge.net/svnroot/asrob  # Cambia la URL (http...) por la del repositorio en cuestión. Posiblemente necesites escribir tu contraseña de usuario del repositorio
@@ -97,16 +94,19 @@ Configuración para `svn diff` de colores:
     ```
 
 ### Marcar ficheros inexistentes como borrados en el proyecto svn
+
 En una [consola](../linux/bash.md) (gracias: [ref](https://stackoverflow.com/questions/9600382/svn-command-to-delete-all-locally-missing-files)):
 ```bash
 svn st | grep ^! | awk '{$1=""; print " --force \""substr($0,2)"@\"" }' | xargs svn rm
 ```
 
 ### Marcar ficheros nuevos como añadidos en el proyecto svn
+
 En una [consola](../linux/bash.md):
 ```bash
 svn st | grep ^? | awk '{$1=""; print " --force \""substr($0,2)"@\"" }' | xargs svn add
 ```
 
 ## Más tutoriales
+
 - http://www.hasheado.com/usando-subversion-desde-la-linea-de-comandos.html
