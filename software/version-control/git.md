@@ -170,19 +170,23 @@ Ahora podrás subir tus cambios al repositorio remoto seleccionado.
 - Crear alias para comandos personalizados (por ejemplo, para escribir solo `git wd` en lugar del comando anterior): [`git config --global alias.wd 'diff --word-diff=color --word-diff-regex=.'`](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
 
 ## Git Log Visualization
+
 - `gitk`
 - `gitg`
 - `git log --graph`
 - `git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit` (thanks https://coderwall.com/p/euwpig/a-better-git-log)
 
 ## Git prompt helpers
+
 Pequeños scripts que pueden hacer que en el prompt de tu consola estilo [bash](/software/linux/bash.md) se vea información de git.
 - Oficial: https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
 - Windows: https://desktop.github.com/
 - Short (hay muchos): https://github.com/motine/gitprompt
 
 ## Páginas similares y relacionadas
+
 - https://www.gitbook.com/book/david-estevez/the-git-the-bad-and-the-ugly
+- https://github.com/firstcontributions/first-contributions
 - https://git-scm.com/book/en/v2
 - https://www.atlassian.com/git
 - https://github.com/k88hudson/git-flight-rules
