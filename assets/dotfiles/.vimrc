@@ -9,6 +9,7 @@ behave mswin
 "-- Linux setting
 set guifont=Monospace\ 11 " Programming
 "set guifont=Monospace\ 13 " Writing
+set visualbell
 
 "-- Windows setting
 "set enc=utf-8
