@@ -63,3 +63,14 @@ La versión más estable del kernel (también instalará el `linux-modules-` cor
 ```
 sudo apt install linux-image-generic linux-headers-generic
 ```
+
+### Actualización manual de bases de datos
+
+Normalmente se ejecutan al arranque o de forma periódica. Todos con permisos (`sudo` en Ubuntu):
+
+```
+depmod # módulos de kernel (drivers)
+ldconfig # librerías dinámicas
+texhash # latex, pdflatex
+updatedb # locate
+```
