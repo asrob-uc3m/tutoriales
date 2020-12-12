@@ -44,7 +44,7 @@ function gw () {
 
 ### abrir explorador nautilus aquí, by @jgvictores
 function n () {
-    nautilus .
+    nautilus .  & disown
 }
 
 ## svn-related
