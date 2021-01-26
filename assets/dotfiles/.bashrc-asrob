@@ -33,13 +33,13 @@ function ccat2 () {
 
 ### Esto es para que al ejecutar el evince desde el terminal no te saque basura, que el programa esté en segundo plano y que si cierras el terminal no se cierre el programa.
 function evince () {
-     /usr/bin/evince $* 2> /dev/null & disown
+     /usr/bin/evince "$*" 2> /dev/null & disown
 }
 function gedit () {
-     /usr/bin/gedit $* 2> /dev/null & disown
+     /usr/bin/gedit "$*" 2> /dev/null & disown
 }
 function gw () {
-     /usr/bin/ghostwriter $* 2> /dev/null & disown
+     /usr/bin/ghostwriter "$*" 2> /dev/null & disown
 }
 
 ### abrir explorador nautilus aquí, by @jgvictores
