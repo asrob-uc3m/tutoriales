@@ -1,0 +1,801 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Bash (consola/terminal) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="folder-structure-debian.html" />
+    
+    
+    <link rel="prev" href="introduction.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Tutoriales
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../electronics/">
+            
+                <a href="../../electronics/">
+            
+                    
+                    Electrónica
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../electronics/battery-charger-imax-b6ac.html">
+            
+                <a href="../../electronics/battery-charger-imax-b6ac.html">
+            
+                    
+                    Cargador IMAX B6AC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../electronics/kicad.html">
+            
+                <a href="../../electronics/kicad.html">
+            
+                    
+                    KiCad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../electronics/soldering.html">
+            
+                <a href="../../electronics/soldering.html">
+            
+                    
+                    Estación de soldadura Baku 601D
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../mechanics/">
+            
+                <a href="../../mechanics/">
+            
+                    
+                    Mecánica
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../mechanics/freecad.html">
+            
+                <a href="../../mechanics/freecad.html">
+            
+                    
+                    FreeCAD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Software
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../version-control/">
+            
+                <a href="../version-control/">
+            
+                    
+                    Control de versiones
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../version-control/git.html">
+            
+                <a href="../version-control/git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../version-control/subversion.html">
+            
+                <a href="../version-control/subversion.html">
+            
+                    
+                    Subversion (SVN)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introducción
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2.2" data-path="bash.html">
+            
+                <a href="bash.html">
+            
+                    
+                    Bash (consola/terminal)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="folder-structure-debian.html">
+            
+                <a href="folder-structure-debian.html">
+            
+                    
+                    Estructura de carpetas en Debian y derivados
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="configuration-files.html">
+            
+                <a href="configuration-files.html">
+            
+                    
+                    Ficheros de configuración
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../programming/">
+            
+                <a href="../programming/">
+            
+                    
+                    Programación
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../programming/cmake.html">
+            
+                <a href="../programming/cmake.html">
+            
+                    
+                    CMake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../programming/libs.html">
+            
+                <a href="../programming/libs.html">
+            
+                    
+                    Librerías estáticas y dinámicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="../programming/yarp.html">
+            
+                <a href="../programming/yarp.html">
+            
+                    
+                    YARP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../comunications/">
+            
+                <a href="../comunications/">
+            
+                    
+                    Comunicaciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../character-encoding.html">
+            
+                <a href="../character-encoding.html">
+            
+                    
+                    Codificación de caracteres
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../environment-variables.html">
+            
+                <a href="../environment-variables.html">
+            
+                    
+                    Variables de entorno
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../writing/">
+            
+                <a href="../../writing/">
+            
+                    
+                    Redactar
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../writing/markdown.html">
+            
+                <a href="../../writing/markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../writing/redactar.html">
+            
+                <a href="../../writing/redactar.html">
+            
+                    
+                    Redactar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../writing/vim.html">
+            
+                <a href="../../writing/vim.html">
+            
+                    
+                    Vim (editor de texto)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../similar.html">
+            
+                <a href="../../similar.html">
+            
+                    
+                    Páginas similares y relacionadas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Bash (consola/terminal)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="bash-consolaterminal">Bash (consola/terminal)</h1>
+<h2 id="introducci&#xF3;n">Introducci&#xF3;n</h2>
+<p>La consola (o terminal) de Linux es muy &#xFA;til. Como se mencion&#xF3; en la <a href="introduction.html#atajos-de-teclado-y-rat&#xF3;n">introducci&#xF3;n a Linux</a>, se puede acceder a una consola a trav&#xE9;s de la combinaci&#xF3;n de teclas <code>CTRL</code>+<code>ALT</code>+<code>t</code>, y utilizar mecanismos como los portapapeles de Linux, adem&#xE1;s de sus atajos de teclado propios. N&#xF3;tese que, al igual que Linux en general, Bash es &quot;sensible a may&#xFA;sculas&quot; (al contrario que en Windows, s&#xED; hace diferencia el hecho de que una misma letra se escriba con min&#xFA;scula o may&#xFA;scula).</p>
+<h2 id="atajos-de-teclado">Atajos de teclado</h2>
+<ul>
+<li><code>tab</code>: autocompletado a partir de lo escrito (es necesario pulsar dos veces si hay existen opciones).</li>
+<li>flecha <code>arriba</code>/<code>abajo</code>: moverse a trav&#xE9;s de historial de comandos.</li>
+<li><code>CTRL-r</code>: b&#xFA;squeda de comandos escritos anteriormente (pulsar y empezar a teclear).</li>
+</ul>
+<h2 id="s&#xED;mbolos-especiales">S&#xED;mbolos especiales</h2>
+<p>En esta secci&#xF3;n se comentan algunos s&#xED;mbolos especiales. En los ejemplos se utilizan los comandos <code>ls</code> (listar contenido de carpeta) y <code>cd</code> (cambiar de carpeta) que se explican con mayor detalle en la secci&#xF3;n de <a href="#listado-alfab&#xE9;tico-de-comandos-&#xFA;tiles">comandos &#xFA;tiles</a>.</p>
+<ul>
+<li><code>/</code> Se utiliza como delimitador entre nombres de carpetas, y entre nombres de carpetas y archivos (equivalente en Windows: <code>\</code>). Por ejemplo: <code>/etc/crontab</code> indica que dentro de la carpeta <code>/etc</code> hay un fichero que se llama <code>crontab</code>.</li>
+<li><code>.</code> Significa &quot;aqu&#xED;&quot;, &quot;en esta carpeta&quot;. Por su cuenta, muchas veces se puede omitir (<code>ls .</code> se puede abreviar como <code>ls</code>, y <code>cd .</code> no hace nada).<ul>
+<li>Se utiliza cuando se quiere especificar una ruta relativa. Por ejemplo: <code>/etc</code> es una ruta absoluta, se refiere una carpeta <code>etc</code> en la ra&#xED;z del sistema de ficheros; sin embargo, <code>./etc</code> es una ruta relativa, se refiere a una carpeta <code>etc</code> dentro de la carpeta donde estamos.</li>
+<li>Se utiliza cuando se quiere lanzar un programa no instalado. Se trata de un caso de uso espec&#xED;fico del punto anterior. Cuando un programa no est&#xE1; propiamente instalado (por ejemplo, acabamos de compilar <code>miPrograma</code>), uno est&#xE1; obligado a especificar que se quiere ejecutar el de la carpeta donde se est&#xE1; (siguiendo con el ejemplo: <code>./miPrograma</code>).</li>
+<li>Tambi&#xE9;n se utiliza dentro del nombre de un fichero, para separar <code>nombre.extensi&#xF3;n</code>.</li>
+<li>Por &#xFA;ltimo, como se coment&#xF3; en la <a href="introduction.html#notas-adicionales">introducci&#xF3;n</a>, el <code>.</code> al inicio de un nombre de fichero indica fichero oculto, y esto sucede con muchos <a href="configuration-files.html">ficheros de configuraci&#xF3;n</a>.</li>
+</ul>
+</li>
+<li><code>..</code> Significa &quot;en la carpeta padre&quot;, &quot;la carpeta que contiene esta carpeta&quot;. Por ejemplo, ascendemos a la carpeta padre via <code>cd ..</code>.</li>
+<li><code>*</code> Significa &quot;cualquier cosa&quot;, es un operador &quot;comod&#xED;n&quot;. Por ejemplo: <code>ls ab*</code> nos da un listado de todo lo que empieza por <code>ab</code>, y <code>ls *png</code> nos da un listado de todoque finalice (nombre completo, incluyendo extensi&#xF3;n) en <code>png</code>.</li>
+<li><code>?</code> Significa &quot;cualquier cosa&quot;, es un operador &quot;comod&#xED;n&quot;, pero limitado a una sola letra o car&#xE1;cter. Se pueden poner varios seguidos.</li>
+<li><code>#</code> Significa &quot;comentario&quot;, no se ejecuta lo que est&#xE9; a su derecha. Por ejemplo: <code>ls # Esto es un comentario</code> hace lo mismo que <code>ls</code>, pero aporta informaci&#xF3;n al lector. N&#xF3;tese que aunque no se ejecute como tal, puede contener informaci&#xF3;n relevante, v&#xE9;ase el Shebang en la secci&#xF3;n de <a href="#scripts-de-bash">scripts de Bash</a>.</li>
+<li><code>\</code> La <em>barra inversa</em> (<em>backslash</em>) tiene dos usos (su equivalente en Windows: <code>^</code> (<em>caret</em>)):<ul>
+<li>Interpretar como <em>literal</em>. Por ejemplo: mediante <code>ls Mis\ Documentos</code> se evita el uso de entrecomillado del texto (interpreta el espacio (<code> </code>) como <em>literalmente</em> un espacio en lugar de como separador de argumentos/par&#xE1;metros).</li>
+<li>Se utiliza para trocear un comando en varias l&#xED;neas, indicando que el comando contin&#xFA;a. Funciona s&#xF3;lo si no se introducen caracteres adicionales a su derecha (aunque en realidad lo que se est&#xE1; introduciendo es una <a href="https://es.wikipedia.org/wiki/Nueva_l%C3%ADnea" target="_blank">nueva l&#xED;nea</a>, y el mecanismo subyacente es el del caso anterior).</li>
+</ul>
+</li>
+<li><code>;</code> Se puede utilizar para escribir varios comandos en la misma l&#xED;nea (equivalente en Windows: <code>&amp;</code>).</li>
+<li><code>&amp;&amp;</code> Similar al anterior, para escribir varios comandos en la misma l&#xED;nea, pero s&#xF3;lo si va bien el primero se ejecuta el segundo (equivalente en Windows: <code>&amp;&amp;</code> igual).</li>
+<li><code>&quot;</code> Este tipo de entrecomillado permite espeficicar que un texto va en bloque, pese a la presencia de espacios. Por ejemplo: <code>cd &quot;Mis Documentos&quot;</code>.</li>
+<li>` Este tipo de entrecomillado permite utilizar la salida est&#xE1;ndar (<a href="http://man7.org/linux/man-pages/man3/stdout.3.html" target="_blank">STDOUT</a>, que por defecto se muestra por pantalla) de un programa como argumento de otro. Por ejemplo: <code>cd</code>`<code>ls</code>` intentar&#xED;a cambiar de carpeta utilizando el nombre de la primera entrada del listado de <code>ls</code> (y dar&#xED;a error en caso de que fuese un fichero en lugar de una carpeta).</li>
+<li><code>|</code> Se llama pipe. Redirige la salida est&#xE1;ndar (<a href="http://man7.org/linux/man-pages/man3/stdout.3.html" target="_blank">STDOUT</a>, que por defecto se muestra por pantalla) de un programa a otro programa. Es similar pero de uso algo menos intuitivo que el entrcomillado  `. Por ejemplo, para salidas est&#xE1;ndar muy largos y sin posibilidad de scroll de rat&#xF3;n, se utiliza: <code>ls | less</code>, donde <code>less</code> permite el avance con la tecla <code>Enter</code> y salir con <code>q</code>. En otras ocasiones est&#xE1; desaconsejado (<a href="https://memegenerator.net/img/instances/53648306/piping-cat-output-to-grep-thats-not-optimal.jpg" target="_blank">don&apos;t pipe the cat</a>, <a href="https://www.infoworld.com/article/2614499/unix/unix--when-pipes-don-t-make-sense.html" target="_blank">1</a>).</li>
+<li><code>&gt;</code> Redirige la salida est&#xE1;ndar (<a href="http://man7.org/linux/man-pages/man3/stdout.3.html" target="_blank">STDOUT</a>, que por defecto se muestra por pantalla) de un programa, a un fichero. Si el fichero ya existe, primero borra su contenido. Por ejemplo: <code>ls &gt; stdout.log</code> vuelca el listado de contenido de la carpeta donde se est&#xE1; creando un fichero llamado <code>stdout.log</code>. Hemos seleccionado <code>log</code> porque se traduce como &quot;registro de actividades&quot;, pero puede usarse cualquier extensi&#xF3;n o incluso omitirse.</li>
+<li><code>&gt;&gt;</code> Similar a <code>&gt;</code>, pero si el fichero ya existe, anexa los datos a continuaci&#xF3;n de los datos existentes.</li>
+<li><code>2&gt;</code> Redirige la salida de errores (<a href="http://man7.org/linux/man-pages/man3/stdout.3.html" target="_blank">STDERR</a>, que por defecto se muestra por pantalla) de un programa, a un fichero. Si el fichero ya existe, primero borra su contenido. Por ejemplo: <code>cd</code> ` <code>ls</code> ` <code>2&gt; stderr.log</code> vuelca el error (en caso de producirse) creando un fichero llamado <code>stderr.log</code>. Existe un fichero muy especial, <code>/dev/null</code>, que quiere decir &quot;a ninguna parte&quot; (se traduce como &quot;no me muestre usted los errores&quot;), y se puede utilizar: <code>cd</code>`<code>ls</code>`<code>2&gt; /dev/null</code></li>
+<li><code>2&gt;&gt;</code> Similar a <code>&gt;</code>, pero si el fichero ya existe, anexa los datos a continuaci&#xF3;n de los datos existentes.</li>
+<li><code>2&gt;&amp;1</code> Otra variante de <code>2&gt;</code>, redirige a donde se dirija lo de <code>&gt;</code>. Existe <code>1&gt;&amp;2</code> para el caso inverso.</li>
+<li><code>&lt;</code> Por ejemplo <code>programa &lt; file.txt</code> utiliza el contenido de <code>file.txt</code> como la entrada est&#xE1;ndar (<a href="http://man7.org/linux/man-pages/man3/stdin.3.html" target="_blank">STDIN</a>, que normalmente ser&#xED;a el teclado, de <code>programa</code> durante su ejecuci&#xF3;n.</li>
+<li><code>&amp;</code> Lanza un programa en segundo plano, por ejemplo: <code>programa &amp;</code>. Muestra el identificador de proceso (<a href="https://en.wikipedia.org/wiki/Process_identifier" target="_blank">PID</a>) al lanzar el programa. Se puede listar los programas en segundo plano mediante el comando <strong>jobs</strong>, o pasar el programa a primer plano mediante el comando <strong>fg</strong>.</li>
+<li><code>!$</code> Contiene la &#xFA;ltima palabra que uno mismo ha escrito en la consola, similar a la <a href="../environment-variables.html">variable de entorno</a> <code>_</code> (<a href="https://unix.stackexchange.com/questions/271659/vs-last-argument-of-the-preceding-command-and-output-redirection" target="_blank">ref</a>).</li>
+<li><code>$</code> Para obtener el valor de una <a href="../environment-variables.html">variable de entorno</a>.</li>
+<li><code>~</code> Se corresponde con la <a href="../environment-variables.html">variable de entorno</a> <code>HOME</code>. Por ejemplo, <code>ls ~</code> y <code>ls $HOME</code> son equivalentes.</li>
+</ul>
+<p>Estos s&#xED;mbolos se pueden combinar en el mismo comando y en cualquier orden, como por ejemplo: <code>programa &amp; 2&gt; /dev/null</code> lanza <code>programa</code> en segundo plano, y adem&#xE1;s evita que no nos est&#xE9;n llegando mensajes de error (que ser&#xED;a el comportamiento por defecto): v&#xE9;ase c&#xF3;mo lo utilizamos <a href="https://github.com/asrob-uc3m/tutoriales/blob/8236fc98076747a377537e608976ac8901108fb0/assets/dotfiles/.bashrc-asrob#L3" target="_blank">aqu&#xED;</a>.</p>
+<h2 id="el-comando-man">El comando <code>man</code></h2>
+<p>El comando <code>man</code> proporciona el manual del comando nombrado. Por ejemplo, con <code>man ls</code> se accede al manual del comando <code>ls</code>.
+Dentro de un manual, se puede buscar con <code>/</code> (esto es como en <a href="../../writing/vim.html">vim</a>).
+Por ejemplo, con <code>/--size</code> se puede obtener informaci&#xF3;n del par&#xE1;metro <code>--size</code> si estamos viendo el manual de <code>ls</code>.
+Los manuales de <code>man</code> se componen de diferentes secciones, del 1 al 8, porque no s&#xF3;lo se refieren a comandos de consola.
+Por ejemplo, la secci&#xF3;n 3 se centra en la librer&#xED;a C est&#xE1;ndar (y adem&#xE1;s muestra el #include necesario).
+Se puede forzar el ir a la entrada de una secci&#xF3;n, por ejemplo <em>man 3 scanf</em> (aunque funcionar&#xED;a sin el <em>3</em> al no tratarse de una entrada duplicada).
+Se sale del manual con la tecla <code>q</code>.</p>
+<p>Un comando muy similar a <code>man</code> es <code>info</code>, que en ocasiones propoorciona mejor documentaci&#xF3;n.</p>
+<h2 id="listado-alfab&#xE9;tico-de-comandos-&#xFA;tiles">Listado alfab&#xE9;tico de comandos &#xFA;tiles</h2>
+<p>Estos comandos, en general, tambi&#xE9;n son aplicables a <code>gnome-terminal</code>, <code>bash</code>, <code>sh</code>, <code>xterm</code>...</p>
+<ul>
+<li><strong>apt-cache search</strong>: en Debian/Ubuntu/Mint, da el nombre de los paquetes que contienen los metadatos que se buscan (versi&#xF3;n, dependencias, descripci&#xF3;n, etc.).</li>
+<li><strong>apt-file search</strong>: en Debian/Ubuntu/Mint, da el nombre de los paquetes que contienen el fichero que se busca.</li>
+<li><strong>apt-get install</strong>: en Debian/Ubuntu/Mint, instala un paquete, que puede ser un programa o librer&#xED;a (e.g. de nombre lib<em>librer&#xED;a</em>-dev). Suele requerir <strong>sudo</strong> delante.</li>
+<li><strong>cat</strong>: Escribe el contenido de un fichero por pantalla. &#xDA;til para echar un vistazo r&#xE1;pido a un fichero que ni merece la pena abrir para editar. Por ejemplo: <code>cat README.md</code> vuelca el contenido del fichero <code>README.md</code>. Para ficheros largos, mejor utilizar <strong>head</strong> (donde una opci&#xF3;n buena es <code>head -n 5 README.md</code> para ver s&#xF3;lo primeras 5 l&#xED;neas) o <strong>tail</strong> (para ver &#xFA;ltimas l&#xED;neas, v&#xE9;ase tambi&#xE9;n su uso en <strong>dmesg</strong>). Curiosamente, para ver una l&#xED;nea espec&#xED;fica, es mejor <strong>sed</strong> v&#xED;a <code>sed -n 5p README.md</code> o rango <code>sed -n 5,7p README.md</code> (m&#xE1;s usos en su secci&#xF3;n abajo). Nota: Su nombre proviene de su uso original, para concatenar, por ejemplo: <code>cat file1.txt file2.txt &gt; new.txt</code></li>
+<li><strong>cd</strong>: cambiar de carpeta.</li>
+<li><strong>cp</strong>: copiar origen a destino. Una alternativa que muestra progreso y mantiene permisos es <code>rsync -ah --progress origen destino</code> (ojo: su comportamiento difiere seg&#xFA;n <code>/</code> al final de la ruta)(para crear respaldos puede ser interesante recursivo y eliminando los ficheros que no existen en el origen: <code>rsync -rah --progress --delete origen destino</code>).</li>
+<li><strong>crontab</strong>: Edita la tabla de tareas peri&#xF3;dicas mediante <code>crontab -e</code>.</li>
+<li><strong>diff</strong>: Compara ficheros y carpetas. <code>colordiff</code> existe como variante con colores (o <code>meld</code> como cliente gr&#xE1;fico).</li>
+<li><strong>df</strong>: Mostrar ocupaci&#xF3;n de discos montados. Util&#xED;cese con <code>-lh</code> para lectura humana.</li>
+<li><strong>dmesg</strong>: Muestra mensajes del kernel. Utiliza <code>tail -f /var/log/syslog</code> para verlo en stream continuo.</li>
+<li><strong>du</strong>: Mostrar ocupaci&#xF3;n de subcarpetas. Util&#xED;cese con <code>-lh</code> para lectura humana, y <code>-s</code> para resumido.</li>
+<li><strong>echo</strong>: Escribe una cadena de caracteres por pantalla. &#xDA;til en <a href="#scripts-de-bash">scripts de bash</a>. Por ejemplo: <code>echo &quot;hola mundo&quot;</code> escribe <code>hola mundo</code> en pantalla.</li>
+<li><strong>find</strong>: Busca ficheros que cumplan un criterio (nombre, tama&#xF1;o...).<ul>
+<li>Uso b&#xE1;sico (buscar fichero por nombre): <code>find -name fichero.txt</code></li>
+<li>Uso b&#xE1;sico (buscar fichero con comod&#xED;n, ejemplo extensi&#xF3;n): <code>find -name *.txt</code></li>
+<li>Buscar fichero por nombre sin importar may&#xFA;sculas/min&#xFA;scula: <code>find -iname fichero.txt</code></li>
+<li>Buscar fichero por nombre delimitando la profundidad de carpetas entre las cuales se busca: <code>find -maxdepth 2 -name fichero.txt</code></li>
+<li>V&#xE9;ase tambi&#xE9;n su uso en la secci&#xF3;n dedicada a <a href="#bucles-en-bash">bucles en bash</a>.</li>
+</ul>
+</li>
+<li><strong>free</strong>: Mostrar memoria (RAM) libre. Util&#xED;cese con <code>-lh</code> para lectura humana.</li>
+<li><strong>grep</strong>: Busca texto contenido en ficheros.<ul>
+<li>Uso b&#xE1;sico: <code>grep &quot;cadena de texto&quot; fichero.txt</code></li>
+<li>En todos los ficheros de una carpeta: <code>grep &quot;cadena de texto&quot; *</code></li>
+<li>En todos los ficheros de una carpeta y sus subcarptas (<code>r</code> de recursivo): <code>grep -r &quot;cadena de texto&quot; *</code></li>
+<li>En todos los ficheros de una carpeta y sus subcarptas (<code>i</code> de case-insensitive) sin importar may&#xFA;sculas/min&#xFA;sculas de la cadena: <code>grep -ri &quot;cadena de texto&quot; *</code></li>
+<li>En todos los ficheros con extensi&#xF3;n <code>.cpp</code> de una carpeta y sus subcarptas sin importar may&#xFA;sculas/min&#xFA;sculas de la cadena: <code>grep -ri &quot;cadena de texto&quot; --include *.cpp</code></li>
+<li>Mostrar l&#xED;neas a continuaci&#xF3;n de las encontradas: <code>grep -A 1 &quot;cadena&quot; *</code></li>
+<li>Mostrar n&#xFA;mero de l&#xED;nea en el cual aparece: <code>grep -n &quot;cadena&quot; *</code></li>
+<li>Mostrar fichero completo marcando cadena en color: <code>grep --color -E &quot;cadena|$&quot; fichero.txt</code></li>
+<li>Invertir b&#xFA;squeda (encontrar lo que no lleve cadena): <code>grep -v &quot;anti cadena&quot; *</code></li>
+<li>Manteniendo color pese a cruzarse con un pipe <code>|</code>: <code>grep --color=always &quot;cadena&quot; * | grep -v &quot;anti cadena&quot;</code></li>
+</ul>
+</li>
+<li><strong>killall</strong>: Intenta matar a un proceso, por nombre. Puedes utilizar <code>pkill</code> en su lugar para nombre incompleto.
+Por defecto, env&#xED;a una <a href="https://en.wikipedia.org/wiki/Signal_(IPC" target="_blank">se&#xF1;al POSIX</a>#POSIX_signals) de tipo <code>SIGTERM</code> (15), que es algo m&#xE1;s brusco que <code>SIGINT</code> (2, t&#xED;pico de <code>CTRL-C</code>), sin llegar al extremo de <code>SIGKILL</code> (9).
+Se puede meter la se&#xF1;al como par&#xE1;metro: <code>killall -s 9 nombre</code> (leer m&#xE1;s: <a href="http://programmergamer.blogspot.com.es/2013/05/clarification-on-sigint-sigterm-sigkill.html" target="_blank">1</a>,<a href="http://www.yolinux.com/TUTORIALS/C++Signals.html" target="_blank">2</a>; listado se&#xF1;ales: <code>kill -l</code>).
+Aqu&#xED; una alternativa m&#xE1;s compleja, metiendo el identificador de proceso (<a href="https://en.wikipedia.org/wiki/Process_identifier" target="_blank">PID</a> de por medio: <code>pgrep &quot;nombre&quot; | xargs kill -s 9</code>.</li>
+<li><strong>locate</strong>: Parecido al find. Busca ficheros de forma general y r&#xE1;pida porque usa la base de datos de <strong>updatedb</strong>.</li>
+<li><strong>ls</strong>: Listar contenido de carpeta, <code>ls -lh</code> para tama&#xF1;os con lectura humana. Existen otros muchos <code>ls</code>: <code>lscpu</code>, <code>lsmod</code>... utiliza <code>ls</code> y tabulador para autocompletado para descubrirlos.</li>
+<li><strong>mkdir</strong>: crear una carpeta</li>
+<li><strong>mv</strong>: mover origen a destino</li>
+<li><strong>rename</strong>: <code>--no-act &apos;s/^imagen/image/&apos; *</code> (donde <code>^</code> implica s&#xF3;lo al principio))</li>
+<li><strong>rm</strong>: borrar (con <code>-r</code> para recursivo (entra en subcarpetas), <code>-rf</code> recursivo forzado))</li>
+<li><strong>sed</strong>: Se puede utilizar reemplazar texto en un fichero (<strong>utilizar con cuidado!!!</strong>).<ul>
+<li>Previsualizaci&#xF3;n (vuelca por pantalla sin realizar cambios): <code>sed &quot;s/viejo/nuevo/g&quot; fichero.txt</code></li>
+<li>Uso b&#xE1;sico: <code>sed -i &quot;s/viejo/nuevo/g&quot; fichero.txt</code></li>
+<li>En todos los ficheros de una carpeta: <code>sed -i &quot;s/viejo/nuevo/g&quot; *</code></li>
+<li></li>
+<li>No tiene funcionalidad recursiva (en todos los ficheros de una carpeta y sus subcarptas), pero se puede conseguir mediante <a href="#bucles-en-bash">bucles en bash</a>.</li>
+</ul>
+</li>
+<li><strong>setxkbmap</strong>: Cambiar la configuraci&#xF3;n del teclado. Por ejemplo, a espa&#xF1;ol: <code>setxkbmap es,es</code> (sin X, pero que requiere <code>sudo</code>: <code>loadkeys --verbose es</code>)</li>
+<li><strong>sudo</strong>: Realizar el comando que se escribe en la misma l&#xED;nea con permisos de administrador.</li>
+<li><strong>top</strong>: Mostrar los processos en ejecuci&#xF3;n (donde (<a href="https://en.wikipedia.org/wiki/Process_identifier" target="_blank">PID</a> es el identificador de proceso, y COMMAND es el nombre del proceso). Con colores, existe <code>htop</code>.</li>
+<li><strong>tree</strong>: Mostrar contenidos de una carpeta en formato &#xE1;rbol. Con <code>-L</code> se puede especificar la profundidad, o con <code>-I</code> se puede excluir un patr&#xF3;n, ejemplo: <code>tree -I build</code>.</li>
+<li><strong>uname</strong>: Informaci&#xF3;n de bajo nivel, incluida la versi&#xF3;n de kernel de Linux y arquitectura/provesadores si se invoca: <code>uname -a</code>.</li>
+<li><strong>updatedb</strong>: Actualiza la base de datos que utiliza <strong>locate</strong></li>
+<li><strong>wget</strong>: Descarga un fichero, con <code>-O</code> se puede renombrar. Es lo que utilizamos <a href="configuration-files.html#bashrc">aqu&#xED;</a>.</li>
+</ul>
+<h2 id="bucles-en-bash">Bucles en Bash</h2>
+<p>Existen diversas maneras de iterar en Bash:</p>
+<ul>
+<li>A trav&#xE9;s del comando <code>find -exec</code>. El operador <code>{}</code> se refiere al objeto encontrado, que puede ponerse entre comillas <code>&quot;{}&quot;</code> para prevenir frente a espacios en nombres. Por &#xFA;ltimo, se utiliza <code>\;</code> para lanzar el comando una vez por incidencia (estilo <code>comando file1; comando file2; comando file3;</code>), o <code>\+</code> para concatenar (juntar secuencialmente en una sola l&#xED;nea, estilo <code>comando file1 file2 file3</code>). Ejemplos:<ul>
+<li>Ejemplo 1: Cambiar a permisos <code>664</code> todos los ficheros (<code>-type f</code>) de una carpeta y sus subcarpetas:<pre><code class="lang-bash">find -type f -exec chmod 664 {} \;
+</code></pre>
+</li>
+<li>Ejemplo 2: Copiar todo lo que contenga &quot;cadena&quot; en su nombre a otra carpeta:<pre><code class="lang-bash">find -name <span class="hljs-string">&quot;*cadena*&quot;</span> -exec cp {} /carpeta/destino  \;
+</code></pre>
+</li>
+<li>Ejemplo 3: En todos los ficheros (<code>-type f</code>) de una carpeta y sus subcarpetas, aplicar <code>sed</code>:<pre><code class="lang-bash">find -type f -exec sed -i <span class="hljs-string">&apos;s/viejo/nuevo/g&apos;</span> {} \+
+</code></pre>
+</li>
+<li>Ejemplo 4: Por cada carpeta que contenga una carpeta <code>.svn</code>, aplicar <code>svn up {}</code> done <code>{}</code> es cada ruta encontrada (omitiendo <code>.svn</code> via <code>sed</code>):<pre><code class="lang-bash">find -name <span class="hljs-string">&quot;.svn&quot;</span> | sed <span class="hljs-string">&quot;s/.svn//g&quot;</span> | xargs svn up
+</code></pre>
+</li>
+</ul>
+</li>
+<li>A trav&#xE9;s de bucles <code>for</code>.<ul>
+<li>Ejemplo 1 (que se podr&#xED;a realizar en una l&#xED;nea &#xFA;nica):<pre><code class="lang-bash"> <span class="hljs-keyword">for</span> fileName <span class="hljs-keyword">in</span> <span class="hljs-string">&quot;<span class="hljs-variable">$(find -name *.mp3)</span>&quot;</span>; <span class="hljs-keyword">do</span>
+     <span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;<span class="hljs-variable">$fileName</span>\n&quot;</span>;
+ <span class="hljs-keyword">done</span>
+</code></pre>
+</li>
+<li>Ejemplo 2: Renombrar con fecha delante, separado por gui&#xF3;n:<pre><code class="lang-bash"> <span class="hljs-keyword">for</span> f <span class="hljs-keyword">in</span> *; <span class="hljs-keyword">do</span> mv -- <span class="hljs-string">&quot;<span class="hljs-variable">$f</span>&quot;</span> <span class="hljs-string">&quot;<span class="hljs-variable">$(date -r &quot;$f&quot; +%Y%m%d)</span>-<span class="hljs-variable">$f</span>&quot;</span>; <span class="hljs-keyword">done</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="scripts-de-bash">Scripts de Bash</h2>
+<p>Un Script de Bash (<em>Bash Script</em>) es un conjunto de comandos de consola de linux que el sistema operativo ejecuta en orden. Script se suele traducir como fichero de ejecuci&#xF3;n por lotes.</p>
+<p>N&#xF3;tese que si la complejidad de un Script es muy elevada:</p>
+<ol>
+<li>Tal vez se pueda simplificar <a href="http://porkmail.org/era/unix/award.html" target="_blank">1</a></li>
+<li>Se puede considerar utilizar un script de Python en su lugar, puesto que a costa de su int&#xE9;rprete se consiguen muchas m&#xE1;s herramientas y en general una sintaxis m&#xE1;s sencilla.</li>
+</ol>
+<p>Cualquier Script de Linux deber&#xED;a tener un <a href="https://en.wikipedia.org/wiki/Shebang_%28Unix%29" target="_blank">Shebang</a> como primera l&#xED;nea. La primera l&#xED;nea de un Script de Bash deber&#xED;a ser <code>#!/usr/bin/env bash</code> (<a href="https://stackoverflow.com/tags/bash/info" target="_blank">1</a>).</p>
+<p>Se pueden encontrar algunos ejemplos de Scripts de Bash en la secci&#xF3;n de <a href="configuration-files.html">ficheros de configuraci&#xF3;n</a>. Nota: al tratarse de ficheros de sistema, en general no necesitan Shebang.</p>
+<h2 id="p&#xE1;ginas-similares-y-relacionadas">P&#xE1;ginas similares y relacionadas</h2>
+<ul>
+<li><a href="https://help.ubuntu.com/community/UsingTheTerminal" target="_blank">https://help.ubuntu.com/community/UsingTheTerminal</a></li>
+<li><a href="http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO" target="_blank">http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO</a></li>
+<li><a href="https://blog.desdelinux.net/shellcheck-una-utilidad-para-comprobar-tus-scripts-de-shell" target="_blank">https://blog.desdelinux.net/shellcheck-una-utilidad-para-comprobar-tus-scripts-de-shell</a></li>
+<li><a href="http://tldp.org/LDP/Bash-Beginners-Guide/html/index.html" target="_blank">http://tldp.org/LDP/Bash-Beginners-Guide/html/index.html</a></li>
+<li><a href="http://tldp.org/LDP/abs/html/index.html" target="_blank">http://tldp.org/LDP/abs/html/index.html</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page: Introducción">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="folder-structure-debian.html" class="navigation navigation-next " aria-label="Next page: Estructura de carpetas en Debian y derivados">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Bash (consola/terminal)","level":"1.4.2.2","depth":3,"next":{"title":"Estructura de carpetas en Debian y derivados","level":"1.4.2.3","depth":3,"path":"software/linux/folder-structure-debian.md","ref":"software/linux/folder-structure-debian.md","articles":[]},"previous":{"title":"Introducción","level":"1.4.2.1","depth":3,"path":"software/linux/introduction.md","ref":"software/linux/introduction.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":"page-toc","pluginsConfig":{"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"gitbook-cover.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"software/linux/bash.md","mtime":"2021-05-29T11:17:00.403Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-29T11:17:19.011Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

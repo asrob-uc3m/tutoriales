@@ -1,0 +1,666 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Librerías estáticas y dinámicas · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="yarp.html" />
+    
+    
+    <link rel="prev" href="cmake.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Tutoriales
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../electronics/">
+            
+                <a href="../../electronics/">
+            
+                    
+                    Electrónica
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../electronics/battery-charger-imax-b6ac.html">
+            
+                <a href="../../electronics/battery-charger-imax-b6ac.html">
+            
+                    
+                    Cargador IMAX B6AC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../electronics/kicad.html">
+            
+                <a href="../../electronics/kicad.html">
+            
+                    
+                    KiCad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../electronics/soldering.html">
+            
+                <a href="../../electronics/soldering.html">
+            
+                    
+                    Estación de soldadura Baku 601D
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../mechanics/">
+            
+                <a href="../../mechanics/">
+            
+                    
+                    Mecánica
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../mechanics/freecad.html">
+            
+                <a href="../../mechanics/freecad.html">
+            
+                    
+                    FreeCAD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Software
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../version-control/">
+            
+                <a href="../version-control/">
+            
+                    
+                    Control de versiones
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../version-control/git.html">
+            
+                <a href="../version-control/git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../version-control/subversion.html">
+            
+                <a href="../version-control/subversion.html">
+            
+                    
+                    Subversion (SVN)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../linux/">
+            
+                <a href="../linux/">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../linux/introduction.html">
+            
+                <a href="../linux/introduction.html">
+            
+                    
+                    Introducción
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../linux/bash.html">
+            
+                <a href="../linux/bash.html">
+            
+                    
+                    Bash (consola/terminal)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../linux/folder-structure-debian.html">
+            
+                <a href="../linux/folder-structure-debian.html">
+            
+                    
+                    Estructura de carpetas en Debian y derivados
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../linux/configuration-files.html">
+            
+                <a href="../linux/configuration-files.html">
+            
+                    
+                    Ficheros de configuración
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Programación
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="cmake.html">
+            
+                <a href="cmake.html">
+            
+                    
+                    CMake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3.2" data-path="libs.html">
+            
+                <a href="libs.html">
+            
+                    
+                    Librerías estáticas y dinámicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="yarp.html">
+            
+                <a href="yarp.html">
+            
+                    
+                    YARP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../comunications/">
+            
+                <a href="../comunications/">
+            
+                    
+                    Comunicaciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../character-encoding.html">
+            
+                <a href="../character-encoding.html">
+            
+                    
+                    Codificación de caracteres
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../environment-variables.html">
+            
+                <a href="../environment-variables.html">
+            
+                    
+                    Variables de entorno
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../writing/">
+            
+                <a href="../../writing/">
+            
+                    
+                    Redactar
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../writing/markdown.html">
+            
+                <a href="../../writing/markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../writing/redactar.html">
+            
+                <a href="../../writing/redactar.html">
+            
+                    
+                    Redactar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../writing/vim.html">
+            
+                <a href="../../writing/vim.html">
+            
+                    
+                    Vim (editor de texto)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../similar.html">
+            
+                <a href="../../similar.html">
+            
+                    
+                    Páginas similares y relacionadas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Librerías estáticas y dinámicas</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="librer&#xED;as-est&#xE1;ticas-y-din&#xE1;micas">Librer&#xED;as est&#xE1;ticas y din&#xE1;micas</h1>
+<p>Una Librer&#xED;a es un conjunto de funciones. Es como un programa, s&#xF3;lo que no tiene una funci&#xF3;n <code>main()</code>. Contiene funciones t&#xED;picas para que sean llamadas desde alg&#xFA;n otro programa o librer&#xED;a. Cualquier desarrollador puede crear una librer&#xED;a nueva.</p>
+<h2 id="tipos-de-librer&#xED;as">Tipos de librer&#xED;as</h2>
+<p>Existen diversas clasificaciones de liber&#xED;as, que simplificaremos como dos tipos: est&#xE1;ticas y din&#xE1;micas.</p>
+<ul>
+<li><p><code>Librer&#xED;as Est&#xE1;ticas</code>. Se enlazan al compilar, quedan &quot;dentro&quot; del ejecutable final. En Windows tienen la extensi&#xF3;n <code>.lib</code>. En Linux tienen la extensi&#xF3;n <code>.a</code>.</p>
+</li>
+<li><p><code>Librer&#xED;as Din&#xE1;micas</code>. Se enlazan al ejecutar, el sistema operativo debe encontrarlas al ejecutar el programa. Si una aplicaci&#xF3;n se instal&#xF3; bien, el sistema operativo no debe tener problema para encontrarla. En Windows tienen la extensi&#xF3;n <code>.dll</code> (en general en <code>c:\windows\system32</code> y sin n&#xFA;mero de versi&#xF3;n, de ah&#xED; el llamado <a href="https://es.wikipedia.org/wiki/Infierno_de_las_DLL" target="_blank">dll hell</a>). En Linux tienen la extensi&#xF3;n <code>.so</code> (normalmente en <code>/usr/lib</code> o <code>/usr/local/lib</code>, l&#xE9;ase sobre la <a href="fix-me">estructura de carpetas en Debian y derivados</a>); dicho sistema operativo actualiza su listado con un <code>sudo ldconfig</code>).</p>
+</li>
+</ul>
+<hr>
+<p>Una librer&#xED;a puede estar pre-compilada, o nos pueden dar las fuentes. Si nos dan las fuentes, deberemos compilarla antes.</p>
+<p>Para utilizar una librer&#xED;a (esto es, compilar contra &#xE9;l), deberemos tener:</p>
+<ul>
+<li><code>Las cabeceras</code>. Las cabeceras son los ficheros con extensi&#xF3;n <code>.h</code> o <code>.hpp</code> que contienen las &apos;&apos;declaraciones&apos;&apos; (tambi&#xE9;n llamadas &apos;&apos;prototipos&apos;&apos;) de las funciones [ver nota]. Una declaraci&#xF3;n muestra el nombre de la funci&#xF3;n, sus argumentos y valor de retorno, pero no toda la implementaci&#xF3;n asociada. Se invocan a trav&#xE9;s de la &apos;&apos;directriz de preprocesador&apos;&apos; (se llaman as&#xED; porque se hace en la etapa de &apos;&apos;preprocesamiento&apos;&apos; del compilador) <code>#include</code>, que realiza una simple sustituci&#xF3;n. El compilador debe ser capaz de localizar las cabeceras.<ul>
+<li>En &apos;&apos;gcc&apos;&apos; de Linux, se utiliza el argumento <code>-I</code>, como p.ej. en &apos;&apos;-I/usr/local/include&apos;&apos;.</li>
+<li>En &apos;&apos;Visual Studio 9&apos;&apos;, se pueden definir las rutas en Tools -&gt; Options -&gt; Projects and Solutions -&gt; VC++ Directories -&gt; Escoger &apos;&apos;Include Files&apos;&apos; del desplegable &apos;&apos;Show directories for&apos;&apos;.</li>
+<li>En &apos;&apos;CMake&apos;&apos; (soluci&#xF3;n multi-plataforma) se utiliza la &apos;&apos;directiva de CMake&apos;&apos; <code>include_directories()</code>, (v&#xE9;ase el <a href="cmake.html">tutorial de CMake</a>).</li>
+</ul>
+</li>
+<li><code>La librer&#xED;a compilada</code>. El compilador debe saber d&#xF3;nde est&#xE1;n las librer&#xED;as est&#xE1;ticas.<ul>
+<li>En &apos;&apos;gcc&apos;&apos; de Linux, se utiliza el argumento <code>-L</code> para definir la ruta, y <code>-l</code> para el nombre de la librer&#xED;a sin el prefijo &apos;&apos;lib&apos;&apos; y sin el sufijo &apos;&apos;.a&apos;&apos;.</li>
+<li>En &apos;&apos;Visual Studio 9&apos;&apos;, se pueden definir las rutas en Tools -&gt; Options -&gt; Projects and Solutions -&gt; VC++ Directories -&gt; Escoger &apos;&apos;Library Files&apos;&apos; del desplegable &apos;&apos;Show directories for&apos;&apos;. Se pueden definir los nombres de las librer&#xED;as en Project -&gt; Properties -&gt; Configuration Properties -&gt; Linker -&gt; Input -&gt; Escribir los nombres con extesi&#xF3;n de los &apos;&apos;.lib&apos;&apos; (separados por retornos de carro en la ventana de selecci&#xF3;n).</li>
+<li>En &apos;&apos;CMake&apos;&apos; (soluci&#xF3;n multi-plataforma) se utiliza la &apos;&apos;directiva de CMake&apos;&apos; <code>link_directories()</code> para definir la ruta, y <code>target_link_libraries()</code> para el nombre de la librer&#xED;a,  (v&#xE9;ase el <a href="cmake.html">tutorial de CMake</a>).</li>
+<li>En &apos;&apos;QtCreator&apos;&apos; se utiliza el archivo de extensi&#xF3;n &quot;pro&quot; para enlazar librer&#xED;as. Un ejemplo para incluir la librer&#xED;a est&#xE1;tica YARP_dev en Linux ser&#xED;a: <code>LIBS += /home/user/Libraries/yarp2/build/lib/libYARP_dev.a</code> pero tambi&#xE9;n funcionan comandos del formato <code>LIBS += -lstdc++</code>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>Nota: Una funci&#xF3;n que est&#xE9; &apos;&apos;definida&apos;&apos; (esto es, lleva toda su implementaci&#xF3;n) dentro de una cabecera se llama funci&#xF3;n &apos;&apos;inline&apos;&apos;. Puede ser m&#xE1;s eficiente para funciones cortas (&#xA1;pero nunca supongas c&#xF3;mo puede optimizar tu compilador!). Puede darse el caso de una librer&#xED;a compuesta &#xFA;nicamente por cabeceras con funciones inline, con lo cual al final se compone &#xFA;nicamente de cabeceras y no lleva librer&#xED;a compilada asociada (ejemplo: la librer&#xED;a Eigen2).</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="cmake.html" class="navigation navigation-prev " aria-label="Previous page: CMake">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="yarp.html" class="navigation navigation-next " aria-label="Next page: YARP">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Librerías estáticas y dinámicas","level":"1.4.3.2","depth":3,"next":{"title":"YARP","level":"1.4.3.3","depth":3,"path":"software/programming/yarp.md","ref":"software/programming/yarp.md","articles":[]},"previous":{"title":"CMake","level":"1.4.3.1","depth":3,"path":"software/programming/cmake.md","ref":"software/programming/cmake.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":"page-toc","pluginsConfig":{"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"gitbook-cover.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"software/programming/libs.md","mtime":"2021-05-29T11:17:00.403Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-29T11:17:19.011Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
