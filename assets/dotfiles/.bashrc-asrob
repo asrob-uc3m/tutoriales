@@ -20,14 +20,13 @@ function swap() { mv $1 $1._tmp && mv $2 $1 && mv $1._tmp $2; }
 ## cat-related
 
 ### cat con color, `sudo -H pip install Pygments` (via pip está >=2.3 con .md) 
-function ccat () {
-    pygmentize -g $1
-}
+alias ccat='pygmentize -g'
 
 ### cat con color, `sudo apt install source-highlight`
-function ccat2 () {
-    source-highlight -fesc -i $1
-}
+alias ccat2='source-highlight -fesc -i'
+
+### cat con color, `sudo apt install highlight`
+alias ccat3='highlight -O ansi --force'
 
 ## window-related
 
@@ -44,7 +43,7 @@ function gw () {
 
 ### abrir explorador nautilus aquí, by @jgvictores
 function n () {
-    nautilus .  & disown
+    nautilus . & disown
 }
 
 ## svn-related
