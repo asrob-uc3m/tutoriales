@@ -16,7 +16,6 @@ function swap () { mv $1 $1._tmp && mv $2 $1 && mv $1._tmp $2; }
 
 ## cat-related
 
-
 ### cat con color, `sudo apt install highlight`
 alias ccat='highlight -O ansi --force'
 
@@ -27,6 +26,17 @@ alias ccat2='pygmentize -g'
 alias ccat3='source-highlight -fesc -i'
 
 ## window-related
+
+### poder cambiar título consola. thanks <https://tjisblogging.blogspot.com/2020/06/how-to-set-terminal-title-in-ubuntu.html>
+function title(){
+ if [ -z "$PS1_BACK" ];  # set backup if it is empty
+ then
+  PS1_BACK="$PS1"
+ fi
+
+ TITLE="\[\e]0;$*\a\]"
+ PS1="${PS1_BACK}${TITLE}"
+}
 
 ### Esto es para que al ejecutar el evince desde el terminal no te saque basura, que el programa esté en segundo plano y que si cierras el terminal no se cierre el programa.
 function evince () {
