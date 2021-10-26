@@ -1,32 +1,30 @@
 ## cd + ls, by @jgvictores
-function cs () {
-    cd $1
-    ls
-}
+function cs () { cd $1; ls; }
 
 ## transfer path: guarda el path actual en un fichero oculto, by @jgvictores
-function tp () {
-    pwd > ~/.sp
-}
+function tp () { pwd > ~/.sp; }
 
 ## go to transfer path: va a donde apunta el path anteriormente guardado, by @jgvictores
-function gtp () {
-    cs `cat ~/.sp`
-}
+function gtp () { cs `cat ~/.sp`; }
+
+## dupe tp/gtp because yolo, by @jgvictores
+function tp2 () { pwd > ~/.sp2; }
+function gtp2 () { cs `cat ~/.sp2`; }
 
 ## swap. thanks https://stackoverflow.com
-function swap() { mv $1 $1._tmp && mv $2 $1 && mv $1._tmp $2; }
+function swap () { mv $1 $1._tmp && mv $2 $1 && mv $1._tmp $2; }
 
 ## cat-related
 
-### cat con color, `sudo -H pip install Pygments` (via pip está >=2.3 con .md) 
-alias ccat='pygmentize -g'
-
-### cat con color, `sudo apt install source-highlight`
-alias ccat2='source-highlight -fesc -i'
 
 ### cat con color, `sudo apt install highlight`
-alias ccat3='highlight -O ansi --force'
+alias ccat='highlight -O ansi --force'
+
+### cat con color, `sudo -H pip install Pygments` (via pip está >=2.3 con .md) 
+alias ccat2='pygmentize -g'
+
+### cat con color, `sudo apt install source-highlight`
+alias ccat3='source-highlight -fesc -i'
 
 ## window-related
 
