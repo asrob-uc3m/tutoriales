@@ -16,7 +16,7 @@ Markdown es un lenguaje de marcado (tipo de formateo de texto más o menos estan
 
 ### Generadores de webs
 
-- [GitBook](http://robots.uc3m.es/gitbook-installation-guides/install-gitbook.html) ([perma](https://github.com/roboticslab-uc3m/installation-guides/blob/09ffe48fd158656bb6359b4f3969948d2a94d4cd/install-gitbook.md)), oficial: [GitBook](https://github.com/GitbookIO/gitbook)
+- [GitBook](https://robots.uc3m.es/installation-guides/install-gitbook.html) ([perma](https://github.com/roboticslab-uc3m/installation-guides/blob/09ffe48fd158656bb6359b4f3969948d2a94d4cd/install-gitbook.md)), oficial: [GitBook](https://github.com/GitbookIO/gitbook)
 - [Jekyll](https://jekyllrb.com)
 
 ## Herramientas
@@ -33,7 +33,7 @@ Markdown es un lenguaje de marcado (tipo de formateo de texto más o menos estan
 
 Véase [roboticslab-uc3m/questions-and-answers#64](https://github.com/roboticslab-uc3m/questions-and-answers/issues/64):
 
-- Plugin [GitBook](http://robots.uc3m.es/gitbook-installation-guides/install-gitbook.html) ([perma](https://github.com/roboticslab-uc3m/installation-guides/blob/09ffe48fd158656bb6359b4f3969948d2a94d4cd/install-gitbook.md)):
+- Plugin [GitBook](https://robots.uc3m.es/installation-guides/install-gitbook.html) ([perma](https://github.com/roboticslab-uc3m/installation-guides/blob/09ffe48fd158656bb6359b4f3969948d2a94d4cd/install-gitbook.md)):
   - [aleung/gitbook-plugin-page-toc](https://github.com/aleung/gitbook-plugin-page-toc): <https://www.npmjs.com/package/gitbook-plugin-page-toc>
 - [jonschlinkert/markdown-toc](https://github.com/jonschlinkert/markdown-toc) (Node.js)
 - [ekalinin/github-markdown-toc](https://github.com/ekalinin/github-markdown-toc) (bash)

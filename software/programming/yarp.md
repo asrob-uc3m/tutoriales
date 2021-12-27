@@ -11,7 +11,7 @@ Para nociones básicas de redes, existe [el tutorial de redes (ASROB)](http://wi
 * Se supone un mínimo conocimiento de:
     - Sistemas **Linux**: veánse las secciones de [Linux (ASROB)](../linux)
     - **C/C++**: veáse [el tutorial de Compilación en Linux (ASROB)](http://wiki.asrob.uc3m.es/index.php/Compilaci%C3%B3n_en_Linux)
-* Instalar YARP: [installation-guides/install-yarp](http://robots.uc3m.es/gitbook-installation-guides/install-yarp.html)
+* Instalar YARP: [installation-guides/install-yarp](https://robots.uc3m.es/installation-guides/install-yarp.html)
 
 ## Lección 1: `yarp server`, `yarp write`, y `yarp read`
 
@@ -166,5 +166,5 @@ Está definido en la línea 10 del `CMakeLists.txt` que genera `yarp cmake`. Es 
 Es una estructura de datos flexible, un contenedor donde puedes incorportar enteros, cadenas de caracteres, coma flotante... Si nos fijamos en la declaración de la clase `Port` de YARP, no es más que un puerto especializado en manejar objetos de clase `Bottle`.
 
 ## Páginas similares y relacionadas
-- [Install YARP](http://robots.uc3m.es/gitbook-installation-guides/install-yarp.html) ([perma](https://github.com/roboticslab-uc3m/installation-guides/blob/8fd1332c1b26ccd67f5deb4a094922fc8abe21ca/install-yarp.md))
+- [Install YARP](https://robots.uc3m.es/installation-guides/install-yarp.html) ([perma](https://github.com/roboticslab-uc3m/installation-guides/blob/8fd1332c1b26ccd67f5deb4a094922fc8abe21ca/install-yarp.md))
 - [http://wiki.asrob.uc3m.es/index.php/Tutorial_yarp_devices](http://wiki.asrob.uc3m.es/index.php/Tutorial_yarp_devices)
