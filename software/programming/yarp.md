@@ -4,13 +4,13 @@ A continuación, presentamos un mini-tutorial, destinado a establecer las comuni
 
 Para más información existe una sección dedicada en la guía oficial: [YARP (Tutorials)](http://yarp.it/tutorials.html).
 
-Para nociones básicas de redes, existe [el tutorial de redes (ASROB)](http://wiki.asrob.uc3m.es/index.php/Tutorial_de_Redes).
+Para nociones básicas de redes, existe [el tutorial de redes (ASROB)](https://apps-robots.uc3m.es/asrob/wiki/Tutorial_de_Redes).
 
 ## Requisitos previos
 
 * Se supone un mínimo conocimiento de:
     - Sistemas **Linux**: veánse las secciones de [Linux (ASROB)](../linux)
-    - **C/C++**: veáse [el tutorial de Compilación en Linux (ASROB)](http://wiki.asrob.uc3m.es/index.php/Compilaci%C3%B3n_en_Linux)
+    - **C/C++**: veáse [el tutorial de Compilación en Linux (ASROB)](https://apps-robots.uc3m.es/asrob/wiki/Compilaci%C3%B3n_en_Linux)
 * Instalar YARP: [installation-guides/install-yarp](https://robots.uc3m.es/installation-guides/install-yarp.html)
 
 ## Lección 1: `yarp server`, `yarp write`, y `yarp read`
@@ -167,4 +167,4 @@ Es una estructura de datos flexible, un contenedor donde puedes incorportar ente
 
 ## Páginas similares y relacionadas
 - [Install YARP](https://robots.uc3m.es/installation-guides/install-yarp.html) ([perma](https://github.com/roboticslab-uc3m/installation-guides/blob/8fd1332c1b26ccd67f5deb4a094922fc8abe21ca/install-yarp.md))
-- [http://wiki.asrob.uc3m.es/index.php/Tutorial_yarp_devices](http://wiki.asrob.uc3m.es/index.php/Tutorial_yarp_devices)
+- <https://apps-robots.uc3m.es/asrob/wiki/Tutorial_yarp_devices>
