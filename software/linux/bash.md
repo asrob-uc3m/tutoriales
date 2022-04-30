@@ -121,16 +121,24 @@ Existen diversas maneras de iterar en Bash:
    - Ejemplo 1: Cambiar a permisos `664` todos los ficheros (`-type f`) de una carpeta y sus subcarpetas:
      ```bash
      find -type f -exec chmod 664 {} \;
+     # find -type f -exec chmod 664 {} + # alternativa 1, concatenando
+     # find -type f -print0 | xargs -0 chmod 664 # alternativa 2, puede ser más rápido
      ```
-   - Ejemplo 2: Copiar todo lo que contenga "cadena" en su nombre a otra carpeta:
+   - Ejemplo 2: Cambiar a permisos `775` todas las carpetas (`-type f`) de una carpeta y sus subcarpetas:
+     ```bash
+     find -type d -exec chmod 775 {} \;
+     # find -type d -exec chmod 775 {} + # alternativa 1, concatenando
+     # find -type d -print0 | xargs -0 chmod 775 # alternativa 2, puede ser más rápido
+     ```
+   - Ejemplo 3: Copiar todo lo que contenga "cadena" en su nombre a otra carpeta:
      ```bash
      find -name "*cadena*" -exec cp {} /carpeta/destino  \;
      ```
-   - Ejemplo 3: En todos los ficheros (`-type f`) de una carpeta y sus subcarpetas, aplicar `sed`:
+   - Ejemplo 4: En todos los ficheros (`-type f`) de una carpeta y sus subcarpetas, aplicar `sed`:
      ```bash
      find -type f -exec sed -i 's/viejo/nuevo/g' {} \+
      ```
-   - Ejemplo 4: Por cada carpeta que contenga una carpeta `.svn`, aplicar `svn up {}` done `{}` es cada ruta encontrada (omitiendo `.svn` via `sed`):
+   - Ejemplo 5: Por cada carpeta que contenga una carpeta `.svn`, aplicar `svn up {}` done `{}` es cada ruta encontrada (omitiendo `.svn` via `sed`):
      ```bash
      find -name ".svn" | sed "s/.svn//g" | xargs svn up
      ```
