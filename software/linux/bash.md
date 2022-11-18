@@ -90,6 +90,7 @@ Estos comandos, en general, también son aplicables a `gnome-terminal`, `bash`, 
    - Mostrar fichero completo marcando cadena en color: `grep --color -E "cadena|$" fichero.txt`
    - Invertir búsqueda (encontrar lo que no lleve cadena): `grep -v "anti cadena" *`
    - Manteniendo color pese a cruzarse con un pipe `|`: `grep --color=always "cadena" * | grep -v "anti cadena"`
+   - Modo regular expressions extendido, permite `|` modo "OR" lógico (al ser dentro de la cadena, no es un pipe) y así buscar simultánemente: `grep -E "uno|dos`
 - **killall**: Intenta matar a un proceso, por nombre. Puedes utilizar `pkill` en su lugar para nombre incompleto.
   Por defecto, envía una [señal POSIX](https://en.wikipedia.org/wiki/Signal_(IPC)#POSIX_signals) de tipo `SIGTERM` (15), que es algo más brusco que `SIGINT` (2, típico de `CTRL-C`), sin llegar al extremo de `SIGKILL` (9).
   Se puede meter la señal como parámetro: `killall -s 9 nombre` (leer más: [1](http://programmergamer.blogspot.com.es/2013/05/clarification-on-sigint-sigterm-sigkill.html),[2](http://www.yolinux.com/TUTORIALS/C++Signals.html); listado señales: `kill -l`).
