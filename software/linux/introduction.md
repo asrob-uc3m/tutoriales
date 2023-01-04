@@ -30,7 +30,9 @@ A continuación detallamos la instalación de una partición nativa, que suele s
 
 ## ¿Cómo instalo programas en Linux?
 
-Las distribuciones, en general, cuentan con gestores de paquetes para poder instalar programas (y librerías) sin necesidad de acceder a ninguna web. En Debian y derivados (Ubuntu, Mint) el comando de consola se llama `apt`. Por ejemplo, `git` se puede instalar vía `sudo apt install git` en una [consola de Linux](bash.md). En la actualidad existen aplicaciones gráficas para interactuar con los gestores de paquetes sin utilizar la consola (p.ej. `Ubuntu Software` de Ubuntu 16.04).
+Las distribuciones, en general, cuentan con gestores de paquetes para poder instalar programas (y librerías) sin necesidad de acceder a ninguna web. En Debian y derivados (Ubuntu, Mint) el comando de consola se llama `apt`. Por ejemplo, `git` se puede instalar vía `sudo apt install git` en una [consola de Linux](bash.md). En la actualidad existen aplicaciones gráficas para interactuar con los gestores de paquetes sin utilizar la consola (p.ej. `Ubuntu Software` de Ubuntu 16.04-22.04).
+
+También puedes ver: <https://robots.uc3m.es/installation-guides>
 
 ## Atajos de teclado y ratón
 
