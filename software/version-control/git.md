@@ -6,6 +6,17 @@ Git es un [sistema de control de versiones](README.md) distribuido creado por Li
 
 ## Comandos básicos
 
+### Establezca su nombre de usuario y correo electrónico
+
+Establezca su nombre de usuario y correo electrónico. Escriba los siguientes comandos en cualquier lugar, llenando los campos correspondientes:
+
+```bash
+git config --global user.name "My Username"
+git config --global user.email "user@example.com"
+```
+
+Puede establecer estos valores por repositorio. Para lograrlo, navegue hasta el directorio raíz del repositorio deseado y escriba los comandos anteriores, reemplazando `--global` con `--local`.
+
 ### Crear un repositorio nuevo (git init)
 
 Habitualmente creamos repositorios nuevos directamente en GitHub (interfaz web), con lo cual nos saltaríamos este paso, pero también se pueden crear localmente.
