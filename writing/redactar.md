@@ -4,12 +4,17 @@
 
 Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.wikipedia.org/wiki/Microsoft_Word), y [LaTeX](http://es.wikipedia.org/wiki/LaTeX). Microsoft Word es más visual, y LaTeX se parece más a programar. Una ventaja de LaTeX es que es Open Source, por tanto, si falla algo, puede ser difícil, pero tienes la posibilidad de arreglarlo.
 
-**UC3M (plantillas, documentación...)**: Existe mucha documentación en webs oficiales ([1](https://www.uc3m.es/ss/Satellite/SecretariaVirtual/es/TextoMixta/1371210936260/Trabajo_de_Fin_de_Grado#defensa)), Campus Global, y en UC3M/Biblioteca ([2](http://uc3m.libguides.com/TFG))([3](http://uc3m.libguides.com/TFM)). Además de estos, mirar nuestros recursos digitales: https://github.com/asrob-uc3m/recursos-digitales (incluyen plantillas, [Matriz de Criterios de Evaluación de PFCs de la UC3M](https://github.com/asrob-uc3m/recursos-digitales/blob/master/plantillas/grado/uc3m_matriz_de_evaluacion_9_febrero_2018.pdf), hoja [Excel para presupuestos](https://github.com/asrob-uc3m/recursos-digitales/blob/master/plantillas/grado/Formulario_PresupuestoPFC-TFG.xlsx)...)
+## Recursos UC3M
+
+Plantillas, documentación... Existe mucha documentación en webs oficiales ([1](https://www.uc3m.es/ss/Satellite/SecretariaVirtual/es/TextoMixta/1371210936260/Trabajo_de_Fin_de_Grado#defensa)), Campus Global, y en UC3M/Biblioteca ([2](http://uc3m.libguides.com/TFG))([3](http://uc3m.libguides.com/TFM)).
+
+Además de estos, mirar nuestros recursos digitales: https://github.com/asrob-uc3m/recursos-digitales (incluyen plantillas, [Matriz de Criterios de Evaluación de PFCs de la UC3M](https://github.com/asrob-uc3m/recursos-digitales/blob/master/plantillas/grado/uc3m_matriz_de_evaluacion_9_febrero_2018.pdf), hoja [Excel para presupuestos](https://github.com/asrob-uc3m/recursos-digitales/blob/master/plantillas/grado/Formulario_PresupuestoPFC-TFG.xlsx)...)
 
 ## Índice del documento
 
 - Una profundidad de índice admisible es hasta 3 subniveles (sección 2.3.4), aunque luego en el documento se desglosen más (sección 2.3.4.c).
 - Cantidad de páginas por capítulo compensado (no tiene sentido que un capítulo sea de 80 páginas y otro de 3).
+- Revisar que se incluyen todos los aspectos contemplados en la correspondiente matriz de evaluación (que puede ser diferente según la titulación, p.ej. véase en [Recursos UC3M](#recursos-uc3m)).
 - Aquí un ejemplo de índice:
   1.  Introducción (con introducción, objetivos, estructura del documento)
   2.  [Estado del arte](#estado-del-arte) A+B+C
@@ -20,7 +25,10 @@ Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.w
   7.  Experimentos y resultados
   8.  Conclusiones y líneas futuras (con conclusiones y líneas futuras)
 - [Bibliografía](#bibliografía)
-- Anexos (sí: presupuesto)(posible: partes relevantes de datasheets)(no: códigos fuentes completos, véase sección [código fuente](#código-fuente)).
+- Anexos:
+  - Siempre: [Presupuesto](#presupuesto)
+  - Posible: partes relevantes de datasheets
+  - Nunca: códigos fuentes completos, véase sección [código fuente](#código-fuente).
 
 ## Estado del arte
 
@@ -87,10 +95,18 @@ Para redactar, existen dos herramientas populares: [Microsoft Word](https://es.w
 - Recomendación: Incluir diagramas (de flujo, UML, etc), que sí son figuras (y aplican las recomendaciones de la sección [figuras](#figuras)). Para trabajos con software en lenguajes de programación orientados a objetos (OOP), los diagramas de clases son casi indispensables.
 - También es un plus incluir un enlace a la documentación generada por [Doxygen](http://www.doxygen.nl/) (que además se puede configurar para generar distintos diagramas).
 
+## Presupuesto
+
+- Véase si existe plantilla específica, que puede ser específico según la titulación, p.ej. véase en [Recursos UC3M](#recursos-uc3m))
+- Otras posibles fuentes:
+  - Los salarios anulares de un licenciado en ingeniería, así como de los técnicos auxiliares: convenio colectivo del sector de la Industria, Servicios e Instalaciones del Metal de la Comunidad de Madrid, Boletín Oficial de la Comunidad el 13 de marzo de 2023.
+  - Los honorarios correspondientes a profesores de universidad de diferentes categorías: se encuentran publicados en la página de recursos humanos de dichas instituciones.
+
 ## Úlitmos consejos
 
 - Revisar enlaces rotos y referencias internas rotas (p.ej. buscar por `??` en LaTeX)
 - Revisar, en todas las páginas generadas por LaTeX, que ninguna palabra se haya salido de márgenes (el hyphen puede hacer que esto ocurra con parabras muy largas)
+- Revisar que se incluyen todos los aspectos contemplados en la correspondiente matriz de evaluación (que puede ser diferente según la titulación, p.ej. véase en [Recursos UC3M](#recursos-uc3m)).
 - Se empezó a realizar un script que revisa textos en inglés [aquí](https://github.com/jgvictores/snippets/blob/develop/bash/review-tex.sh) ([permalink](https://github.com/jgvictores/snippets/blob/8db93e72b29279ffa959e5b72287ab8e0129fa16/bash/review-tex.sh)).
 - ¡Releer el documento entero mínimo una vez!
 
