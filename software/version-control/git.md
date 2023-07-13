@@ -4,6 +4,10 @@
 
 Git es un [sistema de control de versiones](README.md) distribuido creado por Linus Torvalds en 2005 para el desarrollo del kernel de Linux.
 
+## Instalar Git
+
+- <https://robots.uc3m.es/installation-guides/install-git.html>
+
 ## Comandos básicos
 
 ### Establezca su nombre de usuario y correo electrónico
