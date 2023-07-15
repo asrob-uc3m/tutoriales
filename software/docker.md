@@ -6,9 +6,23 @@
 
 ## Comandos Docker
 
+### Gestión de images/containers
+
+```bash
+docker pull image_name
+```
+
 ```bash
 docker image ls
 ```
+
+Limpiar todo:
+
+```bash
+docker system prune -a
+```
+
+### Ejecucción
 
 ```bash
 docker run -it --rm image_name /bin/bash
