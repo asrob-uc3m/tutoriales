@@ -70,3 +70,11 @@ Sustituye `container_id` por el hash corresponiente:
 ```bash
 docker exec -it container_id /bin/bash
 ```
+
+## Algunos buenos images
+
+REPOSITORY                              | TAG     | SIZE  | Comments
+----------------------------------------|---------|-------|------------
+cielavenir/openrave                     | jammy   | ~3 GB | OpenRAVE (para TEO)
+palroboticssl/tiago_tutorials           | melodic | ~5 GB | TIAGo, Gazebo, ROS (public: sin distro PAL)
+ghcr.io/roboticslab-uc3m/roboasset-demo | latest  | ~3 GB | KukaIiwa+ROS2 (private)
