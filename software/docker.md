@@ -73,8 +73,19 @@ docker exec -it container_id /bin/bash
 
 ## Algunos buenos images
 
-REPOSITORY                              | TAG     | SIZE  | Comments
-----------------------------------------|---------|-------|------------
-cielavenir/openrave                     | jammy   | ~3 GB | OpenRAVE (para TEO)
-palroboticssl/tiago_tutorials           | melodic | ~5 GB | TIAGo, Gazebo, ROS (public: sin distro PAL)
-ghcr.io/roboticslab-uc3m/roboasset-demo | latest  | ~3 GB | KukaIiwa+ROS2 (private)
+En <https://hub.docker.com> salvo que se indique otro (e.g. <https://ghcr.io> de GitHub).
+
+### Public
+
+REPOSITORY                      | TAG     | SIZE  | Comments
+--------------------------------|---------|-------|------------
+cielavenir/openrave             | jammy   | ~3 GB | OpenRAVE (para TEO)
+palroboticssl/tiago_tutorials   | melodic | ~5 GB | TIAGo, Gazebo, ROS (sin distro PAL)
+
+### Private
+
+REPOSITORY                                                 | TAG     | SIZE  | Comments
+-----------------------------------------------------------|---------|-------|------------
+ghcr.io/roboticslab-uc3m/roboasset-demo                    | latest  | ~3 GB | KukaIiwa+ROS2
+ghcr.io/roboticslab-uc3m/tiago-2021-accessrobot            | latest  | ~5 GB | TIAGo, Gazebo, ROS (sin distro PAL)
+gitlab.com/pal-robotics/.../dockers/container_registry/... | latest  | ~2 GB | TIAGo, Gazebo, ROS (con Ferrum/Gallium)
