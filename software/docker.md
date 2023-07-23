@@ -95,10 +95,11 @@ En <https://hub.docker.com> salvo que se indique otro (e.g. <https://ghcr.io> de
 
 ### Public
 
-REPOSITORY                      | TAG     | SIZE  | Comments
---------------------------------|---------|-------|------------
-cielavenir/openrave             | jammy   | ~3 GB | OpenRAVE (para TEO)
-palroboticssl/tiago_tutorials   | melodic | ~5 GB | TIAGo, Gazebo, ROS (sin distro PAL)
+REPOSITORY                            | TAG     | SIZE  | Comments
+--------------------------------------|---------|-------|------------
+cielavenir/openrave                   | jammy   | ~3 GB | OpenRAVE (para TEO)
+palroboticssl/tiago_tutorials         | melodic | ~5 GB | TIAGo, Gazebo, ROS (sin distro PAL)
+stephanecaron/lipm_walking_controller | latest  | ~3 GB | Choreonoid
 
 ### Private
 
@@ -107,3 +108,11 @@ REPOSITORY                                                 | TAG     | SIZE  | C
 ghcr.io/roboticslab-uc3m/roboasset-demo                    | latest  | ~3 GB | KukaIiwa+ROS2
 ghcr.io/roboticslab-uc3m/tiago-2021-accessrobot            | latest  | ~5 GB | TIAGo, Gazebo, ROS (sin distro PAL)
 gitlab.com/pal-robotics/.../dockers/container_registry/... | latest  | ~2 GB | TIAGo, Gazebo, ROS (con Ferrum/Gallium)
+
+### Aún más
+
+Con visibilidad público/privado según permisos/login:
+
+- <https://github.com/orgs/asrob-uc3m/packages> (vacío, en momento de escribir esto).
+- <https://github.com/orgs/roboticslab-uc3m/packages>
+- <https://github.com/orgs/robotology/packages>
