@@ -8,7 +8,7 @@ Pincha en la opción que quieras, o utiliza las flechas para avanzar secuencialm
 
 ## Notas adicionales
 
-El contenido de esta documentación se genera a partir de ficheros alojados en [GitHub](https://github.com/asrob-uc3m/tutoriales)
+El contenido de esta documentación se genera a partir de ficheros alojados en: <https://github.com/asrob-uc3m/tutoriales>
 
 ## Si tienes dudas con respecto al contenido
 
