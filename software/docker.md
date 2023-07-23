@@ -6,12 +6,16 @@
 
 ## Comandos Docker
 
+Nota: Donde figura `:TAG`, suele ser opcional, por defecto es `:latest`.
+
 ### Gestión de images/containers
+
+Nota: Según URL, tendrás configurado unos permisos. Para autentificarse, puede ser necesario `docker login URL` (donde `URL` es opcional y por defecto es para <hub.docker.com>)
 
 Descargar image:
 
 ```bash
-docker pull image_repository
+docker pull IMAGE_SOURCE:TAG
 ```
 
 Listar images:
@@ -32,16 +36,28 @@ Eliminar todo (images y containers):
 docker system prune -a
 ```
 
+Asociar nueva tag a image existente (p.ej. para añadir una URL que sirva de prefijo y así poder subir vía `docker push`), 
+
+```bash
+docker tag SOURCE_IMAGE:TAG TARGET_IMAGE:TAG
+```
+
+Subir image:
+
+```bash
+docker push IMAGE:TAG
+```
+
 ### Ejecucción
 
 Nótese que todos los ejemplos se muestran con `/bin/bash`, pero puede omitirse si existe comando por defecto, o modificarse en caso de ser necesario.
 
 ```bash
-docker run -it --rm image_repository:tag /bin/bash
+docker run -it --rm IMAGE:TAG /bin/bash
 ```
 
 ```bash
-docker run -it --rm -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix:rw image_repository:tag /bin/bash
+docker run -it --rm -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix:rw IMAGE:TAG /bin/bash
 ```
 
 #### Ejecucción vía rocker
@@ -51,24 +67,24 @@ docker run -it --rm -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix:rw im
 - Con NVIDIA:
 
 ```bash
-rocker --home --user --nvidia --x11 --privileged image_repository:tag /bin/bash
+rocker --home --user --nvidia --x11 --privileged IMAGE:TAG /bin/bash
 ```
 
 - Con intel integrated graphics support:
 
 
 ```bash
-rocker --home --user --devices /dev/dri/card0 --x11 --privileged image_repository:tag /bin/bash
+rocker --home --user --devices /dev/dri/card0 --x11 --privileged IMAGE:TAG /bin/bash
 ```
 
 Ejemplo de parámetro adicional: `-e ENV_VAR=valor`. `-v` no suele hacer falta si se está usando `--home --user`.
 
 ## Conectarse a container
 
-Sustituye `container_id` por el hash corresponiente:
+Sustituye `CONTAINER_ID` por el hash corresponiente:
 
 ```bash
-docker exec -it container_id /bin/bash
+docker exec -it CONTAINER_ID /bin/bash
 ```
 
 ## Algunos buenos images
