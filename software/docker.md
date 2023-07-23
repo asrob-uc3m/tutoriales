@@ -48,7 +48,7 @@ Subir image:
 docker push IMAGE:TAG
 ```
 
-Si subes a <ghcr.io/ORG>, dentro de GitHub aparecerá como paquete y podrás asociarlo a un repositorio vía interfaz web.
+Si subes a <ghcr.io/ORG>, dentro de GitHub aparecerá como paquete y podrás asociarlo a un repositorio vía interfaz web (técnicamente, configurar `org.opencontainers.image.source`).
 
 ### Ejecucción
 
