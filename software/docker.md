@@ -48,6 +48,8 @@ Subir image:
 docker push IMAGE:TAG
 ```
 
+Si subes a <ghcr.io/ORG>, dentro de GitHub aparecerá como paquete y podrás asociarlo a un repositorio vía interfaz web.
+
 ### Ejecucción
 
 Nótese que todos los ejemplos se muestran con `/bin/bash`, pero puede omitirse si existe comando por defecto, o modificarse en caso de ser necesario.
