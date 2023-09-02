@@ -6,13 +6,14 @@
 
 ## Comandos Docker
 
-Nota: Donde figura `:TAG`, suele ser opcional, por defecto es `:latest`.
+Notas:
 
-### Gestión de images/containers
+- Donde figura `:TAG`, suele ser opcional, por defecto es `:latest`.
+- Según URL, tendrás configurado unos permisos. Para autentificarse, puede ser necesario `docker login URL` (donde `URL` es opcional y por defecto es para <hub.docker.com>)
 
-Nota: Según URL, tendrás configurado unos permisos. Para autentificarse, puede ser necesario `docker login URL` (donde `URL` es opcional y por defecto es para <hub.docker.com>)
+### Descargar image
 
-Descargar image:
+Descargar image ya creada y subida:
 
 ```bash
 docker pull IMAGE_SOURCE:TAG
@@ -24,16 +25,12 @@ Listar images:
 docker image ls
 ```
 
-Listar containers:
+### Crear y subir image
+
+Crear image (pon lo que quieras en NAME_IMAGE):
 
 ```bash
-docker container ls
-```
-
-Eliminar todo (images y containers):
-
-```bash
-docker system prune -a
+docker build -t NAME_IMAGE:TAG -f ./Dockerfile .
 ```
 
 Asociar nueva tag a image existente (p.ej. para añadir una URL que sirva de prefijo y así poder subir vía `docker push`), 
@@ -81,12 +78,26 @@ rocker --home --user --devices /dev/dri/card0 --x11 --privileged IMAGE:TAG /bin/
 
 Ejemplo de parámetro adicional: `-e ENV_VAR=valor`. `-v` no suele hacer falta si se está usando `--home --user`.
 
-## Conectarse a container
+### Conectarse a container
+
+Listar containers:
+
+```bash
+docker container ls
+```
 
 Sustituye `CONTAINER_ID` por el hash corresponiente:
 
 ```bash
 docker exec -it CONTAINER_ID /bin/bash
+```
+
+### Limpieza
+
+Eliminar todo (images y containers):
+
+```bash
+docker system prune -a
 ```
 
 ## Algunos buenos images
@@ -116,3 +127,7 @@ Con visibilidad público/privado según permisos/login:
 - <https://github.com/orgs/asrob-uc3m/packages> (vacío, en momento de escribir esto).
 - <https://github.com/orgs/roboticslab-uc3m/packages>
 - <https://github.com/orgs/robotology/packages>
+
+## Más recursos
+
+- <https://docs.docker.com/engine/reference/commandline>
