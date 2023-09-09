@@ -4,7 +4,7 @@
 
 Recopilación de tutoriales y materiales útiles sobre los programas y herramientas que usamos en [ASROB](https://asrob.uc3m.es)
 
-Actualmente alojado en: https://asrob.uc3m.es/tutoriales/
+Actualmente alojado en: https://asrob.uc3m.es/tutoriales
 
 ## Si tienes alguna duda o comentario con respecto al contenido
 
