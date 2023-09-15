@@ -8,3 +8,7 @@ Aquí una pequeña secuencia de elementos para aprender un poco de Inteligencia 
 1. Vídeo (59 min): ["Robótica inteligente mediante reinforcement learning"](https://youtu.be/YKYBggeFOLk?t=61)
 1. Secuencia de cursos donde los de Alberta explican Reinforcement Learning (siguen mucho un libro de ahí, que es la cuna): ["Reinforcement Learning Specialization"](https://www.coursera.org/specializations/reinforcement-learning) (en Coursera suele haber una opción gratuita, busca la opción "Audit course")
 1. Intentar entender Deep Reinforcement Learning de Sergey en Berkeley (una de las cunas de DRL): ["CS 285: Deep Reinforcement Learning Fall 2022 (UC Berkeley)"](https://youtube.com/playlist?list=PL_iWQOsE6TfX7MaC6C3HcdOf1g337dlC9)
+
+## Más recursos
+
+- <https://github.com/jgvictores/awesome-deep-reinforcement-learning>
