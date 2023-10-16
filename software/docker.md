@@ -59,9 +59,10 @@ docker run -it --rm IMAGE:TAG /bin/bash
 docker run -it --rm -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix:rw IMAGE:TAG /bin/bash
 ```
 
-Parámetros adicionales:
+Parámetros adicionales (vésase <https://docs.docker.com/engine/reference/commandline/run/>):
 
-- `--host network`
+- `--network host` para comunicaciones en red
+- `-e ENV_VAR=valor` para variables de entorno
 - `-v` o `--volume` (separado por `:`)
 
 #### Ejecucción vía rocker
@@ -84,7 +85,6 @@ rocker --home --user --devices /dev/dri/card0 --x11 --privileged IMAGE:TAG /bin/
 Parámetros adicionales:
 
 - Se pueden emplear los de Docker de la sección anterior
-- `-e ENV_VAR=valor`
 - `-v` no suele hacer falta si se está usando `--home --user`
 
 ### Conectarse a container
