@@ -59,6 +59,11 @@ docker run -it --rm IMAGE:TAG /bin/bash
 docker run -it --rm -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix:rw IMAGE:TAG /bin/bash
 ```
 
+Parámetros adicionales:
+
+- `--host network`
+- `-v` o `--volume` (separado por `:`)
+
 #### Ejecucción vía rocker
 
 Útil para gráficos y comunicaciones. Genera imagen cuasi-clon, que en la práctica ocupa sólo MBs en disco.
@@ -76,7 +81,11 @@ rocker --home --user --nvidia --x11 --privileged IMAGE:TAG /bin/bash
 rocker --home --user --devices /dev/dri/card0 --x11 --privileged IMAGE:TAG /bin/bash
 ```
 
-Ejemplo de parámetro adicional: `-e ENV_VAR=valor`. `-v` no suele hacer falta si se está usando `--home --user`.
+Parámetros adicionales:
+
+- Se pueden emplear los de Docker de la sección anterior
+- `-e ENV_VAR=valor`
+- `-v` no suele hacer falta si se está usando `--home --user`
 
 ### Conectarse a container
 
