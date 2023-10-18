@@ -59,7 +59,7 @@ docker run -it --rm IMAGE:TAG /bin/bash
 docker run -it --rm -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix:rw IMAGE:TAG /bin/bash
 ```
 
-Parámetros adicionales (vésase <https://docs.docker.com/engine/reference/commandline/run/>):
+Parámetros adicionales (véase <https://docs.docker.com/engine/reference/commandline/run/>):
 
 - `--network host` para comunicaciones en red
 - `-e ENV_VAR=valor` para variables de entorno
