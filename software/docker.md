@@ -109,7 +109,7 @@ Eliminar todo (images y containers):
 docker system prune -a
 ```
 
-## Algunos buenos images
+## Algunos images buenos
 
 En <https://hub.docker.com> salvo que se indique otro (e.g. <https://ghcr.io> de GitHub).
 
@@ -117,7 +117,8 @@ En <https://hub.docker.com> salvo que se indique otro (e.g. <https://ghcr.io> de
 
 REPOSITORY                            | TAG     | SIZE  | Comments
 --------------------------------------|---------|-------|------------
-cielavenir/openrave                   | jammy   | ~3 GB | OpenRAVE (para TEO)
+ghcr.io/roboticslab-uc3m/teo-demos-misc | latest | ~4 GB | TEO OpenRAVE+YARP+Kinematics+...
+cielavenir/openrave                   | jammy   | ~3 GB | OpenRAVE
 palroboticssl/tiago_tutorials         | melodic | ~5 GB | TIAGo, Gazebo, ROS (sin distro PAL)
 stephanecaron/lipm_walking_controller | latest  | ~3 GB | Choreonoid
 
