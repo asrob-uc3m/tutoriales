@@ -1,0 +1,102 @@
+site_name: Tutoriales
+
+repo_name: asrob-uc3m/tutoriales
+repo_url: https://github.com/asrob-uc3m/tutoriales
+edit_uri: blob/master/docs/
+
+theme:
+  name: material
+  language: es
+  logo: assets/asrob-135x135.png
+  favicon: assets/favicon.ico
+  features:
+    - content.action.edit
+    - content.action.view
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.suggest
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light-blue
+      accent: light-blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light-blue
+      accent: light-blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+extra:
+  social:
+    - icon: material/web
+      link: http://asrob.uc3m.es/
+    - icon: fontawesome/brands/github
+      link: https://github.com/asrob-uc3m
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/asrob_uc3m/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@asrobuc3m
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/asrob_uc3m
+
+nav:
+- Introducción: README.md
+- Electrónica:
+  - electronics/README.md
+  - Cargador IMAX B6AC: electronics/battery-charger-imax-b6ac.md
+  - KiCad: electronics/kicad.md
+  - Estación de soldadura Baku 601D: electronics/soldering.md
+- Inteligencia Artificial: ai/README.md
+- Mecánica:
+  - mechanics/README.md
+  - FreeCAD: mechanics/freecad.md
+- Software:
+  - software/README.md
+  - Control de versiones:
+    - software/version-control/README.md
+    - Git: software/version-control/git.md
+    - Subversion (SVN): software/version-control/subversion.md
+  - Docker: software/docker.md
+  - Linux:
+    - software/linux/README.md
+    - Introducción: software/linux/introduction.md
+    - Bash (consola/terminal): software/linux/bash.md
+    - Estructura de carpetas en Debian y derivados: software/linux/folder-structure-debian.md
+    - Ficheros de configuración: software/linux/configuration-files.md
+  - Programación:
+    - software/programming/README.md
+    - CMake: software/programming/cmake.md
+    - Librerías estáticas y dinámicas: software/programming/libs.md
+    - YARP: software/programming/yarp.md
+  - Comunicaciones: software/comunications/README.md
+  - Codificación de caracteres: software/character-encoding.md
+  - Variables de entorno: software/environment-variables.md
+- Redactar:
+  - writing/README.md
+  - Markdown: writing/markdown.md
+  - Redactar: writing/redactar.md
+  - Vim (editor de texto): writing/vim.md
+- Páginas similares y relacionadas: similar.md
+
+use_directory_urls: false
+
+markdown_extensions:
+  - toc:
+      permalink: '#'
+  - pymdownx.superfences:
+
+plugins:
+  - search
+  - open-in-new-tab
+  - git-revision-date-localized

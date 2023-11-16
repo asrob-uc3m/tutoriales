@@ -6,6 +6,5 @@
 *.swp
 *.orig
 
-## gitbook generated
-/_book/
-/node_modules/
+## mkdocs generated
+/site/
