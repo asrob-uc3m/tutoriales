@@ -63,26 +63,28 @@ Parámetros adicionales (véase <https://docs.docker.com/engine/reference/comman
 
 - `--network host` para comunicaciones en red
 - `-e ENV_VAR=valor` para variables de entorno
-- `-v` o `--volume` (separado por `:`)
+- `-v` o `--volume` (separado por `:` si difiere en origen destino; p.ej. `--volume /home/<USERNAME>/.vimrc:/home/<USERNAME>/.vimrc`)
 
 #### Ejecucción vía rocker
 
 Útil para gráficos y comunicaciones. Genera imagen cuasi-clon, que en la práctica ocupa sólo MBs en disco.
 
 - Con NVIDIA:
-  ```bash
-  rocker --home --user --nvidia --x11 --privileged IMAGE:TAG /bin/bash
-  ```
+    ```bash
+    rocker --home --user --nvidia --x11 --privileged IMAGE:TAG /bin/bash
+    ```
 
 - Con intel integrated graphics support:
-  ```bash
-  rocker --home --user --devices /dev/dri/card0 --x11 --privileged IMAGE:TAG /bin/bash
-  ```
+    ```bash
+    rocker --home --user --devices /dev/dri/card0 --x11 --privileged IMAGE:TAG /bin/bash
+    ```
 
 Parámetros adicionales:
 
 - Se pueden emplear los de Docker de la sección anterior
-- `-v` no suele hacer falta si se está usando `--home --user`
+- `--volume` (`-v`):
+    - La sintaxis cambia, se omite `:` y se pone `--` al final. El ejemplo anterior resulta en: `--volume /home/<USERNAME>/.vimrc /home/<USERNAME>/.vimrc --`
+    - No suele hacer falta si se está usando `--home --user`
 
 ### Conectarse a container
 
