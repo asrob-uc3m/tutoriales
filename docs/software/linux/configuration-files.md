@@ -17,25 +17,25 @@ Nota: Tocar con cuidado, puesto que puede darse el caso de que frene el arranque
 
 ## ~/.bashrc
 
-Este [script de Bash](bash.md) se ejecuta automáticamente al lanzar cada consola, por lo que sus cambios quedan dentro de cada consola. Unas líneas convenientes a agregarle son [estas](https://github.com/asrob-uc3m/tutoriales/blob/master/assets/dotfiles/.bashrc-asrob). Se puede descargar y hacer que se ejecute como parte de `~/.bashrc` con:
+Este [script de Bash](bash.md) se ejecuta automáticamente al lanzar cada consola, por lo que sus cambios quedan dentro de cada consola. Unas líneas convenientes a agregarle son [estas](https://github.com/asrob-uc3m/tutoriales/blob/master/docs/assets/dotfiles/.bashrc-asrob). Se puede descargar y hacer que se ejecute como parte de `~/.bashrc` con:
 ```
-wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/assets/dotfiles/.bashrc-asrob -O ~/.bashrc-asrob
+wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/docs/assets/dotfiles/.bashrc-asrob -O ~/.bashrc-asrob
 cp ~/.bashrc ~/.bashrc.orig
 echo "source ~/.bashrc-asrob" >> ~/.bashrc
 ```
 
 ## ~/.inputrc
 
-Afecta al autocompletado de la consola. Se puede descarga e instalar en `~/` con [este](https://github.com/asrob-uc3m/tutoriales/blob/master/assets/dotfiles/.inputrc) contenido de búsqueda incremental ([fuente](https://help.ubuntu.com/community/UsingTheTerminal#An_extremely_handy_tool_::_Incremental_history_searching)):
+Afecta al autocompletado de la consola. Se puede descarga e instalar en `~/` con [este](https://github.com/asrob-uc3m/tutoriales/blob/master/docs/assets/dotfiles/.inputrc) contenido de búsqueda incremental ([fuente](https://help.ubuntu.com/community/UsingTheTerminal#An_extremely_handy_tool_::_Incremental_history_searching)):
 ```
 cp ~/.inputrc ~/.inputrc.orig
-wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/assets/dotfiles/.inputrc -O ~/.inputrc
+wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/docs/assets/dotfiles/.inputrc -O ~/.inputrc
 ```
 
 ## ~/.dircolors
 
-Afecta al color de los listados de `ls`. Se puede descarga e instalar en `~/` con [este contenido](https://github.com/asrob-uc3m/tutoriales/blob/master/assets/dotfiles/.dircolors) que mejora los colores con sistemas de ficheros NTFS:
+Afecta al color de los listados de `ls`. Se puede descarga e instalar en `~/` con [este contenido](https://github.com/asrob-uc3m/tutoriales/blob/master/docs/assets/dotfiles/.dircolors) que mejora los colores con sistemas de ficheros NTFS:
 ```
 cp ~/.dircolors ~/.dircolors.orig
-wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/assets/dotfiles/.dircolors -O ~/.dircolors
+wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/docs/assets/dotfiles/.dircolors -O ~/.dircolors
 ```

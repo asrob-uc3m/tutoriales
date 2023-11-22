@@ -37,9 +37,9 @@ La configuración por defecto es un tanto compleja, pero puede modificarse en el
    mv mustang_vim_colorscheme_by_hcalves.vim ~/.vim/colors/Mustang.vim
    ```
 
-1. Descarga e instala en `~/` el fichero de configuración básica ([fuente](https://github.com/asrob-uc3m/tutoriales/blob/master/assets/dotfiles/.vimrc)):
+1. Descarga e instala en `~/` el fichero de configuración básica ([fuente](https://github.com/asrob-uc3m/tutoriales/blob/master/docs/assets/dotfiles/.vimrc)):
    ```bash
-   wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/assets/dotfiles/.vimrc -O ~/.vimrc
+   wget https://raw.githubusercontent.com/asrob-uc3m/tutoriales/master/docs/assets/dotfiles/.vimrc -O ~/.vimrc
    ```
 
 ## Configuraciones alternativas
