@@ -57,7 +57,7 @@ Nótese que la mayor parte de distribuciones y programas admiten la personalizac
 - Linux es en general "sensible a mayúsculas" (al contrario que en Windows, sí hace diferencia el hecho de que una misma letra se escriba con minúscula o mayúscula).
 - El sistema operativo está fuertemente ligado a la consola [bash](bash.md), por lo que conviene revisar los [símbolos especiales](bash.md#símbolos-especiales), además de todas las demás secciones Linux [/software/linux](README.md).
 - Por norma general, `.` al inicio de un nombre de fichero indica fichero oculto. Veremos esto como una práctica común entre [ficheros de configuración](configuration-files.md). En ciertos entornos (p.ej. `nautilus` en Ubuntu) pueden desocultarse/ocultarse mediante `CTRL`+`h`.
-- http://ubuntuhandbook.org/index.php/2016/05/time-differences-ubuntu-1604-windows-10/
+- <http://ubuntuhandbook.org/index.php/2016/05/time-differences-ubuntu-1604-windows-10/>
 
 ## Troubleshooting
 
