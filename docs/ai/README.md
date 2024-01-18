@@ -9,6 +9,7 @@ Aquí una pequeña secuencia de elementos para aprender un poco de Inteligencia 
 1. (RL bastante teórico) Secuencia de cursos donde los de Alberta explican Reinforcement Learning (siguen mucho un libro de ahí, que es la cuna): ["Reinforcement Learning Specialization"](https://www.coursera.org/specializations/reinforcement-learning) (en Coursera suele haber una opción gratuita, busca la opción "Audit course")
 1. Para intentar entender Deep Reinforcement Learning (DRL), algunos recursos:
     1. (DRL teórico/práctico) Echar vistazo a [Spinning Up in Deep RL](https://spinningup.openai.com/) de OpenAI (software sin mantener, pero escueto y decente).
+    1. (DRL) <https://huggingface.co/learn/deep-rl-course> 
     1. (DRL bastante teórico) Entender bien lo de (es Fundamental aunque muy difícil): Sergey Levine en Berkeley (una de las cunas de DRL): ["CS 285: Deep Reinforcement Learning Fall 2022 (UC Berkeley)"](https://youtube.com/playlist?list=PL_iWQOsE6TfX7MaC6C3HcdOf1g337dlC9).
     1. (DRL teórico/práctico) Libros como el de Maxim Lapan (no totalmente actualizado, pero algunos trucos interesantes).
 
