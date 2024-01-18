@@ -54,8 +54,8 @@ Además de estos, mirar nuestros recursos digitales: <https://github.com/asrob-u
             - Signal Processing: ICASSP.
         - También existen conferencias predatory. :(
 - Para localizar bibliografía científica, utiliza buscadores como [Google Académico](http://scholar.google.es) o [IEEExplore](http://ieeexplore.ieee.org/Xplore/guesthome.jsp?reload=true) que dispongan de la opción de importar citas a bibtex o semejante.
-    - **UC3M (acceso a buscadores JCR y WOS)**: Puedes acceder a los buscadores JCR dentro de [Información para investigadores](https://www.recursoscientificos.fecyt.es/servicios/informacion) > "ENLACE DE ACCESO DIRECTO A LAS B..." > [JCR](http://jcr-incites.fecyt.es/) o [WOS](http://wos-ic.fecyt.es/)
-    - **UC3M (acceso a buscador de normas UNE)**: [AENORMás UC3M](http://biblioteca2.uc3m.es/aquibiblioteca/2017/12/22/aenormas-nueva-suscripcion-a-normas-une-con-importantes-novedades/) > [http://biblioteca3.uc3m.es/RREE/recurso.php?recurso=AENOR](http://biblioteca3.uc3m.es/RREE/recurso.php?recurso=AENOR)
+    - **UC3M (acceso a buscadores JCR y WOS)**: Puedes acceder a los buscadores JCR dentro de [Información para investigadores](https://www.recursoscientificos.fecyt.es/servicios/informacion) > "ENLACE DE ACCESO DIRECTO A LAS B..." > [JCR](https://jcr-incites.fecyt.es/) o [WOS](http://wos-ic.fecyt.es/)
+    - **UC3M (acceso a buscador de normas UNE)**: [AENORMás UC3M](https://biblioteca2.uc3m.es/aquibiblioteca/2017/12/22/aenormas-nueva-suscripcion-a-normas-une-con-importantes-novedades/) > [https://biblioteca3.uc3m.es/RREE/recurso.php?recurso=AENOR](https://biblioteca3.uc3m.es/RREE/recurso.php?recurso=AENOR) > <https://plataforma.aenormas.aenor.com>
     - **UC3M (acceso estos recursos desde fuera de las redes del campus)**: Las subscripciones de la Biblioteca (p.ej. IEEExplore, JCR y WOS) funcionan de forma automática para dentro de las redes de los campus (cable, `WiFi-UC3M`, `eduroam` en campus). Para acceder externamente, puedes utilizar el servicio [VPN](https://www.uc3m.es/sdic/servicios/vpn).
 - Véase también la sección de [formato de citas bibliográficas](#formato-de-citas-bibliográficas).
 
