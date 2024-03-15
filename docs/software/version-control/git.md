@@ -204,7 +204,9 @@ Ahora podrás subir tus cambios al repositorio remoto seleccionado.
 
 ## Cheatsheet
 
-- Almacenar contraseña durante un tiempo: [`git config credential.helper cache`](https://git-scm.com/docs/git-credential-cache)
+- credential.helper cache:
+    - Almacenar contraseña en cache durante un tiempo: [`git config credential.helper cache`](https://git-scm.com/docs/git-credential-cache)
+    - Limieza de cache: `git config --global --unset credential.helper`
 - Deshacer los cambios de un fichero (antes de commit): [`git checkout -- nombre-fichero`](https://git-scm.com/docs/git-checkout#git-checkout-emgitcheckoutemlttree-ishgt--ltpathspecgt82308203)
 - Corregir el texto del último commit (antes de push, aunque se podría forzar): [`git commit --amend`](https://git-scm.com/docs/git-commit#git-commit---amend)
 - Deshacer el útimo commit entero (antes de push, aunque se podría forzar): [`git reset HEAD~1`](https://git-scm.com/docs/git-reset#git-reset-emgitresetemltmodegtltcommitgt)
