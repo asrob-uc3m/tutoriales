@@ -1,5 +1,5 @@
 ## cd + ls, by @jgvictores
-function cs () { cd $1; ls; }
+function cs () { cd ${1:+"$1"}; ls; }
 
 ## transfer path: guarda el path actual en un fichero oculto, by @jgvictores
 function tp () { pwd > ~/.sp; }
