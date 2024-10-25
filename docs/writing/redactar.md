@@ -69,7 +69,7 @@ Además de estos, mirar nuestros recursos digitales: <https://github.com/asrob-u
 - Evitar la reutilización de frases completas de otros documentos (copia+pega). Incluso las licencias más abiertas piden que se cite la fuente original.
 - Utilizar frases cortas. Como regla general, se puede pensar "no más de un concepto por frase, tal vez más de una frase para explicar un solo concepto".
 - Coherencia interna. Ejemplo 1: MTi debe aparecer siempre como MTi, no MTI a veces. Ejemplo 2: Un algoritmo es siempre un algoritmo, no pasa a ser un método o infraestructura en un mismo documento.
-- Evitar extranjerismos sin referenciar (p.e. si el documento está en español, como mínimo poner pie de página ante anglicismos).
+- Evitar extranjerismos sin referenciar (p.ej. si el documento está en español, como mínimo poner pie de página ante anglicismos).
 
 ### Formato de figuras
 
@@ -116,8 +116,8 @@ Además de estos, mirar nuestros recursos digitales: <https://github.com/asrob-u
 
 ## Úlitmos consejos
 
-- Revisar enlaces rotos y referencias internas rotas (p.ej. buscar por `??` en LaTeX)
-- Revisar, en todas las páginas generadas por LaTeX, que ninguna palabra se haya salido de márgenes (el hyphen puede hacer que esto ocurra con parabras muy largas)
+- Revisar enlaces rotos y referencias internas rotas (p.ej. buscar por `??` en LaTeX).
+- Revisar, en todas las páginas generadas por LaTeX, que ninguna palabra se haya salido de márgenes (el hyphen puede hacer que esto ocurra con parabras muy largas).
 - Revisar que se incluyen todos los aspectos contemplados en la correspondiente matriz de evaluación (que puede ser diferente según la titulación, p.ej. véase en [Recursos UC3M](#recursos-uc3m)).
 - Se empezó a realizar un script que revisa textos en inglés [aquí](https://github.com/jgvictores/snippets/blob/develop/bash/review-tex.sh) ([permalink](https://github.com/jgvictores/snippets/blob/8db93e72b29279ffa959e5b72287ab8e0129fa16/bash/review-tex.sh)).
 - ¡Releer el documento entero mínimo una vez!
