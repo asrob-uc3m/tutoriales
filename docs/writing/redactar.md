@@ -42,9 +42,17 @@ Además de estos, mirar nuestros recursos digitales: <https://github.com/asrob-u
     - Journals: Artículos de revistas científicas. Pasan por procesos de revisión por pares en general largos y con varias iteraciones, por tanto suelen ser largos, descriptivos e informativos.
         - Journals "top":
             - Indexados en Journal Citation Reports (JCR), donde a su vez cada categoría se desglosa en cuartiles (y el "top" es Q1). Sigue siendo relevante, pese a que la ANECA se ha pasado a métricas como DORA y CoARA según [esta noticia](https://www.aneca.es/-/aneca-se-adhiere-a-la-san-francisco-declaration-on-research-assessment-dora-y-a-la-coalition-for-advancing-research-assessment-coara-).
-            - Generalistas: Son muy famosos `Nature` y `Science`.
-            - Robótica: [IEEE RAM](https://ramagazine.ieee.org), [IJRR](https://journals.sagepub.com/home/ijr), [T-RO](https://www.ieee-ras.org/publications/t-ro)...
+            - Generalistas: Son muy famosos `Nature` y `Science`. `IEEE Access` es interesante.
+            - Robótica: [IEEE RAM](https://ramagazine.ieee.org), [IJRR](https://journals.sagepub.com/home/ijr), [T-RO](https://www.ieee-ras.org/publications/t-ro), RAS...
         - Journals a evitar: suelen llamarse Predatory Journals (p.ej. <https://predatoryjournals.com/journals>)
+        - Punto intermedio:
+            - MDPI Applied Sciences. 2023. Q1 (44/181) en JCR en ENGINEERING, MULTIDISCIPLINARY
+            - MDPI Sensors. 2023: Q2 (122/353 ) en JCR en ENGINEERING, ELECTRICAL & ELECTRONIC)
+            - MDPI Electronics. 2023: Q2 (157/353) en JCR en ENGINEERING, ELECTRICAL & ELECTRONIC
+            - MDPI Algorithms. 2023: Q2 (62/144) en JCR en COMPUTER SCIENCE, THEORY & METHODS
+            - MDPI Symmetry. 2023: Q2 (50/134) en JCR en MULTIDISCIPLINARY SCIENCES
+            - MDPI Machines. 2023: Q2 (83/183) en JCR en ENGINEERING, MECHANICAL
+            - MDPI Robotics. 2023: (23/46) en JCR en ROBOTICS
     - Proceedings de conferencias: Artículos que se presentan en conferencias científicas. En general, con contenido más actual y breve que journals.
         - Proceedings "top":
             - Indexados en Web of Science (WOS).
