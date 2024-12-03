@@ -79,6 +79,7 @@ nav:
     - CMake: software/programming/cmake.md
     - Librerías estáticas y dinámicas: software/programming/libs.md
     - YARP: software/programming/yarp.md
+  - Bases de datos: software/databases/README.md
   - Comunicaciones: software/comunications/README.md
   - Codificación de caracteres: software/character-encoding.md
   - Variables de entorno: software/environment-variables.md
