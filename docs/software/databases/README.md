@@ -28,6 +28,12 @@ La `-p` es para que pida contraseña, la `-D` es opcional. Desde consola:
 mysql -u user -p -D database -o < dumpfile.sql
 ```
 
+Una alternativa desde `mysql>` que puede importar en menos tiempo:
+
+```sql
+use db_name; SET autocommit=0 ; source the_sql_file.sql ; COMMIT ;
+```
+
 ## Migración MySQL 5 a MySQL 8
 
 You need to open the `.sql` file and put these lines at the top:
