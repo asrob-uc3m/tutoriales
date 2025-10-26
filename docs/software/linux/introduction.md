@@ -18,7 +18,7 @@ Existen diversas formas de instalar una distribución de Linux, entre las cuales
 
 1. **Partición nativa**: Seleccionas el sistema operativo al arranque.
 1. **Máquina virtual**: Permite arrancar un sistema operativo completo dentro de otro (p. ej., arrancar una distribución de Linux dentro de Windows). La **máquina virtual** puede parecer una opción atractiva puesto que es menos arriesgada (no se tocan las particiones del disco duro ni el arranque), permite experimentar rápidamente con nuevos sistemas operativos, y además permite trabajar con diferentes sistemas operativos simultáneamente. Sin embargo, muchas veces no recomendamos esta opción porque hará que nuestro sistema operativo disponga de menos recursos (el procesador, la memoria, etc del sistema operativo huésped se comparten con el sistema operativo anfitrión), además de posibles problemas con: habilitación de la virtualización en BIOS, conexión de dispositivos como una cámara web USB / RGB-D o Arduino, configuración difícil adicional para redes más allá de NAT (adaptadores de puente, cortafuegos de host, etc.) y también posibles adversidades con respecto al acceso a tarjetas gráficas (p. ej., controladores NVIDIA y CUDA). Si pese a ello se quiere explorar esta opción, recomendamos Virtual Box. Puede seguirse el video-tutorial: [ Install Ubuntu 20.04 on Windows 10 via VirtualBox / Instalar Ubuntu 20.04 en Windows via VirtualBox](https://youtu.be/Vp1EuUYDKk8)
-1. **Subsistema de Windows para Linux (WSL)**: Específico para arrancar una distribución de Linux dentro de Windows de manera ligera (p. ej. sin el escritorio gráfico de Linux por defecto). Para más información, véase: <https://docs.microsoft.com/en-us/windows/wsl/faq>
+1. **Subsistema de Windows para Linux (WSL)**: Específico para arrancar una distribución de Linux dentro de Windows de manera ligera (p. ej. sin el escritorio gráfico de Linux por defecto). Para más información, véase: [WSL](../windows/wsl.md)
 
 A continuación detallamos la instalación de una **partición nativa**, que suele ser la ideal a largo plazo puesto que permite sacar el máximo rendimiento de nuestro equipo y además permite mayor interacción con hardware (cámaras, robots reales, redes, tarjetas gráficas...).
 
@@ -33,7 +33,7 @@ A continuación detallamos la instalación de una **partición nativa**, que sue
 
 ## ¿Cómo instalo programas en Linux?
 
-Las distribuciones, en general, cuentan con gestores de paquetes para poder instalar programas (y librerías) sin necesidad de acceder a ninguna web. En Debian y derivados (Ubuntu, Mint) el comando de consola se llama `apt`. Por ejemplo, `git` se puede instalar vía `sudo apt install git` en una [consola de Linux](bash.md). En la actualidad existen aplicaciones gráficas para interactuar con los gestores de paquetes sin utilizar la consola (p.ej. `Ubuntu Software` de Ubuntu 16.04-22.04).
+Las distribuciones, en general, cuentan con gestores de paquetes para poder instalar programas (y librerías) sin necesidad de acceder a ninguna web. En Debian y derivados (Ubuntu, Mint) el comando de consola se llama `apt`. Por ejemplo, `git` se puede instalar vía `sudo apt install git` en una [consola de Linux](bash.md). En la actualidad existen aplicaciones gráficas para interactuar con los gestores de paquetes sin utilizar la consola (p.ej. `Ubuntu Software` en Ubuntu desde su versión 16.04).
 
 También puedes ver: <https://robots.uc3m.es/installation-guides>
 
