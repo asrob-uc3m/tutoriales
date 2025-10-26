@@ -17,3 +17,5 @@
 * [Comunicaciones](comunications/README.md)
 * [Codificación de caracteres](character-encoding.md)
 * [Variables de entorno](environment-variables.md)
+* [Windows](windows/README.md)
+    * [WSL](windows/wsl.md)

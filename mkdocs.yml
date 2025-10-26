@@ -83,6 +83,9 @@ nav:
   - Comunicaciones: software/comunications/README.md
   - Codificación de caracteres: software/character-encoding.md
   - Variables de entorno: software/environment-variables.md
+  - Windows:
+    - software/windows/README.md
+    - WSL: software/windows/wsl.md
 - Redactar:
   - writing/README.md
   - Markdown: writing/markdown.md
