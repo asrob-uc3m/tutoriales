@@ -19,8 +19,14 @@ wsl --list --online
 
 Instalar:
 
-```
+```bash
 wsl --install
+```
+
+Seleccionar distribución por defecto:
+
+```bash
+wsl --set-default <Distribution Name>
 ```
 
 Desinstalar:
