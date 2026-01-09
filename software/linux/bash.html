@@ -1,0 +1,2228 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="introduction.html">
+      
+      
+        <link rel="next" href="folder-structure-debian.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Bash (consola/terminal) - Tutoriales</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bash-consolaterminal" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../index.html" title="Tutoriales" class="md-header__button md-logo" aria-label="Tutoriales" data-md-component="logo">
+      
+  <img src="../../assets/asrob-135x135.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tutoriales
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bash (consola/terminal)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/asrob-uc3m/tutoriales" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    asrob-uc3m/tutoriales
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="Tutoriales" class="md-nav__button md-logo" aria-label="Tutoriales" data-md-component="logo">
+      
+  <img src="../../assets/asrob-135x135.png" alt="logo">
+
+    </a>
+    Tutoriales
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/asrob-uc3m/tutoriales" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    asrob-uc3m/tutoriales
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../electronics/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electrónica
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Electrónica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../electronics/battery-charger-imax-b6ac.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cargador IMAX B6AC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../electronics/kicad.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KiCad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../electronics/soldering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estación de soldadura Baku 601D
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inteligencia Artificial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../mechanics/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mecánica
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mecánica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mechanics/freecad.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FreeCAD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Software
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../version-control/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Control de versiones
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Control de versiones
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../version-control/git.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../version-control/subversion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Subversion (SVN)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Linux
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introduction.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bash (consola/terminal)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="bash.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bash (consola/terminal)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introducción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atajos-de-teclado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atajos de teclado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simbolos-especiales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Símbolos especiales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-comando-man" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El comando man
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#listado-alfabetico-de-comandos-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listado alfabético de comandos útiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bucles-en-bash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bucles en Bash
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-de-bash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scripts de Bash
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paginas-similares-y-relacionadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Páginas similares y relacionadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="folder-structure-debian.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estructura de carpetas en Debian y derivados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configuration-files.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ficheros de configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../programming/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programación
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../programming/cmake.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CMake
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../programming/libs.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Librerías estáticas y dinámicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../programming/yarp.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    YARP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../databases/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases de datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comunications/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comunicaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../character-encoding.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Codificación de caracteres
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../environment-variables.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variables de entorno
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../windows/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_10" id="__nav_5_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Windows
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../windows/wsl.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WSL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../writing/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Redactar
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Redactar
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../writing/markdown.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Markdown
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../writing/redactar.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Redactar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../writing/vim.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vim (editor de texto)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../similar.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Páginas similares y relacionadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introducción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atajos-de-teclado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atajos de teclado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simbolos-especiales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Símbolos especiales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-comando-man" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El comando man
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#listado-alfabetico-de-comandos-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listado alfabético de comandos útiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bucles-en-bash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bucles en Bash
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-de-bash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scripts de Bash
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paginas-similares-y-relacionadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Páginas similares y relacionadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/asrob-uc3m/tutoriales/blob/master/docs/software/linux/bash.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/asrob-uc3m/tutoriales/raw/master/docs/software/linux/bash.md" title="Ver código fuente de esta página" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="bash-consolaterminal">Bash (consola/terminal)<a class="headerlink" href="#bash-consolaterminal" title="Permanent link">#</a></h1>
+<h2 id="introduccion">Introducción<a class="headerlink" href="#introduccion" title="Permanent link">#</a></h2>
+<p>La consola (o terminal) de Linux es muy útil. Como se mencionó en la <a href="introduction.html#atajos-de-teclado-y-ratón">introducción a Linux</a>, se puede acceder a una consola a través de la combinación de teclas <code>CTRL</code>+<code>ALT</code>+<code>t</code>, y utilizar mecanismos como los portapapeles de Linux, además de sus atajos de teclado propios. Nótese que, al igual que Linux en general, Bash es "sensible a mayúsculas" (al contrario que en Windows, sí hace diferencia el hecho de que una misma letra se escriba con minúscula o mayúscula).</p>
+<h2 id="atajos-de-teclado">Atajos de teclado<a class="headerlink" href="#atajos-de-teclado" title="Permanent link">#</a></h2>
+<ul>
+<li><code>tab</code>: autocompletado a partir de lo escrito (es necesario pulsar dos veces si hay existen opciones).</li>
+<li>flecha <code>arriba</code>/<code>abajo</code>: moverse a través de historial de comandos.</li>
+<li><code>CTRL-r</code>: búsqueda de comandos escritos anteriormente (pulsar y empezar a teclear).</li>
+</ul>
+<h2 id="simbolos-especiales">Símbolos especiales<a class="headerlink" href="#simbolos-especiales" title="Permanent link">#</a></h2>
+<p>En esta sección se comentan algunos símbolos especiales. En los ejemplos se utilizan los comandos <code>ls</code> (listar contenido de carpeta) y <code>cd</code> (cambiar de carpeta) que se explican con mayor detalle en la sección de <a href="#listado-alfabético-de-comandos-útiles">comandos útiles</a>.</p>
+<ul>
+<li><code>/</code> Se utiliza como delimitador entre nombres de carpetas, y entre nombres de carpetas y archivos (equivalente en Windows: <code>\</code>). Por ejemplo: <code>/etc/crontab</code> indica que dentro de la carpeta <code>/etc</code> hay un fichero que se llama <code>crontab</code>.</li>
+<li><code>.</code> Significa "aquí", "en esta carpeta". Por su cuenta, muchas veces se puede omitir (<code>ls .</code> se puede abreviar como <code>ls</code>, y <code>cd .</code> no hace nada).<ul>
+<li>Se utiliza cuando se quiere especificar una ruta relativa. Por ejemplo: <code>/etc</code> es una ruta absoluta, se refiere una carpeta <code>etc</code> en la raíz del sistema de ficheros; sin embargo, <code>./etc</code> es una ruta relativa, se refiere a una carpeta <code>etc</code> dentro de la carpeta donde estamos.</li>
+<li>Se utiliza cuando se quiere lanzar un programa no instalado. Se trata de un caso de uso específico del punto anterior. Cuando un programa no está propiamente instalado (por ejemplo, acabamos de compilar <code>miPrograma</code>), uno está obligado a especificar que se quiere ejecutar el de la carpeta donde se está (siguiendo con el ejemplo: <code>./miPrograma</code>).</li>
+<li>También se utiliza dentro del nombre de un fichero, para separar <code>nombre.extensión</code>.</li>
+<li>Por último, como se comentó en la <a href="introduction.html#notas-adicionales">introducción</a>, el <code>.</code> al inicio de un nombre de fichero indica fichero oculto, y esto sucede con muchos <a href="configuration-files.html">ficheros de configuración</a>.</li>
+</ul>
+</li>
+<li><code>..</code> Significa "en la carpeta padre", "la carpeta que contiene esta carpeta". Por ejemplo, ascendemos a la carpeta padre via <code>cd ..</code>.</li>
+<li><code>*</code> Significa "cualquier cosa", es un operador "comodín". Por ejemplo: <code>ls ab*</code> nos da un listado de todo lo que empieza por <code>ab</code>, y <code>ls *png</code> nos da un listado de todoque finalice (nombre completo, incluyendo extensión) en <code>png</code>.</li>
+<li><code>?</code> Significa "cualquier cosa", es un operador "comodín", pero limitado a una sola letra o carácter. Se pueden poner varios seguidos.</li>
+<li><code>#</code> Significa "comentario", no se ejecuta lo que esté a su derecha. Por ejemplo: <code>ls # Esto es un comentario</code> hace lo mismo que <code>ls</code>, pero aporta información al lector. Nótese que aunque no se ejecute como tal, puede contener información relevante, véase el Shebang en la sección de <a href="#scripts-de-bash">scripts de Bash</a>.</li>
+<li><code>\</code> La <em>barra inversa</em> (<em>backslash</em>) tiene dos usos (su equivalente en Windows: <code>^</code> (<em>caret</em>)):<ul>
+<li>Interpretar como <em>literal</em>. Por ejemplo: mediante <code>ls Mis\ Documentos</code> se evita el uso de entrecomillado del texto (interpreta el espacio (<code></code>) como <em>literalmente</em> un espacio en lugar de como separador de argumentos/parámetros).</li>
+<li>Se utiliza para trocear un comando en varias líneas, indicando que el comando continúa. Funciona sólo si no se introducen caracteres adicionales a su derecha (aunque en realidad lo que se está introduciendo es una <a href="https://es.wikipedia.org/wiki/Nueva_l%C3%ADnea">nueva línea</a>, y el mecanismo subyacente es el del caso anterior).</li>
+</ul>
+</li>
+<li><code>;</code> Se puede utilizar para escribir varios comandos en la misma línea (equivalente en Windows: <code>&amp;</code>).</li>
+<li><code>&amp;&amp;</code> Similar al anterior, para escribir varios comandos en la misma línea, pero sólo si va bien el primero se ejecuta el segundo (equivalente en Windows: <code>&amp;&amp;</code> igual).</li>
+<li><code>"</code> Este tipo de entrecomillado permite espeficicar que un texto va en bloque, pese a la presencia de espacios. Por ejemplo: <code>cd "Mis Documentos"</code>.</li>
+<li>` Este tipo de entrecomillado permite utilizar la salida estándar (<a href="http://man7.org/linux/man-pages/man3/stdout.3.html">STDOUT</a>, que por defecto se muestra por pantalla) de un programa como argumento de otro. Por ejemplo: <code>cd</code>`<code>ls</code>` intentaría cambiar de carpeta utilizando el nombre de la primera entrada del listado de <code>ls</code> (y daría error en caso de que fuese un fichero en lugar de una carpeta).</li>
+<li><code>|</code> Se llama pipe. Redirige la salida estándar (<a href="http://man7.org/linux/man-pages/man3/stdout.3.html">STDOUT</a>, que por defecto se muestra por pantalla) de un programa a otro programa. Es similar pero de uso algo menos intuitivo que el entrcomillado  `. Por ejemplo, para salidas estándar muy largos y sin posibilidad de scroll de ratón, se utiliza: <code>ls | less</code>, donde <code>less</code> permite el avance con la tecla <code>Enter</code> y salir con <code>q</code>. En otras ocasiones está desaconsejado (<a href="https://memegenerator.net/img/instances/53648306/piping-cat-output-to-grep-thats-not-optimal.jpg">don't pipe the cat</a>, <a href="https://www.infoworld.com/article/2614499/unix/unix--when-pipes-don-t-make-sense.html">1</a>).</li>
+<li><code>&gt;</code> Redirige la salida estándar (<a href="http://man7.org/linux/man-pages/man3/stdout.3.html">STDOUT</a>, que por defecto se muestra por pantalla) de un programa, a un fichero. Si el fichero ya existe, primero borra su contenido. Por ejemplo: <code>ls &gt; stdout.log</code> vuelca el listado de contenido de la carpeta donde se está creando un fichero llamado <code>stdout.log</code>. Hemos seleccionado <code>log</code> porque se traduce como "registro de actividades", pero puede usarse cualquier extensión o incluso omitirse.</li>
+<li><code>&gt;&gt;</code> Similar a <code>&gt;</code>, pero si el fichero ya existe, anexa los datos a continuación de los datos existentes.</li>
+<li><code>2&gt;</code> Redirige la salida de errores (<a href="http://man7.org/linux/man-pages/man3/stdout.3.html">STDERR</a>, que por defecto se muestra por pantalla) de un programa, a un fichero. Si el fichero ya existe, primero borra su contenido. Por ejemplo: <code>cd</code> ` <code>ls</code> ` <code>2&gt; stderr.log</code> vuelca el error (en caso de producirse) creando un fichero llamado <code>stderr.log</code>. Existe un fichero muy especial, <code>/dev/null</code>, que quiere decir "a ninguna parte" (se traduce como "no me muestre usted los errores"), y se puede utilizar: <code>cd</code>`<code>ls</code>`<code>2&gt; /dev/null</code></li>
+<li><code>2&gt;&gt;</code> Similar a <code>&gt;</code>, pero si el fichero ya existe, anexa los datos a continuación de los datos existentes.</li>
+<li><code>2&gt;&amp;1</code> Otra variante de <code>2&gt;</code>, redirige a donde se dirija lo de <code>&gt;</code>. Existe <code>1&gt;&amp;2</code> para el caso inverso.</li>
+<li><code>&lt;</code> Por ejemplo <code>programa &lt; file.txt</code> utiliza el contenido de <code>file.txt</code> como la entrada estándar (<a href="http://man7.org/linux/man-pages/man3/stdin.3.html">STDIN</a>, que normalmente sería el teclado, de <code>programa</code> durante su ejecución.</li>
+<li><code>&amp;</code> Lanza un programa en segundo plano, por ejemplo: <code>programa &amp;</code>. Muestra el identificador de proceso (<a href="https://en.wikipedia.org/wiki/Process_identifier">PID</a>) al lanzar el programa. Se puede listar los programas en segundo plano mediante el comando <strong>jobs</strong>, o pasar el programa a primer plano mediante el comando <strong>fg</strong>.</li>
+<li><code>!$</code> Contiene la última palabra que uno mismo ha escrito en la consola, similar a la <a href="../environment-variables.html">variable de entorno</a> <code>_</code> (<a href="https://unix.stackexchange.com/questions/271659/vs-last-argument-of-the-preceding-command-and-output-redirection">ref</a>).</li>
+<li><code>$</code> Para obtener el valor de una <a href="../environment-variables.html">variable de entorno</a>.</li>
+<li><code>~</code> Se corresponde con la <a href="../environment-variables.html">variable de entorno</a> <code>HOME</code>. Por ejemplo, <code>ls ~</code> y <code>ls $HOME</code> son equivalentes.</li>
+</ul>
+<p>Estos símbolos se pueden combinar en el mismo comando y en cualquier orden, como por ejemplo: <code>programa &amp; 2&gt; /dev/null</code> lanza <code>programa</code> en segundo plano, y además evita que no nos estén llegando mensajes de error (que sería el comportamiento por defecto): véase cómo lo utilizamos <a href="https://github.com/asrob-uc3m/tutoriales/blob/8236fc98076747a377537e608976ac8901108fb0/assets/dotfiles/.bashrc-asrob#L3">aquí</a>.</p>
+<h2 id="el-comando-man">El comando <code>man</code><a class="headerlink" href="#el-comando-man" title="Permanent link">#</a></h2>
+<p>El comando <code>man</code> proporciona el manual del comando nombrado. Por ejemplo, con <code>man ls</code> se accede al manual del comando <code>ls</code>.
+Dentro de un manual, se puede buscar con <code>/</code> (esto es como en <a href="../../writing/vim.html">vim</a>).
+Por ejemplo, con <code>/--size</code> se puede obtener información del parámetro <code>--size</code> si estamos viendo el manual de <code>ls</code>.
+Los manuales de <code>man</code> se componen de diferentes secciones, del 1 al 8, porque no sólo se refieren a comandos de consola.
+Por ejemplo, la sección 3 se centra en la librería C estándar (y además muestra el #include necesario).
+Se puede forzar el ir a la entrada de una sección, por ejemplo <em>man 3 scanf</em> (aunque funcionaría sin el <em>3</em> al no tratarse de una entrada duplicada).
+Se sale del manual con la tecla <code>q</code>.</p>
+<p>Un comando muy similar a <code>man</code> es <code>info</code>, que en ocasiones propoorciona mejor documentación.</p>
+<h2 id="listado-alfabetico-de-comandos-utiles">Listado alfabético de comandos útiles<a class="headerlink" href="#listado-alfabetico-de-comandos-utiles" title="Permanent link">#</a></h2>
+<p>Estos comandos, en general, también son aplicables a <code>gnome-terminal</code>, <code>bash</code>, <code>sh</code>, <code>xterm</code>...</p>
+<ul>
+<li><strong>apt-cache search</strong>: en Debian/Ubuntu/Mint, da el nombre de los paquetes que contienen los metadatos que se buscan (versión, dependencias, descripción, etc.).</li>
+<li><strong>apt-file search</strong>: en Debian/Ubuntu/Mint, da el nombre de los paquetes que contienen el fichero que se busca.</li>
+<li><strong>apt-get install</strong>: en Debian/Ubuntu/Mint, instala un paquete, que puede ser un programa o librería (e.g. de nombre lib<em>librería</em>-dev). Suele requerir <strong>sudo</strong> delante.</li>
+<li><strong>cat</strong>: Escribe el contenido de un fichero por pantalla. Útil para echar un vistazo rápido a un fichero que ni merece la pena abrir para editar. Por ejemplo: <code>cat README.md</code> vuelca el contenido del fichero <code>README.md</code>. Para ficheros largos, mejor utilizar <strong>head</strong> (donde una opción buena es <code>head -n 5 README.md</code> para ver sólo primeras 5 líneas) o <strong>tail</strong> (para ver últimas líneas, véase también su uso en <strong>dmesg</strong>). Curiosamente, para ver una línea específica, es mejor <strong>sed</strong> vía <code>sed -n 5p README.md</code> o rango <code>sed -n 5,7p README.md</code> (más usos en su sección abajo). Nota: Su nombre proviene de su uso original, para concatenar, por ejemplo: <code>cat file1.txt file2.txt &gt; new.txt</code></li>
+<li><strong>cd</strong>: cambiar de carpeta.</li>
+<li><strong>cp</strong>: copiar origen a destino. Una alternativa que muestra progreso y mantiene permisos es <code>rsync -ah --progress origen destino</code> (ojo: su comportamiento difiere según <code>/</code> al final de la ruta)(para crear respaldos puede ser interesante recursivo y eliminando los ficheros que no existen en el origen: <code>rsync -rah --progress --delete origen destino</code>).</li>
+<li><strong>crontab</strong>: Edita la tabla de tareas periódicas mediante <code>crontab -e</code>.</li>
+<li><strong>diff</strong>: Compara ficheros y carpetas. <code>colordiff</code> existe como variante con colores (o <code>meld</code> como cliente gráfico).</li>
+<li><strong>df</strong>: Mostrar ocupación de discos montados. Utilícese con <code>-lh</code> para lectura humana.</li>
+<li><strong>dmesg</strong>: Muestra mensajes del kernel. Utiliza <code>tail -f /var/log/syslog</code> para verlo en stream continuo.</li>
+<li><strong>du</strong>: Mostrar ocupación de subcarpetas. Utilícese con <code>-lh</code> para lectura humana, y <code>-s</code> para resumido.</li>
+<li><strong>echo</strong>: Escribe una cadena de caracteres por pantalla. Útil en <a href="#scripts-de-bash">scripts de bash</a>. Por ejemplo: <code>echo "hola mundo"</code> escribe <code>hola mundo</code> en pantalla.</li>
+<li><strong>find</strong>: Busca ficheros que cumplan un criterio (nombre, tamaño...).<ul>
+<li>Uso básico (buscar fichero por nombre): <code>find -name fichero.txt</code></li>
+<li>Uso básico (buscar fichero con comodín, ejemplo extensión): <code>find -name *.txt</code></li>
+<li>Buscar fichero por nombre sin importar mayúsculas/minúscula: <code>find -iname fichero.txt</code></li>
+<li>Buscar fichero por nombre delimitando la profundidad de carpetas entre las cuales se busca: <code>find -maxdepth 2 -name fichero.txt</code></li>
+<li>Véase también su uso en la sección dedicada a <a href="#bucles-en-bash">bucles en bash</a>.</li>
+</ul>
+</li>
+<li><strong>free</strong>: Mostrar memoria (RAM) libre. Utilícese con <code>-lh</code> para lectura humana.</li>
+<li><strong>grep</strong>: Busca texto contenido en ficheros.<ul>
+<li>Uso básico: <code>grep "cadena de texto" fichero.txt</code></li>
+<li>En todos los ficheros de una carpeta: <code>grep "cadena de texto" *</code></li>
+<li>En todos los ficheros de una carpeta y sus subcarptas (<code>r</code> de recursivo): <code>grep -r "cadena de texto" *</code></li>
+<li>En todos los ficheros de una carpeta y sus subcarptas (<code>i</code> de case-insensitive) sin importar mayúsculas/minúsculas de la cadena: <code>grep -ri "cadena de texto" *</code></li>
+<li>En todos los ficheros con extensión <code>.cpp</code> de una carpeta y sus subcarptas sin importar mayúsculas/minúsculas de la cadena: <code>grep -ri "cadena de texto" --include *.cpp</code></li>
+<li>Mostrar líneas a continuación de las encontradas: <code>grep -A 1 "cadena" *</code></li>
+<li>Mostrar número de línea en el cual aparece: <code>grep -n "cadena" *</code></li>
+<li>Mostrar fichero completo marcando cadena en color: <code>grep --color -E "cadena|$" fichero.txt</code></li>
+<li>Invertir búsqueda (encontrar lo que no lleve cadena): <code>grep -v "anti cadena" *</code></li>
+<li>Manteniendo color pese a cruzarse con un pipe <code>|</code>: <code>grep --color=always "cadena" * | grep -v "anti cadena"</code></li>
+<li>Modo regular expressions extendido, permite <code>|</code> modo "OR" lógico (al ser dentro de la cadena, no es un pipe) y así buscar simultánemente: <code>grep -E "uno|dos</code></li>
+</ul>
+</li>
+<li><strong>killall</strong>: Intenta matar a un proceso, por nombre. Puedes utilizar <code>pkill</code> en su lugar para nombre incompleto.
+  Por defecto, envía una <a href="https://en.wikipedia.org/wiki/Signal_(IPC)#POSIX_signals">señal POSIX</a> de tipo <code>SIGTERM</code> (15), que es algo más brusco que <code>SIGINT</code> (2, típico de <code>CTRL-C</code>), sin llegar al extremo de <code>SIGKILL</code> (9).
+  Se puede meter la señal como parámetro: <code>killall -s 9 nombre</code> (leer más: <a href="http://programmergamer.blogspot.com.es/2013/05/clarification-on-sigint-sigterm-sigkill.html">1</a>,<a href="http://www.yolinux.com/TUTORIALS/C++Signals.html">2</a>; listado señales: <code>kill -l</code>).
+  Aquí una alternativa más compleja, metiendo el identificador de proceso (<a href="https://en.wikipedia.org/wiki/Process_identifier">PID</a> de por medio: <code>pgrep "nombre" | xargs kill -s 9</code>.</li>
+<li><strong>locate</strong>: Parecido al find. Busca ficheros de forma general y rápida porque usa la base de datos de <strong>updatedb</strong>.</li>
+<li><strong>ls</strong>: Listar contenido de carpeta, <code>ls -lh</code> para tamaños con lectura humana. Existen otros muchos <code>ls</code>: <code>lscpu</code>, <code>lsmod</code>... utiliza <code>ls</code> y tabulador para autocompletado para descubrirlos.</li>
+<li><strong>mkdir</strong>: crear una carpeta</li>
+<li><strong>mv</strong>: mover origen a destino</li>
+<li><strong>rename</strong>: <code>--no-act 's/^imagen/image/' *</code> (donde <code>^</code> implica sólo al principio))</li>
+<li><strong>rm</strong>: borrar (con <code>-r</code> para recursivo (entra en subcarpetas), <code>-rf</code> recursivo forzado))</li>
+<li><strong>sed</strong>: Se puede utilizar reemplazar texto en un fichero (<strong>utilizar con cuidado!!!</strong>).<ul>
+<li>Previsualización (vuelca por pantalla sin realizar cambios): <code>sed "s/viejo/nuevo/g" fichero.txt</code></li>
+<li>Uso básico: <code>sed -i "s/viejo/nuevo/g" fichero.txt</code></li>
+<li>En todos los ficheros de una carpeta: <code>sed -i "s/viejo/nuevo/g" *</code></li>
+<li>No tiene funcionalidad recursiva (en todos los ficheros de una carpeta y sus subcarptas), pero se puede conseguir mediante <a href="#bucles-en-bash">bucles en bash</a>.</li>
+</ul>
+</li>
+<li><strong>setxkbmap</strong>: Cambiar la configuración del teclado. Por ejemplo, a español: <code>setxkbmap es,es</code> (sin X, pero que requiere <code>sudo</code>: <code>loadkeys --verbose es</code>)</li>
+<li><strong>sudo</strong>: Realizar el comando que se escribe en la misma línea con permisos de administrador.</li>
+<li><strong>top</strong>: Mostrar los processos en ejecución (donde (<a href="https://en.wikipedia.org/wiki/Process_identifier">PID</a> es el identificador de proceso, y COMMAND es el nombre del proceso). Con colores, existe <code>htop</code>.</li>
+<li><strong>tree</strong>: Mostrar contenidos de una carpeta en formato árbol. Con <code>-L</code> se puede especificar la profundidad (p.ej. <code>tree -L 2</code>). Con <code>-I</code> se puede excluir un patrón (p.ej. <code>tree -I build</code>) o varios patrones (p.ej. <code>tree -I "build|__pycache__"</code>).</li>
+<li><strong>uname</strong>: Información de bajo nivel, incluida la versión de kernel de Linux y arquitectura/provesadores si se invoca: <code>uname -a</code>.</li>
+<li><strong>updatedb</strong>: Actualiza la base de datos que utiliza <strong>locate</strong></li>
+<li><strong>wget</strong>: Descarga un fichero, con <code>-O</code> se puede renombrar. Es lo que utilizamos <a href="configuration-files.html#bashrc">aquí</a>.</li>
+</ul>
+<h2 id="bucles-en-bash">Bucles en Bash<a class="headerlink" href="#bucles-en-bash" title="Permanent link">#</a></h2>
+<p>Existen diversas maneras de iterar en Bash:</p>
+<ul>
+<li>A través del comando <code>find -exec</code>. El operador <code>{}</code> se refiere al objeto encontrado, que puede ponerse entre comillas <code>"{}"</code> para prevenir frente a espacios en nombres. Por último, se utiliza <code>\;</code> para lanzar el comando una vez por incidencia (estilo <code>comando file1; comando file2; comando file3;</code>), o <code>\+</code> para concatenar (juntar secuencialmente en una sola línea, estilo <code>comando file1 file2 file3</code>). Ejemplos:<ul>
+<li>Ejemplo 1: Cambiar a permisos <code>664</code> todos los ficheros (<code>-type f</code>) de una carpeta y sus subcarpetas:
+  <div class="highlight"><pre><span></span><code>find<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span><span class="m">664</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+<span class="c1"># find -type f -exec chmod 664 {} + # alternativa 1, concatenando</span>
+<span class="c1"># find -type f -print0 | xargs -0 chmod 664 # alternativa 2, puede ser más rápido</span>
+</code></pre></div></li>
+<li>Ejemplo 2: Cambiar a permisos <code>775</code> todas las carpetas (<code>-type f</code>) de una carpeta y sus subcarpetas:
+  <div class="highlight"><pre><span></span><code>find<span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span><span class="m">775</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+<span class="c1"># find -type d -exec chmod 775 {} + # alternativa 1, concatenando</span>
+<span class="c1"># find -type d -print0 | xargs -0 chmod 775 # alternativa 2, puede ser más rápido</span>
+</code></pre></div></li>
+<li>Ejemplo 3: Copiar todo lo que contenga "cadena" en su nombre a otra carpeta:
+  <div class="highlight"><pre><span></span><code>find<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*cadena*&quot;</span><span class="w"> </span>-exec<span class="w"> </span>cp<span class="w"> </span><span class="o">{}</span><span class="w"> </span>/carpeta/destino<span class="w">  </span><span class="se">\;</span>
+</code></pre></div></li>
+<li>Ejemplo 4: En todos los ficheros (<code>-type f</code>) de una carpeta y sus subcarpetas, aplicar <code>sed</code>:
+  <div class="highlight"><pre><span></span><code>find<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-exec<span class="w"> </span>sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;s/viejo/nuevo/g&#39;</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\+</span>
+</code></pre></div></li>
+<li>Ejemplo 5: Por cada carpeta que contenga una carpeta <code>.svn</code>, aplicar <code>svn up {}</code> done <code>{}</code> es cada ruta encontrada (omitiendo <code>.svn</code> via <code>sed</code>):
+  <div class="highlight"><pre><span></span><code>find<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;.svn&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s2">&quot;s/.svn//g&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>svn<span class="w"> </span>up
+</code></pre></div></li>
+</ul>
+</li>
+<li>A través de bucles <code>for</code>.<ul>
+<li>Ejemplo 1 (que se podría realizar en una línea única):
+   <div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span>fileName<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>find<span class="w"> </span>-name<span class="w"> </span>*.mp3<span class="k">)</span><span class="s2">&quot;</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">    </span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$fileName</span><span class="s2">\n&quot;</span><span class="p">;</span>
+<span class="k">done</span>
+</code></pre></div></li>
+<li>Ejemplo 2: Renombrar con fecha delante, separado por guión:
+   <div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span>f<span class="w"> </span><span class="k">in</span><span class="w"> </span>*<span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>mv<span class="w"> </span>--<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$f</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>date<span class="w"> </span>-r<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$f</span><span class="s2">&quot;</span><span class="w"> </span>+%Y%m%d<span class="k">)</span><span class="s2">-</span><span class="nv">$f</span><span class="s2">&quot;</span><span class="p">;</span><span class="w"> </span><span class="k">done</span>
+</code></pre></div></li>
+</ul>
+</li>
+</ul>
+<h2 id="scripts-de-bash">Scripts de Bash<a class="headerlink" href="#scripts-de-bash" title="Permanent link">#</a></h2>
+<p>Un Script de Bash (<em>Bash Script</em>) es un conjunto de comandos de consola de linux que el sistema operativo ejecuta en orden. Script se suele traducir como fichero de ejecución por lotes.</p>
+<p>Nótese que si la complejidad de un Script es muy elevada:</p>
+<ol>
+<li>Tal vez se pueda simplificar <a href="http://porkmail.org/era/unix/award.html">1</a></li>
+<li>Se puede considerar utilizar un script de Python en su lugar, puesto que a costa de su intérprete se consiguen muchas más herramientas y en general una sintaxis más sencilla.</li>
+</ol>
+<p>Cualquier Script de Linux debería tener un <a href="https://en.wikipedia.org/wiki/Shebang_%28Unix%29">Shebang</a> como primera línea. La primera línea de un Script de Bash debería ser <code>#!/usr/bin/env bash</code> (<a href="https://stackoverflow.com/tags/bash/info">1</a>).</p>
+<p>Se pueden encontrar algunos ejemplos de Scripts de Bash en la sección de <a href="configuration-files.html">ficheros de configuración</a>. Nota: al tratarse de ficheros de sistema, en general no necesitan Shebang.</p>
+<h2 id="paginas-similares-y-relacionadas">Páginas similares y relacionadas<a class="headerlink" href="#paginas-similares-y-relacionadas" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="https://help.ubuntu.com/community/UsingTheTerminal">https://help.ubuntu.com/community/UsingTheTerminal</a></li>
+<li><a href="http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO">http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO</a></li>
+<li><a href="https://blog.desdelinux.net/shellcheck-una-utilidad-para-comprobar-tus-scripts-de-shell">https://blog.desdelinux.net/shellcheck-una-utilidad-para-comprobar-tus-scripts-de-shell</a></li>
+<li><a href="http://tldp.org/LDP/Bash-Beginners-Guide/html/index.html">http://tldp.org/LDP/Bash-Beginners-Guide/html/index.html</a></li>
+<li><a href="http://tldp.org/LDP/abs/html/index.html">http://tldp.org/LDP/abs/html/index.html</a></li>
+</ul>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Última actualización">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="4 de diciembre de 2022 09:25:42 UTC">4 de diciembre de 2022</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="introduction.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Introducción">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Introducción
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="folder-structure-debian.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Estructura de carpetas en Debian y derivados">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Estructura de carpetas en Debian y derivados
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="http://asrob.uc3m.es/" target="_blank" rel="noopener" title="asrob.uc3m.es" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/asrob-uc3m" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/asrob_uc3m/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224.3 141a115 115 0 1 0-.6 230 115 115 0 1 0 .6-230m-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1-.6-149.2m93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1-53.6 0m129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/@asrobuc3m" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/asrob_uc3m" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.action.edit", "content.action.view", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.top", "navigation.tracking", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../js/open_in_new_tab.js"></script>
+      
+    
+  </body>
+</html>
