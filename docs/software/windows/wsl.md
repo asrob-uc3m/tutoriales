@@ -5,13 +5,15 @@
 
 Nota: Para muchos comandos puede emplearse opcionalmente `--verbose` (o simplemente `-v`).
 
-Listar distribuciones de de Linux instaladas:
+## Instalación/desinstalación de distribuciones de Linux
+
+Listar distribuciones de Linux instaladas:
 
 ```bash
 wsl --list # o simplemente -l
 ```
 
-Listar distribuciones de de Linux instalables:
+Listar distribuciones de Linux instalables:
 
 ```bash
 wsl --list --online
@@ -29,8 +31,30 @@ Seleccionar distribución por defecto:
 wsl --set-default <Distribution Name>
 ```
 
-Desinstalar:
+Desinstalar una distribución:
 
 ```bash
 wsl --unregister <DistributionName>
+```
+
+## Ejecución
+
+Para entrar en la distribución por defecto:
+
+```bash
+wsl
+```
+
+O entrar en una distribución aunque no sea la establecida por defecto:
+
+```bash
+wsl --distribution <Distribution Name>
+```
+
+## Cierre
+
+A veces convendrá para wsl:
+
+```bash
+wsl --shutdown
 ```
