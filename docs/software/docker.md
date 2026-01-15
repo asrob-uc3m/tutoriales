@@ -116,6 +116,8 @@ En <https://hub.docker.com> salvo que se indique otro (e.g. <https://ghcr.io> de
 
 REPOSITORY                            | TAG     | SIZE  | Comments
 --------------------------------------|---------|-------|------------
+osrf/ros                  | jazzy-desktop-full | 1.32 GB |
+osrf/ros                  | humble-desktop-full | 1.11 GB |
 ghcr.io/roboticslab-uc3m/teo-demos-misc | latest | ~4 GB | TEO OpenRAVE+YARP+Kinematics+...
 cielavenir/openrave                   | jammy   | ~3 GB | OpenRAVE
 palroboticssl/tiago_tutorials         | melodic | ~5 GB | TIAGo, Gazebo, ROS (sin distro PAL)
