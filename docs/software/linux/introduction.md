@@ -24,11 +24,14 @@ A continuación detallamos la instalación de una **partición nativa**, que sue
 
 ### ¿Cómo instalo una distribución en una partición nativa?
 
-1. Haga una copia de seguridad de sus datos antes de hacer esto, recuerde que es un proceso donde se arriesga a eliminar datos de disco duro si no se siguen los pasos correctamente.
-1. Espere a disponer de una una máquina adicional en caso de que su arranque no se configure correctamente en el primer intento (puede que haya horas / días adicionales para corregir, dependiendo de la experiencia).
+1. Recomendaciones previas:
+    1. Haga una copia de seguridad de sus datos antes de hacer esto, recuerde que es un proceso donde se arriesga a eliminar datos de disco duro si no se siguen los pasos correctamente.
+    1. Espere a disponer de una una máquina adicional en caso de que su arranque no se configure correctamente en el primer intento (puede que haya horas / días adicionales para corregir, dependiendo de la experiencia).
+    1. Adicionalmente, se recomienda anotar las claves de recuperación de BitLocker de Windows, porque Windows puede solicitarlas si detecta cambios en la BIOS. Desde una terminal en modo administrador de Windows, `manage-bde -protectors -get`.
+1. Todos los demás siguientes pasos están básicamente resumidos en: [Este bonito tutorial](https://ubuntu.com/tutorials/install-ubuntu-desktop)
 1. Administre los tamaños de partición desde el sistema operativo original para dejar espacio vacío para el nuevo sistema operativo. Es una buena manera para evitar la pérdida de datos. En Windows la herramienta se llama `Administración de discos`.
 1. Descarga la ISO. Por ejemplo, la ISO de Ubuntu se descarga en: <https://www.ubuntu.com/download/desktop>
-1. Históricamente, los ISO se grabaron en CD, pero ahora creamos unidades USB de arranque. [Este bonito tutorial](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows) a través de Windows recomienda [Rufus](http://rufus.akeo.ie/) .
+1. El menciona tutorial a través de Windows recomienda [balenaEtcher](https://etcher.balena.io/).
 1. Apague y reinicie en USB (a través de la selección de inicio o cambiando el orden de inicio en BIOS), instale la distribución.
 
 ## ¿Cómo instalo programas en Linux?
