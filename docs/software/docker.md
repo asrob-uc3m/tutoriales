@@ -142,3 +142,4 @@ Con visibilidad público/privado según permisos/login:
 ## Más recursos
 
 - <https://docs.docker.com/engine/reference/commandline>
+- <https://docs.docker.com/build/building/best-practices/>
