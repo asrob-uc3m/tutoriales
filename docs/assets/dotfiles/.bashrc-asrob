@@ -83,6 +83,86 @@ function git-credential () {
     git config credential.helper cache
 }
 
+## Clipboard-related
+
+_get_clipboard() {
+    if [ -n "$WAYLAND_DISPLAY" ] && command -v wl-paste >/dev/null 2>&1; then
+        wl-paste --no-newline
+    elif [ -n "$DISPLAY" ] && command -v xclip >/dev/null 2>&1; then
+        xclip -selection clipboard -o
+    else
+        echo "Error: Cannot detect display server or missing clipboard tools (install wl-clipboard and xclip)." >&2
+        return 1
+    fi
+}
+
+cbpatch() {
+    local patch_content
+    patch_content=$(_get_clipboard) || return 1
+
+    # Check if empty (trimming whitespace)
+    if [ -z "$(echo -n "$patch_content" | tr -d '[:space:]')" ]; then
+        echo -e "\e[31m[cbpatch] Clipboard is empty.\e[0m" >&2
+        return 1
+    fi
+
+    # 1. Normalize line endings to LF (CRLF to LF)
+    patch_content=$(echo "$patch_content" | tr -d '\r')
+
+    # 2. AI-Output Proofing: Replace UTF-8 Non-Breaking Spaces (NBSP) with regular spaces
+    patch_content=$(echo "$patch_content" | sed 's/\xC2\xA0/ /g')
+
+    # 3. AI-Output Proofing: Add the mandatory leading space to truly empty context lines
+    patch_content=$(echo "$patch_content" | sed 's/^$/ /')
+
+    local temp_file
+    temp_file=$(mktemp)
+
+    # 4. GNU patch requires a trailing newline. `echo` appends one natively in bash.
+    echo "$patch_content" > "$temp_file"
+
+    # Execute patch (-l ignores whitespace inconsistencies)
+    if patch -i "$temp_file" -l --no-backup-if-mismatch "$@"; then
+        echo -e "\e[32m[cbpatch] Applied clipboard patch $*\e[0m"
+    else
+        echo -e "\e[31m[cbpatch] Failed to apply clipboard patch $*\e[0m"
+    fi
+
+    rm -f "$temp_file"
+}
+
+cbout() {
+    local target_file="$1"
+    if [ -z "$target_file" ]; then
+        echo "Usage: cbout filename.ext" >&2
+        return 1
+    fi
+
+    local clean_content
+    clean_content=$(_get_clipboard) || return 1
+
+    # Empty check
+    if [ -z "$(echo -n "$clean_content" | tr -d '[:space:]')" ]; then
+        echo -e "\e[31m[cbout] Clipboard is empty. Aborting to prevent wiping $target_file.\e[0m" >&2
+        return 1
+    fi
+
+    local full_path
+    full_path=$(realpath "$target_file" 2>/dev/null || echo "$PWD/$target_file")
+
+    # Workflow Protection: Abort if you accidentally still have the filename in your clipboard
+    local trimmed_clipboard
+    trimmed_clipboard=$(echo "$clean_content" | awk '{$1=$1};1')
+    if [ "$trimmed_clipboard" = "$target_file" ] || [ "$trimmed_clipboard" = "$full_path" ]; then
+        echo -e "\e[31m[cbout] Clipboard contains the filename instead of code. Aborting to prevent wiping $target_file.\e[0m" >&2
+        return 1
+    fi
+
+    # Clean NBSP characters and write to file
+    echo "$clean_content" | sed 's/\xC2\xA0/ /g' > "$full_path"
+    echo -e "\e[32m[cbout] Wrote clipboard contents to $target_file\e[0m"
+}
+
 ## Terminal-related
 
 ### Ocultar nombre de usuario y host en el terminal, by @jgvictores
