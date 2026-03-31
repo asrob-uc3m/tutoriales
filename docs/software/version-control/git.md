@@ -10,9 +10,9 @@ Git es un [sistema de control de versiones](README.md) distribuido creado por Li
 
 ## Comandos básicos
 
-### Establezca su nombre de usuario y correo electrónico
+### Establecer nombre de usuario y correo electrónico
 
-Establezca su nombre de usuario y correo electrónico. Escriba los siguientes comandos en cualquier lugar, llenando los campos correspondientes:
+Establecer nombre de usuario y correo electrónico (modificando los campos correspondientes):
 
 ```bash
 git config --global user.name "My Username"
@@ -25,6 +25,7 @@ Puede establecer estos valores por repositorio. Para lograrlo, navegue hasta el 
 
 Habitualmente creamos repositorios nuevos directamente en GitHub (interfaz web), con lo cual nos saltaríamos este paso, pero también se pueden crear localmente.
 Para crear un repositorio localmente, desde una carpeta nueva, ejecuta el comando:
+
 ```bash
 git init
 ```
@@ -32,9 +33,11 @@ git init
 ### Descargar una copia de un repositorio existente (git clone)
 
 Para descargar una copia de un repositorio existente (creado con GitHub o manualmente), se utiliza el comando `git clone`. Para el repositorio `tutoriales` de la organización `asrob-uc3m` en GitHub, el comando sería:
+
 ```bash
 git clone https://github.com/asrob-uc3m/tutoriales.git
 ```
+
 Consideraciones:
 
 1. Debe utilizarse con la raíz del repositorio.
@@ -44,9 +47,11 @@ Consideraciones:
 ### Descargar últimos cambios de un repositorio (git pull)
 
 Si nos hemos descargado previamente la copia de un repositorio ([git clone](#descargar-una-copia-de-un-repositorio-existente-git-clone)), es posible que en un momento dado no tengamos los últimos cambios remotos. Esto se soluciona mediante:
+
 ```bash
 git pull
 ```
+
 Es recomendable hacerlo **siempre** antes de cualquiera de los próximos pasos.
 
 ### Comprobar estado de repositorio (git status)
@@ -61,6 +66,7 @@ git status
 ### Comprobar estado de repositorio por línea (git diff)
 
 Se pueden ver los cambios con una granularidad línea-a-línea mediante:
+
 ```bash
 git diff
 ```
@@ -69,18 +75,22 @@ Por defecto muestra los cambios en todos los ficheros modificados (pero no los n
 ### Indicar qué cambios se subirán localmente (git add)
 
 Puedes indicar qué cambios se subirán usando `git add`. Existe un modo interactivo (`git add -i`) que permite seleccionar por línea, pero lo más habitual es por fichero. Por ejemplo, para indicar que se subirá localmente el fichero `file.md` (sea nuevo o modificado):
+
 ```bash
 git add file.md
 ```
 Este fichero pasará a <span style="color:green;">**verde**</span> en `git status` y se dice que está "staged". Nótese que todavía no se ha subido localmente.
 
 Git hace distinción entre ficheros nuevos y modificados. Existe un atajo para indicar que se suban localmente todos los ficheros con modificaciones, que no afecta a los nuevos (que deberán indicarse explícitamente):
+
 ```bash
 git add -u
 ```
 
 ### Subir los cambios localmente (git commit)
+
 Se pueden subir los cambios localmente	(los ficheros "staged", marcados en <span style="color:green;">**verde**</span>) con el comando:
+
 ```bash
 git commit -m"Mensaje del commit"
 ```
@@ -89,12 +99,13 @@ Esto es un método abreviado. `git commit` a secas nos abre un editor de texto q
 ### Subir los cambios locales al repositorio remoto (git push)
 
 Para enviar estos cambios a tu repositorio remoto ejecuta:
+
 ```bash
 git push
 ```
 Aquí entran conceptos más avanzados de ramas (branches), que incluso depende de tu configuración local. Para un repositorio sencillo con una única rama `master`, si el comando previo da problemas, el comando `git push origin master` te puede salvar.
 
-## Trabajar con ramas (branches)
+## Ramas (branches)
 
 ### Creación de ramas
 
@@ -155,7 +166,7 @@ Antes de fusionar los cambios, puedes revisarlos usando
 git diff <source_branch> <target_branch>
 ```
 
-### Etiquetas
+## Etiquetas (tags)
 
 Se recomienda crear etiquetas para cada nueva [versión](https://semver.org) publicada de un software. Puedes crear una nueva etiqueta llamada 1.0.0 ejecutando:
 
@@ -187,6 +198,8 @@ git fetch origin
 git reset --hard origin/master
 ```
 
+## Remote
+
 ### Enlazar repositorio local con uno remoto
 
 Si no se ha clonado un repositorio ya existente y quieres conectar tu repositorio local a un repositorio remoto, usa:
@@ -196,6 +209,8 @@ git remote add origin <server>
 ```
 
 Ahora podrás subir tus cambios al repositorio remoto seleccionado.
+
+
 
 ## Comandos avanzados
 
