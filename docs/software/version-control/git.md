@@ -200,6 +200,12 @@ git reset --hard origin/master
 
 ## Remote
 
+### Ver a qué repositorio remoto está conectado
+
+```bash
+git remote -v
+```
+
 ### Enlazar repositorio local con uno remoto
 
 Si no se ha clonado un repositorio ya existente y quieres conectar tu repositorio local a un repositorio remoto, usa:
@@ -210,7 +216,13 @@ git remote add origin <server>
 
 Ahora podrás subir tus cambios al repositorio remoto seleccionado.
 
+## Modificar el remoto
 
+P.ej. si habías clonado vía `git clone https://github.com/asrob-uc3m/tutoriales` pero ahora quieres hacer `git push` vía credenciales ssh:
+
+```bash
+git remote set-url origin git@github.com:asrob-uc3m/tutoriales.git
+```
 
 ## Comandos avanzados
 
