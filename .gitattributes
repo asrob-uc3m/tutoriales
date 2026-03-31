@@ -1,0 +1,3 @@
+# Enforce LF line endings for bash/shell scripts and dotfiles
+*.bashrc* text eol=lf
+*.sh text eol=lf
