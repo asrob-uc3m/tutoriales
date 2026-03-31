@@ -45,6 +45,10 @@ function gw () {
 function n () {
     nautilus . & disown
 }
+### abrir code aquí, by @jgvictores
+function c () {
+    code . & disown
+}
 
 ## svn-related
 
