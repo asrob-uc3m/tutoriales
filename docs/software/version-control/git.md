@@ -216,12 +216,18 @@ git remote add origin <server>
 
 Ahora podrás subir tus cambios al repositorio remoto seleccionado.
 
-## Modificar el remoto
+### Modificar el remoto
 
 P.ej. si habías clonado vía `git clone https://github.com/asrob-uc3m/tutoriales` pero ahora quieres hacer `git push` vía credenciales ssh:
 
 ```bash
 git remote set-url origin git@github.com:asrob-uc3m/tutoriales.git
+```
+
+## ssh
+
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
 ## Comandos avanzados
