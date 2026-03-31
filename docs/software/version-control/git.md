@@ -226,7 +226,7 @@ git remote set-url origin git@github.com:asrob-uc3m/tutoriales.git
 
 ## ssh
 
-```
+```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
