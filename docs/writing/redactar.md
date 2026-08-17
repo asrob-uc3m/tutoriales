@@ -127,7 +127,7 @@ Además de estos, mirar nuestros recursos digitales: <https://github.com/asrob-u
 - Revisar enlaces rotos y referencias internas rotas (p.ej. buscar por `??` en LaTeX).
 - Revisar, en todas las páginas generadas por LaTeX, que ninguna palabra se haya salido de márgenes (el hyphen puede hacer que esto ocurra con parabras muy largas).
 - Revisar que se incluyen todos los aspectos contemplados en la correspondiente matriz de evaluación (que puede ser diferente según la titulación, p.ej. véase en [Recursos UC3M](#recursos-uc3m)).
-- Se empezó a realizar un script que revisa textos en inglés [aquí](https://github.com/jgvictores/snippets/blob/develop/bash/review-tex.sh) ([permalink](https://github.com/jgvictores/snippets/blob/8db93e72b29279ffa959e5b72287ab8e0129fa16/bash/review-tex.sh)).
+- Se empezó a realizar un script que revisa textos en inglés [aquí](https://github.com/jgvictores/snippets/blob/master/bash/review-tex.sh) ([permalink](https://github.com/jgvictores/snippets/blob/a80204d0f3354a749aa33824db5b88e4555f6eb3/bash/review-tex.sh)).
 - ¡Releer el documento entero mínimo una vez!
 
 ## Más enlaces de interés
