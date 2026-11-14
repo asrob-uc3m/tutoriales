@@ -260,10 +260,10 @@ Para borrar una tag local:
 git tag -d <tag_name>
 ```
 
-Borrar una tag local no elimina la tag remota. Para borrar una tag remota:
+Borrar una tag local no elimina la tag remota. Para borrar una tag remota (podrías usar `v1.0.0` o más completo `refs/tags/v1.0.0`):
 
 ```bash
-git push origin --delete <tag_name>
+git push origin --delete <tag_name> # o más corto: git push origin :<tag_name>
 ```
 
 ## Remote
