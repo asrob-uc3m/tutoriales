@@ -94,7 +94,14 @@ Se pueden subir los cambios localmente	(los ficheros "staged", marcados en <span
 ```bash
 git commit -m"Mensaje del commit"
 ```
+
 Esto es un método abreviado. `git commit` a secas nos abre un editor de texto que permite introducir descripciones más completas.
+
+Puedes ver el contenido de un commit via su hash:
+
+```bash
+git show commit_hash
+```
 
 ### Deshacer cambios
 
@@ -211,6 +218,12 @@ Listar las tags remotas:
 git ls-remote --tags origin
 ```
 
+Puedes ver el contenido de un tag via su nombre:
+
+```bash
+git show tag_name
+```
+
 Puedes crear una nueva etiqueta llamada 1.0.0 ejecutando:
 
 ```bash
@@ -223,13 +236,13 @@ Si prefieres que sea sobre un commit específico:
 git tag 1.0.0 1b2e1d63ff
 ```
 
-Donde 1b2e1d63ff se refiere a los 10 caracteres del commit id al cual quieres referirte con tu etiqueta. Puedes obtener el commit id con:
+Donde 1b2e1d63ff se refiere a los 10 caracteres del commit hash al cual quieres referirte con tu etiqueta. Puedes obtener el commit id con:
 
 ```bash
 git log
 ```
 
-También puedes usar menos caracteres que el commit id, pero debe ser un valor único.
+También puedes usar menos caracteres que el commit hash, pero debe ser un valor único.
 
 ## Remote
 
@@ -296,7 +309,6 @@ Pequeños scripts que pueden hacer que en el prompt de tu consola estilo [bash](
 
 ## Páginas similares y relacionadas
 
-- <https://www.gitbook.com/book/david-estevez/the-git-the-bad-and-the-ugly>
 - <https://github.com/firstcontributions/first-contributions>
 - <https://git-scm.com/book/en/v2>
 - <https://www.atlassian.com/git>
