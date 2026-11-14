@@ -185,13 +185,25 @@ git diff <source_branch> <target_branch>
 
 ## Etiquetas (tags)
 
+Listar las etiquetas:
+
+```bash
+git tag -l # o simplemente git tag
+```
+
 Se recomienda crear etiquetas para cada nueva [versión](https://semver.org) publicada de un software. Puedes crear una nueva etiqueta llamada 1.0.0 ejecutando:
+
+```bash
+git tag 1.0.0
+```
+
+Si prefieres que sea sobre un commit específico:
 
 ```bash
 git tag 1.0.0 1b2e1d63ff
 ```
 
-1b2e1d63ff se refiere a los 10 caracteres del commit id al cual quieres referirte con tu etiqueta. Puedes obtener el commit id con
+Donde 1b2e1d63ff se refiere a los 10 caracteres del commit id al cual quieres referirte con tu etiqueta. Puedes obtener el commit id con:
 
 ```bash
 git log
