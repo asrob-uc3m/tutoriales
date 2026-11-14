@@ -224,28 +224,34 @@ Puedes ver el contenido de un tag via su nombre:
 git show tag_name
 ```
 
-Puedes crear una nueva tag (standard lightweight) llamada 1.0.0, que será sobre el commit más reciente:
+Puedes crear una nueva tag (standard lightweight) llamada v1.0.0, que será sobre el commit más reciente:
 
 ```bash
-git tag 1.0.0
+git tag v1.0.0
 ```
 
 O si prefieres que sea una annotated tag, para el mismo sería:
 
 ```bash
-git tag -a 1.0.0 -m "<msg>"
+git tag -a v1.0.0 -m "<msg>"
 ```
 
 Si prefieres que sea sobre un commit específico:
 
 ```bash
-git tag 1.0.0 1b2e1d63ff
+git tag v1.0.0 1b2e1d63ff
 ```
 
 Donde 1b2e1d63ff se refiere a los 10 caracteres del commit hash al cual quieres referirte con tu tag (también puedes usar menos caracteres que el commit hash, pero debe ser un valor único). Puedes obtener el commit hash con:
 
 ```bash
 git log
+```
+
+Para subir cualquiera de estos tags locales a remoto:
+
+```bash
+git push origin v1.0.0
 ```
 
 Para borrar una tag local:
