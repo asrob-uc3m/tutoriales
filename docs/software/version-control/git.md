@@ -230,19 +230,23 @@ Puedes crear una nueva tag (standard lightweight) llamada 1.0.0, que será sobre
 git tag 1.0.0
 ```
 
+O si prefieres que sea una annotated tag, para el mismo sería:
+
+```bash
+git tag -a 1.0.0 -m "<msg>"
+```
+
 Si prefieres que sea sobre un commit específico:
 
 ```bash
 git tag 1.0.0 1b2e1d63ff
 ```
 
-Donde 1b2e1d63ff se refiere a los 10 caracteres del commit hash al cual quieres referirte con tu etiqueta. Puedes obtener el commit hash con:
+Donde 1b2e1d63ff se refiere a los 10 caracteres del commit hash al cual quieres referirte con tu tag (también puedes usar menos caracteres que el commit hash, pero debe ser un valor único). Puedes obtener el commit hash con:
 
 ```bash
 git log
 ```
-
-También puedes usar menos caracteres que el commit hash, pero debe ser un valor único.
 
 Para borrar una tag local:
 
