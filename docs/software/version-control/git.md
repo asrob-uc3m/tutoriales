@@ -244,10 +244,16 @@ git log
 
 También puedes usar menos caracteres que el commit hash, pero debe ser un valor único.
 
-Para borrar una branch local:
+Para borrar una tag local:
 
 ```bash
 git tag -d <tag_name>
+```
+
+Borrar una tag local no elimina la tag remota. Para borrar una tag remota:
+
+```bash
+git push origin --delete <tag_name>
 ```
 
 ## Remote
