@@ -96,6 +96,23 @@ git commit -m"Mensaje del commit"
 ```
 Esto es un método abreviado. `git commit` a secas nos abre un editor de texto que permite introducir descripciones más completas.
 
+### Deshacer cambios
+
+En caso de que hagas algo mal puedes deshacer cambios locales antes del commit usando el comando:
+
+```bash
+git checkout -- <filename>
+```
+
+Este comando reemplaza los cambios en tu directorio de trabajo con el último contenido de HEAD. Los cambios que ya han sido agregados al Index, así como también los nuevos archivos, se mantendrán sin cambio.
+
+Por otro lado, si quieres deshacer todos los cambios locales y commits, puedes traer la última versión del servidor y apuntar a tu copia local principal de esta forma
+
+```bash
+git fetch origin
+git reset --hard origin/master
+```
+
 ### Subir los cambios locales al repositorio remoto (git push)
 
 Para enviar estos cambios a tu repositorio remoto ejecuta:
@@ -181,22 +198,6 @@ git log
 ```
 
 También puedes usar menos caracteres que el commit id, pero debe ser un valor único.
-Reemplaza cambios locales.
-
-En caso de que hagas algo mal puedes reemplazar cambios locales usando el comando:
-
-```bash
-git checkout -- <filename>
-```
-
-Este comando reemplaza los cambios en tu directorio de trabajo con el último contenido de HEAD. Los cambios que ya han sido agregados al Index, así como también los nuevos archivos, se mantendrán sin cambio.
-
-Por otro lado, si quieres deshacer todos los cambios locales y commits, puedes traer la última versión del servidor y apuntar a tu copia local principal de esta forma
-
-```bash
-git fetch origin
-git reset --hard origin/master
-```
 
 ## Remote
 
