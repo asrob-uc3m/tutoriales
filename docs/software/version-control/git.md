@@ -185,13 +185,33 @@ git diff <source_branch> <target_branch>
 
 ## Etiquetas (tags)
 
-Listar las etiquetas:
+Se recomienda crear etiquetas para cada nueva [versión](https://semver.org) publicada de un software.
+
+Listar las etiquetas locales:
 
 ```bash
 git tag -l # o simplemente git tag
 ```
 
-Se recomienda crear etiquetas para cada nueva [versión](https://semver.org) publicada de un software. Puedes crear una nueva etiqueta llamada 1.0.0 ejecutando:
+Listar las etiquetas locales (versión más extendida):
+
+```bash
+git show-ref --tags
+```
+
+Listar las etiquetas locales (versión más extendida todavía):
+
+```bash
+git show-ref --tags -d
+```
+
+Listar las etiquetas remotas:
+
+```bash
+git ls-remote --tags origin
+```
+
+Puedes crear una nueva etiqueta llamada 1.0.0 ejecutando:
 
 ```bash
 git tag 1.0.0
