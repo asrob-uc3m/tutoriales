@@ -224,7 +224,7 @@ Puedes ver el contenido de un tag via su nombre:
 git show tag_name
 ```
 
-Puedes crear una nueva etiqueta llamada 1.0.0 ejecutando:
+Puedes crear una nueva tag (standard lightweight) llamada 1.0.0, que será sobre el commit más reciente:
 
 ```bash
 git tag 1.0.0
