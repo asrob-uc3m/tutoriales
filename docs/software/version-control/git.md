@@ -236,7 +236,7 @@ Si prefieres que sea sobre un commit específico:
 git tag 1.0.0 1b2e1d63ff
 ```
 
-Donde 1b2e1d63ff se refiere a los 10 caracteres del commit hash al cual quieres referirte con tu etiqueta. Puedes obtener el commit id con:
+Donde 1b2e1d63ff se refiere a los 10 caracteres del commit hash al cual quieres referirte con tu etiqueta. Puedes obtener el commit hash con:
 
 ```bash
 git log
