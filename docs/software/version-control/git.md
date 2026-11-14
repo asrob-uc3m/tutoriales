@@ -100,7 +100,7 @@ Esto es un método abreviado. `git commit` a secas nos abre un editor de texto q
 Puedes ver el contenido de un commit via su hash:
 
 ```bash
-git show commit_hash
+git show <commit_hash>
 ```
 
 ### Deshacer cambios
@@ -243,6 +243,12 @@ git log
 ```
 
 También puedes usar menos caracteres que el commit hash, pero debe ser un valor único.
+
+Para borrar una branch local:
+
+```bash
+git tag -d <tag_name>
+```
 
 ## Remote
 
