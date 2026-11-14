@@ -183,29 +183,29 @@ Antes de fusionar los cambios, puedes revisarlos usando
 git diff <source_branch> <target_branch>
 ```
 
-## Etiquetas (tags)
+## Tags (etiquetas)
 
-Se recomienda crear etiquetas para cada nueva [versión](https://semver.org) publicada de un software.
+Se recomienda crear tags para cada nueva [versión](https://semver.org) publicada de un software.
 
-Listar las etiquetas locales:
+Listar las tags locales:
 
 ```bash
 git tag -l # o simplemente git tag
 ```
 
-Listar las etiquetas locales (versión más extendida):
+Listar las tags locales (versión más extendida, añade tag object):
 
 ```bash
 git show-ref --tags
 ```
 
-Listar las etiquetas locales (versión más extendida todavía):
+Listar las tags locales (versión todavía más extendida, en caso de annotated tag, aparecen `^{}` que son los underlying commit object correspondientes):
 
 ```bash
 git show-ref --tags -d
 ```
 
-Listar las etiquetas remotas:
+Listar las tags remotas:
 
 ```bash
 git ls-remote --tags origin
