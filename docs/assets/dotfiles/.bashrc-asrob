@@ -49,6 +49,10 @@ function n () {
 function c () {
     code . & disown
 }
+### shorter history command, by @jgvictores
+h() {
+    history "$@"
+}
 
 ## svn-related
 
@@ -173,6 +177,7 @@ cbout() {
 PS1="\w$ "
 
 ### Terminal+git [necesita git-prompt.sh] Mejoras git en prompt, by @PeterBowman
+#source /usr/lib/git-core/git-sh-prompt
 #source ~/repos/git/contrib/completion/git-prompt.sh
 #GIT_PS1_SHOWDIRTYSTATE=1
 #GIT_PS1_SHOWUNTRACKEDFILES=1
